@@ -1,0 +1,240 @@
+{
+ "version": 1,
+ "articles": [
+  {
+   "id": "dfd164b9573ab639",
+   "sourceId": "phoronix",
+   "title": "Nouveau driver gets patches for HDMI Deep Color support",
+   "url": "https://www.phoronix.com/news/Nouveau-Deep-Color-Patches",
+   "author": "Michael Larabel",
+   "publishedAt": 1790124861000,
+   "firstSeenAt": 1790129584592,
+   "tags": [
+    "graphics",
+    "nvidia",
+    "kernel",
+    "nouveau",
+    "hardware",
+    "performance"
+   ],
+   "brief": "New patches posted to the dri-devel mailing list add HDMI Deep Color support to Nouveau, the open-source NVIDIA Linux kernel driver, enabling 10, 12, or 16 bits per color channel. The patches currently support only RGB, and 16-bit output is untested on capable displays.",
+   "imageUrl": "https://www.phoronix.net/image.php?id=nvidia-980-5080-linux&image=nouveau_980_5",
+   "readingMinutes": 2
+  },
+  {
+   "id": "dcdeadf4ba629f15",
+   "sourceId": "omgubuntu",
+   "title": "OpenShot video editor now officially available as a snap",
+   "url": "https://www.omgubuntu.co.uk/2026/09/openshot-video-editor-snap",
+   "author": "Joey Sneddon",
+   "publishedAt": 1790114953000,
+   "firstSeenAt": 1790129584592,
+   "tags": [
+    "snap",
+    "ubuntu",
+    "video-editing",
+    "openshot",
+    "desktop"
+   ],
+   "brief": "OpenShot's official snap package went live on the Canonical Snap Store on 22 September, installable on all supported Ubuntu releases. It eases installation and brings newer versions to older LTS users, though sandbox permissions for microphone, camera, and removable media must be granted manually.",
+   "imageUrl": "https://www.omgubuntu.co.uk/wp-content/uploads/2026/08/openshot-color-grading-1.webp",
+   "readingMinutes": 2
+  },
+  {
+   "id": "2070db5c21b669c3",
+   "sourceId": "phoronix",
+   "title": "Linux 7.2 vs. Linux 7.3 Shows A Few Improvements With AMD Strix Halo",
+   "url": "https://www.phoronix.com/news/Linux-7.3-Strix-Halo",
+   "author": "Michael Larabel",
+   "publishedAt": 1790105028000,
+   "firstSeenAt": 1790129584592,
+   "tags": [
+    "kernel",
+    "amd",
+    "benchmarks",
+    "ubuntu",
+    "hardware",
+    "performance"
+   ],
+   "brief": "Phoronix benchmarked Linux 7.3 against 7.2 on an AMD Ryzen AI Max+ 395 Strix Halo Framework Desktop after Ubuntu 26.10 switched kernels. Most real-world workloads were unchanged, but NUMA performance improved significantly, network latency dropped slightly, and a few graphics and micro-benchmarks saw small gains.",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=strix_halo_linux_73",
+   "readingMinutes": 3
+  },
+  {
+   "id": "f47f7edfb97fe794",
+   "sourceId": "linuxiac",
+   "title": "KDE Picks Enterprise, Documentation, and Styling as New Goals",
+   "url": "https://linuxiac.com/kde-picks-enterprise-documentation-and-styling-as-new-goals/",
+   "author": "Bobby Borisov",
+   "publishedAt": 1790101813000,
+   "firstSeenAt": 1790129584592,
+   "tags": [
+    "kde",
+    "plasma",
+    "enterprise",
+    "documentation",
+    "distro",
+    "news"
+   ],
+   "brief": "KDE has chosen three community goals for 2026–2028: making Plasma viable for enterprise and managed deployments, overhauling its fragmented documentation, and building a next-generation styling system via the Ocean design system and Union theming engine.",
+   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/09/new-kde-goals.jpg",
+   "readingMinutes": 2
+  },
+  {
+   "id": "3622e57b6da49e91",
+   "sourceId": "omgubuntu",
+   "title": "Ubuntu wiki gets its first overhaul in 16 years",
+   "url": "https://www.omgubuntu.co.uk/2026/09/ubuntu-wiki-redesign",
+   "author": "Joey Sneddon",
+   "publishedAt": 1790100492000,
+   "firstSeenAt": 1790129584592,
+   "tags": [
+    "ubuntu",
+    "canonical",
+    "documentation",
+    "infrastructure",
+    "desktop"
+   ],
+   "brief": "Canonical has launched a rebuilt Ubuntu Wiki, its first major update since 2010, now running on MediaWiki. The new wiki is smaller and aimed at Ubuntu users rather than contributors, replacing an aging Python 2 stack with security vulnerabilities.",
+   "imageUrl": "https://www.omgubuntu.co.uk/wp-content/uploads/2026/09/ubuntu-wiki-new.webp",
+   "readingMinutes": 2
+  },
+  {
+   "id": "7e078e2f92bacca3",
+   "sourceId": "itsfoss",
+   "title": "PeppermintOS switches from Xorg to XLibre, avoiding Wayland",
+   "url": "https://feed.itsfoss.com/link/24361/17470277/peppermintos-xlibre",
+   "author": "Abhishek Prakash",
+   "publishedAt": 1790099888000,
+   "firstSeenAt": 1790129584592,
+   "tags": [
+    "x11",
+    "xlibre",
+    "wayland",
+    "peppermintos",
+    "desktop",
+    "tutorial"
+   ],
+   "brief": "PeppermintOS is replacing the stalled xorg-server with XLibre, an X11 fork, in its upcoming ISO refreshes, and says it has no plans to move to Wayland. Testing has gone well so far, but XLibre is controversial: Artix Linux adopted it as default, then reverted after heavy bug reports and harassment of a developer.",
+   "imageUrl": "https://itsfoss.com/content/images/2026/09/peppermint-os.png",
+   "readingMinutes": 3
+  },
+  {
+   "id": "12124879d36e8d4e",
+   "sourceId": "itsfoss",
+   "title": "Survey: Organizations increasingly adopt OpenSearch for AI workloads, not just search",
+   "url": "https://feed.itsfoss.com/link/24361/17469935/opensearch-open-data-report-2026",
+   "author": "Sourav Rudra",
+   "publishedAt": 1790095293000,
+   "firstSeenAt": 1790129584592,
+   "tags": [
+    "opensearch",
+    "ai",
+    "open-source",
+    "linux-foundation",
+    "desktop",
+    "tutorial"
+   ],
+   "brief": "A Linux Foundation Research and OpenSearch Software Foundation report, based on 294 respondents surveyed in May 2026, finds OpenSearch awareness at 89% and production deployments doubled to 36% in two years. Among users, 62% run AI workloads on it, with cost and vendor independence driving adoption.",
+   "imageUrl": "https://itsfoss.com/content/images/2026/09/lf-opensearch-report-banner.png",
+   "readingMinutes": 3
+  },
+  {
+   "id": "d33b225b4fe210bf",
+   "sourceId": "linuxiac",
+   "title": "NetBSD 10.2 Released With New Hardware Support and Security Fixes",
+   "url": "https://linuxiac.com/netbsd-10-2-released-with-new-hardware-support-and-security-fixes/",
+   "author": "Bobby Borisov",
+   "publishedAt": 1790092152000,
+   "firstSeenAt": 1790129584592,
+   "tags": [
+    "netbsd",
+    "bsd",
+    "release",
+    "security",
+    "distro",
+    "news"
+   ],
+   "brief": "The NetBSD Project has released NetBSD 10.2, the second point release in the still-supported NetBSD 10 stable branch. It adds hardware support including Realtek RTL8126 5Gbps Ethernet, fixes security issues in IPFilter and TCP timestamps, and updates OpenSSL to 3.0.21 and Xorg to 21.1.24.",
+   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/09/netbsd102.jpg",
+   "readingMinutes": 3
+  },
+  {
+   "id": "40ba601350f0030c",
+   "sourceId": "lwn",
+   "title": "Compiling the kernel with gccrs",
+   "url": "https://lwn.net/Articles/1095553/",
+   "author": "daroc",
+   "publishedAt": 1790090855000,
+   "firstSeenAt": 1790129584592,
+   "tags": [
+    "rust",
+    "gcc",
+    "kernel",
+    "compilers",
+    "deep"
+   ],
+   "brief": "Talks at RustConf 2026 and Kangrejos covered the status of gccrs, the Rust frontend for GCC, with a focus on compiling the Linux kernel. The project is making good progress, but the compiler remains far from usable for that goal.",
+   "imageUrl": null,
+   "readingMinutes": 0
+  },
+  {
+   "id": "c9bf42680a3c344c",
+   "sourceId": "lwn",
+   "title": "Security updates for Tuesday",
+   "url": "https://lwn.net/Articles/1096022/",
+   "author": "jake",
+   "publishedAt": 1790089811000,
+   "firstSeenAt": 1790129584592,
+   "tags": [
+    "security",
+    "distros",
+    "fedora",
+    "ubuntu",
+    "kernel",
+    "deep"
+   ],
+   "brief": "LWN's daily roundup lists security updates from AlmaLinux, Debian, Fedora, Mageia, Oracle, Slackware, SUSE, and Ubuntu. Fedora 45 ships a large coordinated update touching ffmpeg, chromium, and many multimedia packages; Ubuntu fixes include the kernel, OpenJDK, glib2.0, and expat across multiple LTS releases.",
+   "imageUrl": null,
+   "readingMinutes": 10
+  },
+  {
+   "id": "031f040d4418c064",
+   "sourceId": "fedoramagazine",
+   "title": "Fedora CoreOS 45 Test Week starts September 21",
+   "url": "https://fedoramagazine.org/coreos-45-test-week/",
+   "author": "Lukáš Růžička",
+   "publishedAt": 1789545600000,
+   "firstSeenAt": 1790129584592,
+   "tags": [
+    "fedora",
+    "coreos",
+    "testing",
+    "community",
+    "tutorial"
+   ],
+   "brief": "The Fedora CoreOS and QA teams are running a Test Week starting September 21, 2026, inviting the community to test Fedora CoreOS based on Fedora 45 before it reaches testing and stable streams. Participants download test images, follow provided test cases, and report results on the wiki page.",
+   "imageUrl": "https://fedoramagazine.org/wp-content/uploads/2026/01/Test_Days-300x127.jpg",
+   "readingMinutes": 1
+  },
+  {
+   "id": "48695a35d790955e",
+   "sourceId": "fedoramagazine",
+   "title": "Fedora Linux Asahi Remix 45 Beta brings Fedora 45 to Apple Silicon",
+   "url": "https://fedoramagazine.org/announcing-fedora_asahi_remix_45_beta/",
+   "author": "Davide Cavalca",
+   "publishedAt": 1789481100000,
+   "firstSeenAt": 1790129584592,
+   "tags": [
+    "fedora",
+    "asahi",
+    "apple-silicon",
+    "release",
+    "tutorial"
+   ],
+   "brief": "Fedora Asahi Remix 45 Beta is out, bringing Fedora Linux 45 Beta to Apple Silicon Macs ahead of general availability in about a month. It is the first Remix release with out-of-the-box support for M3, M3 Pro, and M3 Max systems, though M3 GPU acceleration awaits a future Mesa update.",
+   "imageUrl": "https://fedoramagazine.org/wp-content/uploads/2026/09/f45_asahi_remix_beta_rls-300x127.jpg",
+   "readingMinutes": 2
+  }
+ ]
+}
