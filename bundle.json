@@ -199,6 +199,203 @@
    "readingMinutes": 10
   },
   {
+   "id": "cb7470f0b79e7c7a",
+   "sourceId": "phoronix",
+   "title": "AMD BC-250 Linux support expands with PSP secure processor enablement patches",
+   "url": "https://www.phoronix.com/news/AMD-BC-250-Linux-PSP-Support",
+   "author": "Michael Larabel",
+   "publishedAt": 1789986136000,
+   "firstSeenAt": 1790143202455,
+   "tags": [
+    "amd",
+    "kernel",
+    "hardware",
+    "drivers",
+    "performance"
+   ],
+   "brief": "New kernel patches enable the AMD PSP Secure Processor on the BC-250, a cut-down PlayStation 5 APU board originally sold for crypto mining. The three-patch series updates the AMD CCP driver so the board's secure processor works for encryption tasks under Linux.",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2025&image=amd_bc250",
+   "readingMinutes": 3
+  },
+  {
+   "id": "cbf4b38d7c7db22f",
+   "sourceId": "phoronix",
+   "title": "Igalia Celebrates 25 Years of Linux and Open-Source Contributions",
+   "url": "https://www.phoronix.com/news/Igalia-Turns-25",
+   "author": "Michael Larabel",
+   "publishedAt": 1789985231000,
+   "firstSeenAt": 1790143202455,
+   "tags": [
+    "igalia",
+    "open-source",
+    "linux",
+    "consulting",
+    "hardware",
+    "performance"
+   ],
+   "brief": "Worker-owned consultancy Igalia, founded in September 2001 by University of A Coruña engineers, marks 25 years of open-source work. Now nearly 200 people, it contributes to the Linux kernel, WebKit, Chromium, Servo, Mesa, GStreamer, and LLVM, with recent projects for Valve and others.",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=igalia_25",
+   "readingMinutes": 2
+  },
+  {
+   "id": "e279c5b153c30505",
+   "sourceId": "phoronix",
+   "title": "Linux perf script overhauled as fast Python C module",
+   "url": "https://www.phoronix.com/news/Linux-Perf-Python-Module",
+   "author": "Michael Larabel",
+   "publishedAt": 1789984636000,
+   "firstSeenAt": 1790143202455,
+   "tags": [
+    "kernel",
+    "perf",
+    "python",
+    "performance",
+    "hardware"
+   ],
+   "brief": "A 49-patch series from Google engineer Ian Rogers replaces perf's embedded Python/Perl scripting with a standalone Python C extension module, cutting overhead and build dependencies. One script that took 3.7 seconds now runs in 0.1 seconds.",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=linux_perf_python",
+   "readingMinutes": 2
+  },
+  {
+   "id": "fa664a0dbdaefd16",
+   "sourceId": "phoronix",
+   "title": "Linux 7.3-rc4 Released: More Fixes Caught By LLMs, But Nothing Too Scary",
+   "url": "https://www.phoronix.com/news/Linux-7.3-rc4",
+   "author": "Michael Larabel",
+   "publishedAt": 1789939538000,
+   "firstSeenAt": 1790143202455,
+   "tags": [
+    "kernel",
+    "linux",
+    "btrfs",
+    "ai",
+    "hardware",
+    "performance"
+   ],
+   "brief": "Linus Torvalds released Linux 7.3-rc4, a larger-than-usual rc with fixes spread across drivers, filesystems, and networking, many flagged by LLM-based defect hunting. Notable merges include x86 fixes, new XPad game controller support, two Btrfs bug fixes, and a fix for silent user-space data loss present since 2023.",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=linux_73_rc4",
+   "readingMinutes": 2
+  },
+  {
+   "id": "d10886537d235269",
+   "sourceId": "phoronix",
+   "title": "Important x86 Fixes Merged Ahead Of Linux 7.3-rc4",
+   "url": "https://www.phoronix.com/news/Linux-7.3-rc4-x86-Fixes",
+   "author": "Michael Larabel",
+   "publishedAt": 1789928352000,
+   "firstSeenAt": 1790143202455,
+   "tags": [
+    "kernel",
+    "intel",
+    "x86",
+    "microcode",
+    "hardware",
+    "performance"
+   ],
+   "brief": "A batch of x86/x86_64 fixes landed in Linux 7.3 Git ahead of 7.3-rc4. They block problematic Intel Granite Rapids microcode that could cause machine check exceptions, fix Intel FRED on Panther Lake crashing games under Wine/Steam Play, and disable APX register use in -march=native kernel builds.",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2025&image=linux_615_amd_intel",
+   "readingMinutes": 3
+  },
+  {
+   "id": "b25566e448a21f4e",
+   "sourceId": "phoronix",
+   "title": "Gzip 1.15 Released, Fixing Bugs Present Since Its Inception",
+   "url": "https://www.phoronix.com/news/Gzip-1.15-Released",
+   "author": "Michael Larabel",
+   "publishedAt": 1789914732000,
+   "firstSeenAt": 1790143202455,
+   "tags": [
+    "gzip",
+    "gnu",
+    "release",
+    "security",
+    "hardware",
+    "performance"
+   ],
+   "brief": "Gzip 1.15 is out, following version 1.14 from April 2025, with over a hundred commits focused on bug fixes. Several bugs existed since the tool's beginning, including a race that could remove the wrong file, a buffer overflow in LZH decompression, and use of uninitialized memory.",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2023&image=gnu",
+   "readingMinutes": 3
+  },
+  {
+   "id": "195dad8cb9d2d30a",
+   "sourceId": "phoronix",
+   "title": "KDE's 2026-2028 Goals: Enterprise Support, Better Docs, Next-Gen Styling",
+   "url": "https://www.phoronix.com/news/KDE-Goals-To-2028",
+   "author": "Michael Larabel",
+   "publishedAt": 1789907549000,
+   "firstSeenAt": 1790143202455,
+   "tags": [
+    "kde",
+    "plasma",
+    "desktop",
+    "enterprise",
+    "hardware",
+    "performance"
+   ],
+   "brief": "At KDE Akademy 2026 in Graz, KDE announced its three community-voted goals for the next two years: improving Plasma for enterprise deployments, overhauling documentation, and building a next-generation styling system via the Ocean design project and Union theming engine.",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=kde_new_goals",
+   "readingMinutes": 2
+  },
+  {
+   "id": "0a44b9159cfe4211",
+   "sourceId": "phoronix",
+   "title": "Starling 0.5 desktop adds optional walkable 3D waterfront city mode",
+   "url": "https://www.phoronix.com/news/Starling-0.5-3D-Desktop",
+   "author": "Michael Larabel",
+   "publishedAt": 1789901368000,
+   "firstSeenAt": 1790143202455,
+   "tags": [
+    "wayland",
+    "desktop",
+    "ai",
+    "linux",
+    "hardware",
+    "performance"
+   ],
+   "brief": "Starling, the Swift-written Wayland desktop developed largely with Claude Code, released version 0.5 with an optional 3D desktop mode rendering a walkable waterfront city where apps remain real windows. The release also adds Windows support via WSL2 with RDP display mode.",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=starling_05_3",
+   "readingMinutes": 2
+  },
+  {
+   "id": "0f8c0c25123311b5",
+   "sourceId": "phoronix",
+   "title": "Vulkan 1.4.363 Released With New VK_INTEL_device_info Extension",
+   "url": "https://www.phoronix.com/news/Vulkan-1.4.363",
+   "author": "Michael Larabel",
+   "publishedAt": 1789900428000,
+   "firstSeenAt": 1790143202455,
+   "tags": [
+    "vulkan",
+    "intel",
+    "graphics",
+    "api",
+    "hardware",
+    "performance"
+   ],
+   "brief": "Vulkan 1.4.363 is out with spec clarifications, fixes, and multi-instance VUs for DMA-BUF external memory. Its headline addition is VK_INTEL_device_info, an Intel vendor extension that exposes the graphics IP block version of Intel GPUs to applications.",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=vulkan_14363",
+   "readingMinutes": 2
+  },
+  {
+   "id": "f2798a89e7665d83",
+   "sourceId": "phoronix",
+   "title": "AMD Strix Halo Shows Performance Gains on Ubuntu 26.10, Especially with amd64v3",
+   "url": "https://www.phoronix.com/review/ubuntu-2610-strix-halo",
+   "author": "Michael Larabel",
+   "publishedAt": 1789740000000,
+   "firstSeenAt": 1790143202455,
+   "tags": [
+    "amd",
+    "ubuntu",
+    "benchmarks",
+    "performance",
+    "hardware"
+   ],
+   "brief": "Phoronix benchmarked a Framework Desktop with a Ryzen AI Max+ 395 Strix Halo chip on Ubuntu 26.04 LTS versus an Ubuntu 26.10 daily ISO, plus an amd64v3 package build. Ubuntu 26.10 reportedly performs better than 26.04 LTS, with extra out-of-the-box gains from the experimental x86_64-v3 packages.",
+   "imageUrl": "https://www.phoronix.net/image.php?id=ubuntu-2610-strix-halo&image=ubuntu_2610_strix_halo_amd",
+   "readingMinutes": 2
+  },
+  {
    "id": "031f040d4418c064",
    "sourceId": "fedoramagazine",
    "title": "Fedora CoreOS 45 Test Week starts September 21",
