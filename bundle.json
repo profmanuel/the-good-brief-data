@@ -2,6 +2,693 @@
  "version": 1,
  "articles": [
   {
+   "id": "56c25ba781f52514",
+   "sourceId": "omgubuntu",
+   "title": "How to test Ubuntu's AI dictation tool Myna ahead of its official release",
+   "url": "https://www.omgubuntu.co.uk/2026/09/ubuntu-myna-ai-install",
+   "author": "Joey Sneddon",
+   "publishedAt": 1790220853000,
+   "firstSeenAt": 1790229602642,
+   "tags": [
+    "ubuntu",
+    "ai",
+    "accessibility",
+    "gnome",
+    "desktop"
+   ],
+   "brief": "Canonical's local AI speech-to-text tool Myna isn't officially ready, but its components are available to test on Ubuntu 26.04 LTS and 26.10. Installation requires a PPA settings app, a Myna snap, and a local Whisper or Parakeet AI model, with an on-screen HUD via a GNOME Shell extension on 26.10.",
+   "imageUrl": "https://www.omgubuntu.co.uk/wp-content/uploads/2026/09/myna.webp",
+   "readingMinutes": 5
+  },
+  {
+   "id": "18a55769948ea2f4",
+   "sourceId": "itsfoss",
+   "title": "openKylin 3.0 Released with Deep AI Integration and Linux Kernel 7.0",
+   "url": "https://feed.itsfoss.com/link/24361/17471831/openkylin-3-0-released",
+   "author": "Abhishek Prakash",
+   "publishedAt": 1790218300000,
+   "firstSeenAt": 1790229602642,
+   "tags": [
+    "openkylin",
+    "ai",
+    "ukui",
+    "rust",
+    "desktop",
+    "tutorial"
+   ],
+   "brief": "openKylin 3.0 ships Linux kernel 7.0, UKUI 4.24, and a built-in AI agent framework called KylinBot with its Xiao K assistant, which can control system settings via text or voice. The release also adds Rust-based replacement utilities and gesture controls; the AI skills documentation is currently only in Chinese.",
+   "imageUrl": "https://itsfoss.com/content/images/2026/08/openkylin-3.webp",
+   "readingMinutes": 4
+  },
+  {
+   "id": "898a0cb88d97609f",
+   "sourceId": "omgubuntu",
+   "title": "Ubuntu moves kernel security updates to a two-week cycle amid AI-driven surge in CVEs",
+   "url": "https://www.omgubuntu.co.uk/2026/09/ubuntu-kernel-security-updates-faster",
+   "author": "Joey Sneddon",
+   "publishedAt": 1790211702000,
+   "firstSeenAt": 1790229602642,
+   "tags": [
+    "ubuntu",
+    "kernel",
+    "security",
+    "canonical",
+    "desktop"
+   ],
+   "brief": "Canonical is switching Ubuntu kernel updates from a 4/2 schedule to a unified two-week SRU cycle, effectively shipping fixes weekly. The change responds to an 'explosion' of vulnerabilities being found with AI models and agents.",
+   "imageUrl": "https://www.omgubuntu.co.uk/wp-content/uploads/2026/09/Ubuntu-Security-Bug.webp",
+   "readingMinutes": 2
+  },
+  {
+   "id": "579d37e735fddc3c",
+   "sourceId": "linuxiac",
+   "title": "Wireshark 4.6.9 Packet Analyzer Fixes 19 Security Vulnerabilities",
+   "url": "https://linuxiac.com/wireshark-4-6-9-packet-analyzer-fixes-19-security-vulnerabilities/",
+   "author": "Bobby Borisov",
+   "publishedAt": 1790205104000,
+   "firstSeenAt": 1790229602642,
+   "tags": [
+    "wireshark",
+    "security",
+    "networking",
+    "release",
+    "distro",
+    "news"
+   ],
+   "brief": "Wireshark 4.6.9, a maintenance release of the network protocol analyzer, patches 19 vulnerabilities, mostly crashes in protocol dissectors and file parsers. The most serious, CVE-2026-96419 in profile import, could allow code execution.",
+   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/09/wireshark469.jpg",
+   "readingMinutes": 2
+  },
+  {
+   "id": "2040abbf7c88dffc",
+   "sourceId": "omgubuntu",
+   "title": "Original Windows Task Manager dev builds TMOG, a cross-platform system monitor",
+   "url": "https://www.omgubuntu.co.uk/2026/09/tmog-task-manager-linux-beta",
+   "author": "Joey Sneddon",
+   "publishedAt": 1790200593000,
+   "firstSeenAt": 1790229602642,
+   "tags": [
+    "linux",
+    "system-monitor",
+    "qt",
+    "ai-assisted-development",
+    "ubuntu",
+    "desktop"
+   ],
+   "brief": "David Plummer, who wrote the original Windows Task Manager, has released TMOG, a cross-platform system monitor built with Claude Code from a 100+ page spec. The Linux version uses Qt 6 atop a shared C++ core, and is available as a Deb, AppImage, or binary. Some features sit behind a $39.95 Pro tier.",
+   "imageUrl": "https://www.omgubuntu.co.uk/wp-content/uploads/2026/09/tmog.webp",
+   "readingMinutes": 3
+  },
+  {
+   "id": "6434b7ada2f979a0",
+   "sourceId": "9to5linux",
+   "title": "Wireshark 4.6.9 Updates Protocol and Capture File Support, Fixes More Bugs",
+   "url": "https://9to5linux.com/?p=33722",
+   "author": "",
+   "publishedAt": 1790198161000,
+   "firstSeenAt": 1790229602642,
+   "tags": [
+    "wireshark",
+    "networking",
+    "security",
+    "distro",
+    "release"
+   ],
+   "brief": "Wireshark 4.6.9 is now available for download, bringing updated protocol and capture file support alongside various bug and security fixes.",
+   "imageUrl": null,
+   "readingMinutes": 0
+  },
+  {
+   "id": "78699961255805e6",
+   "sourceId": "phoronix",
+   "title": "Debian Inference Portal offers free AI/LLM inferencing to Debian developers",
+   "url": "https://www.phoronix.com/news/Debian-Inference-Portal",
+   "author": "Michael Larabel",
+   "publishedAt": 1790197681000,
+   "firstSeenAt": 1790229602642,
+   "tags": [
+    "debian",
+    "ai",
+    "llm",
+    "infrastructure",
+    "hardware",
+    "performance"
+   ],
+   "brief": "Following Debian's vote to allow responsible generative AI use, the Debian Inference Portal has launched, giving contributors free self-service access to LLM inferencing. Funded by Scaleway, it offers DeepSeek V4 Flash and GLM-5.2 models via an API for use with editors and AI tooling.",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=debian_inference_portal",
+   "readingMinutes": 2
+  },
+  {
+   "id": "4efad0fb13854b8b",
+   "sourceId": "phoronix",
+   "title": "Qualcomm Showcases Linux on Snapdragon X2 Laptops, Developer Preview Announced",
+   "url": "https://www.phoronix.com/news/Qualcomm-Talks-Up-X2-Linux",
+   "author": "Michael Larabel",
+   "publishedAt": 1790196570000,
+   "firstSeenAt": 1790229602642,
+   "tags": [
+    "qualcomm",
+    "arm",
+    "linux",
+    "laptops",
+    "hardware",
+    "performance"
+   ],
+   "brief": "At its Snapdragon Summit, Qualcomm announced an early developer preview of Linux for Snapdragon X2 laptops, using a custom kernel with a Debian 13 user-space. HP, ASUS, and HUMAIN plan Linux support on X2 devices in the first half of 2027.",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=x2_linux_preview",
+   "readingMinutes": 4
+  },
+  {
+   "id": "4b0e4cf683cd2e78",
+   "sourceId": "phoronix",
+   "title": "Lemonade 2026.39.1/2026.40 RC Fix APU Model Streaming, Drop OpenMOSS ROCm",
+   "url": "https://www.phoronix.com/news/Lemonade-2026.40-RC",
+   "author": "Michael Larabel",
+   "publishedAt": 1790192484000,
+   "firstSeenAt": 1790229602642,
+   "tags": [
+    "amd",
+    "ai",
+    "llm",
+    "rocm",
+    "hardware",
+    "performance"
+   ],
+   "brief": "AMD's Lemonade local AI server released 2026.39.1 and a 2026.40 RC. The RC fixes streaming models on AMD APUs by checking the GTT pool instead of the fixed vRAM carve-out, and removes the OpenMOSS ROCm back-end for running about 40x slower than Vulkan. 2026.39.1 adds configurable vRAM auto-eviction.",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=openmoss_rocm_benchmark",
+   "readingMinutes": 3
+  },
+  {
+   "id": "c79131f513e9a88d",
+   "sourceId": "9to5linux",
+   "title": "Debian-Based SparkyLinux 2026.09 “Tiamat” Introduces Sparky Labwc Edition",
+   "url": "https://9to5linux.com/?p=33714",
+   "author": "",
+   "publishedAt": 1790192242000,
+   "firstSeenAt": 1790229602642,
+   "tags": [
+    "debian",
+    "sparkylinux",
+    "release",
+    "labwc",
+    "distro"
+   ],
+   "brief": "SparkyLinux 2026.09 “Tiamat” is available for download, shipping Linux kernel 7.2, a new Sparky Labwc edition, and the latest Debian “Forky” Testing updates.",
+   "imageUrl": null,
+   "readingMinutes": 0
+  },
+  {
+   "id": "4f036612d5c5798f",
+   "sourceId": "linuxiac",
+   "title": "SparkyLinux 2026.09 Released With Kernel 7.2 and New Labwc Edition",
+   "url": "https://linuxiac.com/sparkylinux-2026-09-released-with-kernel-7-2-and-new-labwc-edition/",
+   "author": "Bobby Borisov",
+   "publishedAt": 1790190045000,
+   "firstSeenAt": 1790229602642,
+   "tags": [
+    "sparkylinux",
+    "debian",
+    "wayland",
+    "release",
+    "distro",
+    "news"
+   ],
+   "brief": "SparkyLinux 2026.09 \"Tiamat\" refreshes the semi-rolling branch on a Debian \"Forky\" Testing base with kernel 7.2.6 and updated desktop images. The main addition is a new Labwc MinimalGUI edition, a lightweight Wayland compositor setup installed from the command line.",
+   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/09/sparky202609.jpg",
+   "readingMinutes": 2
+  },
+  {
+   "id": "aa6fc3ffbc2b4bca",
+   "sourceId": "linuxiac",
+   "title": "Ubuntu Kernels Move to Weekly Releases for Faster CVE Fixes",
+   "url": "https://linuxiac.com/ubuntu-kernels-move-to-weekly-releases-for-faster-cve-fixes/",
+   "author": "Bobby Borisov",
+   "publishedAt": 1790184791000,
+   "firstSeenAt": 1790229602642,
+   "tags": [
+    "ubuntu",
+    "kernel",
+    "security",
+    "canonical",
+    "distro",
+    "news"
+   ],
+   "brief": "Canonical is replacing Ubuntu's four-week SRU and two-week security kernel cycles with overlapping two-week cycles, yielding a new kernel release every week. Testing is not shortened; one kernel certifies while the next is prepared.",
+   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/09/canonical-kernel-weekly-releases.jpg",
+   "readingMinutes": 2
+  },
+  {
+   "id": "7e33ece7ef8453d9",
+   "sourceId": "linuxiac",
+   "title": "git-bug 0.11 Adds a Full Web UI for Issues and Code Browsing",
+   "url": "https://linuxiac.com/git-bug-0-11-adds-a-full-web-ui-for-issues-and-code-browsing/",
+   "author": "Bobby Borisov",
+   "publishedAt": 1790183815000,
+   "firstSeenAt": 1790229602642,
+   "tags": [
+    "git",
+    "bug-tracking",
+    "open-source",
+    "release",
+    "distro",
+    "news"
+   ],
+   "brief": "git-bug 0.11, the first release in 16 months of the distributed bug tracker that stores issues inside Git, rewrites its web UI from scratch and adds a built-in code browser. The backend gains Git browsing via GraphQL, the search index shrinks dramatically with Bleve v2, and some breaking changes apply.",
+   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/09/git-bug-011.jpg",
+   "readingMinutes": 3
+  },
+  {
+   "id": "d5953614fe15d91e",
+   "sourceId": "linuxiac",
+   "title": "Konveyor Brings Niri-Like Scrolling Tiling to KDE Plasma",
+   "url": "https://linuxiac.com/konveyor-brings-niri-like-scrolling-tiling-to-kde-plasma/",
+   "author": "Bobby Borisov",
+   "publishedAt": 1790179123000,
+   "firstSeenAt": 1790229602642,
+   "tags": [
+    "kde",
+    "plasma",
+    "tiling",
+    "wayland",
+    "distro",
+    "news"
+   ],
+   "brief": "Konveyor is a new open-source project that adds Niri-inspired scrolling column tiling to KDE Plasma as a KWin effect, leaving panels, widgets, and other desktop features intact. It supports multi-monitor layouts, tabbed columns, gestures, and an optional launcher. It requires Plasma 6.4 or later on Wayland.",
+   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/09/konveyor.jpg",
+   "readingMinutes": 2
+  },
+  {
+   "id": "f50eba4599fa2928",
+   "sourceId": "itsfoss",
+   "title": "Gravity Linux Is a New Fedora Remix for Apple Silicon Designed to Eventually Disappear",
+   "url": "https://feed.itsfoss.com/link/24361/17471348/gravity-linux-launch",
+   "author": "Sourav Rudra",
+   "publishedAt": 1790178487000,
+   "firstSeenAt": 1790229602642,
+   "tags": [
+    "apple-silicon",
+    "fedora",
+    "kernel",
+    "hardware",
+    "desktop",
+    "tutorial"
+   ],
+   "brief": "Gravity Linux is a Fedora Remix for Apple Silicon Macs, forked from Asahi Linux over LLM contribution policy, shipping KDE Plasma on Wayland. Its first alpha runs on the M4 Mac mini with working hardware-accelerated graphics. The project's goal is to upstream all driver work, then sunset itself.",
+   "imageUrl": "https://itsfoss.com/content/images/2026/09/gravity-linux-banner.png",
+   "readingMinutes": 3
+  },
+  {
+   "id": "8992987bb1c9a5d7",
+   "sourceId": "lwn",
+   "title": "[$] Ideas on modernizing the open-source desktop",
+   "url": "https://lwn.net/Articles/1095425/",
+   "author": "jzb",
+   "publishedAt": 1790177970000,
+   "firstSeenAt": 1790229602642,
+   "tags": [
+    "kde",
+    "desktop",
+    "ui",
+    "akademy",
+    "kernel",
+    "deep"
+   ],
+   "brief": "At Akademy 2026, veteran UI/UX designer Scott Jenson urged open-source projects to experiment beyond the classic WIMP desktop model. He argued KDE and its community should take the lead on desktop design innovation.",
+   "imageUrl": null,
+   "readingMinutes": 0
+  },
+  {
+   "id": "d7c193e390ad75bb",
+   "sourceId": "linuxiac",
+   "title": "KeePassXC 2.8 Beta 1 Brings Qt 6, Wayland Auto-Type, and Security Fixes",
+   "url": "https://linuxiac.com/keepassxc-2-8-is-taking-shape-heres-what-to-expect/",
+   "author": "Bobby Borisov",
+   "publishedAt": 1790176453000,
+   "firstSeenAt": 1790229602642,
+   "tags": [
+    "keepassxc",
+    "security",
+    "qt",
+    "wayland",
+    "distro",
+    "news"
+   ],
+   "brief": "KeePassXC released the first beta of version 2.8, a major update that ports the password manager from Qt 5 to Qt 6 and adds remote database synchronization. Linux users gain Auto-Type on Wayland and Polkit-based Quick Unlock. The beta also patches several low-to-moderate severity vulnerabilities affecting 2.7.x.",
+   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/09/keepassxc28beta.jpg",
+   "readingMinutes": 2
+  },
+  {
+   "id": "d81969e4d2ec94a3",
+   "sourceId": "phoronix",
+   "title": "Intel Open-Sources DXVK-IGDEXT for Faster Arc Gaming on Linux",
+   "url": "https://www.phoronix.com/news/DXVK-IGDEXT",
+   "author": "Michael Larabel",
+   "publishedAt": 1790175284000,
+   "firstSeenAt": 1790229602642,
+   "tags": [
+    "intel",
+    "gaming",
+    "wine",
+    "vulkan",
+    "hardware",
+    "performance"
+   ],
+   "brief": "Intel engineers have open-sourced DXVK-IGDEXT, an igdext64.dll for Wine/DXVK that exposes Intel D3D11 Graphics Extensions—UAV overlap, MultiDrawIndirect, depth bounds—by forwarding them to DXVK's native implementation.",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=dxvk_igdext",
+   "readingMinutes": 2
+  },
+  {
+   "id": "51cdc15a8e61a2cf",
+   "sourceId": "lwn",
+   "title": "Systemd v262 released",
+   "url": "https://lwn.net/Articles/1096204/",
+   "author": "jzb",
+   "publishedAt": 1790175097000,
+   "firstSeenAt": 1790229602642,
+   "tags": [
+    "systemd",
+    "linux",
+    "release",
+    "kernel",
+    "deep"
+   ],
+   "brief": "Systemd v262 has been released. Notable additions include building systemd as a single statically linked binary for small containers, support for the kernel coredump socket protocol from Linux 6.17, and OpenSSL 4 support.",
+   "imageUrl": null,
+   "readingMinutes": 0
+  },
+  {
+   "id": "593aa659a1185eb1",
+   "sourceId": "itsfoss",
+   "title": "Local AI Weekly #3: cheap frontier AI won't last, plus local tools and model news",
+   "url": "https://feed.itsfoss.com/link/24361/17471237/local-ai-weekly-3",
+   "author": "Abhishek Prakash",
+   "publishedAt": 1790175092000,
+   "firstSeenAt": 1790229602642,
+   "tags": [
+    "local-ai",
+    "open-source",
+    "llm",
+    "rust",
+    "desktop",
+    "tutorial"
+   ],
+   "brief": "This newsletter issue argues that cheap, generous AI subscriptions are a hook before prices rise, making local models a safer bet. It also covers open-source agent inboxes from Cloudflare and AWS, new tools like OpenPencil and Kalypta, and Microsoft's Rust rewrite of the Copilot runtime.",
+   "imageUrl": "https://itsfoss.com/content/images/2026/09/local-ai-token-rag-pull.webp",
+   "readingMinutes": 7
+  },
+  {
+   "id": "15635b103e5e9890",
+   "sourceId": "lwn",
+   "title": "Critical Radicle protocol flaws expose traffic and enable node impersonation",
+   "url": "https://lwn.net/Articles/1096200/",
+   "author": "jzb",
+   "publishedAt": 1790173246000,
+   "firstSeenAt": 1790229602642,
+   "tags": [
+    "security",
+    "radicle",
+    "p2p",
+    "vulnerabilities",
+    "kernel",
+    "deep"
+   ],
+   "brief": "Radicle disclosed two critical network-protocol flaws: traffic lacks expected confidentiality, and broken peer authentication lets attackers spoof Node IDs to read private repositories. Combined, an on-path attacker can observe allow-listed Node IDs, read exchanges, and fetch repositories; no setting or allow-list…",
+   "imageUrl": null,
+   "readingMinutes": 1
+  },
+  {
+   "id": "b67b36cd9c66192e",
+   "sourceId": "phoronix",
+   "title": "Benchmarking Java Performance Of JDK 8 Through OpenJDK 27",
+   "url": "https://www.phoronix.com/review/java-8-openjdk-27-benchmarks",
+   "author": "Michael Larabel",
+   "publishedAt": 1790173029000,
+   "firstSeenAt": 1790229602642,
+   "tags": [
+    "java",
+    "openjdk",
+    "benchmarks",
+    "performance",
+    "hardware"
+   ],
+   "brief": "Phoronix benchmarked every major OpenJDK release from 8 through the new 27 on a Threadripper 9980X workstation running Fedora 44. Tests used official binaries with default settings across DaCapoBench and Renaissance suites, though some benchmarks had issues with pre-OpenJDK 11 versions.",
+   "imageUrl": "https://www.phoronix.net/image.php?id=java-8-openjdk-27-benchmarks&image=openjdk_27_1",
+   "readingMinutes": 1
+  },
+  {
+   "id": "8a661421e7edc7d1",
+   "sourceId": "9to5linux",
+   "title": "KeePassXC 2.8 Beta Brings Auto-Type on Wayland and Qt 6 Port",
+   "url": "https://9to5linux.com/?p=33711",
+   "author": "",
+   "publishedAt": 1790172633000,
+   "firstSeenAt": 1790229602642,
+   "tags": [
+    "keepassxc",
+    "wayland",
+    "qt6",
+    "security",
+    "distro",
+    "release"
+   ],
+   "brief": "KeePassXC 2.8 is now in public beta, adding Auto-Type support on Wayland, quick unlock on Linux, and a long-awaited port to Qt 6.",
+   "imageUrl": null,
+   "readingMinutes": 0
+  },
+  {
+   "id": "391d2a5a41419e68",
+   "sourceId": "lwn",
+   "title": "Critical WordPress RCE vulnerability announced",
+   "url": "https://lwn.net/Articles/1096195/",
+   "author": "jzb",
+   "publishedAt": 1790171740000,
+   "firstSeenAt": 1790229602642,
+   "tags": [
+    "wordpress",
+    "security",
+    "kernel",
+    "deep"
+   ],
+   "brief": "A critical vulnerability in WordPress's get_page_template() function could allow unauthenticated remote-code execution in limited circumstances. Fixes are available for the latest branch and backported to 4.7; the ClassicPress fork is also affected but has no update yet.",
+   "imageUrl": null,
+   "readingMinutes": 0
+  },
+  {
+   "id": "7507aeca6219aa4c",
+   "sourceId": "lwn",
+   "title": "Security updates for Wednesday",
+   "url": "https://lwn.net/Articles/1096191/",
+   "author": "jzb",
+   "publishedAt": 1790169648000,
+   "firstSeenAt": 1790229602642,
+   "tags": [
+    "security",
+    "kernel",
+    "ubuntu",
+    "fedora",
+    "deep"
+   ],
+   "brief": "LWN's daily roundup of distribution security advisories covering AlmaLinux, Debian, Fedora, Mageia, Oracle, Red Hat, SUSE, and Ubuntu. Notable updates include kernel fixes for Fedora, SUSE, and Ubuntu, plus patches for chromium, firefox, openssh, sudo, and bind.",
+   "imageUrl": null,
+   "readingMinutes": 4
+  },
+  {
+   "id": "24fbbefde36448a6",
+   "sourceId": "phoronix",
+   "title": "NTFS-3G 2026.9.18 released with heap overflow and DoS security fixes",
+   "url": "https://www.phoronix.com/news/NTFS-3G-2026.9.18",
+   "author": "Michael Larabel",
+   "publishedAt": 1790166421000,
+   "firstSeenAt": 1790229602642,
+   "tags": [
+    "filesystems",
+    "ntfs",
+    "security",
+    "fuse",
+    "hardware",
+    "performance"
+   ],
+   "brief": "NTFS-3G 2026.9.18, the FUSE-based NTFS driver, fixes multiple heap buffer overflows, possible heap corruption, and a denial-of-service vector. It also addresses an ntfsresize issue with stale $MFTMirr data and is available from GitHub.",
+   "imageUrl": "https://www.phoronix.net/image.php?id=btrfs-sandisk-raid&image=sandisk_btrfs_raid2",
+   "readingMinutes": 2
+  },
+  {
+   "id": "2594c76cb4a2e102",
+   "sourceId": "9to5linux",
+   "title": "NTFS-3G 2026.9.18 NTFS Driver for Linux Released with Security and Bug Fixes",
+   "url": "https://9to5linux.com/?p=33708",
+   "author": "",
+   "publishedAt": 1790165467000,
+   "firstSeenAt": 1790229602642,
+   "tags": [
+    "ntfs",
+    "filesystems",
+    "security",
+    "linux",
+    "distro",
+    "release"
+   ],
+   "brief": "NTFS-3G 2026.9.18, the driver for handling NTFS partitions on Linux-based systems, is now available for download. The release brings various security and bug fixes.",
+   "imageUrl": null,
+   "readingMinutes": 0
+  },
+  {
+   "id": "7364ada1da0c0c76",
+   "sourceId": "phoronix",
+   "title": "Qualcomm Posts Open-Source GPU Driver Patches For Adreno 850 One Day After Announcement",
+   "url": "https://www.phoronix.com/news/Qualcomm-Adreno-850-Open-Source",
+   "author": "Michael Larabel",
+   "publishedAt": 1790163948000,
+   "firstSeenAt": 1790229602642,
+   "tags": [
+    "gpu",
+    "qualcomm",
+    "kernel",
+    "mesa",
+    "hardware",
+    "performance"
+   ],
+   "brief": "One day after announcing the Snapdragon 8 Elite Extreme Gen 6, Qualcomm engineers posted initial Linux kernel patches bringing up its Adreno 850 GPU in the MSM driver. The series also adds the similar Adreno 845 'Maili' GPU, which lacks the A850's new MALU matrix core. Mesa and linux-firmware support are promised soon.",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=qualcomm_8eeg6",
+   "readingMinutes": 3
+  },
+  {
+   "id": "37c29e4a071bb8b7",
+   "sourceId": "phoronix",
+   "title": "AMD Upstreams AVX10_V2_AUX Support Into LLVM Clang 24",
+   "url": "https://www.phoronix.com/news/LLVM-Clang-AVX10_V2_AUX",
+   "author": "Michael Larabel",
+   "publishedAt": 1790159158000,
+   "firstSeenAt": 1790229602642,
+   "tags": [
+    "llvm",
+    "clang",
+    "amd",
+    "ai",
+    "hardware",
+    "performance"
+   ],
+   "brief": "AMD's AVX10_V2_AUX support has been merged into LLVM 24, exposed via the new -mavx10v2aux Clang flag. The instructions add data-type conversion to FP4/FP6, OCP microscaling formats, and new rounding modes as part of the Intel/AMD AI Compute Extensions. LLVM/Clang 24.1 stable is expected around March.",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=llvm_avx10v2aux",
+   "readingMinutes": 2
+  },
+  {
+   "id": "d6fd59a3bc7d6ac8",
+   "sourceId": "phoronix",
+   "title": "Linux 7.3 Reverts Logitech Bolt Receiver HID++ Support After Bug Reports",
+   "url": "https://www.phoronix.com/news/Linux-Reverting-Logitech-Bolt",
+   "author": "Michael Larabel",
+   "publishedAt": 1790158537000,
+   "firstSeenAt": 1790229602642,
+   "tags": [
+    "kernel",
+    "hardware",
+    "logitech",
+    "hid",
+    "performance"
+   ],
+   "brief": "Linux 7.3 added Logitech Bolt receiver support to hid-logitech-dj with HID++, but it caused scroll-wheel and settings bugs with Logitech mice. Benjamin Tissoires has queued a revert to the generic HID driver, dropping HID++ functionality until the issues can be properly addressed.",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=logitech_bolt",
+   "readingMinutes": 4
+  },
+  {
+   "id": "73582ccbb708ed02",
+   "sourceId": "linuxiac",
+   "title": "Sublime Text Build 4213 Adds Python 3.14 Runtime and File Icon Themes",
+   "url": "https://linuxiac.com/sublime-text-4213-code-editor-adds-python-3-14-file-icon-themes/",
+   "author": "Bobby Borisov",
+   "publishedAt": 1790156984000,
+   "firstSeenAt": 1790229602642,
+   "tags": [
+    "sublime-text",
+    "editors",
+    "python",
+    "linux",
+    "distro",
+    "news"
+   ],
+   "brief": "Sublime Text Build 4213 upgrades the plugin runtime from Python 3.8 to 3.14, adds file icon themes and an open_terminal command, and speeds up Git status and multi-file saving. It also ships a rewritten C# syntax definition plus Linux fixes for modal dialogs, KDE input, and Wayland tab dragging.",
+   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/09/sublime4213.jpg",
+   "readingMinutes": 2
+  },
+  {
+   "id": "b3367c6eb7404367",
+   "sourceId": "9to5linux",
+   "title": "NVIDIA 595.104.02 Linux Graphics Driver Released with Better Wayland Support",
+   "url": "https://9to5linux.com/?p=33704",
+   "author": "",
+   "publishedAt": 1790156155000,
+   "firstSeenAt": 1790229602642,
+   "tags": [
+    "nvidia",
+    "drivers",
+    "wayland",
+    "linux",
+    "distro",
+    "release"
+   ],
+   "brief": "NVIDIA 595.104.02 for Linux is available, bringing fixes for bugs and crashes to improve driver stability and reliability, plus better Wayland support.",
+   "imageUrl": null,
+   "readingMinutes": 0
+  },
+  {
+   "id": "75107613a0d7699e",
+   "sourceId": "linuxiac",
+   "title": "FreeRDP 3.32 Adds Microsoft Entra Integration on Linux",
+   "url": "https://linuxiac.com/freerdp-3-32-adds-microsoft-entra-integration-on-linux/",
+   "author": "Bobby Borisov",
+   "publishedAt": 1790153060000,
+   "firstSeenAt": 1790229602642,
+   "tags": [
+    "freerdp",
+    "rdp",
+    "security",
+    "wayland",
+    "distro",
+    "news"
+   ],
+   "brief": "FreeRDP 3.32.0 ships with Microsoft Entra/Azure integration for the SDL and xfreerdp clients, beta RemoteApp (RAIL) support on X11 and Wayland, and a reworked FFmpeg-based hardware video pipeline. The release also hardens security, including a default-deny certificate policy on the proxy side.",
+   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/09/freerdp332.jpg",
+   "readingMinutes": 2
+  },
+  {
+   "id": "4c01c2ccc0b53b09",
+   "sourceId": "fedoramagazine",
+   "title": "Installing Fedora 45 on Stratis storage",
+   "url": "https://fedoramagazine.org/installing-fedora-45-on-stratis-storage/",
+   "author": "Vojtěch Trefný",
+   "publishedAt": 1790150400000,
+   "firstSeenAt": 1790229602642,
+   "tags": [
+    "fedora",
+    "storage",
+    "anaconda",
+    "tutorial"
+   ],
+   "brief": "Fedora 45's Anaconda installer adds Stratis as a storage option. In the Web UI, Stratis layouts are built manually via the integrated Cockpit storage module; kickstart gains full support with a stratis autopart type and new stratispool and stratisfs commands.",
+   "imageUrl": "https://fedoramagazine.org/wp-content/uploads/2026/09/fedora_45_on_stratis-300x127.jpg",
+   "readingMinutes": 5
+  },
+  {
+   "id": "2c87d4c2751231ff",
+   "sourceId": "itsfoss",
+   "title": "Local AI Jargon Quiz: Do You Know All These Buzzwords?",
+   "url": "https://itsfoss.com/quiz/local-ai-jargon-test/",
+   "author": "Abhishek Prakash",
+   "publishedAt": 1790145513000,
+   "firstSeenAt": 1790229602642,
+   "tags": [
+    "ai",
+    "local-llm",
+    "quiz",
+    "desktop",
+    "tutorial"
+   ],
+   "brief": "A ten-question quiz tests how well you understand common local AI terms like tokens, harness, and quantization, with a correct description per term. It's aimed at people who run models locally with tools like Ollama or llama.cpp.",
+   "imageUrl": "https://itsfoss.com/content/images/2026/09/ai-quiz.webp",
+   "readingMinutes": 1
+  },
+  {
    "id": "dfd164b9573ab639",
    "sourceId": "phoronix",
    "title": "Nouveau driver gets patches for HDMI Deep Color support",
@@ -20,6 +707,25 @@
    "brief": "New patches posted to the dri-devel mailing list add HDMI Deep Color support to Nouveau, the open-source NVIDIA Linux kernel driver, enabling 10, 12, or 16 bits per color channel. The patches currently support only RGB, and 16-bit output is untested on capable displays.",
    "imageUrl": "https://www.phoronix.net/image.php?id=nvidia-980-5080-linux&image=nouveau_980_5",
    "readingMinutes": 2
+  },
+  {
+   "id": "b888bdaa3b25a3d2",
+   "sourceId": "drewdevault",
+   "title": "Drew DeVault: Hacker News's right-wing bias flows from Y Combinator itself",
+   "url": "https://drewdevault.com/blog/Why-is-HN-like-that/",
+   "author": "September",
+   "publishedAt": 1790121600000,
+   "firstSeenAt": 1790229602642,
+   "tags": [
+    "hacker-news",
+    "y-combinator",
+    "moderation",
+    "opinion",
+    "foss"
+   ],
+   "brief": "Drew DeVault argues that Hacker News systematically suppresses progressive views through flagging, automated moderation, and its moderators, citing flagged comments critical of Musk's Grok. He traces the bias to Y Combinator's leaders — Paul Graham, Sam Altman, and Garry Tan — and their politics and associations.",
+   "imageUrl": null,
+   "readingMinutes": 16
   },
   {
    "id": "dcdeadf4ba629f15",
@@ -255,6 +961,23 @@
    "brief": "A 49-patch series from Google engineer Ian Rogers replaces perf's embedded Python/Perl scripting with a standalone Python C extension module, cutting overhead and build dependencies. One script that took 3.7 seconds now runs in 0.1 seconds.",
    "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=linux_perf_python",
    "readingMinutes": 2
+  },
+  {
+   "id": "c2698c2cd236c05d",
+   "sourceId": "lwn",
+   "title": "Kernel prepatch 7.3-rc4",
+   "url": "https://lwn.net/Articles/1095491/",
+   "author": "jake",
+   "publishedAt": 1789944745000,
+   "firstSeenAt": 1790229602642,
+   "tags": [
+    "kernel",
+    "linux",
+    "deep"
+   ],
+   "brief": "Linus Torvalds has released the fourth release candidate of kernel 7.3, remarking that it is a large one. Only a teaser was available, so further details are not included here.",
+   "imageUrl": null,
+   "readingMinutes": 0
   },
   {
    "id": "fa664a0dbdaefd16",
