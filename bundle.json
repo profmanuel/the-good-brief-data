@@ -2,6 +2,654 @@
  "version": 1,
  "articles": [
   {
+   "id": "d5b705f90dfd63f3",
+   "sourceId": "omgubuntu",
+   "title": "Era, a Rust-based calendar app for GNOME, enters beta on Flathub",
+   "url": "https://www.omgubuntu.co.uk/2026/09/era-rust-calendar-gnome-beta",
+   "author": "Joey Sneddon",
+   "publishedAt": 1790391883000,
+   "firstSeenAt": 1790402402904,
+   "tags": [
+    "gnome",
+    "rust",
+    "calendar",
+    "flathub",
+    "ubuntu",
+    "desktop"
+   ],
+   "brief": "Era is a new GTK4/libadwaita calendar app for GNOME written in Rust, now available in beta on Flathub. It offers year, month and agenda views, event editing, .ics import and online sync, routing Evolution Data Server calls through a swappable middle layer called Clepsydre.",
+   "keyPoints": [
+    "Beta installable from Flathub; clean, adaptive GTK4/libadwaita UI",
+    "Uses Evolution Data Server indirectly via hot-swappable Clepsydre layer",
+    "Supports local use, .ics import and sync with online providers"
+   ],
+   "whyItMatters": "GNOME users looking for a modern alternative to GNOME Calendar can test it now.",
+   "kind": "release",
+   "imageUrl": "https://www.omgubuntu.co.uk/wp-content/uploads/2026/09/era-calendar.webp",
+   "readingMinutes": 2
+  },
+  {
+   "id": "1b01fe43791a3990",
+   "sourceId": "9to5linux",
+   "title": "OBS Studio 33 beta adds latest NVIDIA Broadcast SDK support",
+   "url": "https://9to5linux.com/?p=33743",
+   "author": "",
+   "publishedAt": 1790376962000,
+   "firstSeenAt": 1790402402904,
+   "tags": [
+    "obs",
+    "nvidia",
+    "streaming",
+    "beta",
+    "distro",
+    "release"
+   ],
+   "brief": "OBS Studio 33 entered public beta with support for the newest NVIDIA Broadcast SDKs for audio and video effects. It also adds a check for missing encoders when loading a profile.",
+   "keyPoints": [],
+   "whyItMatters": "Streamers and content creators using OBS with NVIDIA GPUs can test the beta for updated effects support.",
+   "kind": "release",
+   "imageUrl": null,
+   "readingMinutes": 0
+  },
+  {
+   "id": "9b4d920979fd2b47",
+   "sourceId": "phoronix",
+   "title": "New FUTEX syscalls back in development to aid Valve's ARM64 gaming efforts",
+   "url": "https://www.phoronix.com/news/FUTEX-Robust-List2-Syscalls",
+   "author": "Michael Larabel",
+   "publishedAt": 1790376136000,
+   "firstSeenAt": 1790402402904,
+   "tags": [
+    "kernel",
+    "futex",
+    "arm64",
+    "gaming",
+    "hardware",
+    "performance"
+   ],
+   "brief": "Igalia has posted an updated version of its get_robust_list2 and set_robust_list2 FUTEX syscall patches, designed to improve FEX-Emu and other emulation layers running x86 games on ARM64, including Valve's Steam Frame. The rebase against mainline was delayed while a race condition was fixed.",
+   "keyPoints": [
+    "Patches target shortcomings of existing robust list syscalls for emulation layers like FEX-Emu",
+    "First update since late November; rebased on mainline with VDSO adaptations",
+    "Work supports Steam Play gaming on ARM64 devices such as Steam Frame"
+   ],
+   "whyItMatters": "Developers working on Linux gaming, ARM64 emulation, or kernel FUTEX code should track these patches as they underpin Valve's ARM64 gaming strategy.",
+   "kind": "news",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2025&image=fex_emu_syscall",
+   "readingMinutes": 2
+  },
+  {
+   "id": "24f23da66346c67a",
+   "sourceId": "linuxiac",
+   "title": "Shelly 3.1.5 Arch Linux Package Manager Expands AUR Support",
+   "url": "https://linuxiac.com/shelly-3-1-5-arch-linux-package-manager-expands-aur-support/",
+   "author": "Bobby Borisov",
+   "publishedAt": 1790364516000,
+   "firstSeenAt": 1790402402904,
+   "tags": [
+    "arch-linux",
+    "aur",
+    "package-manager",
+    "release",
+    "distro",
+    "news"
+   ],
+   "brief": "Shelly 3.1.5, a graphical Arch package manager covering repos, AUR, Flatpaks, and AppImages, adds an optional atoll-powered AUR browser with sorting and search. It also introduces a `shelly build --install` workflow, a `repo-db` command for pacman-compatible databases, and numerous build, search, and error-handling…",
+   "keyPoints": [
+    "Optional atoll-based AUR browser with pagination, sorting, and multiple search modes",
+    "New `shelly build --install` and `shelly repo-db` command families",
+    "Fixes for repository search, AUR `--needed` support, and corrupt config recovery"
+   ],
+   "whyItMatters": "Arch Linux users who manage packages graphically gain broader AUR tooling and more reliable builds in a single app.",
+   "kind": "release",
+   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/09/shelly315.jpg",
+   "readingMinutes": 3
+  },
+  {
+   "id": "c6ce21d970fcb9b8",
+   "sourceId": "linuxiac",
+   "title": "Nginx Proxy Manager 2.16 Adds Built-In Log Viewer",
+   "url": "https://linuxiac.com/nginx-proxy-manager-2-16-adds-built-in-log-viewer/",
+   "author": "Bobby Borisov",
+   "publishedAt": 1790363999000,
+   "firstSeenAt": 1790402402904,
+   "tags": [
+    "nginx",
+    "self-hosting",
+    "security",
+    "release",
+    "distro",
+    "news"
+   ],
+   "brief": "Nginx Proxy Manager 2.16 adds a web-based log viewer and per-path access lists for proxy hosts. Security changes include token invalidation after password changes, local 2FA QR generation, and removal of DNS credentials after Certbot runs. A Certbot update may break some DNS plugins.",
+   "keyPoints": [
+    "New integrated log viewer and per-path access lists in the web UI",
+    "Security fixes: token invalidation, local 2FA QR codes, DNS credential cleanup",
+    "Certbot update may break existing DNS plugins; check setups after upgrading"
+   ],
+   "whyItMatters": "Self-hosters using Nginx Proxy Manager for reverse proxying and TLS should review the release, especially if they rely on DNS-based certificate validation.",
+   "kind": "release",
+   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/09/npm216.jpg",
+   "readingMinutes": 2
+  },
+  {
+   "id": "686303a45769c30c",
+   "sourceId": "9to5linux",
+   "title": "Shelly 3.1.5 GUI Package Manager for Arch Linux Adds Atoll-Powered AUR Browser",
+   "url": "https://9to5linux.com/?p=33739",
+   "author": "",
+   "publishedAt": 1790363518000,
+   "firstSeenAt": 1790402402904,
+   "tags": [
+    "arch-linux",
+    "aur",
+    "package-manager",
+    "distro",
+    "release"
+   ],
+   "brief": "Shelly 3.1.5, a graphical package manager for Arch Linux, is now available. It adds an Atoll-powered AUR browser, a build-and-install command, and native tools for maintaining your own package repositories.",
+   "keyPoints": [],
+   "whyItMatters": "Arch Linux users who prefer GUI tools for AUR packages and personal repositories may find this update useful.",
+   "kind": "release",
+   "imageUrl": null,
+   "readingMinutes": 0
+  },
+  {
+   "id": "f943406659a948f9",
+   "sourceId": "phoronix",
+   "title": "GDB 18.1 Debugger Brings Better Windows Support",
+   "url": "https://www.phoronix.com/news/GNU-Debugger-GDB-18.1",
+   "author": "Michael Larabel",
+   "publishedAt": 1790354872000,
+   "firstSeenAt": 1790402402904,
+   "tags": [
+    "gdb",
+    "debugger",
+    "windows",
+    "gnu",
+    "hardware",
+    "performance"
+   ],
+   "brief": "GDB 18.1 is out with major Windows improvements: native TLS variable support, non-stop mode on Windows 10 and later, scheduler locking, better Windows Terminal console support, and consistent forward-slash filenames.",
+   "keyPoints": [
+    "Windows gains native TLS variables, non-stop mode, and scheduler locking",
+    "Adds AArch64 MinGW target and FPMR support on AArch64",
+    "New commands: \"save history\", \"set/show/unset local-environment\", \"info proc environ\""
+   ],
+   "whyItMatters": "Developers who debug C/C++, Rust, or other languages on Windows get a substantially improved GNU Debugger experience.",
+   "kind": "release",
+   "imageUrl": "https://www.phoronix.net/image.php?id=ryzen-ai-max-390-windows-linux&image=ai_max_390_windows",
+   "readingMinutes": 2
+  },
+  {
+   "id": "c1e4f38cbe1db44a",
+   "sourceId": "lwn",
+   "title": "How KDE got funding to add enterprise features",
+   "url": "https://lwn.net/Articles/1096245/",
+   "author": "jzb",
+   "publishedAt": 1790351995000,
+   "firstSeenAt": 1790402402904,
+   "tags": [
+    "kde",
+    "funding",
+    "kernel",
+    "deep"
+   ],
+   "brief": "The Sovereign Tech Agency is investing nearly €1.3 million in KDE through 2027. At Akademy 2026, Nate Graham and Kevin Ottens explained how the funding was secured and offered tips for other projects seeking similar support.",
+   "keyPoints": [],
+   "whyItMatters": "",
+   "kind": "news",
+   "imageUrl": null,
+   "readingMinutes": 0
+  },
+  {
+   "id": "b46ce2a2b5cd4793",
+   "sourceId": "omgubuntu",
+   "title": "Banshee music player returns as a Snap package",
+   "url": "https://www.omgubuntu.co.uk/2026/09/banshee-music-player-snap-ubuntu",
+   "author": "Joey Sneddon",
+   "publishedAt": 1790351630000,
+   "firstSeenAt": 1790402402904,
+   "tags": [
+    "snap",
+    "ubuntu",
+    "music",
+    "gtk",
+    "desktop"
+   ],
+   "brief": "Alan Pope packaged Banshee 2.6.2, the final 2014 stable release, as a Snap with compatibility fixes and some restored online services. It works as a functional music player on modern desktops, though some features like Last.fm login and video playback fail, and its GTK2 UI scales poorly on modern displays.",
+   "keyPoints": [
+    "Snap bundles old dependencies via Core22 without affecting the host system",
+    "Music playback, album art, MPRIS, and media keys all work",
+    "Last.fm auth and video playback broken; GTK2 UI struggles with fractional scaling"
+   ],
+   "whyItMatters": "Nostalgic Linux users and software preservation fans can run a classic app that distros dropped years ago.",
+   "kind": "news",
+   "imageUrl": "https://www.omgubuntu.co.uk/wp-content/uploads/2026/09/banshee-snap.webp",
+   "readingMinutes": 4
+  },
+  {
+   "id": "1cf8d92ec37f9cc9",
+   "sourceId": "phoronix",
+   "title": "Redox OS Adds IO_uring-Like API, NUMA Support, and Working QEMU",
+   "url": "https://www.phoronix.com/news/Redox-OS-August-2026",
+   "author": "Michael Larabel",
+   "publishedAt": 1790351498000,
+   "firstSeenAt": 1790402402904,
+   "tags": [
+    "redox",
+    "rust",
+    "kernel",
+    "virtualization",
+    "hardware",
+    "performance"
+   ],
+   "brief": "Redox OS's August status update covers an IO_uring-like ring buffer API, initial NUMA support, and QEMU now running on the OS, though without hardware acceleration. The update also brings dual boot support from Linux, initial multi-core support on ARM64, about 5% lower IPC overhead, and a smaller kernel binary.",
+   "keyPoints": [
+    "Ring buffer API akin to Linux's IO_uring, targeting better NVMe I/O performance",
+    "QEMU runs on Redox but lacks KVM-like acceleration, so it is very slow",
+    "Initial NUMA support, ARM64 multi-core support, and dual boot from Linux"
+   ],
+   "whyItMatters": "Developers following alternative operating systems can see how Redox, the Rust-based OS, is closing feature gaps with Linux.",
+   "kind": "news",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=redoxos_qemu",
+   "readingMinutes": 2
+  },
+  {
+   "id": "18fc3bc3cfaabf93",
+   "sourceId": "geerling",
+   "title": "Jeff Geerling announces HomelabFest, St. Louis, September 2027",
+   "url": "https://www.jeffgeerling.com/blog/2026/homelabfest-announcement/",
+   "author": "jeff@jeffgeerling.com (Jeff Geerling)",
+   "publishedAt": 1790349360000,
+   "firstSeenAt": 1790402402904,
+   "tags": [
+    "homelab",
+    "self-hosting",
+    "events",
+    "community",
+    "hardware"
+   ],
+   "brief": "Jeff Geerling is launching HomelabFest, a conference for the homelab community, set for September 12-14, 2027 in St. Louis (technically St. Charles). He is inviting content creators, self-hosting companies, and attendees, with 250 'Super Early Bird' tickets at $100.",
+   "keyPoints": [
+    "Event runs September 12-14, 2027 in St. Charles, near St. Louis",
+    "Focus areas include networking, mini racks, servers, 3D printing, self-hosted software",
+    "250 Super Early Bird tickets at $100; community tables offered near cost"
+   ],
+   "whyItMatters": "Homelab enthusiasts and self-hosting fans get a first dedicated in-person gathering organized by a prominent community figure.",
+   "kind": "news",
+   "imageUrl": "https://www.jeffgeerling.com/blog/2026/homelabfest-announcement/homelabfest-featured-creators.jpg",
+   "readingMinutes": 3
+  },
+  {
+   "id": "c2ed3ca5dd6526b0",
+   "sourceId": "lwn",
+   "title": "Linux 7.2.8 and 6.18.54 stable kernels released",
+   "url": "https://lwn.net/Articles/1096818/",
+   "author": "jzb",
+   "publishedAt": 1790349205000,
+   "firstSeenAt": 1790402402904,
+   "tags": [
+    "kernel",
+    "stable",
+    "linux",
+    "deep"
+   ],
+   "brief": "Greg Kroah-Hartman announced the 7.2.8 and 6.18.54 stable kernel releases. Both contain important fixes throughout the tree, and users are advised to upgrade.",
+   "keyPoints": [],
+   "whyItMatters": "Administrators and users tracking stable kernels should plan to update.",
+   "kind": "release",
+   "imageUrl": null,
+   "readingMinutes": 0
+  },
+  {
+   "id": "1fee5be235da82f8",
+   "sourceId": "phoronix",
+   "title": "Phoronix: Linux kernel builds approach the 10-second mark",
+   "url": "https://www.phoronix.com/review/near-10-sec-kernel-build",
+   "author": "Michael Larabel",
+   "publishedAt": 1790347586000,
+   "firstSeenAt": 1790402402904,
+   "tags": [
+    "kernel",
+    "kbuild",
+    "benchmarks",
+    "amd",
+    "hardware",
+    "performance"
+   ],
+   "brief": "Phoronix reports that defconfig x86_64 kernel builds now take about 15-20 seconds on high-end dual EPYC hardware, with 10 seconds in sight. Lorenzo Stoakes' AI-assisted kbuild patch series, now at v4, cuts build times ~36% (and incremental builds ~70%) by removing parallelism bottlenecks, and may land in Linux 7.4.",
+   "keyPoints": [
+    "Stoakes' kbuild patches make kernel builds ~36% faster, incremental builds ~70% faster",
+    "Dual EPYC 9754 server defconfig build dropped from 28 to 20 seconds",
+    "allmodconfig builds now drop under two minutes"
+   ],
+   "whyItMatters": "Kernel developers and anyone bisecting or building kernels benefit from dramatically faster clean and incremental builds, even on non-flagship hardware.",
+   "kind": "news",
+   "imageUrl": "https://www.phoronix.net/image.php?id=near-10-sec-kernel-build&image=fast_linux_kernel_1",
+   "readingMinutes": 4
+  },
+  {
+   "id": "42b74a013979529a",
+   "sourceId": "lwn",
+   "title": "Security updates for Friday",
+   "url": "https://lwn.net/Articles/1096637/",
+   "author": "jzb",
+   "publishedAt": 1790342230000,
+   "firstSeenAt": 1790402402904,
+   "tags": [
+    "security",
+    "kernel",
+    "debian",
+    "fedora",
+    "deep"
+   ],
+   "brief": "LWN's roundup of security updates published September 24-25, 2026, covering AlmaLinux, Debian, Fedora, Mageia, Oracle, Slackware, SUSE, and Ubuntu. Notable updates include kernel fixes across several distributions, plus curl, expat, openssl, unbound, squid, and webkitgtk patches.",
+   "keyPoints": [
+    "Kernel updates for AlmaLinux 8, SUSE, and multiple Ubuntu releases",
+    "Ubuntu patched curl, expat, gdal, libpcap, and kernel packages across many LTS releases",
+    "SUSE and openSUSE issued a large batch including chromium, libsoup, libx11, and rabbitmq-server"
+   ],
+   "whyItMatters": "System administrators should scan this list for packages running on their systems and apply relevant patches.",
+   "kind": "news",
+   "imageUrl": null,
+   "readingMinutes": 7
+  },
+  {
+   "id": "0744dca7632bd077",
+   "sourceId": "linuxiac",
+   "title": "systemd Gets Built-In System Reporting With systemd-report",
+   "url": "https://linuxiac.com/systemd-gets-built-in-system-reporting-with-systemd-report/",
+   "author": "Bobby Borisov",
+   "publishedAt": 1790337198000,
+   "firstSeenAt": 1790402402904,
+   "tags": [
+    "systemd",
+    "monitoring",
+    "fleet-management",
+    "security",
+    "distro",
+    "news"
+   ],
+   "brief": "systemd is gaining a reporting subsystem called systemd-report that collects static system facts and dynamic runtime metrics into a single timestamped, optionally signed JSON report. Reports can be uploaded to a central HTTPS server on a timer or on boot, reboot, and shutdown events, targeting fleet management.",
+   "keyPoints": [
+    "Gathers system facts and runtime metrics via a generic Varlink interface into one JSON report",
+    "Supports three signing methods: local software key, TPM quote, or CPU TSM quote",
+    "Periodic or event-triggered HTTPS PUT uploads for remote fleet management"
+   ],
+   "whyItMatters": "Admins managing large Linux fleets get a signed, snapshot-based reporting framework built into systemd instead of separate monitoring agents.",
+   "kind": "news",
+   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/09/systemd-report.jpg",
+   "readingMinutes": 3
+  },
+  {
+   "id": "87ec6f167b2686d6",
+   "sourceId": "itsfoss",
+   "title": "Dutch Government Builds NixOS-Based Desktop After Microsoft Cut Off the ICC",
+   "url": "https://feed.itsfoss.com/link/24361/17473313/netherlands-dawo-initiative",
+   "author": "Sourav Rudra",
+   "publishedAt": 1790336309000,
+   "firstSeenAt": 1790402402904,
+   "tags": [
+    "nixos",
+    "linux",
+    "government",
+    "digital-sovereignty",
+    "desktop",
+    "tutorial"
+   ],
+   "brief": "After US sanctions cut the ICC prosecutor off from Microsoft services, the Dutch government launched DAWO, a sovereign digital work environment built on NixOS. The framework covers OS, office suite, collaboration, cloud, and AI, with eight municipalities running pilots and a stable release planned for next year.",
+   "keyPoints": [
+    "DAWO is a full sovereign stack covering OS, office suite, cloud, and AI",
+    "NixOS chosen as a Dutch project; openSUSE and Fedora rejected over US commercial ties",
+    "Pilots run on decommissioned laptops; 80-90% of configuration carries between deployments"
+   ],
+   "whyItMatters": "Linux users and open-source advocates should care: a national government is standardizing on NixOS specifically to escape US vendor dependency.",
+   "kind": "news",
+   "imageUrl": "https://itsfoss.com/content/images/2026/09/netherlands-dawo-banner.png",
+   "readingMinutes": 3
+  },
+  {
+   "id": "292efef2f33ee66d",
+   "sourceId": "phoronix",
+   "title": "Patches Posted For Enabling NVMe On All Apple M3 SoCs With Linux",
+   "url": "https://www.phoronix.com/news/NVMe-Apple-M3-Linux-Patches",
+   "author": "Michael Larabel",
+   "publishedAt": 1790332071000,
+   "firstSeenAt": 1790402402904,
+   "tags": [
+    "kernel",
+    "apple-silicon",
+    "nvme",
+    "asahi-linux",
+    "hardware",
+    "performance"
+   ],
+   "brief": "Janne Grunau posted a seven-patch series enabling NVMe storage on all Apple M3, M3 Pro, Max, and Ultra devices under Linux. The NVMe works as on M2 Pro/Max/Ultra, but needs ~140 lines of Device Tree and YAML additions. The patches may land in the Linux 7.4 merge window.",
+   "keyPoints": [
+    "Seven-patch series enables NVMe across all Apple M3 variants",
+    "Requires ~140 lines of Device Tree and YAML additions",
+    "May make the Linux 7.4 merge window; M3 users should use Asahi Linux meanwhile"
+   ],
+   "whyItMatters": "Developers and users running Linux on Apple M3 hardware need mainline NVMe support for usable storage.",
+   "kind": "news",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=apple_m3_nvme",
+   "readingMinutes": 2
+  },
+  {
+   "id": "1b9d6957902b0c5e",
+   "sourceId": "phoronix",
+   "title": "AMD Linux patches improve HDMI 2.1 reliability ahead of Linux 7.4",
+   "url": "https://www.phoronix.com/news/AMDGPU-HDMI-2.1-Reliability",
+   "author": "Michael Larabel",
+   "publishedAt": 1790331129000,
+   "firstSeenAt": 1790402402904,
+   "tags": [
+    "amd",
+    "kernel",
+    "graphics",
+    "hdmi",
+    "hardware",
+    "performance"
+   ],
+   "brief": "AMD sent out new AMDGPU Display Core patches fixing HDMI 2.1 reliability issues, such as skipping FRL status polling when the link is down and aligning LT timeout with the HDMI spec. This comes ahead of Linux 7.4, where HDMI 2.1 will be enabled by default with FreeSync, VRR, and ALLM.",
+   "keyPoints": [
+    "Fix skips HDMI FRL status polling when link is down, avoiding blank displays on hot-plug",
+    "HDMI 2.1 LT timeout fix aligns with spec; FRL polling serialized against link detect",
+    "Patches also advance DCN 4.2 and DCN 6.0 support; DCN 6 likely tied to next-gen RDNA5 GPUs"
+   ],
+   "whyItMatters": "AMD GPU users on Linux with HDMI 2.1 displays should care, as these fixes reduce display failures ahead of default HDMI 2.1 support in Linux 7.4.",
+   "kind": "news",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=hdmi_21_reliability",
+   "readingMinutes": 3
+  },
+  {
+   "id": "de60fbc4de60753a",
+   "sourceId": "phoronix",
+   "title": "Last call for Phoronix Premium autumn sale: $35/year or $160 lifetime",
+   "url": "https://www.phoronix.com/news/Autumn-2026-Special-Final-Call",
+   "author": "Michael Larabel",
+   "publishedAt": 1790330426000,
+   "firstSeenAt": 1790402402904,
+   "tags": [
+    "phoronix",
+    "linux",
+    "subscription",
+    "hardware",
+    "performance"
+   ],
+   "brief": "Phoronix's autumn Premium sale ends Sunday, 27 September, offering ad-free subscriptions at $35/year (normally $45) or $160 lifetime (normally $250). The site says Premium revenue funds its Linux hardware reviews and benchmarks, noting that under 1% of readers subscribe while most ads are blocked.",
+   "keyPoints": [
+    "Sale ends end of day Sunday, 27 September, any timezone",
+    "$35/year instead of $45; $160 lifetime instead of $250",
+    "Premium includes ad-free reading, single-page articles, dark mode, priority feedback"
+   ],
+   "whyItMatters": "Regular Phoronix readers who want to support independent Linux hardware coverage can get the discounted rate this weekend.",
+   "kind": "news",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2023&image=dark_eoy_2023",
+   "readingMinutes": 2
+  },
+  {
+   "id": "f988b1de70570bd5",
+   "sourceId": "phoronix",
+   "title": "Go's expanding SIMD support adds platform-independent interface",
+   "url": "https://www.phoronix.com/news/Go-SIMD-2026",
+   "author": "Michael Larabel",
+   "publishedAt": 1790329822000,
+   "firstSeenAt": 1790402402904,
+   "tags": [
+    "go",
+    "simd",
+    "performance",
+    "programming-languages",
+    "hardware"
+   ],
+   "brief": "A new Go.dev blog post details Go's experimental SIMD support, introduced in Go 1.26 for x86_64 AVX and expanded in Go 1.27 to ARM64 NEON plus a portable, platform- and size-agnostic interface modeled on Google's Highway library. Go 1.28 plans to add Arm SVE support and more SIMD operations.",
+   "keyPoints": [
+    "Go 1.26 added experimental SIMD APIs targeting x86_64 AVX",
+    "SIMD package covers AVX, AVX2, AVX-512, ARM NEON, and WASM SIMD",
+    "Go 1.27 added a portable, platform-agnostic SIMD interface inspired by Google Highway"
+   ],
+   "whyItMatters": "Go developers writing performance-critical code can use vectorized CPU instructions without architecture-specific code.",
+   "kind": "news",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2023&image=linux_66_wq",
+   "readingMinutes": 2
+  },
+  {
+   "id": "e02ed8c1ecb19835",
+   "sourceId": "phoronix",
+   "title": "Samba 4.25 Released With Experimental SMB3 Persistent Handles",
+   "url": "https://www.phoronix.com/news/Samba-4.25-Released",
+   "author": "Michael Larabel",
+   "publishedAt": 1790329123000,
+   "firstSeenAt": 1790402402904,
+   "tags": [
+    "samba",
+    "smb",
+    "file-sharing",
+    "ceph",
+    "hardware",
+    "performance"
+   ],
+   "brief": "Samba 4.25 is out, adding experimental SMB3 Persistent Handles so clients can reconnect after a server restart while keeping their file handles, though at a significant performance cost. It also adds a Ceph RGW VFS module, improved JSON audit logging, and AES as the default domain encryption type.",
+   "keyPoints": [
+    "Experimental SMB3 Persistent Handles enable uninterrupted file access after server restarts",
+    "Persistent handles carry a significant performance cost from double storage per operation",
+    "New Ceph RGW VFS module exports Ceph Object Gateway buckets as SMB shares"
+   ],
+   "whyItMatters": "Admins running Samba file services gain failover resilience and new Ceph integration, but must weigh the performance trade-off of persistent handles.",
+   "kind": "release",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=samba",
+   "readingMinutes": 2
+  },
+  {
+   "id": "11a985e7dbe00766",
+   "sourceId": "linuxiac",
+   "title": "Mageia 9 support ends September 30, users urged to upgrade to Mageia 10",
+   "url": "https://linuxiac.com/mageia-9-support-ends-september-30-upgrade-to-mageia-10/",
+   "author": "Bobby Borisov",
+   "publishedAt": 1790327378000,
+   "firstSeenAt": 1790402402904,
+   "tags": [
+    "mageia",
+    "linux",
+    "distribution",
+    "security",
+    "distro",
+    "news"
+   ],
+   "brief": "Mageia 9, released in August 2023, reaches end of support on September 30, 2026 and will stop receiving security fixes. Users can upgrade via the system tray update tool or command line, or do a clean install of Mageia 10.",
+   "keyPoints": [
+    "Support ends September 30, 2026, three months after Mageia 10's June 30 release",
+    "Upgrade via system tray app, command line, or clean install; Live images cannot upgrade",
+    "Mageia 10 ships kernel 6.18 LTS, Plasma 6.5, GNOME 49, DNF 5"
+   ],
+   "whyItMatters": "Mageia 9 users must upgrade before September 30 to keep receiving security updates.",
+   "kind": "news",
+   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/09/mageia9eol.jpg",
+   "readingMinutes": 2
+  },
+  {
+   "id": "f96b4826c178d796",
+   "sourceId": "linuxiac",
+   "title": "Samba 4.25 Released With New High-Availability and Clustering Features",
+   "url": "https://linuxiac.com/samba-4-25-released-with-new-high-availability-and-clustering-features/",
+   "author": "Bobby Borisov",
+   "publishedAt": 1790324629000,
+   "firstSeenAt": 1790402402904,
+   "tags": [
+    "samba",
+    "smb",
+    "clustering",
+    "security",
+    "distro",
+    "news"
+   ],
+   "brief": "Samba 4.25 is out as the first stable release in the new series. Its headline addition is experimental SMB3 Persistent Handles for high-availability setups, plus a new Ceph RGW VFS module, safer cluster rolling upgrades, and stronger Kerberos encryption defaults.",
+   "keyPoints": [
+    "Experimental SMB3 Persistent Handles let clients keep open files across server restarts",
+    "New vfs_ceph_rgw module exposes Ceph Object Gateway buckets as SMB shares",
+    "Kerberos defaults to AES encryption for domains at functional level 2008 or newer"
+   ],
+   "whyItMatters": "Administrators running clustered Samba, Active Directory, or HA storage should review the release notes before upgrading.",
+   "kind": "release",
+   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/09/samba425.jpg",
+   "readingMinutes": 2
+  },
+  {
+   "id": "7cdd35180b72332d",
+   "sourceId": "fedoramagazine",
+   "title": "Installing Navidrome on Fedora Linux using Podman",
+   "url": "https://fedoramagazine.org/installing-navidrome-on-fedora-linux-using-podman/",
+   "author": "Nico Shetty",
+   "publishedAt": 1790323200000,
+   "firstSeenAt": 1790402402904,
+   "tags": [
+    "fedora",
+    "podman",
+    "containers",
+    "self-hosting",
+    "tutorial"
+   ],
+   "brief": "Fedora Magazine walks through running Navidrome, an open-source personal music streaming server, in Podman on Fedora. It covers pulling the official multi-arch image, SELinux contexts and ownership for data and music directories, and starting the service via podman-compose or the podman CLI.",
+   "keyPoints": [
+    "Official deluan/navidrome image supports amd64, arm64, and arm/v6/v7",
+    "Set container_file_t SELinux context and UID 1000 ownership on Data and Music dirs",
+    "Run with podman-compose or podman run; configure via environment variables"
+   ],
+   "whyItMatters": "Fedora users who want to self-host music streaming get a concrete, SELinux-aware Podman setup that also works on ARM devices like Raspberry Pi.",
+   "kind": "tutorial",
+   "imageUrl": "https://fedoramagazine.org/wp-content/uploads/2026/09/install_navidrom_using_podman-300x127.jpg",
+   "readingMinutes": 3
+  },
+  {
+   "id": "b28b110cefacedd6",
+   "sourceId": "itsfoss",
+   "title": "Vicharak Axon-Lite: a tiny SBC with swappable interface modules",
+   "url": "https://feed.itsfoss.com/link/24361/17473150/vicharak-axon-lite",
+   "author": "Abhishek Prakash",
+   "publishedAt": 1790321565000,
+   "firstSeenAt": 1790402402904,
+   "tags": [
+    "sbc",
+    "hardware",
+    "linux",
+    "edge-ai",
+    "desktop",
+    "tutorial"
+   ],
+   "brief": "Vicharak's Axon-Lite is a small ARM SBC built around the Rockchip RK3576 with a 6 TOPS NPU. Its hook is a modular connector letting users snap on voice, vision, sensing, or AI hub modules instead of stacking HATs. It's on pre-order at about $165-$200, shipping January 2027.",
+   "keyPoints": [
+    "RK3576 SoC, 6 TOPS NPU, LPDDR5, eMMC/UFS/microSD storage",
+    "Four swappable modules shown: Voice Processing, Smart Sensing, AI Data Hub, AI Vision",
+    "Pre-order $165 (4GB) or $200 (8GB), ships January 2027"
+   ],
+   "whyItMatters": "Makers and teams prototyping edge AI or vision projects get a modular alternative to stacking Raspberry Pi HATs, though the proprietary connector ties them to Vicharak's lineup.",
+   "kind": "news",
+   "imageUrl": "https://itsfoss.com/content/images/2026/09/axion-lite-1-.webp",
+   "readingMinutes": 4
+  },
+  {
    "id": "69efd9eba1c84617",
    "sourceId": "itsfoss",
    "title": "openEuler 24.03 LTS SP3 positions itself as the first open-source SuperPoD OS",
