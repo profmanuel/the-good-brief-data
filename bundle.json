@@ -2,6 +2,451 @@
  "version": 1,
  "articles": [
   {
+   "id": "5676d13b2eed9f25",
+   "sourceId": "itsfoss",
+   "title": "AlmaLinux Opens Free, Community-Driven Software and Hardware Certification",
+   "url": "https://feed.itsfoss.com/link/24361/17474965/almalinux-software-certification-launched",
+   "author": "Sourav Rudra",
+   "publishedAt": 1790485279000,
+   "firstSeenAt": 1790488804051,
+   "tags": [
+    "almalinux",
+    "enterprise-linux",
+    "certification",
+    "hardware",
+    "desktop",
+    "tutorial"
+   ],
+   "brief": "AlmaLinux now offers free software certification: publishers list products and users confirm they work on their own hardware. The alma-certify hardware tool was rewritten for sub-10-minute runs, works from live media without installation, and all results land in a public, searchable catalog.",
+   "keyPoints": [
+    "Software certification is free; users confirm compatibility via an account on the portal",
+    "alma-certify rewritten: sub-10-minute runs, live-media support, QR-code registration",
+    "Results go to a public catalog with a free read-only API, tracked per major release"
+   ],
+   "whyItMatters": "AlmaLinux users and admins can verify hardware and software compatibility before deploying, and submissions push vendors toward official support.",
+   "kind": "news",
+   "imageUrl": "https://itsfoss.com/content/images/2026/09/almalinux-software-certification-banner.png",
+   "readingMinutes": 3
+  },
+  {
+   "id": "6a00edc95a4b0e11",
+   "sourceId": "phoronix",
+   "title": "Improved GPU Reset Coming For Raspberry Pi Boards With Linux 7.4",
+   "url": "https://www.phoronix.com/news/Linux-7.4-Better-RPI-GPU-Reset",
+   "author": "Michael Larabel",
+   "publishedAt": 1790469933000,
+   "firstSeenAt": 1790488804051,
+   "tags": [
+    "kernel",
+    "raspberry-pi",
+    "gpu",
+    "drm",
+    "hardware",
+    "performance"
+   ],
+   "brief": "A DRM-Misc-Next pull request adds improved GPU reset support for the Broadcom V3D GPU in the VC4 kernel driver. Igalia's Maíra Canal switched the driver to use the V3D reset controller, replacing a cumbersome private refcount workaround. The code targets the Linux 7.4 merge window in October.",
+   "keyPoints": [
+    "VC4 driver now uses the BCM2835 PM block's V3D reset line instead of forcing PM counts to zero",
+    "GPU can be reset without power-cycling its domain, improving hang recovery",
+    "Reset line is optional; device trees without it keep driver-side recovery"
+   ],
+   "whyItMatters": "Raspberry Pi and Broadcom-based hardware users should see more reliable recovery from GPU hangs.",
+   "kind": "news",
+   "imageUrl": "https://www.phoronix.net/image.php?id=raspberrypi-3-bplus&image=raspberrypi_3bp_4",
+   "readingMinutes": 3
+  },
+  {
+   "id": "4815d84d28f20570",
+   "sourceId": "linuxiac",
+   "title": "Solus Linux Adopts Formal AI and LLM Contribution Policy",
+   "url": "https://linuxiac.com/solus-linux-adopts-formal-ai-and-llm-contribution-policy/",
+   "author": "Bobby Borisov",
+   "publishedAt": 1790460889000,
+   "firstSeenAt": 1790488804051,
+   "tags": [
+    "solus",
+    "ai",
+    "linux",
+    "open-source",
+    "distro",
+    "news"
+   ],
+   "brief": "Solus Linux has published a policy governing AI and LLM use in contributions. AI-assisted code is allowed if developers test it, take responsibility, and mark commits with an 'Assisted-by LLM' note, but AI-generated content is banned from blogs and official communications.",
+   "keyPoints": [
+    "AI-assisted contributions allowed; submitters must test and take full responsibility",
+    "Commits using AI must carry an 'Assisted-by LLM' note; no bot submissions",
+    "No AI-generated material in Solus blog or official communications"
+   ],
+   "whyItMatters": "Solus contributors and packagers need to know the disclosure rules to avoid having work rejected or being blocked.",
+   "kind": "news",
+   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/09/solus-ai-policy.jpg",
+   "readingMinutes": 2
+  },
+  {
+   "id": "7651bfb570089bc8",
+   "sourceId": "linuxiac",
+   "title": "Incus 7.5 Adds OVN Child Networks, Live Instance Moves",
+   "url": "https://linuxiac.com/incus-7-5-adds-ovn-child-networks-live-instance-moves/",
+   "author": "Bobby Borisov",
+   "publishedAt": 1790447347000,
+   "firstSeenAt": 1790488804051,
+   "tags": [
+    "incus",
+    "containers",
+    "virtualization",
+    "security",
+    "distro",
+    "news"
+   ],
+   "brief": "Incus 7.5 lands with OVN child networks, live migration of instances across projects and cluster members, and improvements to storage, authorization, monitoring, and VM support. It also fixes 11 security vulnerabilities, several critical, including arbitrary host file writes via migration and Btrfs backup paths.",
+   "keyPoints": [
+    "OVN child networks share a parent router, uplink, and peerings while keeping own subnets",
+    "Instances can move projects while live-migrating to another cluster member",
+    "11 vulnerabilities fixed, including critical host file write and auth bypass flaws"
+   ],
+   "whyItMatters": "Incus administrators should upgrade promptly given the critical security fixes, and cluster operators gain useful networking and migration features.",
+   "kind": "release",
+   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/09/incus75.jpg",
+   "readingMinutes": 2
+  },
+  {
+   "id": "fbec4bea8530be8b",
+   "sourceId": "phoronix",
+   "title": "GNOME OS Developers Unveil Toolpak, a Flatpak-Like System for Developer Tools",
+   "url": "https://www.phoronix.com/news/Toolpak",
+   "author": "Michael Larabel",
+   "publishedAt": 1790441400000,
+   "firstSeenAt": 1790488804051,
+   "tags": [
+    "gnome",
+    "toolpak",
+    "packaging",
+    "developer-tools",
+    "hardware",
+    "performance"
+   ],
+   "brief": "GNOME developer Jordan Petridis introduced Toolpak, a packaging concept from GNOME OS developers aimed at developer tools that don't fit Flatpak's sandboxing model. It uses UAPL3 discoverable disk images, mount namespaces, and unrestricted system access, with a prototype in progress.",
+   "keyPoints": [
+    "Flatpak's confinement doesn't suit tools like QEMU and strace; Toolpak fills that gap",
+    "Uses UAPL3 disk images, mount namespaces, and $PATH prepending with full system access",
+    "Aims for reproducible builds, SBOM/licensing compliance; apps fit for Flatpak are rejected"
+   ],
+   "whyItMatters": "Developers on GNOME OS who need containerized tools without sandboxing restrictions should watch this prototype.",
+   "kind": "news",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=toolpak",
+   "readingMinutes": 3
+  },
+  {
+   "id": "611bf87cfb997e0d",
+   "sourceId": "phoronix",
+   "title": "MM Change Slated For Linux 7.4 Yields +22904539.81% In One Metric",
+   "url": "https://www.phoronix.com/news/Linux-7.4-Refill-Sheaves-Barn",
+   "author": "Michael Larabel",
+   "publishedAt": 1790435262000,
+   "firstSeenAt": 1790488804051,
+   "tags": [
+    "kernel",
+    "memory-management",
+    "performance",
+    "slab",
+    "hardware"
+   ],
+   "brief": "A memory management patch queued for Linux 7.4 lets sheaf refills draw from the barn first, fixing saturation that forced RCU sheaf flushes. The 81-line change improves a will-it-scale mmap1 test by 24% and shows extreme gains in barn_get/barn_put metrics.",
+   "keyPoints": [
+    "Sheaf refills now take objects from the barn first, using a new partial sheaf for leftovers",
+    "Benchmarks show 24% mmap1 improvement and huge barn_get/barn_put gains",
+    "81 lines of new code, queued for the Linux 7.4 merge window in late October"
+   ],
+   "whyItMatters": "Kernel developers and performance-focused admins should track allocator changes that may improve memory-heavy workloads in Linux 7.4.",
+   "kind": "news",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=sheaves_go_wow",
+   "readingMinutes": 3
+  },
+  {
+   "id": "13ef7fd338b20e24",
+   "sourceId": "lwn",
+   "title": "GDB 18.1 released with Windows improvements, new commands, and Python API additions",
+   "url": "https://lwn.net/Articles/1096897/",
+   "author": "corbet",
+   "publishedAt": 1790435000000,
+   "firstSeenAt": 1790488804051,
+   "tags": [
+    "gdb",
+    "debugger",
+    "gnu",
+    "release",
+    "kernel",
+    "deep"
+   ],
+   "brief": "Version 18.1 of the GNU Debugger is out. Highlights include major Windows native target improvements such as non-stop mode and true-color support, new commands for saving history and managing subprocess environments, two new targets, and a long list of Python API and remote protocol additions, alongside several…",
+   "keyPoints": [
+    "Windows target gains non-stop mode, scheduler-locking, TLS support, and true-color console output",
+    "New commands save history, skips, and user commands; new MicroBlaze Linux and AArch64 MinGW targets",
+    "Removes stabs, mdebug, CTF trace support, old .gdb_index versions, and AIX 7.1 support"
+   ],
+   "whyItMatters": "Developers who debug with GDB, especially on Windows or via its Python API, should review the incompatible changes before upgrading.",
+   "kind": "release",
+   "imageUrl": null,
+   "readingMinutes": 7
+  },
+  {
+   "id": "a5972246538e7d89",
+   "sourceId": "linuxiac",
+   "title": "virtio-nvgpu Brings Shared NVIDIA GPU Access to Linux KVM Guests",
+   "url": "https://linuxiac.com/virtio-nvgpu-brings-shared-nvidia-gpu-access-to-linux-kvm-guests/",
+   "author": "Bobby Borisov",
+   "publishedAt": 1790431728000,
+   "firstSeenAt": 1790488804051,
+   "tags": [
+    "virtualization",
+    "kvm",
+    "nvidia",
+    "gpu",
+    "distro",
+    "news"
+   ],
+   "brief": "Nestri Labs is building virtio-nvgpu, an experimental virtio device that lets multiple Linux KVM guests share a single NVIDIA GPU without PCI passthrough. It works at the NVIDIA kernel-driver ABI level, claims about 2% overhead versus bare metal, and was demoed with four guests on one RTX 3060.",
+   "keyPoints": [
+    "GPU stays on host; multiple guests share it via a custom virtio device",
+    "Demoed four guests on one GeForce RTX 3060 simultaneously",
+    "Supports Vulkan, Wayland, NVENC, basic CUDA enumeration"
+   ],
+   "whyItMatters": "Developers and homelabbers wanting shared NVIDIA GPUs for game streaming or virtualized desktops should watch this, as it removes the one-GPU-per-VM passthrough constraint.",
+   "kind": "news",
+   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/09/virtio-nvgpu.jpg",
+   "readingMinutes": 2
+  },
+  {
+   "id": "93f4d3917f48fd2d",
+   "sourceId": "linuxiac",
+   "title": "OBS Studio 33 Nears Release: Here's What to Expect",
+   "url": "https://linuxiac.com/obs-studio-33-nears-release-heres-what-to-expect/",
+   "author": "Bobby Borisov",
+   "publishedAt": 1790429893000,
+   "firstSeenAt": 1790488804051,
+   "tags": [
+    "obs",
+    "streaming",
+    "linux",
+    "open-source",
+    "distro",
+    "news"
+   ],
+   "brief": "OBS Studio 33 is approaching stable release, now at Beta 4. Headline changes include a Chromium Embedded Framework upgrade, a reworked plugin loading system, improved source snapping, and numerous usability and platform-specific fixes, including dropping Ubuntu 24.04 support.",
+   "keyPoints": [
+    "CEF browser backend updated from July 2024 to September 2026 codebase",
+    "Plugin loading overhauled; old third-party locations work only until OBS 34",
+    "Source snapping improved with visual indicator and axis-wide snapping"
+   ],
+   "whyItMatters": "Streamers and OBS plugin developers should review the plugin path changes and test browser sources before the stable release.",
+   "kind": "release",
+   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/09/obsstudio33.jpg",
+   "readingMinutes": 2
+  },
+  {
+   "id": "e4a42fcbcec47ed8",
+   "sourceId": "9to5linux",
+   "title": "GNOME 50.5 Improves Multi-Monitor Support, HDR Support, and More",
+   "url": "https://9to5linux.com/?p=33751",
+   "author": "",
+   "publishedAt": 1790427112000,
+   "firstSeenAt": 1790488804051,
+   "tags": [
+    "gnome",
+    "release",
+    "desktop",
+    "distro"
+   ],
+   "brief": "GNOME 50.5 is out as the fifth update to the GNOME 50 desktop series, bringing bug fixes, updated translations, and improvements to multi-monitor and HDR support.",
+   "keyPoints": [],
+   "whyItMatters": "GNOME users on multi-monitor or HDR setups may want to update for these fixes.",
+   "kind": "release",
+   "imageUrl": null,
+   "readingMinutes": 0
+  },
+  {
+   "id": "5a9d702d75febfa7",
+   "sourceId": "linuxiac",
+   "title": "Fastfetch 2.69 Adds Animated Logos, Better Linux and Bluetooth Support",
+   "url": "https://linuxiac.com/fastfetch-2-69-system-information-tool-adds-animated-logos-better-linux-support/",
+   "author": "Bobby Borisov",
+   "publishedAt": 1790425910000,
+   "firstSeenAt": 1790488804051,
+   "tags": [
+    "cli",
+    "release",
+    "linux",
+    "tools",
+    "distro",
+    "news"
+   ],
+   "brief": "Fastfetch 2.69, the command-line system information tool, adds animated GIF and APNG logo support via the Kitty graphics protocol, plus a logo.position auto mode for narrow terminals. It drops the ImageMagick dependency on Windows, macOS, and Android, and expands Linux detection for CRUX, SPARC CPUs, and COSMIC.",
+   "keyPoints": [
+    "Animated GIF/APNG logos via Kitty protocol, with fallback to built-in logo",
+    "Native image libraries replace ImageMagick on Windows, macOS, Android",
+    "Bluetooth LE detection, Core versions up to 6.3, signal quality reporting"
+   ],
+   "whyItMatters": "Users and package maintainers of the popular system info tool get richer logo display and fewer dependencies.",
+   "kind": "release",
+   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/09/fastfetch269.jpg",
+   "readingMinutes": 2
+  },
+  {
+   "id": "bdf52d33b771f4bb",
+   "sourceId": "phoronix",
+   "title": "Linux 7.3-rc5 DRM fixes: Nouveau suspend/resume, Intel Xe power brake, AI-found bugs",
+   "url": "https://www.phoronix.com/news/Linux-7.3-rc5-DRM",
+   "author": "Michael Larabel",
+   "publishedAt": 1790421196000,
+   "firstSeenAt": 1790488804051,
+   "tags": [
+    "kernel",
+    "drm",
+    "nouveau",
+    "intel",
+    "hardware",
+    "performance"
+   ],
+   "brief": "A heavy batch of DRM subsystem fixes landed ahead of Linux 7.3-rc5, many of them AI-inspired fixes for error paths, leaks, and use-after-frees. Nouveau got the most fixes, including a suspend/resume regression from the move to NVIDIA R570 firmware, while Intel's Xe driver gained a new \"power brake\" throttle reason for…",
+   "keyPoints": [
+    "Many fixes for error handling, leaks, and use-after-frees were found via AI/LLMs",
+    "Nouveau fixed suspend/resume regressions and vRAM pinning with R570 firmware",
+    "Intel Xe now reports PWRBRK power brake throttling for Crescent Island accelerators"
+   ],
+   "whyItMatters": "Kernel graphics users, especially NVIDIA-on-Nouveau users hit by suspend/resume bugs, should track these fixes in Linux 7.3.",
+   "kind": "news",
+   "imageUrl": "https://www.phoronix.net/image.php?id=nvidia-980-5080-linux&image=nouveau_980_5",
+   "readingMinutes": 2
+  },
+  {
+   "id": "27cb6951dfe809f7",
+   "sourceId": "phoronix",
+   "title": "Wisp GNOME Shell Extension Simplifies Btrfs Snapshot Management",
+   "url": "https://www.phoronix.com/news/GNOME-Wisp-Btrfs-Snapshots",
+   "author": "Michael Larabel",
+   "publishedAt": 1790419513000,
+   "firstSeenAt": 1790488804051,
+   "tags": [
+    "gnome",
+    "btrfs",
+    "snapshots",
+    "extension",
+    "hardware",
+    "performance"
+   ],
+   "brief": "Wisp is a new GNOME Shell extension that provides a graphical interface to Snapper for managing Btrfs file-system snapshots, highlighted in the latest This Week in GNOME. It lets users view changed files between snapshots, adjust retention policies, and create snapshots manually.",
+   "keyPoints": [
+    "Wisp wraps Snapper with a GUI for Btrfs snapshots on GNOME",
+    "Shows file changes between snapshots and adjusts retention policies",
+    "Available from extensions.gnome.org and GitHub"
+   ],
+   "whyItMatters": "GNOME users on Btrfs systems who prefer not to use Snapper from the command line gain a graphical management option.",
+   "kind": "news",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=gnome_wisp_1",
+   "readingMinutes": 2
+  },
+  {
+   "id": "05b4fd9255424c6c",
+   "sourceId": "phoronix",
+   "title": "AMDXDNA Linux driver gains NPU3 kernel-mode command submission patches",
+   "url": "https://www.phoronix.com/news/AMDXDNA-NPU3-Enhancements",
+   "author": "Michael Larabel",
+   "publishedAt": 1790418798000,
+   "firstSeenAt": 1790488804051,
+   "tags": [
+    "amd",
+    "kernel",
+    "drivers",
+    "npu",
+    "hardware",
+    "performance"
+   ],
+   "brief": "AMD engineer David Zhang has posted 21 patches extending the open-source AMDXDNA kernel driver for NPU3 (AIE4) hardware found in Ryzen AI 300 series SoCs. The series adds kernel-mode command submission, device telemetry queries, and full system and runtime power management including suspend/resume.",
+   "keyPoints": [
+    "21 patches on LKML target AIE4/NPU3 hardware in Ryzen AI 300 SoCs",
+    "Kernel-mode command submission replaces userspace doorbell mapping as default path",
+    "Adds suspend/resume and runtime PM across PF, VF, and Classic devices with SR-IOV linking"
+   ],
+   "whyItMatters": "Developers and users of Ryzen AI 300 laptops should care, as this work improves upstream Linux support and power behavior for their NPU hardware.",
+   "kind": "news",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=ryzen_ai_npu",
+   "readingMinutes": 2
+  },
+  {
+   "id": "03c2bf4d5e765096",
+   "sourceId": "phoronix",
+   "title": "KDE Plasma 6.8 Continues With Last Minute Tweaks & Fixes",
+   "url": "https://www.phoronix.com/news/Plasma-6.8-Last-Minute-UI-Fixes",
+   "author": "Michael Larabel",
+   "publishedAt": 1790416612000,
+   "firstSeenAt": 1790488804051,
+   "tags": [
+    "kde",
+    "plasma",
+    "desktop",
+    "hardware",
+    "performance"
+   ],
+   "brief": "Alongside Plasma 6.8 Beta 2 and the Akademy conference, KDE developers landed last-minute UI refinements, a crash fix, and a Bluetooth wizard improvement for Plasma 6.8. Early Plasma 6.9 work includes better currency conversion handling in KRunner searches.",
+   "keyPoints": [
+    "Improved click feedback for system tray icons in Plasma 6.8",
+    "Fixes crash when deleting starred clipboard entry from Meta+V pop-up",
+    "Bluetooth wizard can find BLE devices while other apps hold a discovery session"
+   ],
+   "whyItMatters": "KDE Plasma users and testers tracking the 6.8 release should know what late fixes to expect in the final build.",
+   "kind": "news",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=kde_linux_dos",
+   "readingMinutes": 2
+  },
+  {
+   "id": "ce05d1a90349f040",
+   "sourceId": "linuxiac",
+   "title": "PeaZip 11.3 File Archiver Adds Safer PEA Extraction",
+   "url": "https://linuxiac.com/peazip-11-3-file-archiver-adds-safer-pea-extraction/",
+   "author": "Bobby Borisov",
+   "publishedAt": 1790414155000,
+   "firstSeenAt": 1790488804051,
+   "tags": [
+    "peazip",
+    "security",
+    "archiving",
+    "release",
+    "distro",
+    "news"
+   ],
+   "brief": "PeaZip 11.3 tightens security: a master password is now mandatory for the password manager, sensitive file types require confirmation before opening, and PEA archives extract to a temporary directory until validated. The release also fixes ZPAQ crashes, adds an 'Open with' screen, and updates 7z/p7zip and PEA backends.",
+   "keyPoints": [
+    "Master password now mandatory; export stored passwords before upgrading",
+    "PEA extraction validated in temp directory before moving to output",
+    "New Shift+F12 'Open with' screen, themes, and 7z 26.03 / PEA 1.33 backends"
+   ],
+   "whyItMatters": "PeaZip users get safer archive extraction and file launching, and should export saved passwords before upgrading.",
+   "kind": "release",
+   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/09/peazip113.jpg",
+   "readingMinutes": 2
+  },
+  {
+   "id": "e5e5f3245db917a3",
+   "sourceId": "9to5linux",
+   "title": "PeaZip 11.3 Archive Manager Improves ZPAQ Support, Adds New Themes",
+   "url": "https://9to5linux.com/?p=33746",
+   "author": "",
+   "publishedAt": 1790412508000,
+   "firstSeenAt": 1790488804051,
+   "tags": [
+    "peazip",
+    "archiving",
+    "release",
+    "distro"
+   ],
+   "brief": "PeaZip 11.3, the open-source archive manager, is now available with improved ZPAQ support, new themes, a new keyboard shortcut, and better handling of invalid filenames.",
+   "keyPoints": [],
+   "whyItMatters": "PeaZip users get improved ZPAQ archive handling and a refreshed look.",
+   "kind": "release",
+   "imageUrl": null,
+   "readingMinutes": 0
+  },
+  {
    "id": "d5b705f90dfd63f3",
    "sourceId": "omgubuntu",
    "title": "Era, a Rust-based calendar app for GNOME, enters beta on Flathub",
@@ -299,6 +744,28 @@
    "keyPoints": [],
    "whyItMatters": "Administrators and users tracking stable kernels should plan to update.",
    "kind": "release",
+   "imageUrl": null,
+   "readingMinutes": 0
+  },
+  {
+   "id": "a7ca9a6277ed3f4f",
+   "sourceId": "lwn",
+   "title": "A summary from the 2026 Git Contributors' Summit",
+   "url": "https://lwn.net/Articles/1096819/",
+   "author": "corbet",
+   "publishedAt": 1790349125000,
+   "firstSeenAt": 1790488804051,
+   "tags": [
+    "git",
+    "development",
+    "community",
+    "kernel",
+    "deep"
+   ],
+   "brief": "Johannes Schindelin has posted a detailed summary of the 2026 Git Contributors' Summit discussions. Topics include Git 3.0, the security process, documentation, the pluggable object database, and use of LLMs.",
+   "keyPoints": [],
+   "whyItMatters": "Git contributors and users interested in the project's direction will find the summit outcomes relevant.",
+   "kind": "news",
    "imageUrl": null,
    "readingMinutes": 0
   },
