@@ -2,6 +2,488 @@
  "version": 1,
  "articles": [
   {
+   "id": "3c5905277376b388",
+   "sourceId": "9to5linux",
+   "title": "OpenShot 4.0.1 Video Editor Released with Timeline and Zoom Improvements",
+   "url": "https://9to5linux.com/?p=33763",
+   "author": "",
+   "publishedAt": 1790559034000,
+   "firstSeenAt": 1790575204177,
+   "tags": [
+    "openshot",
+    "video-editing",
+    "release",
+    "open-source",
+    "distro"
+   ],
+   "brief": "OpenShot 4.0.1, a bug-fix release of the open-source video editor, is available for download. It brings timeline and zoom improvements, an updated Razor tool, and faster keyframe and color editing.",
+   "keyPoints": [],
+   "whyItMatters": "OpenShot users get smoother timeline work and quicker editing tools in this update.",
+   "kind": "release",
+   "imageUrl": null,
+   "readingMinutes": 0
+  },
+  {
+   "id": "a14efad0d3e50978",
+   "sourceId": "9to5linux",
+   "title": "Shotcut 26.9 Video Editor Improves VA-API HEVC Hardware Encoding on Linux",
+   "url": "https://9to5linux.com/?p=33760",
+   "author": "",
+   "publishedAt": 1790556113000,
+   "firstSeenAt": 1790575204177,
+   "tags": [
+    "video-editing",
+    "linux",
+    "release",
+    "distro"
+   ],
+   "brief": "Shotcut 26.9 is out, improving the VA-API HEVC hardware encoder on Linux and adding Automatic Ducking for audio, volume control, and an audio level meter for timeline track headers.",
+   "keyPoints": [],
+   "whyItMatters": "",
+   "kind": "release",
+   "imageUrl": null,
+   "readingMinutes": 0
+  },
+  {
+   "id": "7580cc020a29544c",
+   "sourceId": "linuxiac",
+   "title": "OpenShot 4.0.1 Video Editor Improves Razor Tool, Timeline Editing, and Linux Support",
+   "url": "https://linuxiac.com/openshot-4-0-1-video-editor-improves-razor-tool-timeline-editing-and-linux-support/",
+   "author": "Bobby Borisov",
+   "publishedAt": 1790552720000,
+   "firstSeenAt": 1790575204177,
+   "tags": [
+    "openshot",
+    "video-editing",
+    "linux",
+    "release",
+    "distro",
+    "news"
+   ],
+   "brief": "OpenShot 4.0.1 upgrades the Razor tool with source-frame previews, snapping, and ripple cuts, and improves timeline navigation and editing responsiveness. Linux users get official Snap support, native webcam discovery, and an optional Wayland capture module.",
+   "keyPoints": [
+    "Razor tool gains frame previews, snapping, and automatic ripple cuts",
+    "Linux: official Snap support, webcam discovery, optional Wayland capture module",
+    "Fixes for undo history, exports, project saving, and macOS startup failures"
+   ],
+   "whyItMatters": "Linux video editors and OpenShot users should care, as this update improves daily editing workflows and Linux integration.",
+   "kind": "release",
+   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/09/openshot401.jpg",
+   "readingMinutes": 2
+  },
+  {
+   "id": "a3228981b95ccfe0",
+   "sourceId": "omgubuntu",
+   "title": "Silent Horizon gives Linux Mint a dramatic makeover — but at a CPU cost",
+   "url": "https://www.omgubuntu.co.uk/2026/09/linux-mint-silent-horizon-design",
+   "author": "Joey Sneddon",
+   "publishedAt": 1790549763000,
+   "firstSeenAt": 1790575204177,
+   "tags": [
+    "linux-mint",
+    "cinnamon",
+    "desktop",
+    "themes",
+    "ubuntu"
+   ],
+   "brief": "Silent Horizon is a transformation script for Linux Mint's Cinnamon desktop that installs animated desklets, Plank dock themes and panel applets for a sleek, dark look. The animated weather and system monitor desklets look striking but drove Cinnamon CPU usage above 24% on low-powered hardware, causing slowdowns and…",
+   "keyPoints": [
+    "Installs desklets, Plank dock theme, workspace switcher and tray applets via script",
+    "Weather desklet shows sun, moon and planet positions for your actual location",
+    "Animated desklets pushed Cinnamon CPU above 24%; removing them dropped it below 1%"
+   ],
+   "whyItMatters": "Linux Mint users wanting a modern-looking desktop should know this pack delivers the visuals but may cripple weaker hardware.",
+   "kind": "news",
+   "imageUrl": "https://www.omgubuntu.co.uk/wp-content/uploads/2026/09/linux-mint-silent-horizon.webp",
+   "readingMinutes": 5
+  },
+  {
+   "id": "ec38376711042d34",
+   "sourceId": "linuxiac",
+   "title": "Linuxiac Weekly Wrap-Up: Week 39, 2026 (September 21–27)",
+   "url": "https://linuxiac.com/linuxiac-weekly-wrap-up-week-39-2026-september-21-27/",
+   "author": "Bobby Borisov",
+   "publishedAt": 1790548251000,
+   "firstSeenAt": 1790575204177,
+   "tags": [
+    "linux",
+    "systemd",
+    "gnome",
+    "security",
+    "distro",
+    "news"
+   ],
+   "brief": "Linuxiac's weekly roundup for September 21–27, 2026, covers a light week for distribution news but a long list of open-source software releases. Highlights include Systemd 262, COSMIC Desktop 1.9, GNOME 50.5, Samba 4.25, and Wireshark 4.6.9.",
+   "keyPoints": [
+    "Systemd 262 adds static PID 1 builds plus better container, TPM, and VM support",
+    "COSMIC 1.9 adds a viewer and on-screen keyboard; GNOME 50.5 ships bug and security fixes",
+    "Wireshark 4.6.9 fixes 19 security vulnerabilities; Samba 4.25 adds clustering features"
+   ],
+   "whyItMatters": "Linux users and admins wanting a quick scan of the week's FOSS releases and security fixes.",
+   "kind": "news",
+   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/09/linuxiac-weekly-wrap-up-39-2026.jpg",
+   "readingMinutes": 3
+  },
+  {
+   "id": "4795e07ae228e29c",
+   "sourceId": "lwn",
+   "title": "Kernel prepatch 7.3-rc5 released",
+   "url": "https://lwn.net/Articles/1096959/",
+   "author": "corbet",
+   "publishedAt": 1790545251000,
+   "firstSeenAt": 1790575204177,
+   "tags": [
+    "kernel",
+    "linux",
+    "deep"
+   ],
+   "brief": "Linus Torvalds released the fifth 7.3 release candidate, describing it as large but without an alarming pattern—just routine changes despite the sizable diffstat.",
+   "keyPoints": [],
+   "whyItMatters": "Kernel testers and developers tracking the 7.3 cycle should know this rc is large but considered normal.",
+   "kind": "release",
+   "imageUrl": null,
+   "readingMinutes": 0
+  },
+  {
+   "id": "d2ee542f18bd7c45",
+   "sourceId": "phoronix",
+   "title": "Linux 7.3-rc5 Released: \"Another Week, Another Large RC\"",
+   "url": "https://www.phoronix.com/news/Linux-7.3-rc5-Released",
+   "author": "Michael Larabel",
+   "publishedAt": 1790543841000,
+   "firstSeenAt": 1790575204177,
+   "tags": [
+    "kernel",
+    "linux",
+    "release",
+    "testing",
+    "hardware",
+    "performance"
+   ],
+   "brief": "Linus Torvalds released Linux 7.3-rc5, an unusually large weekly test candidate, targeting a stable release around 18 October. Torvalds noted an odd diffstat with fewer driver patches and a quarter being selftests, but saw nothing alarming. Linux 7.3 will ship in Ubuntu 26.10 and other autumn distributions.",
+   "keyPoints": [
+    "rc5 includes Cache Aware Scheduling fixes, new HID device support, and graphics driver fixes",
+    "Logitech Holt Receiver HID++ support reverted due to issues",
+    "AI/LLM agents credited with uncovering new issues in the ~41 million line codebase"
+   ],
+   "whyItMatters": "Kernel testers and distro maintainers should test rc5 ahead of the mid-October Linux 7.3 stable release that will power Ubuntu 26.10.",
+   "kind": "release",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=linux_73_rc5",
+   "readingMinutes": 3
+  },
+  {
+   "id": "3009c59e2da19a6e",
+   "sourceId": "9to5linux",
+   "title": "9to5Linux Weekly Roundup: September 27th, 2026",
+   "url": "https://9to5linux.com/?p=33719",
+   "author": "",
+   "publishedAt": 1790541983000,
+   "firstSeenAt": 1790575204177,
+   "tags": [
+    "linux",
+    "gnome",
+    "firefox",
+    "release",
+    "distro"
+   ],
+   "brief": "This week's 9to5Linux roundup covers a long list of Linux software releases, including COSMIC 1.9, VLC 3.0.24, GNU Wget 2.3, Flatpak 1.18.3, GNOME 50.5, Firefox 156.0.1, OBS Studio 33 beta, and KeePassXC 2.8 beta.",
+   "keyPoints": [],
+   "whyItMatters": "Linux users who want a quick overview of the week's application and driver releases.",
+   "kind": "news",
+   "imageUrl": null,
+   "readingMinutes": 0
+  },
+  {
+   "id": "48b48757e0217b38",
+   "sourceId": "linuxiac",
+   "title": "Klassik Revives the KDE 3 Desktop on Modern Plasma 6",
+   "url": "https://linuxiac.com/klassik-revives-the-kde-3-desktop-on-modern-plasma-6/",
+   "author": "Bobby Borisov",
+   "publishedAt": 1790531282000,
+   "firstSeenAt": 1790575204177,
+   "tags": [
+    "kde",
+    "plasma",
+    "qt",
+    "desktop",
+    "distro",
+    "news"
+   ],
+   "brief": "Klassik is a new open-source project recreating the KDE 3 desktop on top of the modern KDE Plasma 6 stack. Rather than just a theme, it rebuilds original KDE 3 components in Qt 6 and Qt Quick, with support for Wayland and fractional scaling.",
+   "keyPoints": [
+    "Recreated KDE 3 panel applets include K Menu, Quicklaunch, task manager, and clocks, written in C++ and QML",
+    "The KDE 2/3 QStyle theme is rewritten for Qt 6; old KWin decorations are being ported to KDecoration3",
+    "Requires Qt 6, KDE Frameworks 6, and Plasma 6; install via CMake, use the latest tagged release"
+   ],
+   "whyItMatters": "KDE users nostalgic for KDE 3 can get an authentic recreation on a fully modern, Wayland-capable Plasma 6 base.",
+   "kind": "news",
+   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/09/klassik-kde3.jpg",
+   "readingMinutes": 2
+  },
+  {
+   "id": "7f52e4b58e9f1b14",
+   "sourceId": "phoronix",
+   "title": "Budgie 10.10.3 Adds Favorites to Budgie Menu, Improves Labwc Bridge",
+   "url": "https://www.phoronix.com/news/Budgie-10.10.3-Released",
+   "author": "Michael Larabel",
+   "publishedAt": 1790530627000,
+   "firstSeenAt": 1790575204177,
+   "tags": [
+    "budgie",
+    "desktop",
+    "wayland",
+    "release",
+    "hardware",
+    "performance"
+   ],
+   "brief": "Budgie 10.10.3 is out, headlined by a Favorites area in the Budgie Menu so apps can finally be pinned there. The point release also improves the Labwc bridge for the recommended Wayland compositor and adds primary monitor designation, freely placed desktop icons, and oo7 Secret Service support.",
+   "keyPoints": [
+    "Budgie Menu gains a Favorites area for pinning applications",
+    "Labwc bridge gets keybinding, multimedia key, and reliability fixes",
+    "Adds primary monitor selection and oo7 Secret Service support"
+   ],
+   "whyItMatters": "Budgie desktop users, especially those on Wayland with Labwc, get long-requested menu favorites and smoother compositor integration.",
+   "kind": "release",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=budgie_10103",
+   "readingMinutes": 2
+  },
+  {
+   "id": "f959a6997c811059",
+   "sourceId": "9to5linux",
+   "title": "Budgie 10.10.3 Desktop Environment Introduces Free Placement of Desktop Icons",
+   "url": "https://9to5linux.com/?p=33754",
+   "author": "",
+   "publishedAt": 1790525967000,
+   "firstSeenAt": 1790575204177,
+   "tags": [
+    "budgie",
+    "desktop",
+    "wayland",
+    "distro",
+    "release"
+   ],
+   "brief": "Budgie 10.10.3 is out as the third maintenance update to the Wayland-only Budgie 10.10 series, adding free placement of desktop icons among various improvements and bug fixes.",
+   "keyPoints": [],
+   "whyItMatters": "Budgie users tracking the Wayland-only 10.10 series will want to know about this maintenance update and its desktop icon feature.",
+   "kind": "release",
+   "imageUrl": null,
+   "readingMinutes": 0
+  },
+  {
+   "id": "c7fbbdbc4bd0362e",
+   "sourceId": "linuxiac",
+   "title": "Budgie Desktop 10.10.3 Released With Menu Favorites, Free Desktop Icon Placement",
+   "url": "https://linuxiac.com/budgie-desktop-10-10-3-released-with-menu-favorites/",
+   "author": "Bobby Borisov",
+   "publishedAt": 1790523853000,
+   "firstSeenAt": 1790575204177,
+   "tags": [
+    "budgie",
+    "desktop",
+    "wayland",
+    "release",
+    "distro",
+    "news"
+   ],
+   "brief": "Budgie 10.10.3, the third maintenance update in the 10.10 series, adds favorites to Budgie Menu, restores the Wayland-compatible Keyboard Layout applet, and lets users place desktop icons freely instead of on a fixed grid.",
+   "keyPoints": [
+    "Right-click apps to add them to a new Favorites category in Budgie Menu",
+    "Desktop icons can now be placed freely, with auto-arrange, snap-to-grid, and multi-select",
+    "Keyboard Layout applet rewritten in C to work under Wayland"
+   ],
+   "whyItMatters": "Budgie users, especially on Wayland or multi-monitor setups, get long-requested usability fixes and features; packagers can note the optional oo7 Secret Service support.",
+   "kind": "release",
+   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/09/budgie-desktop-10103.jpg",
+   "readingMinutes": 3
+  },
+  {
+   "id": "ed25026856ac4d6a",
+   "sourceId": "linuxiac",
+   "title": "postmarketOS Rebrands as Nura After 18-Month Naming Process",
+   "url": "https://linuxiac.com/postmarketos-is-now-nura-after-major-project-rebrand/",
+   "author": "Bobby Borisov",
+   "publishedAt": 1790522145000,
+   "firstSeenAt": 1790575204177,
+   "tags": [
+    "linux",
+    "mobile",
+    "postmarketos",
+    "rebranding",
+    "distro",
+    "news"
+   ],
+   "brief": "Mobile Linux project postmarketOS has renamed itself Nura, announced at its conference. The name comes from Sardinia's ancient Nuraghe stone structures, symbolizing longevity. The old name was hard to trademark, often miscapitalized, and no longer fit a project now shipping preinstalled on PinePhones.",
+   "keyPoints": [
+    "Nura is short for Nuraghe, ancient Sardinian stone towers built to last",
+    "Old name was untrademarkable; Nura trademark application filed",
+    "Over 300 community names submitted; Nura won an internal team vote"
+   ],
+   "whyItMatters": "Users and contributors of the mobile Linux distro should know the project, packages, and documentation will gradually move to the Nura name and nura.eco domain.",
+   "kind": "news",
+   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/09/postmarketos-nura.jpg",
+   "readingMinutes": 3
+  },
+  {
+   "id": "8310e19d95b2431b",
+   "sourceId": "linuxiac",
+   "title": "Noctalia 5.2 Wayland Shell Released With Redesigned Window Switcher",
+   "url": "https://linuxiac.com/noctalia-5-2-wayland-shell-released-with-new-window-switcher/",
+   "author": "Bobby Borisov",
+   "publishedAt": 1790519225000,
+   "firstSeenAt": 1790575204177,
+   "tags": [
+    "wayland",
+    "desktop-shell",
+    "noctalia",
+    "release",
+    "distro",
+    "news"
+   ],
+   "brief": "Noctalia 5.2, a desktop shell for Wayland, arrives with an animated window-switcher carousel, calendar reminders from iCalendar, CalDAV, and Google Calendar, plus Freedesktop sound theme support.",
+   "keyPoints": [
+    "Redesigned window switcher with animated preview carousel and workspace filtering",
+    "Calendar reminders for iCalendar, CalDAV, and Google Calendar with configurable lead times",
+    "Sound theme support, annotation editor for existing images, Japanese localization"
+   ],
+   "whyItMatters": "Wayland users running Noctalia or considering alternative desktop shells gain workflow improvements and broad bug fixes worth reviewing.",
+   "kind": "release",
+   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/09/noctalia52.jpg",
+   "readingMinutes": 3
+  },
+  {
+   "id": "fe529a4df7cd7040",
+   "sourceId": "phoronix",
+   "title": "Linux Kernel's LZ4 Compression Code Being Resynced for Better Performance",
+   "url": "https://www.phoronix.com/news/Linux-LZ4-Clean-Resync",
+   "author": "Michael Larabel",
+   "publishedAt": 1790514980000,
+   "firstSeenAt": 1790575204177,
+   "tags": [
+    "kernel",
+    "lz4",
+    "compression",
+    "performance",
+    "hardware"
+   ],
+   "brief": "Samsung's Michal Wilczynski posted patches to overhaul the kernel's LZ4 code, which has been a stale fork of upstream since 2017-2018. The changes vendor upstream LZ4 unmodified, bringing bug fixes and up to 21% higher in-kernel benchmark performance.",
+   "keyPoints": [
+    "In-kernel LZ4 fork last synced with upstream around 2017-2018",
+    "Patches let upstream LZ4 code be copied into kernel tree unmodified",
+    "EROFS sees ~11-14% higher read throughput; other benchmarks up to 21% faster"
+   ],
+   "whyItMatters": "Kernel developers and users of LZ4-compressed filesystems like EROFS gain performance and easier future updates.",
+   "kind": "news",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=linux_faster_lz4",
+   "readingMinutes": 2
+  },
+  {
+   "id": "a7504a1174afa7e7",
+   "sourceId": "linuxiac",
+   "title": "Apprise 2.0 Notification Tool Released With Smarter Retries and Async Support",
+   "url": "https://linuxiac.com/apprise-2-0-notification-tool-released-with-smarter-retries-and-async-support/",
+   "author": "Bobby Borisov",
+   "publishedAt": 1790507564000,
+   "firstSeenAt": 1790575204177,
+   "tags": [
+    "notifications",
+    "python",
+    "open-source",
+    "release",
+    "distro",
+    "news"
+   ],
+   "brief": "Apprise 2.0 launches the notification framework's new major series with a rebuilt architecture, adding template variables, tag escalation, selective retries, parallel delivery, timeouts, and native async support. It is a breaking release for 1.x API users; a supported apprise-v1-release branch remains available.",
+   "keyPoints": [
+    "Retries now track per-recipient results and resend only to failed destinations",
+    "New AppriseResult object gives detailed per-service statuses and logs from notify()",
+    "Adds Delta Chat, WPUSH, YouLMK, and Telnyx SMS services; breaking change for 1.x API"
+   ],
+   "whyItMatters": "Developers and sysadmins using Apprise for multi-service notifications should review the breaking API changes before upgrading.",
+   "kind": "release",
+   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/09/apprise20.jpg",
+   "readingMinutes": 2
+  },
+  {
+   "id": "e730c65c0b1d6043",
+   "sourceId": "phoronix",
+   "title": "Intel lands big memory hotplugging speedup for Linux 7.4",
+   "url": "https://www.phoronix.com/news/Linux-7.4-Faster-RAM-Hotplug",
+   "author": "Michael Larabel",
+   "publishedAt": 1790506145000,
+   "firstSeenAt": 1790575204177,
+   "tags": [
+    "kernel",
+    "memory-management",
+    "intel",
+    "cxl",
+    "hardware",
+    "performance"
+   ],
+   "brief": "Intel's Yuan Liu has queued patches into mm/core.git's for-next branch that optimize zone contiguous checks to speed up memory hotplugging, expected for the Linux 7.4 merge window. Testing shows up to an 81% time reduction for VM memory hotplugging and up to 75% for unplugging, with Samsung also seeing large CXL…",
+   "keyPoints": [
+    "Avoids page block by page block scans across entire zones during hotplug",
+    "Up to 81% faster VM memory hotplug, 75% faster unplug",
+    "Expected in Linux 7.4 via mm/core.git for-next branch"
+   ],
+   "whyItMatters": "Operators of virtual machines and CXL-based memory expansion systems will see much faster memory hot add/remove operations.",
+   "kind": "news",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=memory_hot_plug_1",
+   "readingMinutes": 2
+  },
+  {
+   "id": "7da5ff1a604d12a3",
+   "sourceId": "phoronix",
+   "title": "Linux Patches Enable ThinkPad X1 Carbon G14's IR Camera",
+   "url": "https://www.phoronix.com/news/Linux-X1-Carbon-G14-MIPI-Cam",
+   "author": "Michael Larabel",
+   "publishedAt": 1790505180000,
+   "firstSeenAt": 1790575204177,
+   "tags": [
+    "kernel",
+    "hardware",
+    "lenovo",
+    "drivers",
+    "performance"
+   ],
+   "brief": "New kernel patches from Ruslan Koreev enable the second MIPI IR camera on Lenovo's Panther Lake-based ThinkPad X1 Carbon Gen 14, which is used for Windows Hello-style face authentication. The main RGB camera already works on Linux. The patches are under review and may land in Linux v7.4.",
+   "keyPoints": [
+    "Sensor is an ST VD55G1 monochrome global-shutter unit, powered via an INT3472 device.",
+    "Patches add ACPI wiring and monochrome pixel formats to the Intel IPU7 ISYS.",
+    "Tested on Fedora 44: streams via libcamera and works with howdy face authentication."
+   ],
+   "whyItMatters": "Owners or prospective buyers of the ThinkPad X1 Carbon Gen 14 on Linux gain IR face-authentication support if these patches are merged.",
+   "kind": "news",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=x1_carbon_g14",
+   "readingMinutes": 3
+  },
+  {
+   "id": "bd8fa313d395fbff",
+   "sourceId": "phoronix",
+   "title": "New Patch Series Working Toward DRBD 9 Support In The Linux Kernel",
+   "url": "https://www.phoronix.com/news/Linux-Patches-Toward-DRBD-9",
+   "author": "Michael Larabel",
+   "publishedAt": 1790504587000,
+   "firstSeenAt": 1790575204177,
+   "tags": [
+    "kernel",
+    "storage",
+    "drbd",
+    "lkml",
+    "hardware",
+    "performance"
+   ],
+   "brief": "LINBIT developers sent a new patch series to the LKML preparing to bring DRBD 9 support into the mainline Linux kernel. The prep patches restructure the in-kernel DRBD 8.4 code to match the out-of-tree layout and raise limits to DRBD 9 values, with the full DRBD 9 patches hoped to follow.",
+   "keyPoints": [
+    "Patches restructure in-kernel DRBD 8.4 code to align with LINBIT's out-of-tree driver",
+    "Series raises various limits to match DRBD 9 values",
+    "DRBD 9 adds 32-node replication, load balancing, quorum management, faster I/O"
+   ],
+   "whyItMatters": "Cluster and storage administrators relying on out-of-tree DRBD builds should care, since mainline DRBD 9 would simplify deployment and maintenance of replicated block storage.",
+   "kind": "news",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=drbd",
+   "readingMinutes": 2
+  },
+  {
    "id": "5676d13b2eed9f25",
    "sourceId": "itsfoss",
    "title": "AlmaLinux Opens Free, Community-Driven Software and Hardware Certification",
@@ -54,6 +536,33 @@
    "kind": "news",
    "imageUrl": "https://www.phoronix.net/image.php?id=raspberrypi-3-bplus&image=raspberrypi_3bp_4",
    "readingMinutes": 3
+  },
+  {
+   "id": "f86fb9777ea6f762",
+   "sourceId": "jvns",
+   "title": "Replacing the old battery on rechargeable bike lights",
+   "url": "https://jvns.ca/blog/2026/09/27/replacing-the-old-battery-on-rechargeable-bike-lights/",
+   "author": "",
+   "publishedAt": 1790467200000,
+   "firstSeenAt": 1790575204177,
+   "tags": [
+    "repair",
+    "electronics",
+    "diy",
+    "soldering",
+    "explainer",
+    "tooling"
+   ],
+   "brief": "Julia Evans revived ten-year-old rechargeable bike lights by replacing their dead batteries. With minimal electronics experience, she cut open the silicone casing, desoldered the old cells, identified them as LIR2477 coin cells, and soldered in replacements ordered from AliExpress for about $20 CAD in parts.",
+   "keyPoints": [
+    "Identified the mystery battery as an LIR2477 by asking an LLM",
+    "Used a desoldering pump and iFixit guide for a first-ever desoldering job",
+    "Repair cost about $20 CAD; both lights work again"
+   ],
+   "whyItMatters": "Encouraging read for anyone curious about repairing old electronics without prior soldering experience.",
+   "kind": "tutorial",
+   "imageUrl": null,
+   "readingMinutes": 5
   },
   {
    "id": "4815d84d28f20570",
