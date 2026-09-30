@@ -2,6 +2,912 @@
  "version": 1,
  "articles": [
   {
+   "id": "c2b2203bbd3b4cdc",
+   "sourceId": "itsfoss",
+   "title": "France's DINUM runs NixOS-based Sécurix workstations, echoing Dutch DAWO move",
+   "url": "https://feed.itsfoss.com/link/24361/17478137/france-nixos-move",
+   "author": "Sourav Rudra",
+   "publishedAt": 1790735617000,
+   "firstSeenAt": 1790748004002,
+   "tags": [
+    "nixos",
+    "government",
+    "security",
+    "digital-sovereignty",
+    "desktop",
+    "tutorial"
+   ],
+   "brief": "Following the Netherlands' DAWO mandate to deploy a NixOS platform in public institutions, it emerged that France's DINUM has been running Sécurix, a security-hardened NixOS setup for admin workstations, for months.",
+   "keyPoints": [
+    "Sécurix hardens NixOS per ANSSI guidelines without forking; v0.20.1 in alpha",
+    "FIDO2 hardware keys as main login, TPM2 and YubiKey support",
+    "Bureautix companion template ships KDE Plasma and office suites for forking"
+   ],
+   "whyItMatters": "Linux admins and public-sector IT teams tracking digital sovereignty should watch NixOS adoption as a reproducible, vendor-neutral alternative to US-tied distros.",
+   "kind": "news",
+   "imageUrl": "https://itsfoss.com/content/images/2026/09/france-securix-nix-os-banner.png",
+   "readingMinutes": 2
+  },
+  {
+   "id": "61d854d8adfc7c76",
+   "sourceId": "phoronix",
+   "title": "Archinstall 4.5 adds real-time kernels and improved AArch64 support",
+   "url": "https://www.phoronix.com/news/Arch-Linux-Archinstall-4.5",
+   "author": "Michael Larabel",
+   "publishedAt": 1790727951000,
+   "firstSeenAt": 1790748004002,
+   "tags": [
+    "arch-linux",
+    "installer",
+    "aarch64",
+    "kernel",
+    "hardware",
+    "performance"
+   ],
+   "brief": "Archinstall 4.5, the text-based Arch Linux installer, is out ahead of the October ISO refresh. It adds linux-rt and linux-rt-lts kernel options, AArch64 support for GRUB and Limine EFI installs, and swaps polkit for systemd-logind in several Wayland desktop profiles, plus bug fixes.",
+   "keyPoints": [
+    "Adds linux-rt and linux-rt-lts real-time kernel options",
+    "AArch64 support for GRUB and Limine EFI installs and partition GUID handling",
+    "Switches polkit to systemd-logind for Hyprland, Labwc, Niri, and Sway"
+   ],
+   "whyItMatters": "Arch Linux users, especially those on ARM or needing real-time kernels, get a smoother out-of-box install experience.",
+   "kind": "release",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=archinstall_4",
+   "readingMinutes": 2
+  },
+  {
+   "id": "962e61e93aef4da3",
+   "sourceId": "omgubuntu",
+   "title": "VLC 3.0.24 ships as the player's 'biggest security release ever'",
+   "url": "https://www.omgubuntu.co.uk/2026/09/vlc-major-security-update",
+   "author": "Joey Sneddon",
+   "publishedAt": 1790723726000,
+   "firstSeenAt": 1790748004002,
+   "tags": [
+    "vlc",
+    "security",
+    "release",
+    "multimedia",
+    "ubuntu",
+    "desktop"
+   ],
+   "brief": "VLC 3.0.24 patches more than 130 security issues across the app and bundled libraries. VideoLAN's president says most flaws are hard to exploit but not all are harmless, and urges users to update. The release also adds ATRAC3/9 decoding, an FFmpeg jump to 8.1.2, and removes the NPAPI plugin.",
+   "keyPoints": [
+    "Over 130 security fixes; users encouraged to update promptly",
+    "FFmpeg updated from 4.4 to 8.1.2; adds APV video support",
+    "New: ATRAC3/9 decoding, CEA-708 captions, SRT listener mode, Flatpak builds"
+   ],
+   "whyItMatters": "Anyone running VLC should update soon given the volume of security fixes.",
+   "kind": "release",
+   "imageUrl": "https://www.omgubuntu.co.uk/wp-content/uploads/2024/03/vlc.jpg",
+   "readingMinutes": 3
+  },
+  {
+   "id": "596d103b4d4f5267",
+   "sourceId": "lwn",
+   "title": "Firefox 157.0 released with biggest visual refresh in years",
+   "url": "https://lwn.net/Articles/1097495/",
+   "author": "corbet",
+   "publishedAt": 1790718471000,
+   "firstSeenAt": 1790748004002,
+   "tags": [
+    "firefox",
+    "browser",
+    "release",
+    "kernel",
+    "deep"
+   ],
+   "brief": "Firefox 157.0 has been released, described as the browser's biggest visual refresh in years. Only a teaser was available, so further details are not included here.",
+   "keyPoints": [],
+   "whyItMatters": "Firefox users may want to check the full release notes for what the visual redesign changes.",
+   "kind": "release",
+   "imageUrl": null,
+   "readingMinutes": 0
+  },
+  {
+   "id": "c681c6f596169a78",
+   "sourceId": "linuxiac",
+   "title": "Microsoft Brings Native Linux Container Workflows to WSL",
+   "url": "https://linuxiac.com/microsoft-brings-native-linux-container-workflows-to-wsl/",
+   "author": "Bobby Borisov",
+   "publishedAt": 1790714832000,
+   "firstSeenAt": 1790748004002,
+   "tags": [
+    "wsl",
+    "containers",
+    "microsoft",
+    "windows",
+    "distro",
+    "news"
+   ],
+   "brief": "WSL Containers is now generally available, letting Windows developers build, run, and manage Linux containers natively via the new wslc.exe tool and an API, without Docker for every task. The release adds management features, enterprise security integration, and claimed 2x file-access performance, but still lacks…",
+   "keyPoints": [
+    "New wslc.exe CLI and API run Linux containers directly on Windows",
+    "Enterprise integration via Defender for Endpoint and Intune registry controls",
+    "VS Code Dev Containers and Aspire already support wslc as a driver"
+   ],
+   "whyItMatters": "Windows-based developers wanting Linux containers without Docker should care, though Compose users may still need Docker.",
+   "kind": "news",
+   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/09/wsl-containers.jpg",
+   "readingMinutes": 2
+  },
+  {
+   "id": "d0eaad89a243502c",
+   "sourceId": "linuxiac",
+   "title": "Archinstall 4.5 Adds Better AArch64 Support, RT Kernels",
+   "url": "https://linuxiac.com/archinstall-4-5-adds-better-aarch64-support-rt-kernels/",
+   "author": "Bobby Borisov",
+   "publishedAt": 1790711311000,
+   "firstSeenAt": 1790748004002,
+   "tags": [
+    "arch-linux",
+    "installer",
+    "aarch64",
+    "kernel",
+    "distro",
+    "news"
+   ],
+   "brief": "Archinstall, Arch Linux's guided text-based installer, reaches version 4.5 with expanded AArch64 support, real-time kernel options, desktop profile changes, and many fixes. It will ship in the upcoming 2026.10.01 ISO.",
+   "keyPoints": [
+    "GRUB and Limine EFI installs now work on AArch64, with proper root partition GUID",
+    "Real-time kernel variants can be deployed during installation",
+    "Hyprland, Labwc, Niri, and Sway profiles switch from polkit to systemd-logind"
+   ],
+   "whyItMatters": "Arch Linux users installing on ARM64 hardware or needing real-time kernels get a smoother guided setup.",
+   "kind": "release",
+   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/09/archinstall45.jpg",
+   "readingMinutes": 2
+  },
+  {
+   "id": "9cbc2dc7ce7fe255",
+   "sourceId": "9to5linux",
+   "title": "Archinstall 4.5 Arch Linux Installer Adds AArch64 Support for GRUB and Limine",
+   "url": "https://9to5linux.com/?p=33812",
+   "author": "",
+   "publishedAt": 1790709946000,
+   "firstSeenAt": 1790748004002,
+   "tags": [
+    "arch-linux",
+    "installer",
+    "arm64",
+    "distro",
+    "release"
+   ],
+   "brief": "Archinstall 4.5, the text-mode installer for Arch Linux, is out with AArch64 support for GRUB and Limine EFI installations, plus AArch64 root partition type GUID support and other changes.",
+   "keyPoints": [],
+   "whyItMatters": "Arch Linux users installing on ARM64 hardware gain proper bootloader and partition support.",
+   "kind": "release",
+   "imageUrl": null,
+   "readingMinutes": 0
+  },
+  {
+   "id": "4be4017caf7e0bbc",
+   "sourceId": "phoronix",
+   "title": "AMD PerfOpt in Linux 7.4 boosts AI/LLM performance on Radeon iGPUs by 18-23%",
+   "url": "https://www.phoronix.com/review/amd-perfopt",
+   "author": "Michael Larabel",
+   "publishedAt": 1790708220000,
+   "firstSeenAt": 1790748004002,
+   "tags": [
+    "kernel",
+    "amd",
+    "gpu",
+    "ai",
+    "hardware",
+    "performance"
+   ],
+   "brief": "Linux 7.4 will enable AMD PerfOpt, an IOMMU performance optimization that bypasses IOMMU overhead when integrated graphics access system memory. Phoronix benchmarks show 18-23% gains in local AI/LLM inference on Ryzen systems. It is on by default for AMD iGPUs and can be disabled via a kernel option.",
+   "keyPoints": [
+    "PerfOpt bypasses IOMMU when iGPU directly accesses system memory",
+    "Benchmarks with Lemonade/Llama.cpp show 18-23% faster LLM inference",
+    "Tested on Strix Halo, Strix Point, and Krackan hardware"
+   ],
+   "whyItMatters": "Users running local AI inference on AMD Ryzen integrated graphics get a significant free performance boost with Linux 7.4.",
+   "kind": "news",
+   "imageUrl": "https://www.phoronix.net/image.php?id=amd-perfopt&image=amd_perfopt_1",
+   "readingMinutes": 2
+  },
+  {
+   "id": "d2945bbb85c4632e",
+   "sourceId": "lwn",
+   "title": "Native support for Rust on the GPU",
+   "url": "https://lwn.net/Articles/1095731/",
+   "author": "daroc",
+   "publishedAt": 1790704640000,
+   "firstSeenAt": 1790748004002,
+   "tags": [
+    "rust",
+    "gpu",
+    "compilers",
+    "kernel",
+    "deep"
+   ],
+   "brief": "rust-gpu and Rust CUDA maintainer Christian Legnitto presented a vision at RustConf 2026 for making the GPU an ordinary Rust compiler target, without special libraries. A prototype exists but is not yet released.",
+   "keyPoints": [],
+   "whyItMatters": "Rust developers interested in GPU computing should watch for a simpler, library-free path to GPU targets.",
+   "kind": "news",
+   "imageUrl": null,
+   "readingMinutes": 0
+  },
+  {
+   "id": "2630e1839c7b2231",
+   "sourceId": "phoronix",
+   "title": "Microsoft Announces General Availability Of WSLC: Linux Containers On Windows",
+   "url": "https://www.phoronix.com/news/Microsoft-WSLC-Linux-Containers",
+   "author": "Michael Larabel",
+   "publishedAt": 1790701752000,
+   "firstSeenAt": 1790748004002,
+   "tags": [
+    "wsl",
+    "microsoft",
+    "containers",
+    "linux",
+    "hardware",
+    "performance"
+   ],
+   "brief": "Microsoft has made WSLC generally available, bringing Linux container support to Windows via a new wslc.exe command. It offers strong isolation between sessions, a per-session storage VHD, and a new networking model compared to WSL. Microsoft is promoting it as open source via the microsoft/wsl GitHub repository.",
+   "keyPoints": [
+    "WSLC is now GA, adding Linux containers on Windows via wslc.exe",
+    "Each session gets its own storage VHD and strong isolation",
+    "Promoted as open source through the microsoft/wsl GitHub repo"
+   ],
+   "whyItMatters": "Windows developers working with Linux containers gain an officially supported, open-source alternative to traditional WSL setups.",
+   "kind": "release",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=wlsc_model",
+   "readingMinutes": 1
+  },
+  {
+   "id": "65734d88b22f5a56",
+   "sourceId": "phoronix",
+   "title": "Branch Target Reuse: new Spectre V2 attack hits JIT compilers, BPF, SpiderMonkey",
+   "url": "https://www.phoronix.com/news/Branch-Target-Reuse-BTR",
+   "author": "Michael Larabel",
+   "publishedAt": 1790701200000,
+   "firstSeenAt": 1790748004002,
+   "tags": [
+    "security",
+    "spectre",
+    "kernel",
+    "bpf",
+    "hardware",
+    "performance"
+   ],
+   "brief": "VUSec researchers disclosed BTR (Branch Target Reuse), a Spectre-V2 attack abusing stale indirect branch predictions in JIT engines, including Linux kernel BPF, Oracle GraalVM, and Mozilla SpiderMonkey. All tested Intel, AMD, and Arm CPUs are affected, with an exploit leaking arbitrary memory despite mitigations.",
+   "keyPoints": [
+    "BTR is a speculative execute-after-free primitive using stale indirect branch predictor entries",
+    "Linux kernel BPF hardened in July via IBPB flushes; fixes already back-ported to stable kernels",
+    "GraalVM randomizes JIT code-cache locations; Mozilla prioritizes site isolation over IBPB"
+   ],
+   "whyItMatters": "Kernel, browser, and VM maintainers and users of BPF or JIT-heavy workloads should ensure mitigations are applied since existing defenses were bypassed.",
+   "kind": "news",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=btr_overview",
+   "readingMinutes": 3
+  },
+  {
+   "id": "9678653018f41a71",
+   "sourceId": "omgubuntu",
+   "title": "Ubuntu 24.04 to 26.04 LTS direct upgrades now enabled",
+   "url": "https://www.omgubuntu.co.uk/2026/09/ubuntu-2604-upgrades-live-2404",
+   "author": "Joey Sneddon",
+   "publishedAt": 1790699160000,
+   "firstSeenAt": 1790748004002,
+   "tags": [
+    "ubuntu",
+    "canonical",
+    "upgrades",
+    "wayland",
+    "desktop"
+   ],
+   "brief": "Canonical has enabled direct in-place upgrades from Ubuntu 24.04 LTS to 26.04 LTS, delayed past the August 26.04.1 point release due to bug fixes and testing. Users get a notification and can upgrade via Software Updater or do-release-upgrade; the article notes Xorg GNOME sessions are dropped and RAM recommendation…",
+   "keyPoints": [
+    "LTS-to-LTS upgrades went live after 26.04.1 bugs were fixed and tested",
+    "Ubuntu 26.04 drops X11/Xorg GNOME sessions; X11 apps still work via XWayland",
+    "Recommended RAM rose from 4GB to 6GB; 24.04 remains supported until 2029"
+   ],
+   "whyItMatters": "Ubuntu 24.04 LTS users deciding whether to upgrade need the caveats on Wayland-only GNOME and higher memory expectations.",
+   "kind": "news",
+   "imageUrl": "https://www.omgubuntu.co.uk/wp-content/uploads/2026/04/upgrade-ubuntu-2604.webp",
+   "readingMinutes": 4
+  },
+  {
+   "id": "60fb9748cc44f552",
+   "sourceId": "phoronix",
+   "title": "Ubuntu 26.10 Snapdragon Concept ISO adds first Snapdragon X2 laptop support",
+   "url": "https://www.phoronix.com/news/Ubuntu-26.10-Snapdragon-Concept",
+   "author": "Michael Larabel",
+   "publishedAt": 1790698536000,
+   "firstSeenAt": 1790748004002,
+   "tags": [
+    "ubuntu",
+    "snapdragon",
+    "arm",
+    "kernel",
+    "hardware",
+    "performance"
+   ],
+   "brief": "Canonical released new Ubuntu 26.10 Snapdragon Concept images with improved Snapdragon X1 support and the first Snapdragon X2 laptop support. The build moves to the Linux 7.3 kernel, and Canonical plans a certified, optimized X2 image with Qualcomm in 2027.",
+   "keyPoints": [
+    "Concept images move to the Linux 7.3 kernel, improving existing Snapdragon X1 laptops",
+    "New X1 support: Lenovo IdeaPad Slim 3, Ideacentre Mini, HONOR MagicBook Art 14",
+    "First X2 laptops supported: ASUS Zenbook A14/A16, Lenovo Yoga Slim 7, HP EliteBook X G2q"
+   ],
+   "whyItMatters": "Users with Snapdragon X1 or X2 ARM laptops can now run current Ubuntu on more models, with official certified X2 images promised for 2027.",
+   "kind": "release",
+   "imageUrl": "https://www.phoronix.net/image.php?id=ubuntu-2604-snapdragon-x-elite&image=snapdragon_x_0",
+   "readingMinutes": 2
+  },
+  {
+   "id": "a801ae8f7a35ece3",
+   "sourceId": "phoronix",
+   "title": "Meta Releases OpenZL 0.3 With Decompression Speed 144% Faster Than Zstd",
+   "url": "https://www.phoronix.com/news/OpenZL-0.3-Released",
+   "author": "Michael Larabel",
+   "publishedAt": 1790698004000,
+   "firstSeenAt": 1790748004002,
+   "tags": [
+    "compression",
+    "open-source",
+    "meta",
+    "performance",
+    "hardware"
+   ],
+   "brief": "Meta has released OpenZL 0.3, an upgrade to its format-aware compression framework. The new version claims decompression around 144% faster than Zstandard at equivalent settings, a 33% faster LZ engine, and compression averaging 35% better than Zstd at its highest level.",
+   "keyPoints": [
+    "LZ engine upgraded with ~33% higher performance over v0.2",
+    "Decompression ~144% faster than Zstandard at equivalent settings",
+    "Neural Compression Transformer picks codec combinations, 35% better than Zstd level 19"
+   ],
+   "whyItMatters": "Developers choosing compression libraries for performance-sensitive workloads may want to evaluate OpenZL against Zstd.",
+   "kind": "release",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=openzl_03",
+   "readingMinutes": 2
+  },
+  {
+   "id": "75c0025c11f7ba5a",
+   "sourceId": "itsfoss",
+   "title": "openSUSE Leap 16.1 gets immutable mode, replacing Leap Micro",
+   "url": "https://feed.itsfoss.com/link/24361/17477655/opensuse-leap-immutable",
+   "author": "Sourav Rudra",
+   "publishedAt": 1790697938000,
+   "firstSeenAt": 1790748004002,
+   "tags": [
+    "opensuse",
+    "immutable",
+    "release",
+    "linux",
+    "desktop",
+    "tutorial"
+   ],
+   "brief": "openSUSE Leap 16.1 adds an \"Immutable\" mode to the Agama installer, offering a read-only root filesystem with transactional updates and snapshot rollback. This absorbs Leap Micro's role, so no Leap Micro 6.3 or 7.0 will be released. The release also ships KDE Plasma 6.6 and GNOME 48, with an RC available now.",
+   "keyPoints": [
+    "Leap 16.1 installer offers Immutable mode with read-only root and snapshot rollback",
+    "Leap Micro discontinued; Migration Tool offered for existing 6.2 users",
+    "Also includes KDE Plasma 6.6 and GNOME 48; stable lands alongside SLES 16.1"
+   ],
+   "whyItMatters": "openSUSE users and admins running immutable or container workloads need to know Leap now covers that use case and Leap Micro is ending.",
+   "kind": "release",
+   "imageUrl": "https://itsfoss.com/content/images/2026/09/opensuse-leap-immutable-banner.png",
+   "readingMinutes": 3
+  },
+  {
+   "id": "55d0d148a4f044a5",
+   "sourceId": "omgubuntu",
+   "title": "Destroy Any Website is a browser game that does what it says",
+   "url": "https://www.omgubuntu.co.uk/2026/09/destroy-any-website-browser-game",
+   "author": "Joey Sneddon",
+   "publishedAt": 1790697816000,
+   "firstSeenAt": 1790748004002,
+   "tags": [
+    "gaming",
+    "browser",
+    "fun",
+    "web",
+    "ubuntu",
+    "desktop"
+   ],
+   "brief": "Destroy Any Website is a browser-based run-and-gun that lets players blast a copy of any public website to pieces using WASD controls, a jetpack, and weapons. It includes a competitive multiplayer mode with shareable codes and a scoreboard. Nothing is damaged permanently; the destruction happens on a copy of the page.",
+   "keyPoints": [
+    "Run, jump and jetpack around site elements, scoring points by destroying them",
+    "Multiplayer mode: share a code and race to a target destruction score",
+    "Made by Hugo Duprez as a showcase for his Sprite Fusion pixel-art editor"
+   ],
+   "whyItMatters": "Anyone looking for a quick, harmless diversion in any modern Linux desktop browser may find it an amusing five-minute break.",
+   "kind": "news",
+   "imageUrl": "https://www.omgubuntu.co.uk/wp-content/uploads/2026/09/destroy-website-1.webp",
+   "readingMinutes": 2
+  },
+  {
+   "id": "e1e4c40c377dfd2e",
+   "sourceId": "lwn",
+   "title": "The kernel from a PostgreSQL point of view",
+   "url": "https://lwn.net/Articles/1096827/",
+   "author": "corbet",
+   "publishedAt": 1790696550000,
+   "firstSeenAt": 1790748004002,
+   "tags": [
+    "kernel",
+    "postgresql",
+    "databases",
+    "performance",
+    "deep"
+   ],
+   "brief": "PostgreSQL performance engineer Andres Freund spoke at Kernel Recipes 2026 about his experience working with the Linux kernel, how the kernel could better support applications like PostgreSQL, and recent PostgreSQL developments.",
+   "keyPoints": [],
+   "whyItMatters": "Database and kernel developers interested in how the kernel can better serve demanding applications like PostgreSQL.",
+   "kind": "news",
+   "imageUrl": null,
+   "readingMinutes": 0
+  },
+  {
+   "id": "3e10f49c838018d9",
+   "sourceId": "linuxiac",
+   "title": "OpenSSL 4.0.3 Released With High-Severity Security Fixes",
+   "url": "https://linuxiac.com/openssl-4-0-3-released-with-high-severity-security-fixes/",
+   "author": "Bobby Borisov",
+   "publishedAt": 1790696495000,
+   "firstSeenAt": 1790748004002,
+   "tags": [
+    "openssl",
+    "security",
+    "tls",
+    "release",
+    "distro",
+    "news"
+   ],
+   "brief": "OpenSSL 4.0.3 is a security patch release for the TLS and cryptography toolkit, fixing or mitigating 14 CVEs, including one rated High severity. Issues span DTLS, QUIC, X.509 processing, elliptic-curve operations, and more. Users running OpenSSL 4.0 are advised to update as packages become available.",
+   "keyPoints": [
+    "14 CVEs fixed or mitigated, one rated High severity",
+    "Includes a use-after-free in the X.509 extension cache under concurrent use",
+    "Multiple QUIC flaws fixed, including DoS and flow-control issues"
+   ],
+   "whyItMatters": "Anyone running or shipping OpenSSL 4.0 should plan to upgrade, since the release patches high-severity and denial-of-service flaws.",
+   "kind": "release",
+   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/09/openssl403.jpg",
+   "readingMinutes": 2
+  },
+  {
+   "id": "572d3fe4a78adcad",
+   "sourceId": "lwn",
+   "title": "Security updates for Tuesday",
+   "url": "https://lwn.net/Articles/1097466/",
+   "author": "jake",
+   "publishedAt": 1790696322000,
+   "firstSeenAt": 1790748004002,
+   "tags": [
+    "security",
+    "kernel",
+    "debian",
+    "ubuntu",
+    "deep"
+   ],
+   "brief": "LWN's Tuesday roundup lists new security updates from AlmaLinux, Debian, Fedora, Mageia, Slackware, SUSE, and Ubuntu. Affected packages include kernels, curl, rsync, flatpak, dovecot, libevent, redis, and numerous Fedora Perl and Python modules.",
+   "keyPoints": [
+    "Ubuntu fixes libevent and curl across many releases, plus cloud kernel variants",
+    "Debian patches kernel, rsync, dovecot, flatpak, and wordpress",
+    "Fedora updates chromium, vlc, grub2, and many Perl/Python packages"
+   ],
+   "whyItMatters": "System administrators should review this list to find and apply patches affecting their distributions.",
+   "kind": "news",
+   "imageUrl": null,
+   "readingMinutes": 5
+  },
+  {
+   "id": "882e016442fe643c",
+   "sourceId": "9to5linux",
+   "title": "Debian-Based and systemd-Free antiX Linux 26.1 Released",
+   "url": "https://9to5linux.com/?p=33806",
+   "author": "",
+   "publishedAt": 1790695847000,
+   "firstSeenAt": 1790748004002,
+   "tags": [
+    "linux",
+    "debian",
+    "systemd",
+    "antix",
+    "distro",
+    "release"
+   ],
+   "brief": "antiX Linux 26.1 is now available for download, based on Debian 13 \"Trixie\" and built without systemd/libsystemd0 or elogind/libelogind0.",
+   "keyPoints": [],
+   "whyItMatters": "Users seeking a Debian-based distribution without systemd or elogind may find this release relevant.",
+   "kind": "release",
+   "imageUrl": null,
+   "readingMinutes": 0
+  },
+  {
+   "id": "988f0f1472a6f9d6",
+   "sourceId": "9to5linux",
+   "title": "OpenSSL 4.0.3 Security Patch Release Available",
+   "url": "https://9to5linux.com/?p=33802",
+   "author": "",
+   "publishedAt": 1790692655000,
+   "firstSeenAt": 1790748004002,
+   "tags": [
+    "openssl",
+    "security",
+    "tls",
+    "distro",
+    "release"
+   ],
+   "brief": "OpenSSL 4.0.3 is out with bug fixes and mitigations for various security vulnerabilities in the open-source TLS/SSL and crypto library. Users are advised to update.",
+   "keyPoints": [],
+   "whyItMatters": "Anyone running or shipping OpenSSL-based software should update to address the disclosed vulnerabilities.",
+   "kind": "release",
+   "imageUrl": null,
+   "readingMinutes": 0
+  },
+  {
+   "id": "7973a3a39a10540b",
+   "sourceId": "phoronix",
+   "title": "hw-monitor 0.6 Released With Per-Process GPU Usage & Memory Reporting",
+   "url": "https://www.phoronix.com/news/hw-monitor-0.6",
+   "author": "Michael Larabel",
+   "publishedAt": 1790691838000,
+   "firstSeenAt": 1790748004002,
+   "tags": [
+    "monitoring",
+    "gpu",
+    "linux",
+    "release",
+    "hardware",
+    "performance"
+   ],
+   "brief": "hw-monitor 0.6, a Linux system monitoring tool, adds per-process GPU usage and memory reporting on capable DRM drivers. The release also includes a startup-applications tab, sensors UI improvements, and bug fixes, followed by a 0.6.1 fix-up release.",
+   "keyPoints": [
+    "Per-process GPU usage and memory columns with AMDGPU, Intel i915/Xe, and Nouveau drivers",
+    "New tab listing startup applications from XDG autostart entries",
+    "Sensors UI and theme improvements; 0.6.1 adds more fixes"
+   ],
+   "whyItMatters": "Linux users tracking GPU workloads per application get a modern monitoring option with driver-level reporting.",
+   "kind": "release",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=hwmonitor_06_2",
+   "readingMinutes": 1
+  },
+  {
+   "id": "0d4cdc4575754b91",
+   "sourceId": "itsfoss",
+   "title": "Firefox 157 ships Nova redesign as default, with an opt-out",
+   "url": "https://feed.itsfoss.com/link/24361/17478367/firefox-nova-redesign",
+   "author": "Sourav Rudra",
+   "publishedAt": 1790690095000,
+   "firstSeenAt": 1790748004002,
+   "tags": [
+    "firefox",
+    "mozilla",
+    "design",
+    "linux",
+    "desktop",
+    "tutorial"
+   ],
+   "brief": "Mozilla's Nova redesign, leaked in March, is now the default look in Firefox 157, bringing rounder tabs and address bar, refreshed settings cards, and improved Tab Groups. The final design drops the leaked mockups' floating island and rounded web content container. Users can revert via about:config.",
+   "keyPoints": [
+    "Rounder tabs, address bar, and slimmer toolbar; settings panels now sit in rounded cards",
+    "Tab Groups feel more complete; compact mode returns under Window density settings",
+    "Disable Nova via browser.nova.enabled in about:config"
+   ],
+   "whyItMatters": "Firefox users on Linux will receive the redesign through routine distro updates, and those who dislike it can revert.",
+   "kind": "news",
+   "imageUrl": "https://itsfoss.com/content/images/2026/09/firefox-nova-banner.png",
+   "readingMinutes": 4
+  },
+  {
+   "id": "3d7ab9f0d9ff4d55",
+   "sourceId": "phoronix",
+   "title": "NOCL Making Progress As Mesa Gallium/OpenCL Atop NVIDIA CUDA",
+   "url": "https://www.phoronix.com/news/NOCL-OpenCL-CUDA",
+   "author": "Michael Larabel",
+   "publishedAt": 1790689985000,
+   "firstSeenAt": 1790748004002,
+   "tags": [
+    "mesa",
+    "opencl",
+    "nvidia",
+    "gpu",
+    "hardware",
+    "performance"
+   ],
+   "brief": "Karol Herbst presented at XDC 2026 on NOCL, a compute-only Mesa Gallium driver that runs OpenCL via Rusticl atop NVIDIA's proprietary CUDA driver API using PTX. The merge request is still pending, but the driver already supports more OpenCL extensions than NVIDIA's own OpenCL driver.",
+   "keyPoints": [
+    "NOCL is a compute-only Gallium driver pairing Rusticl with NVIDIA's CUDA driver API and PTX",
+    "Supports more OpenCL extensions than NVIDIA's proprietary OpenCL driver",
+    "PTX-to-NIR work will matter for features like DLSS with the NVK driver"
+   ],
+   "whyItMatters": "Developers and users on NVIDIA's proprietary Linux driver gain an open-source OpenCL option, and the PTX work feeds into NVK.",
+   "kind": "news",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=nocl",
+   "readingMinutes": 2
+  },
+  {
+   "id": "cf4367ec5b779cb5",
+   "sourceId": "9to5linux",
+   "title": "How to Upgrade Ubuntu 24.04 LTS to Ubuntu 26.04 LTS",
+   "url": "https://9to5linux.com/?p=33788",
+   "author": "",
+   "publishedAt": 1790687276000,
+   "firstSeenAt": 1790748004002,
+   "tags": [
+    "ubuntu",
+    "linux",
+    "upgrade",
+    "distro",
+    "release"
+   ],
+   "brief": "9to5Linux has published a step-by-step tutorial with screenshots showing how to upgrade Ubuntu 24.04 LTS (Noble Numbat) installations to Ubuntu 26.04 LTS (Resolute Raccoon). The upgrade path is now available to users.",
+   "keyPoints": [],
+   "whyItMatters": "Ubuntu 24.04 LTS users who want the newer 26.04 LTS release can follow this guide to perform the upgrade.",
+   "kind": "tutorial",
+   "imageUrl": null,
+   "readingMinutes": 0
+  },
+  {
+   "id": "d4b3e03a88df38b8",
+   "sourceId": "linuxiac",
+   "title": "Ubuntu 24.04 LTS Users Can Now Upgrade to Ubuntu 26.04.1 LTS",
+   "url": "https://linuxiac.com/ubuntu-24-04-lts-users-can-now-upgrade-to-ubuntu-26-04-1-lts/",
+   "author": "Bobby Borisov",
+   "publishedAt": 1790686962000,
+   "firstSeenAt": 1790748004002,
+   "tags": [
+    "ubuntu",
+    "upgrade",
+    "gnome",
+    "kernel",
+    "distro",
+    "news"
+   ],
+   "brief": "Canonical has enabled the LTS-to-LTS upgrade path from Ubuntu 24.04 to Ubuntu 26.04.1 \"Resolute Raccoon.\" Desktop users get a phased Update Manager notification; server users can run do-release-upgrade manually. The release brings kernel 7.0, GNOME 50, and a Wayland-only desktop.",
+   "keyPoints": [
+    "Upgrade via Update Manager rollout or sudo do-release-upgrade",
+    "Ships Linux kernel 7.0 and GNOME 50 with Wayland-only session",
+    "New default apps: Ptyxis, Loupe, Papers, Resources, Showtime"
+   ],
+   "whyItMatters": "Ubuntu 24.04 LTS users who skipped interim releases can now upgrade directly to the latest LTS, supported until May 2031, without a clean install.",
+   "kind": "news",
+   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/09/ubuntu2404-to-2604-upgrade.jpg",
+   "readingMinutes": 2
+  },
+  {
+   "id": "a35cbac17fc1d2b0",
+   "sourceId": "phoronix",
+   "title": "Mesa 26.3 Enables Intel's Jay Shader Compiler by Default on Xe2/Xe3",
+   "url": "https://www.phoronix.com/news/Mesa-26.3-Intel-Jay-Compiler",
+   "author": "Michael Larabel",
+   "publishedAt": 1790685090000,
+   "firstSeenAt": 1790748004002,
+   "tags": [
+    "mesa",
+    "intel",
+    "gpu",
+    "drivers",
+    "hardware",
+    "performance"
+   ],
+   "brief": "Mesa 26.3 now enables Jay, a new Intel GPU shader compiler led by Alyssa Rosenzweig, by default on Xe2 and Xe3 platforms including Battlemage, Lunar Lake, and Panther Lake. Jay is about 10% faster than the BRW compiler overall and compiles Fossil 55% faster than BRW, 66% faster than the Windows driver.",
+   "keyPoints": [
+    "Jay enabled by default for Xe2/Xe3: Battlemage, Lunar Lake, Panther Lake",
+    "About 10% faster than existing BRW compiler",
+    "Fossil compile times 55% faster than BRW, 66% faster than Windows driver"
+   ],
+   "whyItMatters": "Intel Linux graphics users get faster shader compilation and modest performance gains out of the box in Mesa 26.3.",
+   "kind": "news",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=jay_default_2",
+   "readingMinutes": 2
+  },
+  {
+   "id": "06e2b24cd8a1fa63",
+   "sourceId": "linuxiac",
+   "title": "antiX 26.1 Released as a Debian 13-Based, systemd-Free Linux",
+   "url": "https://linuxiac.com/antix-26-1-released-as-a-debian-13-based-systemd-free-linux/",
+   "author": "Bobby Borisov",
+   "publishedAt": 1790684343000,
+   "firstSeenAt": 1790748004002,
+   "tags": [
+    "debian",
+    "systemd",
+    "distros",
+    "release",
+    "distro",
+    "news"
+   ],
+   "brief": "antiX 26.1 is out, based on Debian 13 \"Trixie,\" as a bug-fix update to the lightweight, systemd-free distribution. It offers five init systems with runit as default, two kernel options, and Full and Core images for both 64-bit and 32-bit hardware.",
+   "keyPoints": [
+    "Five init choices (runit, SysVinit, dinit, s6-rc, s6-66); no systemd, elogind, Snap, or Flatpak",
+    "Kernels: customized 5.10.256, plus 6.6.139 in the 64-bit Full edition",
+    "Full (~2 GB) and Core (~660 MB) images, both with official 32-bit support"
+   ],
+   "whyItMatters": "Users who want a lightweight, systemd-free Debian-based distro, especially on older 32-bit hardware, get an updated option.",
+   "kind": "release",
+   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/09/antix261.jpg",
+   "readingMinutes": 3
+  },
+  {
+   "id": "a82eeaf0ed38b43d",
+   "sourceId": "phoronix",
+   "title": "BPF-Based MIPI DSI Display Panel Drivers Proposed for Linux",
+   "url": "https://www.phoronix.com/news/Linux-BPF-Panel-Drivers",
+   "author": "Michael Larabel",
+   "publishedAt": 1790683826000,
+   "firstSeenAt": 1790748004002,
+   "tags": [
+    "kernel",
+    "bpf",
+    "drivers",
+    "display",
+    "hardware",
+    "performance"
+   ],
+   "brief": "Maxime Ripard posted a patch series proposing BPF-based MIPI DSI panel drivers, following the HID-BPF model. The approach lets panel drivers ship separately from the kernel, addressing OEMs' need for quick panel swaps and distros' slow kernel update cycles. It works with Raspberry Pi Touch Display 2 panels.",
+   "keyPoints": [
+    "MIPI DSI panels typically need a custom, poorly documented init driver each",
+    "BPF programs ship separately from the kernel with their own lifecycle",
+    "Userspace component started by udev would load the right BPF program"
+   ],
+   "whyItMatters": "Kernel and distro developers should care because this could decouple panel support from slow kernel release cycles.",
+   "kind": "news",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2025&image=touch_display_2_5",
+   "readingMinutes": 3
+  },
+  {
+   "id": "1703e9cf91d8859a",
+   "sourceId": "phoronix",
+   "title": "D7VK 2.3 Released, Project Declared Mature and Enters Maintenance Mode",
+   "url": "https://www.phoronix.com/news/D7VK-2.3-Released",
+   "author": "Michael Larabel",
+   "publishedAt": 1790682210000,
+   "firstSeenAt": 1790748004002,
+   "tags": [
+    "vulkan",
+    "gaming",
+    "wine",
+    "direct3d",
+    "hardware",
+    "performance"
+   ],
+   "brief": "D7VK, a Vulkan-based implementation of Direct3D 7/6/5/3 for Linux and Wine/Steam Play, released version 2.3 with a possibly final performance optimization around shadow surface memory placement. The developer now considers the project mature and is moving it into maintenance mode with no major new features planned.",
+   "keyPoints": [
+    "Imperial Age performance rose from 80 to 137 FPS, up from 62 FPS on D7VK 2.0",
+    "Re-based against DXVK 3.1.1 with improved Vulkan side checks and fixes",
+    "Project enters maintenance mode; no major new features expected"
+   ],
+   "whyItMatters": "Linux gamers running older Direct3D titles via Wine or Steam Play get a faster, now stable translation layer.",
+   "kind": "release",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=d7vk_23",
+   "readingMinutes": 2
+  },
+  {
+   "id": "c92fd6c44bb7e2a8",
+   "sourceId": "phoronix",
+   "title": "Large Folios Able To Deliver Big Performance Gains For FUSE With Linux 7.4",
+   "url": "https://www.phoronix.com/news/FUSE-Large-Folios",
+   "author": "Michael Larabel",
+   "publishedAt": 1790677823000,
+   "firstSeenAt": 1790748004002,
+   "tags": [
+    "kernel",
+    "fuse",
+    "filesystems",
+    "performance",
+    "hardware"
+   ],
+   "brief": "A patch enabling large folios for FUSE has landed in the FUSE for-next branch and is expected to be merged for Linux 7.4. Large folios group contiguous physical pages into one folio for lower overhead, and will be enabled when not under memory pressure.",
+   "keyPoints": [
+    "Large folios patch queued in FUSE for-next branch, expected in Linux 7.4",
+    "Large folios group contiguous pages into one folio for lower overhead",
+    "Benchmarks show strong gains on TMPFS and XFS/NVMe cold I/O with passthrough_hp"
+   ],
+   "whyItMatters": "Users of FUSE-based filesystems in user-space should care, as Linux 7.4 may bring significant I/O performance improvements.",
+   "kind": "news",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=fuse_large_folio",
+   "readingMinutes": 2
+  },
+  {
+   "id": "0d1469d8f53f4979",
+   "sourceId": "phoronix",
+   "title": "Igalia Improving The Firefox Experience For Valve's Steam Deck",
+   "url": "https://www.phoronix.com/news/Steam-Deck-Better-Firefox",
+   "author": "Michael Larabel",
+   "publishedAt": 1790676926000,
+   "firstSeenAt": 1790748004002,
+   "tags": [
+    "wayland",
+    "steam-deck",
+    "firefox",
+    "valve",
+    "hardware",
+    "performance"
+   ],
+   "brief": "Igalia, working with Valve, presented at XDC 2026 on improving Firefox on the Steam Deck by moving it to native Wayland under the Gamescope compositor, replacing the limited X11 path. Fixes cover gamepad input, fullscreen, touch scrolling, notifications, and HDR video.",
+   "keyPoints": [
+    "Firefox on Steam Deck is transitioning to native Wayland via Gamescope's wl_compositor protocol",
+    "Fixes target gamepad input, fullscreen handling, touch-scroll stutter, notifications, and HDR video",
+    "Ongoing work: upstreaming Gamescope patches, replacing udev with inputfd, session management"
+   ],
+   "whyItMatters": "Steam Deck owners and Wayland/Gamescope developers should care, as this upstreams fixes for one of Linux gaming's most visible browser experiences.",
+   "kind": "news",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=firefox_steam_deck",
+   "readingMinutes": 2
+  },
+  {
+   "id": "dc5f6ed6a3091ecb",
+   "sourceId": "phoronix",
+   "title": "AMD Ryzen Zen 6 CPU Power Values Being Further Tuned For Linux",
+   "url": "https://www.phoronix.com/news/AMD-Zen-6-More-Client-Tuning",
+   "author": "Michael Larabel",
+   "publishedAt": 1790675997000,
+   "firstSeenAt": 1790748004002,
+   "tags": [
+    "amd",
+    "kernel",
+    "hardware",
+    "zen-6",
+    "performance"
+   ],
+   "brief": "AMD engineers posted a new patch refining power and performance characteristics for upcoming Zen 6 Ryzen client CPUs in the AMD P-State Linux driver. It adjusts Energy Performance Preference (EPP) values for the performance and new low-power core types, continuing pre-launch tuning that suggests Linux 7.4 as an…",
+   "keyPoints": [
+    "Patch tunes EPP values for Zen 6 performance and low-power cores",
+    "Performance core power EPP rises from 64 to 115; low-power values shift 51 to 64 and 115 to 64",
+    "Linux 7.4 eyed as initial sweet spot for next-gen Ryzen support"
+   ],
+   "whyItMatters": "Linux users planning to run future Zen 6 Ryzen systems should track these kernel patches for proper power/performance behavior.",
+   "kind": "news",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=zen6_client",
+   "readingMinutes": 2
+  },
+  {
+   "id": "78d6920e1c0b0f8f",
+   "sourceId": "linuxiac",
+   "title": "KDE Plasma 6.8 Beta 2 Polishes UI Ahead of October 14 Release",
+   "url": "https://linuxiac.com/kde-plasma-6-8-adds-more-polish-while-plasma-6-9-starts-taking-shape/",
+   "author": "Bobby Borisov",
+   "publishedAt": 1790670254000,
+   "firstSeenAt": 1790748004002,
+   "tags": [
+    "kde",
+    "plasma",
+    "desktop",
+    "release",
+    "distro",
+    "news"
+   ],
+   "brief": "KDE's weekly update details the second Plasma 6.8 beta with UI refinements and bug fixes before the October 14 final release. Early Plasma 6.9 changes are also landing, and a KDE documentary premieres on the project's 30th anniversary the same day.",
+   "keyPoints": [
+    "Plasma 6.8 improves tray click feedback, lock screen layout switching, and BLE pairing.",
+    "Fixes include clipboard crash, KRunner journal flooding, and wetter.com nighttime temperatures.",
+    "Plasma 6.9, due February 2027, adds flexible currency conversion in KRunner."
+   ],
+   "whyItMatters": "Plasma users and KDE followers get a preview of near-term desktop fixes and the project's anniversary plans.",
+   "kind": "news",
+   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/09/kde68-ui-polish.jpg",
+   "readingMinutes": 2
+  },
+  {
+   "id": "10602f09d0bea74e",
+   "sourceId": "linuxiac",
+   "title": "GoZen 0.14 Video Editor Enters Beta, Built With Godot and FFmpeg",
+   "url": "https://linuxiac.com/gozen-0-14-video-editor-enters-beta-built-with-godot-and-ffmpeg/",
+   "author": "Bobby Borisov",
+   "publishedAt": 1790668842000,
+   "firstSeenAt": 1790748004002,
+   "tags": [
+    "video-editing",
+    "open-source",
+    "godot",
+    "linux",
+    "distro",
+    "news"
+   ],
+   "brief": "GoZen, a minimalist open-source video editor built with Godot and FFmpeg, has released version 0.14, its first beta. It adds effects like Glow, Shake, and Glitch plus many reliability fixes, with future betas focusing on polish ahead of 1.0.",
+   "keyPoints": [
+    "First beta of minimalist Godot-based video editor, primarily for Linux",
+    "New effects: Glow, Scroll, Shear, Shake, Glitch; unified audio/video timeline",
+    "Fixes crashes, timeline and waveform bugs; Steam release planned at 1.0"
+   ],
+   "whyItMatters": "Linux content creators seeking a lightweight, open-source video editor gain a new option now stable enough for beta testing.",
+   "kind": "release",
+   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/09/gozen014.jpg",
+   "readingMinutes": 2
+  },
+  {
    "id": "91312a4f191ff491",
    "sourceId": "omgubuntu",
    "title": "gThumb 4.0 released with GTK4/libadwaita rewrite",
