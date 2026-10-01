@@ -2,6 +2,803 @@
  "version": 1,
  "articles": [
   {
+   "id": "f15ac78ee17a5418",
+   "sourceId": "phoronix",
+   "title": "OpenMandriva ROME 26.09 Released With More AI Apps, Snaps & PGO + LTO Optimizations",
+   "url": "https://www.phoronix.com/news/OpenMandriva-ROME-26.09",
+   "author": "Michael Larabel",
+   "publishedAt": 1790818585000,
+   "firstSeenAt": 1790834403788,
+   "tags": [
+    "openmandriva",
+    "linux",
+    "release",
+    "compilers",
+    "hardware",
+    "performance"
+   ],
+   "brief": "OpenMandriva released ROME 26.09, its first update since 24.12 after delays from technical issues and a reported sabotage attempt. It switches to Clang 23, adds PGO and near-universal LTO builds, Snap package support, more AI apps, and ships the open-source NVIDIA kernel module.",
+   "keyPoints": [
+    "Clang 23 becomes default compiler; GCC 16.2 and RPM 6.1 included",
+    "Packages gain %pgo section support and near-universal LTO builds",
+    "Adds Snap support alongside Flatpak, AppImage, and RPM"
+   ],
+   "whyItMatters": "OpenMandriva users and distro watchers get a long-delayed release with notable compiler optimization work and broader packaging support.",
+   "kind": "release",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2024&image=openmandriva_rome_2412",
+   "readingMinutes": 2
+  },
+  {
+   "id": "5e889b5ecf7b3ec1",
+   "sourceId": "lwn",
+   "title": "LWN.net Weekly Edition for October 1, 2026",
+   "url": "https://lwn.net/Articles/1096293/",
+   "author": "jzb",
+   "publishedAt": 1790814607000,
+   "firstSeenAt": 1790834403788,
+   "tags": [
+    "kernel",
+    "rust",
+    "kde",
+    "security",
+    "deep"
+   ],
+   "brief": "LWN's weekly roundup covers PostgreSQL and the kernel, Rust on the GPU, KDE Plasma, C memory safety, and KDE funding, plus briefs on file-notification attacks, F-Droid 2.0, Firefox 157.0, and Git 2.56.0.",
+   "keyPoints": [],
+   "whyItMatters": "Linux and open-source developers who want a weekly digest of kernel, tooling, and desktop news.",
+   "kind": "news",
+   "imageUrl": null,
+   "readingMinutes": 0
+  },
+  {
+   "id": "a0930660b2933503",
+   "sourceId": "phoronix",
+   "title": "Valve's foveated rendering work for Mesa Turnip driver on the Steam Frame VR headset",
+   "url": "https://www.phoronix.com/news/Steam-Frame-Turnip-Foveated",
+   "author": "Michael Larabel",
+   "publishedAt": 1790813928000,
+   "firstSeenAt": 1790834403788,
+   "tags": [
+    "mesa",
+    "vulkan",
+    "vr",
+    "valve",
+    "hardware",
+    "performance"
+   ],
+   "brief": "Valve developer Connor Abbott presented foveated rendering support for the Mesa Turnip Vulkan driver at XDC 2026, built for the Steam Frame VR headset. The work uses VK_EXT_fragment_density_map to render high detail at the gaze point while saving power and boosting performance elsewhere.",
+   "keyPoints": [
+    "Foveated rendering renders detail at gaze point, lower quality in peripheral vision",
+    "Implemented via Vulkan VK_EXT_fragment_density_map extension in Mesa Turnip",
+    "Future plans: Adreno 800 series support, sub-sampled images in SteamVR, engine integrations"
+   ],
+   "whyItMatters": "VR and Mesa developers should care, since this brings open-source foveated rendering to Qualcomm Adreno GPUs powering Valve's next headset.",
+   "kind": "news",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=foveated",
+   "readingMinutes": 2
+  },
+  {
+   "id": "3be00bc4951b9f3b",
+   "sourceId": "omgubuntu",
+   "title": "Ubuntu 26.10 adds early support for Snapdragon X2 laptops",
+   "url": "https://www.omgubuntu.co.uk/2026/09/ubuntu-2610-snapdragon-x2",
+   "author": "Joey Sneddon",
+   "publishedAt": 1790800260000,
+   "firstSeenAt": 1790834403788,
+   "tags": [
+    "ubuntu",
+    "snapdragon",
+    "arm",
+    "linux",
+    "desktop"
+   ],
+   "brief": "Canonical released a test build of Ubuntu 26.10 with early support for laptops powered by Qualcomm's Snapdragon X2 chips. The experimental Concept image, based on the 26.10 Beta, supports devices like the Lenovo Yoga Slim 7 and ASUS Zenbook A14/A16, with final release expected 15 October.",
+   "keyPoints": [
+    "Concept image supports Lenovo Yoga Slim 7, HP EliteBook X G2q, ASUS Zenbook A14/A16",
+    "Snapdragon X1 support expanded to more Lenovo and HONOR devices",
+    "Built on Linux 7.3; official certified X2 image planned with Qualcomm"
+   ],
+   "whyItMatters": "Owners of Snapdragon X2 laptops can now test Ubuntu on their hardware and file bugs ahead of official certified support.",
+   "kind": "news",
+   "imageUrl": "https://www.omgubuntu.co.uk/wp-content/uploads/2026/09/snapdragon-ubuntu.webp",
+   "readingMinutes": 2
+  },
+  {
+   "id": "40130a681c9eeb97",
+   "sourceId": "phoronix",
+   "title": "Phoronix Recaps Q3 2026: AI Debates, CachyOS Benchmarks, Framework Laptop 13 Pro",
+   "url": "https://www.phoronix.com/news/Q3-2026-Highlights",
+   "author": "Michael Larabel",
+   "publishedAt": 1790794663000,
+   "firstSeenAt": 1790834403788,
+   "tags": [
+    "linux",
+    "ai",
+    "benchmarks",
+    "hardware",
+    "performance"
+   ],
+   "brief": "Phoronix looks back at its third quarter: 852 news articles and 57 featured reviews. Popular coverage centered on AI policies in open-source projects, kernel activity, and benchmarks of CachyOS, the AMD Ryzen AI Halo, and the Framework Laptop 13 Pro.",
+   "keyPoints": [
+    "Top news: Debian AI inference portal, CERN moving to Debian, kernel AI patch policy debates",
+    "Popular reviews: CachyOS vs Windows 11 vs Ubuntu, Framework Laptop 13 Pro, Ryzen AI Halo",
+    "Other hits: last MPEG-4 patent expiring, FreeBSD 16 dropping GPL code, Btrfs gains on Linux 7.3"
+   ],
+   "whyItMatters": "Linux enthusiasts can use this index to catch up on the quarter's most-read hardware benchmarks and open-source news.",
+   "kind": "other",
+   "imageUrl": "https://www.phoronix.net/image.php?id=framework-laptop-13-pro&image=framework_13pro_1",
+   "readingMinutes": 15
+  },
+  {
+   "id": "5c739a5e32117a33",
+   "sourceId": "phoronix",
+   "title": "EDG C/C++ Front-End Open-Sourced Under Apache 2.0",
+   "url": "https://www.phoronix.com/news/EDG-CPP-Open-Sourced",
+   "author": "Michael Larabel",
+   "publishedAt": 1790790812000,
+   "firstSeenAt": 1790834403788,
+   "tags": [
+    "c++",
+    "compilers",
+    "open-source",
+    "licensing",
+    "hardware",
+    "performance"
+   ],
+   "brief": "Edison Design Group has open-sourced its commercial EDG C/C++ front-end after more than 30 years, releasing it under the Apache 2.0 license. The C++ Alliance will serve as its non-profit home, with community contributions accepted; code is on GitHub and details at edgcpp.org.",
+   "keyPoints": [
+    "EDG front-end powers Intel C++ classic, NVIDIA NVCC, and Visual Studio IntelliSense",
+    "Released under Apache 2.0, hosted on GitHub",
+    "The C++ Alliance becomes its non-profit home"
+   ],
+   "whyItMatters": "C++ toolchain developers gain access to a widely used, standards-rich front-end they can now study and contribute to.",
+   "kind": "news",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=edgcpp",
+   "readingMinutes": 1
+  },
+  {
+   "id": "ab209483a3bc1b42",
+   "sourceId": "omgubuntu",
+   "title": "Blanc: a new FOSS browser with a floating-island UI instead of a tab strip",
+   "url": "https://www.omgubuntu.co.uk/2026/09/blanc-web-browser-new",
+   "author": "Joey Sneddon",
+   "publishedAt": 1790783735000,
+   "firstSeenAt": 1790834403788,
+   "tags": [
+    "browser",
+    "electron",
+    "open-source",
+    "linux",
+    "ubuntu",
+    "desktop"
+   ],
+   "brief": "Blanc is a new open-source, Electron-based browser that replaces the traditional tab bar with an expandable floating pill for navigation, tabs, commands and search. It claims a quarter of the RAM of Chrome or Vivaldi, bundles ad blocking and encrypted sync, skips AI features and extensions, and gates one feature…",
+   "keyPoints": [
+    "Floating 'island' pill handles tabs, address bar, commands; opened via click or super+L",
+    "Electron/Chromium based; developer claims a quarter of Chrome/Vivaldi RAM usage",
+    "Built-in ad blocking, profiles, optional E2E sync; no extensions or mobile versions"
+   ],
+   "whyItMatters": "Linux users curious about alternative browser UIs or lightweight Chromium options may want to try it, though the lack of extension support is a real trade-off.",
+   "kind": "release",
+   "imageUrl": "https://www.omgubuntu.co.uk/wp-content/uploads/2026/09/blanc-web-browser.webp",
+   "readingMinutes": 3
+  },
+  {
+   "id": "65cfab17a8492251",
+   "sourceId": "linuxiac",
+   "title": "OpenTofu 1.13 IaC Tool Brings Windows ARM64 Support, Smarter Planning",
+   "url": "https://linuxiac.com/opentofu-1-13-iac-tool-brings-windows-arm64-support-smarter-planning/",
+   "author": "Bobby Borisov",
+   "publishedAt": 1790782524000,
+   "firstSeenAt": 1790834403788,
+   "tags": [
+    "opentofu",
+    "terraform",
+    "iac",
+    "devops",
+    "distro",
+    "news"
+   ],
+   "brief": "OpenTofu 1.13 is out with official Windows ARM64 builds, new functions that reduce \"known after apply\" noise in plans, and experimental built-in linting and Symbol Libraries. It also drops WinRM support in provisioners and is the last series with 32-bit builds.",
+   "keyPoints": [
+    "Native Windows ARM64 builds, though providers must publish compatible versions",
+    "New convert/assume functions make plan output clearer before apply",
+    "Experimental linting framework and Symbol Libraries for shared values and functions"
+   ],
+   "whyItMatters": "OpenTofu users get clearer plans and Windows ARM support, but should note the WinRM removal and platform requirement changes.",
+   "kind": "release",
+   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/09/opentofu113.jpg",
+   "readingMinutes": 2
+  },
+  {
+   "id": "34a89d720dc58f34",
+   "sourceId": "lwn",
+   "title": "The year in Plasma and what's ahead",
+   "url": "https://lwn.net/Articles/1096518/",
+   "author": "jzb",
+   "publishedAt": 1790782302000,
+   "firstSeenAt": 1790834403788,
+   "tags": [
+    "kde",
+    "plasma",
+    "wayland",
+    "akademy",
+    "kernel",
+    "deep"
+   ],
+   "brief": "At Akademy 2026 in Graz, KDE contributor Marco Martin reviewed Plasma's major features from the past year and previewed what's next. The biggest upcoming change is dropping X11 support, alongside plans to improve remote-desktop support.",
+   "keyPoints": [],
+   "whyItMatters": "KDE Plasma users and developers should care, since the planned removal of X11 support will affect how they run the desktop.",
+   "kind": "news",
+   "imageUrl": null,
+   "readingMinutes": 0
+  },
+  {
+   "id": "186deca96528ff5d",
+   "sourceId": "itsfoss",
+   "title": "Local AI Weekly #4: The Fine Print of Running AI Locally",
+   "url": "https://feed.itsfoss.com/link/24361/17481812/local-ai-weekly-4",
+   "author": "Abhishek Prakash",
+   "publishedAt": 1790781906000,
+   "firstSeenAt": 1790834403788,
+   "tags": [
+    "ai",
+    "local-ai",
+    "linux",
+    "open-source",
+    "desktop",
+    "tutorial"
+   ],
+   "brief": "The fourth Local AI Weekly warns that many \"local AI\" tools aren't truly local and suggests checking where inference happens, required accounts, and licensing. It rounds up tools and news: Klara for KDE voice control, OpenMuse, a Linux Foundation MCP certification, OpenDecider's small routing models, and NVIDIA PAIR…",
+   "keyPoints": [
+    "Test tools by inference location, required accounts, and license before calling them local",
+    "OpenMuse self-hosts but still needs a CopilotKit key; no documented Ollama path",
+    "OpenDecider shows small distilled models (400M–4B) can triage tickets cheaply"
+   ],
+   "whyItMatters": "Linux users running or evaluating local AI tools get practical criteria for spotting misleading \"local\" claims plus setup and backup tips.",
+   "kind": "news",
+   "imageUrl": "https://itsfoss.com/content/images/2026/09/local-ai-weekly-4.png",
+   "readingMinutes": 4
+  },
+  {
+   "id": "2741163045bb7c05",
+   "sourceId": "phoronix",
+   "title": "Framework Desktop with AMD Ryzen AI Max+ PRO 495 starts at $6799",
+   "url": "https://www.phoronix.com/news/Framework-Desktop-Gorgon-Halo",
+   "author": "Michael Larabel",
+   "publishedAt": 1790781358000,
+   "firstSeenAt": 1790834403788,
+   "tags": [
+    "hardware",
+    "amd",
+    "linux",
+    "ai",
+    "performance"
+   ],
+   "brief": "Framework has opened pre-orders for its updated desktop powered by AMD's Ryzen AI Max+ PRO 495 \"Gorgon Halo\" SoC with 192GB of LPDDR5x-8533 memory. The DIY edition starts at $6799, while a pre-built model with 2TB storage costs $7449. First shipments are expected in November.",
+   "keyPoints": [
+    "16 Zen 5 cores up to 5.2GHz, Radeon 8065S graphics, 55W default TDP",
+    "192GB LPDDR5x-8533 memory; only Gorgon Halo model offered",
+    "Fedora 44 KDE Plasma Edition is the default OS"
+   ],
+   "whyItMatters": "Linux users wanting a high-memory desktop for local AI/LLM workloads now have a new Framework option, though at a steep price.",
+   "kind": "news",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=framework_desktop_gorgon",
+   "readingMinutes": 2
+  },
+  {
+   "id": "38595c1f02841631",
+   "sourceId": "phoronix",
+   "title": "Phoronix benchmarks OpenJDK 25-27 against GraalVM, Temurin, and Semeru",
+   "url": "https://www.phoronix.com/review/openjdk-graalvm-temurin-semeru",
+   "author": "Michael Larabel",
+   "publishedAt": 1790779349000,
+   "firstSeenAt": 1790834403788,
+   "tags": [
+    "java",
+    "benchmarks",
+    "openjdk",
+    "performance",
+    "hardware"
+   ],
+   "brief": "Phoronix benchmarked OpenJDK 25, 26, and 27 against GraalVM Community 25i4, Eclipse Temurin 25.0.4.1, and IBM Semeru 27.0 on a Threadripper 9980X running Fedora 44. All tests used stock settings to measure out-of-the-box performance.",
+   "keyPoints": [
+    "Compares OpenJDK 25/26/27 with GraalVM, Temurin, and Semeru JVMs",
+    "Tested on AMD Threadripper 9980X with Fedora Workstation 44",
+    "Stock settings only; results are reference, not tuned"
+   ],
+   "whyItMatters": "Developers choosing a JVM can see how alternative implementations compare to standard OpenJDK on current hardware.",
+   "kind": "deep-dive",
+   "imageUrl": "https://www.phoronix.net/image.php?id=openjdk-graalvm-temurin-semeru&image=openjdk_java_comparisons",
+   "readingMinutes": 1
+  },
+  {
+   "id": "92ffae2172145f49",
+   "sourceId": "lwn",
+   "title": "Reports from the 2026 Python Language Summit",
+   "url": "https://lwn.net/Articles/1097761/",
+   "author": "corbet",
+   "publishedAt": 1790778756000,
+   "firstSeenAt": 1790834403788,
+   "tags": [
+    "python",
+    "kernel",
+    "deep"
+   ],
+   "brief": "LWN has published a series of reports from the 2026 Python Language Summit, held July 14 in Kraków, Poland. Covered topics include the memory buffer protocol, garbage collection, free-threaded Python, and \"Spicycrab\".",
+   "keyPoints": [],
+   "whyItMatters": "Python developers can catch up on core language design discussions from the summit.",
+   "kind": "news",
+   "imageUrl": null,
+   "readingMinutes": 0
+  },
+  {
+   "id": "fa2fa6d911709d98",
+   "sourceId": "lwn",
+   "title": "Comparing Chromium development at Google and Igalia",
+   "url": "https://lwn.net/Articles/1094721/",
+   "author": "jake",
+   "publishedAt": 1790777779000,
+   "firstSeenAt": 1790834403788,
+   "tags": [
+    "chromium",
+    "igalia",
+    "google",
+    "conferences",
+    "kernel",
+    "deep"
+   ],
+   "brief": "At FOSSY 2026, Chromium developer Sharon Yang compared her experiences working on the browser at Google and at Igalia, contrasting how each company operates and how that shapes work on the code base. The talk was positive about both employers rather than a complaint.",
+   "keyPoints": [],
+   "whyItMatters": "Developers curious how corporate culture affects large open-source projects like Chromium may find this comparison useful.",
+   "kind": "news",
+   "imageUrl": null,
+   "readingMinutes": 0
+  },
+  {
+   "id": "7c70c7ee9b2a7caf",
+   "sourceId": "lwn",
+   "title": "Linux Foundation Technical Advisory Board 2026 election approaches",
+   "url": "https://lwn.net/Articles/1097758/",
+   "author": "corbet",
+   "publishedAt": 1790776520000,
+   "firstSeenAt": 1790834403788,
+   "tags": [
+    "kernel",
+    "linux-foundation",
+    "community",
+    "deep"
+   ],
+   "brief": "The Linux Foundation Technical Advisory Board election will be held electronically after the Linux Plumbers Conference, with a nomination deadline of October 7. Five seats are open, including the one vacated by the passing of Dan Williams.",
+   "keyPoints": [],
+   "whyItMatters": "Kernel developers interested in shaping the community's technical direction should consider nominating themselves before October 7.",
+   "kind": "news",
+   "imageUrl": null,
+   "readingMinutes": 0
+  },
+  {
+   "id": "e303044e32a78c92",
+   "sourceId": "linuxiac",
+   "title": "Thunderbird 157 Fixes 100% CPU Usage, OpenPGP, and IMAP Issues",
+   "url": "https://linuxiac.com/mozilla-thunderbird-157-fixes-100-cpu-usage-openpgp-and-imap-issues/",
+   "author": "Bobby Borisov",
+   "publishedAt": 1790776246000,
+   "firstSeenAt": 1790834403788,
+   "tags": [
+    "thunderbird",
+    "email",
+    "openpgp",
+    "release",
+    "distro",
+    "news"
+   ],
+   "brief": "Thunderbird 157 ships with fixes for a status bar bug that could drive CPU usage to 100%, wrong senders in the message list, and sent mail failing to save over IMAP. It also improves OpenPGP key handling, OAuth2 and NTLM authentication, calendars, and adds two enterprise policies.",
+   "keyPoints": [
+    "Status bar bug that could push CPU to 100% is fixed",
+    "OpenPGP fixes cover rejected RSA keys, revoked-key discovery, and remote content",
+    "IMAP setup hang, disappearing moved messages, and optional port config"
+   ],
+   "whyItMatters": "Thunderbird users hit by high CPU, OpenPGP, or IMAP sync bugs should update, and admins get new policy controls.",
+   "kind": "release",
+   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/09/thunderbird157.jpg",
+   "readingMinutes": 2
+  },
+  {
+   "id": "1ac1be2e2b330817",
+   "sourceId": "linuxiac",
+   "title": "Qt 6.12 LTS Released With QML Hot Reload, GPU-Accelerated CanvasPainter",
+   "url": "https://linuxiac.com/qt-6-12-lts-released-with-qml-hot-reload-gpu-accelerated-canvaspainter/",
+   "author": "Bobby Borisov",
+   "publishedAt": 1790776200000,
+   "firstSeenAt": 1790834403788,
+   "tags": [
+    "qt",
+    "qml",
+    "release",
+    "cross-platform",
+    "distro",
+    "news"
+   ],
+   "brief": "Qt 6.12 arrives as a Long-Term Support release with five years of maintenance. Headline features include QML Hot Reload, the production-ready GPU-accelerated CanvasPainter API, a new Canvas2D element in Technology Preview, and HarmonyOS support.",
+   "keyPoints": [
+    "QML Hot Reload lets developers see UI changes live via Qt Creator or qmlpreview",
+    "CanvasPainter API now production-ready; Canvas2D QML element in Technology Preview",
+    "Adds HarmonyOS as LTS platform; commercial edition prepared for EU Cyber Resilience Act"
+   ],
+   "whyItMatters": "Qt developers gain faster QML iteration, modern 2D rendering options, and long-term stability for new platforms.",
+   "kind": "release",
+   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/09/qt612.jpg",
+   "readingMinutes": 2
+  },
+  {
+   "id": "4ad2ccb4b9fd6b04",
+   "sourceId": "lwn",
+   "title": "Security updates for Wednesday",
+   "url": "https://lwn.net/Articles/1097753/",
+   "author": "jzb",
+   "publishedAt": 1790774442000,
+   "firstSeenAt": 1790834403788,
+   "tags": [
+    "security",
+    "debian",
+    "red-hat",
+    "ubuntu",
+    "kernel",
+    "deep"
+   ],
+   "brief": "LWN's daily roundup of distribution security advisories for September 30, 2026, listing updates from AlmaLinux, Debian, Fedora, Red Hat, Slackware, SUSE, and Ubuntu. Notable items include openssl updates in Debian and Ubuntu, SUSE kernel fixes, and a large Fedora 45 GNOME package batch.",
+   "keyPoints": [
+    "Debian and Ubuntu patched openssl; SUSE shipped multiple kernel updates.",
+    "Red Hat and AlmaLinux updated container tools, grafana, git-lfs, and PostgreSQL.",
+    "Fedora 45 received a broad GNOME-related security update batch."
+   ],
+   "whyItMatters": "System administrators should check whether any listed packages affect systems they maintain and apply updates promptly.",
+   "kind": "news",
+   "imageUrl": null,
+   "readingMinutes": 11
+  },
+  {
+   "id": "dbe217d8ffea007a",
+   "sourceId": "phoronix",
+   "title": "Qt 6.12 LTS Released With QML Hot Reloading, Experimental StyleKit",
+   "url": "https://www.phoronix.com/news/Qt-6.12-LTS-Released",
+   "author": "Michael Larabel",
+   "publishedAt": 1790774400000,
+   "firstSeenAt": 1790834403788,
+   "tags": [
+    "qt",
+    "qml",
+    "release",
+    "gui",
+    "hardware",
+    "performance"
+   ],
+   "brief": "Qt 6.12 is out as a Long Term Support release of the Qt6 toolkit. It promotes Qt Canvas Painter to a fully supported module, adds QML hot reloading and HarmonyOS support, and introduces StyleKit in Qt Labs as a QML-based styling API for both Widgets and Qt Quick.",
+   "keyPoints": [
+    "Qt Canvas Painter leaves tech preview; works with Qt Graphs for 2D rendering",
+    "QML hot reloading; StyleKit enters Qt Labs for unified Widgets and Quick styling",
+    "HarmonyOS support; Qt Quick 3D XR gains mono view for AR glasses"
+   ],
+   "whyItMatters": "Qt and QML developers get an LTS baseline with faster UI iteration via hot reloading and a preview of unified styling.",
+   "kind": "release",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=qt_stylekit",
+   "readingMinutes": 2
+  },
+  {
+   "id": "1f102230789ffbd2",
+   "sourceId": "phoronix",
+   "title": "Rusticl Had a Great Year: OpenCL 3.1 Support and More Drivers in Mesa",
+   "url": "https://www.phoronix.com/news/Rusticl-2026",
+   "author": "Michael Larabel",
+   "publishedAt": 1790773400000,
+   "firstSeenAt": 1790834403788,
+   "tags": [
+    "mesa",
+    "opencl",
+    "rust",
+    "gpu",
+    "hardware",
+    "performance"
+   ],
+   "brief": "At XDC 2026, Rusticl lead developer Karol Herbst recapped progress on Mesa's Rust-based OpenCL driver. Panfrost and Freedreno now enable Rusticl by default, OpenCL 3.1 is supported — even conformantly on Apple M1/M2 via Asahi Linux — and performance work continues.",
+   "keyPoints": [
+    "Panfrost passed OpenCL conformance; Panfrost and Freedreno enable Rusticl by default",
+    "OpenCL 3.1 plus extensions like cl_ext_float_atomics and cl_khr_subgroup*",
+    "Work on NOCL for NVIDIA driver stack and Qualcomm QAIC Gallium3D driver"
+   ],
+   "whyItMatters": "Developers and users relying on open-source GPU compute on ARM, Qualcomm, Apple, or NVIDIA hardware benefit from maturing Rust OpenCL support.",
+   "kind": "news",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=karol_rusticl_2026",
+   "readingMinutes": 2
+  },
+  {
+   "id": "eed09c30be703323",
+   "sourceId": "9to5linux",
+   "title": "Mozilla Thunderbird 157 Email Client Released with New Enterprise Policies",
+   "url": "https://9to5linux.com/mozilla-thunderbird-157-email-client-released-with-new-enterprise-policies",
+   "author": "Marcus Nestor",
+   "publishedAt": 1790772426000,
+   "firstSeenAt": 1790834403788,
+   "tags": [
+    "thunderbird",
+    "email",
+    "mozilla",
+    "release",
+    "distro"
+   ],
+   "brief": "Mozilla Thunderbird 157 is now available for download, adding new enterprise policies and an optional manual port field for IMAP/POP configuration, among other changes.",
+   "keyPoints": [],
+   "whyItMatters": "Thunderbird users and IT administrators may care about the new enterprise policy options.",
+   "kind": "release",
+   "imageUrl": null,
+   "readingMinutes": 0
+  },
+  {
+   "id": "50c3156a8a318568",
+   "sourceId": "linuxiac",
+   "title": "Audacity 4.0.1 Fixes Project Corruption and Linux AppImage Issues",
+   "url": "https://linuxiac.com/audacity-4-0-1-audio-editor-fixes-project-corruption-linux-appimage-issues/",
+   "author": "Bobby Borisov",
+   "publishedAt": 1790772289000,
+   "firstSeenAt": 1790834403788,
+   "tags": [
+    "audacity",
+    "audio",
+    "linux",
+    "release",
+    "distro",
+    "news"
+   ],
+   "brief": "Audacity 4.0.1, the first maintenance update in the 4.0 series, fixes a bug that could corrupt projects after failed saves and resolves Linux AppImage startup failures. It also improves Export Multiple, restores missing keyboard shortcuts, and adds accessibility improvements for keyboard navigation and screen readers.",
+   "keyPoints": [
+    "Fixes project corruption after failed saves and clip errors converting old .aup3 projects",
+    "AppImage now installs and starts correctly on Linux; uppercase extensions like .WAV recognized",
+    "Improved Export Multiple saves each track or labeled region to its own file"
+   ],
+   "whyItMatters": "Audacity users, especially on Linux or with existing projects, should update to avoid corruption and conversion problems.",
+   "kind": "release",
+   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/09/audacity401.jpg",
+   "readingMinutes": 2
+  },
+  {
+   "id": "268be1889c0d8815",
+   "sourceId": "9to5linux",
+   "title": "Audacity 4.0.1 Audio Editor Restores Keyboard Shortcuts from Audacity 3",
+   "url": "https://9to5linux.com/audacity-4-0-1-audio-editor-restores-keyboard-shortcuts-from-audacity-3",
+   "author": "Marcus Nestor",
+   "publishedAt": 1790771723000,
+   "firstSeenAt": 1790834403788,
+   "tags": [
+    "audacity",
+    "audio",
+    "open-source",
+    "distro",
+    "release"
+   ],
+   "brief": "Audacity 4.0.1 is now available, restoring the keyboard shortcuts from Audacity 3 and adding the ability to export tracks or labelled regions to their own files, along with other changes.",
+   "keyPoints": [],
+   "whyItMatters": "Audacity users who disliked the shortcut changes in 4.0 get their familiar workflow back.",
+   "kind": "release",
+   "imageUrl": null,
+   "readingMinutes": 0
+  },
+  {
+   "id": "6a7c79c812b91887",
+   "sourceId": "phoronix",
+   "title": "Linux 7.4 to support the NPU on AMD Ryzen AI Max 400 \"Gorgon Halo\"",
+   "url": "https://www.phoronix.com/news/AMD-Gorgon-Halo-NPU-LInux",
+   "author": "Michael Larabel",
+   "publishedAt": 1790770814000,
+   "firstSeenAt": 1790834403788,
+   "tags": [
+    "kernel",
+    "amd",
+    "npu",
+    "drivers",
+    "hardware",
+    "performance"
+   ],
+   "brief": "A two-line patch adds the \"GRGH\" AIE2 Revision 9 NPU from AMD's Ryzen AI Max 400 \"Gorgon Halo\" chips to the AMDXDNA driver. It has landed in drm-misc-next and should reach Linux 7.4, with possible backports to stable kernels.",
+   "keyPoints": [
+    "Patch adds GRGH revision to AMDXDNA device table; no other driver changes needed",
+    "NPU is effectively the same hardware as Strix Point, Strix Halo, and Gorgon Point",
+    "Already in drm-misc-next, expected in the Linux 7.4 merge window"
+   ],
+   "whyItMatters": "Linux users of upcoming Ryzen AI Max 400 systems get working NPU support for AI and LLM workloads near launch.",
+   "kind": "news",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=gorgon_halo_npu",
+   "readingMinutes": 3
+  },
+  {
+   "id": "8b6d30bfa948f824",
+   "sourceId": "itsfoss",
+   "title": "Microsoft WSL Containers Reach General Availability",
+   "url": "https://feed.itsfoss.com/link/24361/17480952/wslc-general-availability",
+   "author": "Sourav Rudra",
+   "publishedAt": 1790770797000,
+   "firstSeenAt": 1790834403788,
+   "tags": [
+    "wsl",
+    "containers",
+    "microsoft",
+    "windows",
+    "desktop",
+    "tutorial"
+   ],
+   "brief": "Microsoft moved WSL containers (WSLC) from public preview to general availability, shipping a wslc.exe CLI and a Windows API for running Linux containers natively on Windows. It adds a new networking model, per-user isolation via wslcsession.exe, plus Intune and Defender for Endpoint management controls.",
+   "keyPoints": [
+    "wslc.exe CLI (aliased container.exe) manages Linux containers on Windows",
+    "Consommé networking routes container traffic through a user-mode Windows process",
+    "Intune gains WSLC enable/disable and registry allow-list settings; Defender plugin covers containers"
+   ],
+   "whyItMatters": "Windows developers and enterprise admins get native Linux container workflows without third-party tools, with built-in management and security controls.",
+   "kind": "release",
+   "imageUrl": "https://itsfoss.com/content/images/2026/09/wslc-general-availability-banner.png",
+   "readingMinutes": 3
+  },
+  {
+   "id": "a0716f3c83876d66",
+   "sourceId": "linuxiac",
+   "title": "Tcl/Tk 9.1 Released With Screen Reader Support and RTL Text",
+   "url": "https://linuxiac.com/tcl-tk-9-1-released-with-screen-reader-support-and-rtl-text/",
+   "author": "Bobby Borisov",
+   "publishedAt": 1790764701000,
+   "firstSeenAt": 1790834403788,
+   "tags": [
+    "tcl",
+    "tk",
+    "release",
+    "accessibility",
+    "distro",
+    "news"
+   ],
+   "brief": "Tcl/Tk 9.1 is out, adding screen reader support and initial bidirectional/right-to-left text handling to the Tk toolkit. Tcl gains new unicode, timer, and lfilter commands, plus a new ttk::toggleswitch widget on the Tk side.",
+   "keyPoints": [
+    "Tk adds screen reader support and bidirectional/RTL text for languages like Arabic and Hebrew",
+    "New ttk::toggleswitch widget, rotated label text, and extended treeview and notebook states",
+    "Tcl gains unicode, timer, and lfilter commands plus new C APIs"
+   ],
+   "whyItMatters": "Developers maintaining Tcl/Tk applications get long-requested accessibility and internationalization features worth upgrading for.",
+   "kind": "release",
+   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/09/tcl91.jpg",
+   "readingMinutes": 2
+  },
+  {
+   "id": "698bc59f9de26edb",
+   "sourceId": "phoronix",
+   "title": "RFC: Boot-Time ARM64 Kernel Stack Size to Cut Memory Use",
+   "url": "https://www.phoronix.com/news/ARM64-Linux-Stack-Size-Boot",
+   "author": "Michael Larabel",
+   "publishedAt": 1790764020000,
+   "firstSeenAt": 1790834403788,
+   "tags": [
+    "kernel",
+    "arm64",
+    "memory",
+    "android",
+    "hardware",
+    "performance"
+   ],
+   "brief": "A Google engineer posted a 15-patch RFC to the Linux kernel mailing list allowing ARM64 kernel stack size to be set via a kernel_stack_pages= boot option, avoiding rebuilds. The goal is reducing memory waste, since the default 16kB stack can allocate ~100MB despite most threads using far less.",
+   "keyPoints": [
+    "kernel_stack_pages= boot option sets ARM64 kernel stack size without rebuilding",
+    "Default 16kB stacks can waste ~100MB; 12kB size also proposed",
+    "Per-task stack sizes floated as a future idea; ARM64-only for now"
+   ],
+   "whyItMatters": "Kernel developers and Android/embedded maintainers should care, as this could cut kernel memory consumption significantly on thread-heavy systems.",
+   "kind": "news",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=ram_phone",
+   "readingMinutes": 3
+  },
+  {
+   "id": "183b50958c16bfae",
+   "sourceId": "phoronix",
+   "title": "Intel Media Driver 2026Q3 Adds Crescent Island Video Support",
+   "url": "https://www.phoronix.com/news/Intel-Media-Crescent-Island",
+   "author": "Michael Larabel",
+   "publishedAt": 1790763066000,
+   "firstSeenAt": 1790834403788,
+   "tags": [
+    "intel",
+    "graphics",
+    "drivers",
+    "video",
+    "hardware",
+    "performance"
+   ],
+   "brief": "Intel released its Media Driver 2026Q3 stack with support for Crescent Island, the upcoming Xe3LP-based enterprise AI accelerator with LPDDR5X memory. Video decode, encode, and processing should be roughly on par with Panther Lake and Nova Lake.",
+   "keyPoints": [
+    "Crescent Island gains video decoding, encoding, and processing support",
+    "Other fixes: AV1 decode slice-count validation, VVC slice out-of-bounds handling",
+    "VPL GPU Runtime 2026Q3 adds Crescent Island, Wildcat Lake, HEVC quality tweak"
+   ],
+   "whyItMatters": "Linux users tracking Intel's upcoming AI accelerator and graphics platforms can see video acceleration support landing ahead of hardware launch.",
+   "kind": "release",
+   "imageUrl": "https://www.phoronix.net/image.php?id=intel-crescent-island&image=crescent_island_1",
+   "readingMinutes": 2
+  },
+  {
+   "id": "2e63439d4303385b",
+   "sourceId": "phoronix",
+   "title": "Mesa Developers To Work Toward Eliminating TGSI IR",
+   "url": "https://www.phoronix.com/news/Mesa-Toward-Eliminating-TGSI",
+   "author": "Michael Larabel",
+   "publishedAt": 1790762114000,
+   "firstSeenAt": 1790834403788,
+   "tags": [
+    "mesa",
+    "graphics",
+    "drivers",
+    "nir",
+    "hardware",
+    "performance"
+   ],
+   "brief": "At XDC 2026, Mesa developer Erik Faye-Lund presented a plan to eliminate the aging TGSI intermediate representation from Mesa in favor of NIR. Remaining TGSI usage includes VMware's SVGA driver, VirGL's protocol, and legacy Intel i915g and Nouveau NV30 shader compilers. The transition is expected to be lengthy.",
+   "keyPoints": [
+    "Goal: remove TGSI from the Gallium3D interface entirely",
+    "Remaining users: VMware SVGA, VirGL protocol, i915g, Nouveau NV30",
+    "Remaining shaders will be converted to NIR or the code removed"
+   ],
+   "whyItMatters": "Mesa and driver developers should care, as sunsetting TGSI simplifies the Gallium3D interface but requires changes to legacy drivers.",
+   "kind": "news",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=mesa_kill_tgsi",
+   "readingMinutes": 2
+  },
+  {
+   "id": "c318b00c6b805576",
+   "sourceId": "linuxiac",
+   "title": "Gitea 28.0 Drops 1.x Versioning, Adds Audit Logs and Bot Accounts",
+   "url": "https://linuxiac.com/gitea-28-0-drops-1-x-versioning-adds-audit-logs-and-bot-accounts/",
+   "author": "Bobby Borisov",
+   "publishedAt": 1790759955000,
+   "firstSeenAt": 1790834403788,
+   "tags": [
+    "git",
+    "self-hosting",
+    "devops",
+    "release",
+    "distro",
+    "news"
+   ],
+   "brief": "Gitea 28.0 abandons the 1.x version prefix, so the former 1.28 is now simply Gitea 28. The release adds audit logging, bot accounts, admin user impersonation, HTTPS deploy tokens, and many Gitea Actions improvements.",
+   "keyPoints": [
+    "Versioning drops the 1.x prefix; 1.28 becomes Gitea 28",
+    "New audit logging, bot accounts, and admin user impersonation",
+    "Breaking changes: Git 2.25 required, self-registration off, WebSocket notifications"
+   ],
+   "whyItMatters": "Self-hosting administrators must review several breaking changes before upgrading, and gain long-requested audit and automation features.",
+   "kind": "release",
+   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/09/gitea280.jpg",
+   "readingMinutes": 3
+  },
+  {
+   "id": "2e3d32fc7099e94f",
+   "sourceId": "linuxiac",
+   "title": "Tails 7.14 Anonymous OS Updates Tor Browser, Tor Client, and Linux Kernel",
+   "url": "https://linuxiac.com/tails-7-14-anonymous-os-updates-tor-browser-tor-client-and-linux-kernel/",
+   "author": "Bobby Borisov",
+   "publishedAt": 1790758486000,
+   "firstSeenAt": 1790834403788,
+   "tags": [
+    "tails",
+    "tor",
+    "privacy",
+    "linux",
+    "distro",
+    "news"
+   ],
+   "brief": "Tails 7.14 is out with Tor Browser 15.0.24, Tor client 0.4.9.13, and Linux kernel 6.12.111. It also fixes the default keyboard input method for Korean-language sessions. Users on Tails 7.0 or later can upgrade automatically while keeping Persistent Storage.",
+   "keyPoints": [
+    "Tor Browser updated to 15.0.24, Tor client to 0.4.9.13",
+    "Linux kernel bumped to 6.12.111",
+    "Automatic upgrade preserves Persistent Storage; reinstalling erases it"
+   ],
+   "whyItMatters": "Tails users relying on anonymity should update for current Tor components and kernel fixes.",
+   "kind": "release",
+   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/09/tails714.jpg",
+   "readingMinutes": 1
+  },
+  {
    "id": "c2b2203bbd3b4cdc",
    "sourceId": "itsfoss",
    "title": "France's DINUM runs NixOS-based Sécurix workstations, echoing Dutch DAWO move",
@@ -176,6 +973,29 @@
    "brief": "Archinstall 4.5, the text-mode installer for Arch Linux, is out with AArch64 support for GRUB and Limine EFI installations, plus AArch64 root partition type GUID support and other changes.",
    "keyPoints": [],
    "whyItMatters": "Arch Linux users installing on ARM64 hardware gain proper bootloader and partition support.",
+   "kind": "release",
+   "imageUrl": null,
+   "readingMinutes": 0
+  },
+  {
+   "id": "6c08836ec18ab373",
+   "sourceId": "9to5linux",
+   "title": "Archinstall 4.5 Adds AArch64 Support for GRUB and Limine",
+   "url": "https://9to5linux.com/archinstall-4-5-arch-linux-installer-adds-aarch64-support-for-grub-and-limine",
+   "author": "Marcus Nestor",
+   "publishedAt": 1790709946000,
+   "firstSeenAt": 1790834403788,
+   "tags": [
+    "arch-linux",
+    "installer",
+    "arm64",
+    "bootloader",
+    "distro",
+    "release"
+   ],
+   "brief": "Archinstall 4.5, the text-mode installer for Arch Linux, adds AArch64 support for GRUB and Limine EFI installations, plus AArch64 root partition type GUID support.",
+   "keyPoints": [],
+   "whyItMatters": "Arch Linux users installing on ARM64 hardware gain official bootloader support in the guided installer.",
    "kind": "release",
    "imageUrl": null,
    "readingMinutes": 0
@@ -515,6 +1335,29 @@
    "readingMinutes": 0
   },
   {
+   "id": "5f8d7272ff4969e3",
+   "sourceId": "9to5linux",
+   "title": "antiX Linux 26.1 released, based on Debian 13 and free of systemd",
+   "url": "https://9to5linux.com/debian-based-and-systemd-free-antix-linux-26-1-released-with-updated-kernels",
+   "author": "Marcus Nestor",
+   "publishedAt": 1790695847000,
+   "firstSeenAt": 1790834403788,
+   "tags": [
+    "debian",
+    "antix",
+    "systemd",
+    "linux",
+    "distro",
+    "release"
+   ],
+   "brief": "antiX Linux 26.1 is available for download, based on Debian 13 \"Trixie\" and shipping without systemd/libsystemd0 or elogind/libelogind0. The release also includes updated kernels.",
+   "keyPoints": [],
+   "whyItMatters": "Users seeking a Debian-based distribution without systemd can now upgrade to a release tracking Debian 13.",
+   "kind": "release",
+   "imageUrl": null,
+   "readingMinutes": 0
+  },
+  {
    "id": "988f0f1472a6f9d6",
    "sourceId": "9to5linux",
    "title": "OpenSSL 4.0.3 Security Patch Release Available",
@@ -532,6 +1375,27 @@
    "brief": "OpenSSL 4.0.3 is out with bug fixes and mitigations for various security vulnerabilities in the open-source TLS/SSL and crypto library. Users are advised to update.",
    "keyPoints": [],
    "whyItMatters": "Anyone running or shipping OpenSSL-based software should update to address the disclosed vulnerabilities.",
+   "kind": "release",
+   "imageUrl": null,
+   "readingMinutes": 0
+  },
+  {
+   "id": "bf5279d1f189bd93",
+   "sourceId": "9to5linux",
+   "title": "OpenSSL 4.0.3 Security Patch Release Available",
+   "url": "https://9to5linux.com/openssl-4-0-3-is-out-as-another-security-patch-release-update-now",
+   "author": "Marcus Nestor",
+   "publishedAt": 1790692655000,
+   "firstSeenAt": 1790834403788,
+   "tags": [
+    "openssl",
+    "security",
+    "release",
+    "distro"
+   ],
+   "brief": "OpenSSL 4.0.3 is now available for download, bringing bug fixes and mitigations for various security vulnerabilities in the open-source TLS/SSL and crypto library.",
+   "keyPoints": [],
+   "whyItMatters": "Anyone running OpenSSL-based services should update to address the security vulnerabilities.",
    "kind": "release",
    "imageUrl": null,
    "readingMinutes": 0
@@ -635,6 +1499,28 @@
    "brief": "9to5Linux has published a step-by-step tutorial with screenshots showing how to upgrade Ubuntu 24.04 LTS (Noble Numbat) installations to Ubuntu 26.04 LTS (Resolute Raccoon). The upgrade path is now available to users.",
    "keyPoints": [],
    "whyItMatters": "Ubuntu 24.04 LTS users who want the newer 26.04 LTS release can follow this guide to perform the upgrade.",
+   "kind": "tutorial",
+   "imageUrl": null,
+   "readingMinutes": 0
+  },
+  {
+   "id": "98becc8c5fdd11cd",
+   "sourceId": "9to5linux",
+   "title": "You Can Now Upgrade Ubuntu 24.04 LTS to Ubuntu 26.04 LTS, Here's How",
+   "url": "https://9to5linux.com/you-can-now-upgrade-ubuntu-24-04-lts-to-ubuntu-26-04-lts-heres-how",
+   "author": "Marcus Nestor",
+   "publishedAt": 1790687276000,
+   "firstSeenAt": 1790834403788,
+   "tags": [
+    "ubuntu",
+    "linux",
+    "upgrade",
+    "distro",
+    "release"
+   ],
+   "brief": "9to5Linux has published a step-by-step tutorial, with screenshots, showing how to upgrade Ubuntu 24.04 LTS (Noble Numbat) installations to Ubuntu 26.04 LTS (Resolute Raccoon).",
+   "keyPoints": [],
+   "whyItMatters": "Ubuntu 24.04 LTS users considering a move to the 26.04 LTS release can follow this guide.",
    "kind": "tutorial",
    "imageUrl": null,
    "readingMinutes": 0
@@ -1007,6 +1893,27 @@
    "readingMinutes": 0
   },
   {
+   "id": "b2b8565104e5b6c0",
+   "sourceId": "9to5linux",
+   "title": "Emmabuntüs Debian Edition 1.03 Adds Accessibility Features, Debian 13.7 Base",
+   "url": "https://9to5linux.com/emmabuntus-debian-edition-1-03-adds-new-accessibility-features-debian-13-7-base",
+   "author": "Marcus Nestor",
+   "publishedAt": 1790630348000,
+   "firstSeenAt": 1790834403788,
+   "tags": [
+    "debian",
+    "distro",
+    "accessibility",
+    "release"
+   ],
+   "brief": "Emmabuntüs Debian Edition 6 1.03 is now available, rebased on Debian GNU/Linux 13.7 \"Trixie\" and introducing new accessibility features. Only a teaser was available, so further details are unknown.",
+   "keyPoints": [],
+   "whyItMatters": "Users of this refurbishing-focused distro may want the updated Debian base and accessibility improvements.",
+   "kind": "release",
+   "imageUrl": null,
+   "readingMinutes": 0
+  },
+  {
    "id": "053025abaaef8e05",
    "sourceId": "9to5linux",
    "title": "Mozilla Firefox 158 Enters Public Beta Testing with Better PDF Handling on Linux",
@@ -1025,6 +1932,28 @@
    "keyPoints": [],
    "whyItMatters": "Linux users who test Firefox betas may want to try the improved PDF handling early.",
    "kind": "news",
+   "imageUrl": null,
+   "readingMinutes": 0
+  },
+  {
+   "id": "ec88e3ed5b40a2e5",
+   "sourceId": "9to5linux",
+   "title": "Firefox 158 Enters Public Beta with Better PDF Handling on Linux",
+   "url": "https://9to5linux.com/mozilla-firefox-158-enters-public-beta-testing-with-better-pdf-handling",
+   "author": "Marcus Nestor",
+   "publishedAt": 1790627894000,
+   "firstSeenAt": 1790834403788,
+   "tags": [
+    "firefox",
+    "browser",
+    "beta",
+    "distro",
+    "release"
+   ],
+   "brief": "Mozilla has opened public beta testing for Firefox 158. The teaser mentions improved PDF handling, New Tab improvements, and other changes, with only partial details available.",
+   "keyPoints": [],
+   "whyItMatters": "Firefox users and testers on Linux can preview upcoming browser improvements ahead of the stable release.",
+   "kind": "release",
    "imageUrl": null,
    "readingMinutes": 0
   },
@@ -1073,6 +2002,27 @@
    "brief": "qBittorrent 5.2.4 is now available for download, shipping various bug fixes and improvements focused mainly on the web-based user interface.",
    "keyPoints": [],
    "whyItMatters": "qBittorrent users, especially those using the WebUI for remote management, may want to update for the fixes.",
+   "kind": "release",
+   "imageUrl": null,
+   "readingMinutes": 0
+  },
+  {
+   "id": "e13042e627f102f2",
+   "sourceId": "9to5linux",
+   "title": "qBittorrent 5.2.4 Released with WebUI Improvements",
+   "url": "https://9to5linux.com/qbittorrent-5-2-4-open-source-bittorrent-client-released-with-webui-improvements",
+   "author": "Marcus Nestor",
+   "publishedAt": 1790624060000,
+   "firstSeenAt": 1790834403788,
+   "tags": [
+    "qbittorrent",
+    "bittorrent",
+    "release",
+    "distro"
+   ],
+   "brief": "qBittorrent 5.2.4, an open-source BitTorrent client, is now available for download. The update brings bug fixes and improvements, mainly to the web-based user interface.",
+   "keyPoints": [],
+   "whyItMatters": "",
    "kind": "release",
    "imageUrl": null,
    "readingMinutes": 0
@@ -1146,6 +2096,27 @@
    "brief": "Git 2.56 is now available for download with new features, options, and performance improvements, including options for cleaning up branches and resolving conflicts.",
    "keyPoints": [],
    "whyItMatters": "",
+   "kind": "release",
+   "imageUrl": null,
+   "readingMinutes": 0
+  },
+  {
+   "id": "58c95f361421bba1",
+   "sourceId": "9to5linux",
+   "title": "Git 2.56 Adds New Options for Cleaning Up Branches and Resolving Conflicts",
+   "url": "https://9to5linux.com/git-2-56-adds-new-options-for-cleaning-up-branches-and-resolving-conflicts",
+   "author": "Marcus Nestor",
+   "publishedAt": 1790621565000,
+   "firstSeenAt": 1790834403788,
+   "tags": [
+    "git",
+    "release",
+    "open-source",
+    "distro"
+   ],
+   "brief": "Git 2.56 is now available for download with new features, new options for branch cleanup and conflict resolution, and performance improvements.",
+   "keyPoints": [],
+   "whyItMatters": "Git users interested in new branch-management and conflict-resolution options will want to see the release details.",
    "kind": "release",
    "imageUrl": null,
    "readingMinutes": 0
