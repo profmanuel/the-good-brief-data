@@ -2,6 +2,940 @@
  "version": 1,
  "articles": [
   {
+   "id": "caaf0aa10eba8b04",
+   "sourceId": "phoronix",
+   "title": "Siemens Shuts Down Open-Source OpenRadioss Project, Deletes GitHub Repo",
+   "url": "https://www.phoronix.com/news/Siemens-Ends-OpenRadioss",
+   "author": "Michael Larabel",
+   "publishedAt": 1790902831000,
+   "firstSeenAt": 1790920804534,
+   "tags": [
+    "open-source",
+    "cae",
+    "siemens",
+    "simulation",
+    "hardware",
+    "performance"
+   ],
+   "brief": "Siemens, which acquired Altair Engineering last year, has closed OpenRadioss, the AGPL-licensed open-source crash and blast simulation solver Altair released in 2022. The project website is retired and the GitHub repository returns 404, with Siemens citing a consolidation of efforts around its commercial Simcenter…",
+   "keyPoints": [
+    "OpenRadioss website retired; visitors redirected to Siemens Simcenter Radioss offerings",
+    "GitHub repository fully removed (404), not merely archived",
+    "Siemens says it is consolidating efforts for production-grade simulation support"
+   ],
+   "whyItMatters": "Open-source CAE users and benchmarkers lose a rare AGPL-licensed industrial finite element solver, with the code no longer publicly available.",
+   "kind": "news",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=openradioss_404",
+   "readingMinutes": 4
+  },
+  {
+   "id": "4f105b96e7f3997b",
+   "sourceId": "phoronix",
+   "title": "Steam on Linux Falls to 3.05% in September Survey",
+   "url": "https://www.phoronix.com/news/Steam-Survey-September-2025",
+   "author": "Michael Larabel",
+   "publishedAt": 1790900336000,
+   "firstSeenAt": 1790920804534,
+   "tags": [
+    "gaming",
+    "steam",
+    "linux",
+    "marketshare",
+    "hardware",
+    "performance"
+   ],
+   "brief": "The September Steam Survey shows Linux marketshare dropping 0.85% to 3.05%, down from a 5.33% peak in March, while Windows sits at 95%. The decline coincides with a 7.42% spike in Simplified Chinese users, which some attribute to a sampling issue. Among Linux gamers, CachyOS jumped to 18.12%, overtaking SteamOS Holo.",
+   "keyPoints": [
+    "Linux Steam share fell 0.85% to 3.05%; macOS at 1.92%, Windows at 95%",
+    "Simplified Chinese users spiked 7.42% to 31.39%, possibly skewing results",
+    "CachyOS hit 18.12% of Linux gamers, ahead of SteamOS Holo's 17.37%"
+   ],
+   "whyItMatters": "Linux gamers and distro watchers can track platform adoption trends and CachyOS's rapid rise among Steam users.",
+   "kind": "news",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=steam_september_1",
+   "readingMinutes": 3
+  },
+  {
+   "id": "82e0a34727b5b0e4",
+   "sourceId": "linuxiac",
+   "title": "Mozilla Thunderbird Is Finally Coming to iPhone and iPad",
+   "url": "https://linuxiac.com/mozilla-thunderbird-is-finally-coming-to-iphone-and-ipad/",
+   "author": "Bobby Borisov",
+   "publishedAt": 1790896451000,
+   "firstSeenAt": 1790920804534,
+   "tags": [
+    "thunderbird",
+    "email",
+    "ios",
+    "mozilla",
+    "distro",
+    "news"
+   ],
+   "brief": "Thunderbird's team has shown the first preview of a native iOS email app, built from scratch rather than from K-9 Mail like the Android version. There is no release date; a community testing build is hoped for in the coming months.",
+   "keyPoints": [
+    "Native iOS app built from the ground up, not based on K-9 Mail",
+    "Focus on easy account setup, multi-account support, and battery-friendly background sync",
+    "No release date; community test version expected in the next few months"
+   ],
+   "whyItMatters": "Thunderbird users on iPhone and iPad can expect an official client, completing its cross-platform reach.",
+   "kind": "news",
+   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/10/thunderbird-for-ios.jpg",
+   "readingMinutes": 2
+  },
+  {
+   "id": "abf98077cf1fcf39",
+   "sourceId": "omgubuntu",
+   "title": "Linux App Release Roundup: Shotcut, Audacity, PeaZip and More (September 2026)",
+   "url": "https://www.omgubuntu.co.uk/2026/10/linux-app-release-roundup-september-2026",
+   "author": "Joey Sneddon",
+   "publishedAt": 1790895195000,
+   "firstSeenAt": 1790920804534,
+   "tags": [
+    "apps",
+    "release",
+    "open-source",
+    "ubuntu",
+    "desktop"
+   ],
+   "brief": "A roundup of September 2026 Linux app releases not covered elsewhere, led by Shotcut 26.9's new adjustment clips and logo, plus Audacity 4.0.1 bug fixes, PeaZip 11.3, Plank Reloaded, Tributary, Fooyin and OpenShot 4.0.1.",
+   "keyPoints": [
+    "Shotcut 26.9 adds adjustment clips, audio ducking and FFmpeg 9.0",
+    "Audacity 4.0.1 restores shortcuts, multi-track export and fixes AppImage on non-systemd distros",
+    "PeaZip 11.3 requires a master password for stored archive passwords; Fooyin 0.13 adds CD playback and ripping"
+   ],
+   "whyItMatters": "Linux desktop users tracking updates to common open-source audio, video and utility apps will find the month's notable changes here.",
+   "kind": "release",
+   "imageUrl": "https://www.omgubuntu.co.uk/wp-content/uploads/2026/10/lrr-sept-26.webp",
+   "readingMinutes": 7
+  },
+  {
+   "id": "e609b2a2b00ef13e",
+   "sourceId": "linuxiac",
+   "title": "New Spectre-v2 BTR Attack Can Leak Linux Kernel Memory",
+   "url": "https://linuxiac.com/new-spectre-v2-btr-attack-can-leak-linux-kernel-memory/",
+   "author": "Bobby Borisov",
+   "publishedAt": 1790894095000,
+   "firstSeenAt": 1790920804534,
+   "tags": [
+    "security",
+    "kernel",
+    "spectre",
+    "intel",
+    "distro",
+    "news"
+   ],
+   "brief": "Researchers from VUSec and Scuola Superiore Sant'Anna disclosed Branch Target Reuse (BTR), a Spectre-v2 attack abusing stale CPU branch predictions to leak data on Linux. They built cBPF exploits reading arbitrary Intel memory at ~8 bytes/second, extracting a root password hash; Linux kernel mitigations already exist.",
+   "keyPoints": [
+    "BTR reuses stale branch predictions after JIT code memory is recycled",
+    "Linux cBPF exploit reads arbitrary Intel memory, ~8 bytes/second",
+    "Disabling unprivileged eBPF doesn't help; cBPF is used by seccomp, Docker, Chrome"
+   ],
+   "whyItMatters": "Linux administrators and security teams should know local unprivileged attackers can leak kernel memory, and that patched kernels mitigate it.",
+   "kind": "news",
+   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/10/linux-btr-attack.jpg",
+   "readingMinutes": 2
+  },
+  {
+   "id": "a3206e7e56cae4d9",
+   "sourceId": "linuxiac",
+   "title": "Rust 1.99 Released With C Variadic Functions, New Stable APIs",
+   "url": "https://linuxiac.com/rust-1-99-released-with-c-variadic-functions-and-new-stable-apis/",
+   "author": "Bobby Borisov",
+   "publishedAt": 1790891692000,
+   "firstSeenAt": 1790920804534,
+   "tags": [
+    "rust",
+    "release",
+    "programming",
+    "ffi",
+    "distro",
+    "news"
+   ],
+   "brief": "Rust 1.99 is out, letting developers define C-compatible variadic functions in Rust rather than only calling them. It also stabilizes raw-pointer APIs for size and alignment of dynamically sized data, plus new standard library methods for vectors, strings, filesystem timestamps, and iterators.",
+   "keyPoints": [
+    "Rust can now define C-compatible variadic functions, not just call ones like printf",
+    "New stable APIs expose size and alignment of raw pointers, including to unsized data",
+    "Docs now advise against leaking with Box::leak and later freeing the same allocation"
+   ],
+   "whyItMatters": "Rust developers doing C FFI or systems work get variadic function definitions and safer pointer tooling; rustup users upgrade with `rustup update stable`.",
+   "kind": "release",
+   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/10/rust199.jpg",
+   "readingMinutes": 2
+  },
+  {
+   "id": "713b59113a7e5cd5",
+   "sourceId": "linuxiac",
+   "title": "Nitrux 7.0 launches with new in-house workspace environment and Linux 7.2",
+   "url": "https://linuxiac.com/nitrux-7-0-launches-with-new-workspace-environment-linux-kernel-7-2/",
+   "author": "Bobby Borisov",
+   "publishedAt": 1790890392000,
+   "firstSeenAt": 1790920804534,
+   "tags": [
+    "nitrux",
+    "linux",
+    "hyprland",
+    "wayland",
+    "distro",
+    "news"
+   ],
+   "brief": "Nitrux 7.0 replaces third-party Hyprland session components with its own MauiKit-based tools, managed by the OpenRC-based nwsm session manager. It ships Linux kernel 7.2.6 with CachyOS patches, KDE Frameworks 6.26, and MauiKit 4.0.4. Secure Boot may not work due to unsigned GRUB and kernel binaries.",
+   "keyPoints": [
+    "New Nitrux-built components: Valenz bar, Marina dock, Desklock, QMLogout, Toma screenshots",
+    "Workspace Settings and AppFinder provide new unified configuration and software frontends",
+    "Kernel 7.2.6 with CachyOS patches, NVIDIA Open Kernel Module 615.71.09"
+   ],
+   "whyItMatters": "Nitrux users and systemd-free distro followers should know about the rebuilt desktop stack and the Secure Boot boot caveat before upgrading.",
+   "kind": "release",
+   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/10/nitrux7.jpg",
+   "readingMinutes": 3
+  },
+  {
+   "id": "f3bece1b9988912a",
+   "sourceId": "phoronix",
+   "title": "Fedora 45 Beta benchmarks show little change over Fedora 44",
+   "url": "https://www.phoronix.com/review/fedora-45-beta-benchmarks",
+   "author": "Michael Larabel",
+   "publishedAt": 1790888278000,
+   "firstSeenAt": 1790920804534,
+   "tags": [
+    "fedora",
+    "benchmarks",
+    "linux",
+    "performance",
+    "hardware"
+   ],
+   "brief": "Phoronix benchmarked Fedora Workstation 44 against the Fedora 45 Beta on a Threadripper 9980X system and found little to report: both releases run Linux 7.2, Mesa 26.2, and GCC 16.2.1 because Fedora pushes major kernel and graphics updates as stable updates.",
+   "keyPoints": [
+    "Both releases use Linux 7.2, Mesa 26.2, and GCC 16.2.1, so performance changes are minimal",
+    "Fedora 45 Beta moves to GNOME 51 and Python 3.15-rc2",
+    "Tests ran on a System76 Thelio Major with a 64-core Threadripper 9980X"
+   ],
+   "whyItMatters": "Fedora users wondering whether upgrading to 45 Beta brings performance gains can expect essentially none.",
+   "kind": "deep-dive",
+   "imageUrl": "https://www.phoronix.net/image.php?id=fedora-45-beta-benchmarks&image=fedora45_beta_benchmark_1",
+   "readingMinutes": 2
+  },
+  {
+   "id": "34b42a700215ecd4",
+   "sourceId": "linuxiac",
+   "title": "Arch Linux October 2026 ISO Ships with Linux Kernel 7.2.7, Systemd 262",
+   "url": "https://linuxiac.com/arch-linux-october-2026-iso-is-out-with-linux-kernel-7-2-7-systemd-262/",
+   "author": "Bobby Borisov",
+   "publishedAt": 1790886595000,
+   "firstSeenAt": 1790920804534,
+   "tags": [
+    "arch-linux",
+    "release",
+    "kernel",
+    "systemd",
+    "distro",
+    "news"
+   ],
+   "brief": "Arch Linux released its October 2026 installation ISO with kernel 7.2.7, systemd 262, and September's package updates including Mesa 26.2.3, Plasma 6.7.5, and Archinstall 4.5. Existing users only need a regular pacman update, not the new image.",
+   "keyPoints": [
+    "ISO ships kernel 7.2.7, systemd 262, GRUB 2.16, OpenSSL 3.6.5",
+    "Desktops updated: KDE Plasma 6.7.5, GNOME Shell 50.5, COSMIC 1.9",
+    "Archinstall 4.5 and Archiso 91 included; existing users just run pacman -Syu"
+   ],
+   "whyItMatters": "Users planning a fresh Arch install get the latest kernel, firmware, and installer fixes on the new medium.",
+   "kind": "release",
+   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/10/arch-october-2026-iso.jpg",
+   "readingMinutes": 3
+  },
+  {
+   "id": "6907970499498954",
+   "sourceId": "phoronix",
+   "title": "Mesa removes the rarely used Direct3D 10 user-mode driver",
+   "url": "https://www.phoronix.com/news/Mesa-Drops-Direct3D-10-UMD",
+   "author": "Michael Larabel",
+   "publishedAt": 1790884808000,
+   "firstSeenAt": 1790920804534,
+   "tags": [
+    "mesa",
+    "graphics",
+    "direct3d",
+    "virtualization",
+    "hardware",
+    "performance"
+   ],
+   "brief": "Mesa has dropped d3d10umd, the Direct3D 10 Gallium3D state tracker added in 2021 for Windows WDDM virtualization use. The 12.7k-line driver was poorly maintained and still emitted the legacy TGSI IR instead of NIR, which Mesa is eliminating. The removal lands in the Mesa 26.3 release due this quarter.",
+   "keyPoints": [
+    "d3d10umd was a WDDM UMD driver using LLVMpipe, built by VMware for Windows VMs",
+    "Removed for emitting legacy TGSI instead of NIR, with no plans to port it",
+    "Removal takes effect in Mesa 26.3; no objections from the original author"
+   ],
+   "whyItMatters": "Mesa contributors and anyone relying on VirGL or VMware graphics on Windows guests should know this driver path is gone.",
+   "kind": "news",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=remove_d3d10umd",
+   "readingMinutes": 2
+  },
+  {
+   "id": "65f59fc80ee4c8eb",
+   "sourceId": "linuxiac",
+   "title": "Ubuntu 26.10 Beta Lands With Linux Kernel 7.3-rc and GNOME 51",
+   "url": "https://linuxiac.com/ubuntu-26-10-beta-lands-with-linux-kernel-7-3-rc-and-gnome-51/",
+   "author": "Bobby Borisov",
+   "publishedAt": 1790883676000,
+   "firstSeenAt": 1790920804534,
+   "tags": [
+    "ubuntu",
+    "kernel",
+    "gnome",
+    "release",
+    "distro",
+    "news"
+   ],
+   "brief": "Canonical released the Ubuntu 26.10 \"Stonking Stingray\" Beta ahead of the October 15 final release. It ships a Linux 7.3 release candidate, GNOME 51, Rust-based uutils coreutils replacing GNU tools, and a switch from dbus-daemon to dbus-broker.",
+   "keyPoints": [
+    "GNOME 51 adds smoother Mutter frame scheduling and persistent monitor brightness",
+    "Rust uutils now fully provide core tools like cp, mv, and rm",
+    "Toolchain refresh: GCC 16, Python 3.14, Rust 1.97, Mesa 26.2, GStreamer 1.30"
+   ],
+   "whyItMatters": "Ubuntu users and testers should care, as the Beta previews major changes like the full move to Rust coreutils before the October 15 release.",
+   "kind": "release",
+   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/10/ubuntu2610-beta.jpg",
+   "readingMinutes": 3
+  },
+  {
+   "id": "f3ece1709e9b97e3",
+   "sourceId": "phoronix",
+   "title": "Ubuntu 26.10 Beta Released With Linux 7.3 Kernel, GNOME 51 Desktop",
+   "url": "https://www.phoronix.com/news/Ubuntu-26.10-Beta-Released",
+   "author": "Michael Larabel",
+   "publishedAt": 1790882765000,
+   "firstSeenAt": 1790920804534,
+   "tags": [
+    "ubuntu",
+    "kernel",
+    "gnome",
+    "release",
+    "hardware",
+    "performance"
+   ],
+   "brief": "Ubuntu 26.10 \"Stonking Stingray\" is available in beta ahead of the official release expected 15 October. It ships a Linux 7.3 release candidate kernel, GNOME 51 desktop components, and Mesa 26.2 graphics drivers, and completes the Rust Coreutils transition.",
+   "keyPoints": [
+    "Stable release expected 15 October, two weeks after the beta",
+    "Linux 7.3 RC kernel, GNOME 51 components, Mesa 26.2 drivers",
+    "Rust Coreutils transition fully completed; Snapdragon X1/X2 laptop support improved"
+   ],
+   "whyItMatters": "Ubuntu users and testers who want to preview the next release or validate hardware support, especially on Snapdragon laptops, should care.",
+   "kind": "release",
+   "imageUrl": "https://www.phoronix.net/image.php?id=ubuntu-2610-panther-lake&image=ubuntu_2610_ptl_2",
+   "readingMinutes": 2
+  },
+  {
+   "id": "5afd38c2545023ac",
+   "sourceId": "9to5linux",
+   "title": "Ubuntu 26.10 Beta Released with Linux Kernel 7.3 and GNOME 51",
+   "url": "https://9to5linux.com/ubuntu-26-10-beta-released-with-linux-kernel-7-3-and-gnome-51",
+   "author": "Marcus Nestor",
+   "publishedAt": 1790881832000,
+   "firstSeenAt": 1790920804534,
+   "tags": [
+    "ubuntu",
+    "kernel",
+    "gnome",
+    "release",
+    "distro"
+   ],
+   "brief": "Ubuntu 26.10 is now available for public beta testing. It ships with the Linux 7.3 kernel, Mesa 26.2 graphics stack, and GNOME 51 desktop environment.",
+   "keyPoints": [],
+   "whyItMatters": "Ubuntu users and testers who want early access to the next release and its updated stack should take note.",
+   "kind": "release",
+   "imageUrl": null,
+   "readingMinutes": 0
+  },
+  {
+   "id": "39188dabefdcae09",
+   "sourceId": "omgubuntu",
+   "title": "Ubuntu 26.10 Beta arrives with Linux 7.3 and GNOME 51",
+   "url": "https://www.omgubuntu.co.uk/2026/10/ubuntu-2610-beta-released",
+   "author": "Joey Sneddon",
+   "publishedAt": 1790881807000,
+   "firstSeenAt": 1790920804534,
+   "tags": [
+    "ubuntu",
+    "gnome",
+    "kernel",
+    "release",
+    "desktop"
+   ],
+   "brief": "Ubuntu 26.10 (Stonking Stingray) Beta is out a week late, running a Linux 7.3 release candidate and GNOME 51. The final stable release lands 15 October 2026, and beta installs can upgrade to it via updates without reinstalling.",
+   "keyPoints": [
+    "GNOME 51 adds Reduced Motion setting, passkey login, and easier window snapping",
+    "Rust coreutils migration completes; cp, mv, rm now come from uutils",
+    "OOM changes protect core desktop processes from being killed under low memory"
+   ],
+   "whyItMatters": "Ubuntu users and developers can test the beta now and report bugs before the 15 October stable release.",
+   "kind": "release",
+   "imageUrl": "https://www.omgubuntu.co.uk/wp-content/uploads/2026/09/stonking-stingray.webp",
+   "readingMinutes": 5
+  },
+  {
+   "id": "12648a59120fdcf7",
+   "sourceId": "phoronix",
+   "title": "Phoronix September Roundup: 10-Second Kernel Builds, Xeon 600 Benchmarks, Linux 7.4 Features",
+   "url": "https://www.phoronix.com/news/September-2026-Highlights",
+   "author": "Michael Larabel",
+   "publishedAt": 1790874468000,
+   "firstSeenAt": 1790920804534,
+   "tags": [
+    "linux",
+    "kernel",
+    "benchmarks",
+    "hardware",
+    "performance"
+   ],
+   "brief": "Phoronix recaps September: 284 news articles and 19 benchmark features. Highlights include near-10-second kernel builds via AI-assisted parallelization, Xeon 600 vs Threadripper 9000 benchmarks, AMDGPU HDMI 2.1 landing in Linux 7.4, and CERN moving industrial computers to Debian.",
+   "keyPoints": [
+    "AI-assisted work nears 10-second clean Linux kernel builds via build parallelization",
+    "Linux 7.4 brings AMDGPU HDMI 2.1 by default, Rust Binder replacing C driver",
+    "Xeon 600 workstation tested against Threadripper 9000 in nearly 400 benchmarks"
+   ],
+   "whyItMatters": "Useful for readers catching up on the month's major Linux kernel, hardware, and distribution developments.",
+   "kind": "news",
+   "imageUrl": "https://www.phoronix.net/image.php?id=msi-b850p-coreboot-opensil&image=msi_ryzen_dasharo_4",
+   "readingMinutes": 11
+  },
+  {
+   "id": "0bc3d16536b83de3",
+   "sourceId": "phoronix",
+   "title": "Some Networking Fixes Diverted to Linux 7.4 as AI/LLM Patch Traffic Grows",
+   "url": "https://www.phoronix.com/news/Linux-Networking-Linux-7.3-rc6",
+   "author": "Michael Larabel",
+   "publishedAt": 1790871880000,
+   "firstSeenAt": 1790920804534,
+   "tags": [
+    "kernel",
+    "networking",
+    "ai",
+    "linux",
+    "hardware",
+    "performance"
+   ],
+   "brief": "Linux networking developers, overwhelmed by AI/LLM-driven patch activity and bug reports, are holding back non-urgent fixes from Linux 7.3 for the 7.4 cycle. Legitimate fixes, including slab-out-of-bounds reads and wired/WiFi driver issues, were still merged this week.",
+   "keyPoints": [
+    "Non-urgent networking fixes retargeted from Linux 7.3 to 7.4",
+    "Maintainers cite overwhelming AI/LLM-driven patch and bug report traffic",
+    "Eric Dumazet retires from Google; maintainers entry updated"
+   ],
+   "whyItMatters": "Kernel contributors and network maintainers should note the triage policy shift as AI-generated patches strain review capacity.",
+   "kind": "news",
+   "imageUrl": "https://www.phoronix.net/image.php?id=10gbe-linux-4distro&image=10gbe_linux_4",
+   "readingMinutes": 2
+  },
+  {
+   "id": "377a057a23b783dc",
+   "sourceId": "itsfoss",
+   "title": "IFPI wants yt-dlp on the EU's piracy watchlist",
+   "url": "https://feed.itsfoss.com/link/24361/17483251/yt-dlp-ifpi-piracy-watchlist",
+   "author": "Sourav Rudra",
+   "publishedAt": 1790868337000,
+   "firstSeenAt": 1790920804534,
+   "tags": [
+    "open-source",
+    "copyright",
+    "yt-dlp",
+    "eu",
+    "desktop",
+    "tutorial"
+   ],
+   "brief": "The IFPI has asked the European Commission to put the open-source downloader yt-dlp on its Counterfeit and Piracy Watch List, naming four maintainers by their GitHub handles. The list carries no legal force but pressures operators and governments; the article argues a general-purpose tool is not a piracy service.",
+   "keyPoints": [
+    "IFPI calls yt-dlp a 'major problem for the music industry' in its watchlist submission",
+    "Four maintainers named by GitHub handle, including founder pukkandan",
+    "Watch List is a naming exercise, not a legal finding; 2027 edition due Q2 2027"
+   ],
+   "whyItMatters": "Open-source developers and tool maintainers should watch how industry groups use EU processes to pressure general-purpose software projects.",
+   "kind": "news",
+   "imageUrl": "https://itsfoss.com/content/images/2026/10/yt-dlp-ifpi-banner.png",
+   "readingMinutes": 3
+  },
+  {
+   "id": "c3e5f6126ea480a7",
+   "sourceId": "omgubuntu",
+   "title": "Ubuntu 26.10 ships with Rust-based OpenPGP tooling",
+   "url": "https://www.omgubuntu.co.uk/2026/10/ubuntu-rust-pgp-sq",
+   "author": "Joey Sneddon",
+   "publishedAt": 1790868295000,
+   "firstSeenAt": 1790920804534,
+   "tags": [
+    "ubuntu",
+    "rust",
+    "security",
+    "openpgp",
+    "desktop"
+   ],
+   "brief": "Ubuntu 26.10 preinstalls Sequoia PGP, a Rust-based OpenPGP implementation, alongside GnuPG, with Canonical planning to eventually make it the default. For now `gpg` still invokes GnuPG while `sq` uses Sequoia. The release also ships Rust-based core utilities via uutils.",
+   "keyPoints": [
+    "Sequoia PGP (sq) is preinstalled and moved to the main repo for official support",
+    "GnuPG remains the default; Canonical plans to phase it out later",
+    "Rust coreutils from uutils now provide cp, mv, and rm"
+   ],
+   "whyItMatters": "Ubuntu users and developers tracking the shift to memory-safe Rust tooling in core system components should note the coming GnuPG transition.",
+   "kind": "news",
+   "imageUrl": "https://www.omgubuntu.co.uk/wp-content/uploads/2025/05/ubuntu-rust.jpg",
+   "readingMinutes": 2
+  },
+  {
+   "id": "6ed0135471e0353e",
+   "sourceId": "9to5linux",
+   "title": "Arch Linux October 2026 ISO Ships with ArchInstall 4.5",
+   "url": "https://9to5linux.com/arch-linux-iso-release-for-october-2026-ships-with-the-archinstall-4-5-installer",
+   "author": "Marcus Nestor",
+   "publishedAt": 1790867480000,
+   "firstSeenAt": 1790920804534,
+   "tags": [
+    "arch-linux",
+    "release",
+    "installer",
+    "kernel",
+    "distro"
+   ],
+   "brief": "Arch Linux 2026.10.01 is available for download, powered by Linux kernel 7.2.7 and including the ArchInstall 4.5 text-mode installer.",
+   "keyPoints": [],
+   "whyItMatters": "Arch users planning fresh installs get the latest kernel and an updated guided installer.",
+   "kind": "release",
+   "imageUrl": null,
+   "readingMinutes": 0
+  },
+  {
+   "id": "d67140c711d57e09",
+   "sourceId": "lwn",
+   "title": "Coping with the onslaught of kernel security bugs",
+   "url": "https://lwn.net/Articles/1096908/",
+   "author": "corbet",
+   "publishedAt": 1790867005000,
+   "firstSeenAt": 1790920804534,
+   "tags": [
+    "kernel",
+    "security",
+    "llm",
+    "deep"
+   ],
+   "brief": "LLMs have made it easy to find security bugs, flooding free-software projects including the kernel with reports. At Kernel Recipes 2026, Greg Kroah-Hartman described how the kernel security team is handling the deluge, with the core message: don't panic.",
+   "keyPoints": [],
+   "whyItMatters": "Kernel developers and security researchers facing the wave of LLM-generated bug reports will want to hear the security team's response.",
+   "kind": "news",
+   "imageUrl": null,
+   "readingMinutes": 0
+  },
+  {
+   "id": "3afbb7a1398fd0df",
+   "sourceId": "phoronix",
+   "title": "Qt Creator 21 IDE Beta Enables ACP and MCP AI Servers by Default",
+   "url": "https://www.phoronix.com/news/Qt-Creator-21-Beta",
+   "author": "Michael Larabel",
+   "publishedAt": 1790863801000,
+   "firstSeenAt": 1790920804534,
+   "tags": [
+    "qt",
+    "ide",
+    "ai",
+    "development-tools",
+    "hardware",
+    "performance"
+   ],
+   "brief": "The Qt Group released Qt Creator 21 Beta, a day after Qt 6.12 LTS. The C/C++-focused IDE now enables Agent Communication Protocol and Model Context Protocol AI servers by default, alongside new platform and editing features.",
+   "keyPoints": [
+    "ACP and MCP servers enabled by default, with ACP v2 and MCP 2026-07-28 protocol support",
+    "New .qdoc editor, editable inline diff view, FakeVim fixes, project handling improvements",
+    "Experimental HarmonyOS support, remote Windows devices over SSH, Podman container support"
+   ],
+   "whyItMatters": "Qt and C++ developers should watch how the IDE's default-on AI integrations evolve before the stable release.",
+   "kind": "release",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=qt_creator_20",
+   "readingMinutes": 2
+  },
+  {
+   "id": "97965b81ea1dca57",
+   "sourceId": "lwn",
+   "title": "Rust 1.99.0 released",
+   "url": "https://lwn.net/Articles/1098068/",
+   "author": "corbet",
+   "publishedAt": 1790861117000,
+   "firstSeenAt": 1790920804534,
+   "tags": [
+    "rust",
+    "programming",
+    "release",
+    "kernel",
+    "deep"
+   ],
+   "brief": "Rust 1.99.0 is out, featuring extern \"C\" variadic functions, functions for obtaining the size and alignment of raw pointers, and a number of stabilized APIs.",
+   "keyPoints": [],
+   "whyItMatters": "Rust developers tracking language and standard-library changes will want the full release notes.",
+   "kind": "release",
+   "imageUrl": null,
+   "readingMinutes": 0
+  },
+  {
+   "id": "9cc52130bc67ea77",
+   "sourceId": "lwn",
+   "title": "Security updates for Thursday",
+   "url": "https://lwn.net/Articles/1098067/",
+   "author": "jzb",
+   "publishedAt": 1790860372000,
+   "firstSeenAt": 1790920804534,
+   "tags": [
+    "security",
+    "linux",
+    "red-hat",
+    "ubuntu",
+    "kernel",
+    "deep"
+   ],
+   "brief": "LWN's daily roundup lists security updates from nine distributions. Red Hat shipped the largest batch, fixing acl, glib2, golang, libxml2, sqlite, tesseract, and vim across multiple RHEL versions; Fedora, Ubuntu, SUSE, Debian, and others also published fixes.",
+   "keyPoints": [
+    "Red Hat patched sqlite, vim, tesseract, glib2, and golang across EL8-EL10",
+    "Ubuntu fixed kernel variants, OpenVPN, Django, and ImageMagick",
+    "Fedora, Debian, SUSE, AlmaLinux, Mageia, and Slackware also issued advisories"
+   ],
+   "whyItMatters": "Administrators of these distributions should check the list for packages they run and apply updates.",
+   "kind": "news",
+   "imageUrl": null,
+   "readingMinutes": 8
+  },
+  {
+   "id": "565985aab1289149",
+   "sourceId": "itsfoss",
+   "title": "FOSS Weekly: Faster Ubuntu Kernel Updates, NixOS in Europe, postmarketOS Renamed Nura",
+   "url": "https://feed.itsfoss.com/link/24361/17483196/foss-weekly-26-40",
+   "author": "Abhishek Prakash",
+   "publishedAt": 1790860014000,
+   "firstSeenAt": 1790920804534,
+   "tags": [
+    "linux",
+    "ubuntu",
+    "nixos",
+    "distros",
+    "desktop",
+    "tutorial"
+   ],
+   "brief": "This week's FOSS roundup covers Canonical moving Ubuntu kernel updates to a weekly cadence, postmarketOS rebranding as Nura, and openSUSE folding Leap Micro into Leap 16.1. Also featured: European governments adopting NixOS, AlmaLinux's new software certification catalog, and GhostBSD's in-development Mocka desktop.",
+   "keyPoints": [
+    "Ubuntu kernel releases now weekly, driven by faster AI-assisted CVE discovery",
+    "postmarketOS renamed Nura after community vote and trademark review",
+    "Netherlands and France deploying NixOS-based government work environments"
+   ],
+   "whyItMatters": "Linux users and admins tracking distro changes, security update cadence, and government open-source adoption will find the week's key developments here.",
+   "kind": "news",
+   "imageUrl": "https://itsfoss.com/content/images/2026/10/foss-weekly.webp",
+   "readingMinutes": 5
+  },
+  {
+   "id": "a4377227a4ac8f27",
+   "sourceId": "phoronix",
+   "title": "AMD RMPOPT Optimization Queued Ahead Of Linux 7.4",
+   "url": "https://www.phoronix.com/news/AMD-RMPOPT-For-Linux-7.4",
+   "author": "Michael Larabel",
+   "publishedAt": 1790859120000,
+   "firstSeenAt": 1790920804534,
+   "tags": [
+    "kernel",
+    "amd",
+    "virtualization",
+    "security",
+    "hardware",
+    "performance"
+   ],
+   "brief": "AMD's RMPOPT patches, after sixteen revision rounds, are queued in tip's x86/sev branch for the Linux 7.4 merge window. The feature shrinks the Reverse Map Table for SEV-SNP virtual machines on EPYC servers, benefiting Zen 6 'Venice' systems whose RAM isn't saturated with confidential VMs.",
+   "keyPoints": [
+    "RMPOPT reduces Reverse Map Table size for SEV-SNP VMs on EPYC CPUs",
+    "v16 patches queued in tip/tip.git x86/sev for Linux 7.4 merge window",
+    "Stable release expected around late December"
+   ],
+   "whyItMatters": "Operators running confidential SEV-SNP VMs on AMD EPYC servers should care, as this lowers memory overhead.",
+   "kind": "news",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=rmpopt",
+   "readingMinutes": 2
+  },
+  {
+   "id": "ff33846f35c25c28",
+   "sourceId": "phoronix",
+   "title": "Clearing out Linux’s old 32-bit ARM platform code is itself a challenge",
+   "url": "https://www.phoronix.com/news/Clearing-Old-ARM-Code-Challenge",
+   "author": "Michael Larabel",
+   "publishedAt": 1790856258000,
+   "firstSeenAt": 1790920804534,
+   "tags": [
+    "kernel",
+    "arm",
+    "linux",
+    "maintenance",
+    "hardware",
+    "performance"
+   ],
+   "brief": "Arnd Bergmann says removing deprecated 32-bit ARM platform code has grown to about 300 patches after Linux 7.3 deprecated multiple old platforms. The platform code is about 55k lines, with roughly 247k lines potentially removable once unused drivers are included; timing may shift if Linux 7.4 becomes LTS.",
+   "keyPoints": [
+    "Linux 7.3 deprecated numerous legacy 32-bit ARM platforms and orphaned drivers.",
+    "Removal spans about 300 patches; many still need splitting into smaller series.",
+    "RiscPC remains temporarily due to discussion about reviving compiler support."
+   ],
+   "whyItMatters": "Kernel maintainers and anyone running legacy ARM boards should care because support cleanup reduces maintenance burden but can end mainline coverage for old hardware.",
+   "kind": "news",
+   "imageUrl": "https://www.phoronix.net/image.php?id=march-2017-arm&image=march_2017_arm",
+   "readingMinutes": 3
+  },
+  {
+   "id": "f148b6593d1cd35d",
+   "sourceId": "9to5linux",
+   "title": "OpenMandriva Lx 26.09 “ROME” Released with KDE Plasma 6.7 and Linux Kernel 7.2",
+   "url": "https://9to5linux.com/openmandriva-lx-26-09-rome-released-with-kde-plasma-6-7-and-linux-kernel-7-2",
+   "author": "Marcus Nestor",
+   "publishedAt": 1790856119000,
+   "firstSeenAt": 1790920804534,
+   "tags": [
+    "openmandriva",
+    "linux",
+    "kde",
+    "release",
+    "distro"
+   ],
+   "brief": "OpenMandriva Lx 26.09 ROME is now available for download, shipping KDE Plasma 6.7, GNOME 50.3, or Xfce 4.20 desktops, Linux kernel 7.2, and Snap support.",
+   "keyPoints": [],
+   "whyItMatters": "OpenMandriva users get a fresh rolling release with the latest desktops and kernel.",
+   "kind": "release",
+   "imageUrl": null,
+   "readingMinutes": 0
+  },
+  {
+   "id": "278ed5a7460f9243",
+   "sourceId": "phoronix",
+   "title": "Intel Optimization Zone 1.2 Released With New Tuning Guides and Recommendations",
+   "url": "https://www.phoronix.com/news/Intel-Optimization-Zone-1.2",
+   "author": "Michael Larabel",
+   "publishedAt": 1790852771000,
+   "firstSeenAt": 1790920804534,
+   "tags": [
+    "intel",
+    "performance",
+    "xeon",
+    "optimization",
+    "hardware"
+   ],
+   "brief": "Intel released version 1.2 of its Optimization Zone, a centralized collection of performance tuning resources for Intel hardware. The update adds guides on NUMA, Kubernetes, vLLM, NumPy, R, Nginx, and system configuration for Xeon and other Intel platforms.",
+   "keyPoints": [
+    "New NUMA best practices for Xeon 6 cloud instances on AWS and Google Cloud",
+    "vLLM optimization guide for CPU inference on Xeon processors",
+    "System configuration guidance on EPB/EPP, frequency scaling, Hyper-Threading, LPE cores"
+   ],
+   "whyItMatters": "Administrators and developers tuning workloads on Intel Xeon systems get updated, centralized performance guidance.",
+   "kind": "release",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=intel_oz",
+   "readingMinutes": 3
+  },
+  {
+   "id": "ab2c62f4d2cfe42d",
+   "sourceId": "9to5linux",
+   "title": "Systemd-Free Nitrux 7.0 Released with Linux Kernel 7.2 and Hyprland 0.55.4",
+   "url": "https://9to5linux.com/systemd-free-nitrux-7-0-released-with-linux-kernel-7-2-and-hyprland-0-55-4",
+   "author": "Marcus Nestor",
+   "publishedAt": 1790851367000,
+   "firstSeenAt": 1790920804534,
+   "tags": [
+    "nitrux",
+    "linux",
+    "hyprland",
+    "kernel",
+    "distro",
+    "release"
+   ],
+   "brief": "Nitrux 7.0, a systemd-free and immutable Linux distribution, is now available for download. It ships with Linux kernel 7.2 and the Hyprland 0.55.4 Wayland compositor.",
+   "keyPoints": [],
+   "whyItMatters": "Users of systemd-free, immutable distributions may want to check this release for the updated kernel and Hyprland compositor.",
+   "kind": "release",
+   "imageUrl": null,
+   "readingMinutes": 0
+  },
+  {
+   "id": "fdbf29ce75faae5d",
+   "sourceId": "itsfoss",
+   "title": "F-Droid 2.0 Brings Full Kotlin Rewrite and Redesigned Interface",
+   "url": "https://feed.itsfoss.com/link/24361/17483121/f-droid-revamp",
+   "author": "Sourav Rudra",
+   "publishedAt": 1790850832000,
+   "firstSeenAt": 1790920804534,
+   "tags": [
+    "android",
+    "f-droid",
+    "open-source",
+    "google",
+    "desktop",
+    "tutorial"
+   ],
+   "brief": "F-Droid has released version 2.0 of its Android client, a full rewrite in Kotlin with a Jetpack Compose interface following Material Design. The update adds a three-section bottom bar, improved search and filtering, and background update checks, rolling out gradually.",
+   "keyPoints": [
+    "Codebase rewritten from Java to Kotlin with Jetpack Compose UI",
+    "New Discover, Search, and My Apps sections with improved filtering",
+    "Background update checks now enabled by default"
+   ],
+   "whyItMatters": "Android users relying on open-source app stores should know F-Droid is actively modernizing despite Google's looming developer registration restrictions.",
+   "kind": "release",
+   "imageUrl": "https://itsfoss.com/content/images/2026/10/f-droid-2-0-banner.png",
+   "readingMinutes": 3
+  },
+  {
+   "id": "91b24bb918324137",
+   "sourceId": "phoronix",
+   "title": "NVIDIA Olympus SMT scheduler patches show 3~6% gains on Vera CPU",
+   "url": "https://www.phoronix.com/news/NVIDIA-Olympus-SMT-Better",
+   "author": "Michael Larabel",
+   "publishedAt": 1790850461000,
+   "firstSeenAt": 1790920804534,
+   "tags": [
+    "kernel",
+    "nvidia",
+    "scheduler",
+    "arm",
+    "hardware",
+    "performance"
+   ],
+   "brief": "NVIDIA's Linux scheduler patches enabling preferred SMT siblings on Olympus cores are at their seventh revision and show 3~6% throughput gains. The under-100-line series adds asymmetric SMT priority handling and a sched_smt_asym_packing knob, and is being reviewed on LKML for mainline inclusion.",
+   "keyPoints": [
+    "Patches enable preferred SMT siblings on NVIDIA Olympus cores, honoring asymmetric SMT priority",
+    "OpenBLAS throughput +3.20%; NVPL +6.73%, with more predictable results",
+    "Series by Andrea Righi is at v7, targeting mainline, possibly Linux v7.4"
+   ],
+   "whyItMatters": "Developers and admins running NVIDIA Vera-based Arm servers should watch these patches, which measurably improve SMT workload performance.",
+   "kind": "news",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=nvidia_spatial_smt",
+   "readingMinutes": 3
+  },
+  {
+   "id": "9f8249d5ba6a64b0",
+   "sourceId": "phoronix",
+   "title": "Qualcomm details expanded open-source Linux graphics driver work at XDC 2026",
+   "url": "https://www.phoronix.com/news/Qualcomm-More-OSS-GPU-2026",
+   "author": "Michael Larabel",
+   "publishedAt": 1790849820000,
+   "firstSeenAt": 1790920804534,
+   "tags": [
+    "qualcomm",
+    "mesa",
+    "linux-kernel",
+    "graphics",
+    "hardware",
+    "performance"
+   ],
+   "brief": "Rob Clark presented at XDC 2026 on Qualcomm's upstream Linux graphics work, including kernel and Mesa enablement for Snapdragon X2, Hawi, and Maili SoCs. Adreno 800 support is in good shape, Rusticl OpenCL 3.1 is now enabled by default, and future plans include GPU firmware scheduling and Adreno 850 compute support.",
+   "keyPoints": [
+    "Upstream enablement for Snapdragon X2, Hawi, and Maili SoCs in kernel and Mesa",
+    "Rusticl OpenCL driver enabled by default with OpenCL 3.1 support",
+    "Future work: firmware scheduling, OpenCL SVM, Adreno 850 MALU matrix core"
+   ],
+   "whyItMatters": "Developers and users interested in Linux on Snapdragon laptops should track this, as Qualcomm is targeting broad X2 laptop support in 2027.",
+   "kind": "news",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=qualcomm_linux_gpu_status",
+   "readingMinutes": 2
+  },
+  {
+   "id": "073e99967e331b86",
+   "sourceId": "phoronix",
+   "title": "New Linux patches try to mainline Renesas SH7305 CPU support",
+   "url": "https://www.phoronix.com/news/Renesas-SH7305-Linux-Patches",
+   "author": "Michael Larabel",
+   "publishedAt": 1790848508000,
+   "firstSeenAt": 1790920804534,
+   "tags": [
+    "kernel",
+    "superh",
+    "renesas",
+    "embedded",
+    "hardware",
+    "performance"
+   ],
+   "brief": "A developer has posted initial kernel patches adding SuperH support for the Renesas SH7305, a 32-bit SH-4a chip long used in Casio graphing calculators. The first patches fix compiler flags and add the SH7304 CPU type plus Kconfig infrastructure, with clocks, interrupt controller, timer and board support to follow.",
+   "keyPoints": [
+    "Initial patches add SH7304 CPU type and Kconfig infrastructure",
+    "More enablement coming: clocks, interrupt controller, timer, board support",
+    "SH7305: no FPU, ~118MHz, ~8MB RAM, powers Casio graphing calculators"
+   ],
+   "whyItMatters": "SuperH and retro-hardware enthusiasts should care, since mainline support is uncertain while the kernel is actively stripping old hardware code.",
+   "kind": "news",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=casio_calculator",
+   "readingMinutes": 2
+  },
+  {
+   "id": "925bae0c2f518fc5",
+   "sourceId": "phoronix",
+   "title": "Raspberry Pi 5 2GB Price Increases to $77.50 Amid RAM Cost Surge",
+   "url": "https://www.phoronix.com/news/Raspberry-Pi-5-2GB-Price-77.50",
+   "author": "Michael Larabel",
+   "publishedAt": 1790846981000,
+   "firstSeenAt": 1790920804534,
+   "tags": [
+    "raspberry-pi",
+    "hardware",
+    "pricing",
+    "performance"
+   ],
+   "brief": "Eben Upton announced new price hikes for 2GB Raspberry Pi models, citing unsustainable industry RAM pricing. The Pi 4 2GB now costs $67.50 and the Pi 5 2GB $77.50, a $12.50 increase. Higher-capacity Pi 5 models stand at $110 (4GB), $180 (8GB), and $305 (16GB).",
+   "keyPoints": [
+    "Pi 5 2GB up $12.50 to $77.50; Pi 4 2GB now $67.50",
+    "1GB and 2GB models were previously spared from earlier RAM-driven hikes",
+    "Pi 5 4GB/8GB/16GB currently priced at $110, $180, and $305"
+   ],
+   "whyItMatters": "Makers and hobbyists planning Pi purchases face higher costs as rising RAM prices ripple through single-board computer pricing.",
+   "kind": "news",
+   "imageUrl": "https://www.phoronix.net/image.php?id=raspberry-pi-5-benchmarks&image=raspberrypi_5_1",
+   "readingMinutes": 1
+  },
+  {
+   "id": "365f20d571bbdcf7",
+   "sourceId": "linuxiac",
+   "title": "OpenMandriva ROME 26.09 Released With Linux Kernel 7.2, Plasma 6.7",
+   "url": "https://linuxiac.com/openmandriva-rome-26-09-released-with-linux-kernel-7-2-plasma-6-7/",
+   "author": "Bobby Borisov",
+   "publishedAt": 1790844767000,
+   "firstSeenAt": 1790920804534,
+   "tags": [
+    "openmandriva",
+    "distribution",
+    "kernel",
+    "kde",
+    "distro",
+    "news"
+   ],
+   "brief": "OpenMandriva has published refreshed installation images for ROME, its rolling-release edition, as the 26.09 snapshot. It ships Linux kernel 7.2, KDE Plasma 6.7.5, GNOME 50.3, RPM 6.1 with a new %pgo spec section, LLVM/Clang 23.1.2, and adds snapd support.",
+   "keyPoints": [
+    "Kernel 7.2 by default; 7.3-rc4 available, in Clang- and GCC-compiled variants",
+    "LLVM/Clang 23.1.2 is the default compiler; GCC 16.2 and glibc 2.44 included",
+    "Helium 0.17.2 replaces ungoogled-chromium as the default browser in Plasma and LXQt"
+   ],
+   "whyItMatters": "OpenMandriva users get current kernels, toolchains, and desktops plus new Snap and local AI software options.",
+   "kind": "release",
+   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/10/openmandriva-rome-2609.jpg",
+   "readingMinutes": 3
+  },
+  {
+   "id": "06414e76e9616e58",
+   "sourceId": "itsfoss",
+   "title": "Replacing IP:Port Memorization with .internal Names in a Homelab",
+   "url": "https://feed.itsfoss.com/link/24361/17482986/homelab-internal-domain-setup",
+   "author": "Abhishek Prakash",
+   "publishedAt": 1790842572000,
+   "firstSeenAt": 1790920804534,
+   "tags": [
+    "homelab",
+    "self-hosting",
+    "dns",
+    "networking",
+    "desktop",
+    "tutorial"
+   ],
+   "brief": "A homelab owner replaced hard-to-remember IP and port combinations with readable .internal hostnames using AdGuard Home as DNS and Nginx Proxy Manager as a reverse proxy, both running on an always-on ZimaBoard.",
+   "keyPoints": [
+    "AdGuard Home resolves .internal names; Nginx Proxy Manager maps them to the right ports",
+    "ICANN reserved .internal for private networks in 2024, so it never clashes with real domains",
+    "Fixes included trusting the NPM proxy in Home Assistant and allowlisting Netflix telemetry domains"
+   ],
+   "whyItMatters": "Homelab self-hosters juggling many services get a practical, troubleshooted recipe for clean hostname-based access on their LAN.",
+   "kind": "tutorial",
+   "imageUrl": "https://itsfoss.com/content/images/2026/10/homelab-internal-domain-setup-1.png",
+   "readingMinutes": 12
+  },
+  {
    "id": "f15ac78ee17a5418",
    "sourceId": "phoronix",
    "title": "OpenMandriva ROME 26.09 Released With More AI Apps, Snaps & PGO + LTO Optimizations",
@@ -259,6 +1193,26 @@
    "kind": "news",
    "imageUrl": "https://itsfoss.com/content/images/2026/09/local-ai-weekly-4.png",
    "readingMinutes": 4
+  },
+  {
+   "id": "5b656b09edc9c51a",
+   "sourceId": "lwn",
+   "title": "Kernel Recipes 2026 videos and caricatures posted",
+   "url": "https://lwn.net/Articles/1097802/",
+   "author": "corbet",
+   "publishedAt": 1790781891000,
+   "firstSeenAt": 1790920804534,
+   "tags": [
+    "kernel",
+    "conferences",
+    "deep"
+   ],
+   "brief": "Videos from the recently concluded Kernel Recipes conference are now available online, alongside caricature drawings of attendees and speakers by Frank Tizzoni.",
+   "keyPoints": [],
+   "whyItMatters": "Kernel developers and enthusiasts who missed the conference can now watch the talks.",
+   "kind": "news",
+   "imageUrl": null,
+   "readingMinutes": 0
   },
   {
    "id": "2741163045bb7c05",
