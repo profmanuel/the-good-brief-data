@@ -2,6 +2,631 @@
  "version": 1,
  "articles": [
   {
+   "id": "af5dc4c9ebbaff5b",
+   "sourceId": "phoronix",
+   "title": "Wine 11.19 adds Wayland color management for Vulkan, DNS query caching",
+   "url": "https://www.phoronix.com/news/Wine-11.19-Released",
+   "author": "Michael Larabel",
+   "publishedAt": 1790987350000,
+   "firstSeenAt": 1791007204357,
+   "tags": [
+    "wine",
+    "wayland",
+    "vulkan",
+    "release",
+    "hardware",
+    "performance"
+   ],
+   "brief": "Wine 11.19 is out as the latest bi-weekly development release ahead of the Wine 12.0 stable series expected in early 2027. Highlights include vertical text in GDIPlus, Unicode 18.0 characters, DNS query caching, an improved VBScript parser, and Wayland color management for the Vulkan color space, plus 23 bug fixes.",
+   "keyPoints": [
+    "Wayland driver now implements color management protocol for Vulkan color space",
+    "Adds vertical text in GDIPlus, Unicode 18.0, DNS caching, VBScript parser improvements",
+    "23 known bug fixes affecting games and other apps"
+   ],
+   "whyItMatters": "Linux gamers and app users running Windows software on Wayland get better color accuracy, especially in Vulkan titles.",
+   "kind": "release",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2024&image=wine_applet",
+   "readingMinutes": 2
+  },
+  {
+   "id": "e8fe3d19f2c11ab3",
+   "sourceId": "linuxiac",
+   "title": "Wine 11.19 Adds DNS Caching, Unicode 18 Support, Fixes 23 Bugs",
+   "url": "https://linuxiac.com/wine-11-19-adds-dns-caching-unicode-18-support-fixes-23-bugs/",
+   "author": "Bobby Borisov",
+   "publishedAt": 1790983803000,
+   "firstSeenAt": 1791007204357,
+   "tags": [
+    "wine",
+    "linux",
+    "gaming",
+    "release",
+    "distro",
+    "news"
+   ],
+   "brief": "Wine 11.19 is out with DNS query caching, vertical text support in GDIPlus, Unicode 18.0 character tables, and VBScript parser improvements. It fixes 23 bugs, including startup crashes in ArcGIS Pro and Euro Truck Simulator 2, plus a wineboot delay that could add five seconds to startup.",
+   "keyPoints": [
+    "Adds DNS query caching and Unicode 18.0 character tables",
+    "Fixes crashes in ArcGIS Pro, Euro Truck Simulator 2, Zombie Army 4",
+    "Resolves wineboot delay adding roughly five seconds to startup"
+   ],
+   "whyItMatters": "Linux users running Windows apps or games through Wine get broader compatibility and faster startup.",
+   "kind": "release",
+   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/10/wine1119.jpg",
+   "readingMinutes": 2
+  },
+  {
+   "id": "583bf6d08d481588",
+   "sourceId": "phoronix",
+   "title": "Linux 7.4 to gain initial Device Trees for Apple M4 Macs and MacBook Neo",
+   "url": "https://www.phoronix.com/news/Linux-7.4-Apple-Device-Trees",
+   "author": "Michael Larabel",
+   "publishedAt": 1790973161000,
+   "firstSeenAt": 1791007204357,
+   "tags": [
+    "kernel",
+    "asahi-linux",
+    "apple-silicon",
+    "device-tree",
+    "hardware",
+    "performance"
+   ],
+   "brief": "Asahi Linux developer Sven Peter has submitted pull requests adding initial Device Trees for Apple base-M4 Macs and the A18 Pro-based MacBook Neo, targeting the Linux 7.4 merge window. Support is minimal—enough to boot, with CPU, interrupts, watchdog, serial, and frame-buffer, but no GPU or other functionality yet.",
+   "keyPoints": [
+    "Initial M4 and A18 Pro Device Trees submitted for Linux 7.4 merge window",
+    "Covers M4 MacBook Pro, iMac, MacBook Air, and Mac Mini models",
+    "Boot-only support; GPU and other hardware left for future kernels"
+   ],
+   "whyItMatters": "Relevant to Asahi Linux users and kernel developers tracking mainline support for Apple's newest Mac hardware.",
+   "kind": "news",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=macbook_neo_1",
+   "readingMinutes": 3
+  },
+  {
+   "id": "b31f143b08bda7c0",
+   "sourceId": "linuxiac",
+   "title": "COSMIC Bans LLM-Generated Content in Pull Requests",
+   "url": "https://linuxiac.com/cosmic-stops-accepting-llm-generated-content-in-pull-requests/",
+   "author": "Bobby Borisov",
+   "publishedAt": 1790968946000,
+   "firstSeenAt": 1791007204357,
+   "tags": [
+    "cosmic",
+    "system76",
+    "open-source",
+    "ai",
+    "distro",
+    "news"
+   ],
+   "brief": "System76's COSMIC project no longer accepts pull requests containing any LLM-generated content, including code, comments, and descriptions. Maintainer Jeremy Soller cites review burden from low-quality first-time AI submissions; cosmic-flatpak is exempt.",
+   "keyPoints": [
+    "PRs must be free of LLM-generated code, comments, and descriptions or risk closure",
+    "Policy aims to reduce review burden, not oppose AI tools generally",
+    "cosmic-flatpak manifests are exempt; only sandboxing is checked"
+   ],
+   "whyItMatters": "Contributors to COSMIC and maintainers of open-source projects weighing AI contribution policies should note the shift from disclosure to outright bans.",
+   "kind": "news",
+   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/10/cosmic-no-ai-prs.jpg",
+   "readingMinutes": 2
+  },
+  {
+   "id": "f0c45c7d8dd88cb9",
+   "sourceId": "phoronix",
+   "title": "Intel Xe driver lands ULLS migration queue improvement for Battlemage in Linux 7.4",
+   "url": "https://www.phoronix.com/news/Intel-CPU-Binds-ULLS-Migration",
+   "author": "Michael Larabel",
+   "publishedAt": 1790966040000,
+   "firstSeenAt": 1791007204357,
+   "tags": [
+    "intel",
+    "gpu",
+    "kernel",
+    "drivers",
+    "hardware",
+    "performance"
+   ],
+   "brief": "Intel sent the final round of Xe kernel driver patches for Linux 7.4, headlined by CPU binds and Ultra Low Latency Scheduling on the migration queue. On Battlemage GPUs, copy jobs run roughly 30–40µs faster during continuous page fault processing, with bigger gains from a cold start.",
+   "keyPoints": [
+    "ULLS plus CPU binds cut copy job time by ~30–40µs under continuous faults on Battlemage",
+    "Compute benchmarks show multiple GB/s improvement in pagefault tests",
+    "ULLS consumes more power but exits after an idle period with no faults"
+   ],
+   "whyItMatters": "Linux users with Intel Battlemage discrete GPUs should see noticeably better fault-handling and compute performance once Linux 7.4 arrives around late December.",
+   "kind": "news",
+   "imageUrl": "https://www.phoronix.net/image.php?id=intel-arc-pro-b70-four&image=arc_pro_b70_2",
+   "readingMinutes": 3
+  },
+  {
+   "id": "c56c813d1c5b9075",
+   "sourceId": "phoronix",
+   "title": "Ubuntu Working On SHA3 For Debian's APT For If/When SHA2 Is Broken",
+   "url": "https://www.phoronix.com/news/Ubuntu-SHA3-For-Debian-APT",
+   "author": "Michael Larabel",
+   "publishedAt": 1790964600000,
+   "firstSeenAt": 1791007204357,
+   "tags": [
+    "ubuntu",
+    "debian",
+    "apt",
+    "security",
+    "hardware",
+    "performance"
+   ],
+   "brief": "A Canonical developer has opened a merge request adding SHA3-256 and SHA3-384 support to Debian's APT as an optional alternative to SHA2 in Release, Packages, and Sources files. The goal is to prepare for the possibility that SHA2 is broken before Ubuntu 24.04 LTS support ends in 2036, with backporting to 24.04…",
+   "keyPoints": [
+    "Merge request adds SHA3-256/SHA3-384 to APT, off by default",
+    "Motivation: SHA2 could be broken within Ubuntu 24.04's 10-12 year support window",
+    "SHA2 remains unbroken; only theoretical attacks exist so far"
+   ],
+   "whyItMatters": "Distribution maintainers and security-conscious admins should care, since deployed LTS systems need hash agility long before any SHA2 break.",
+   "kind": "news",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=apt_sha3",
+   "readingMinutes": 2
+  },
+  {
+   "id": "c399e8da608e1996",
+   "sourceId": "9to5linux",
+   "title": "LibreOffice 26.8.1 Open-Source Office Suite Released with 40 Bug Fixes",
+   "url": "https://9to5linux.com/libreoffice-26-8-1-open-source-office-suite-released-with-40-bug-fixes",
+   "author": "Marcus Nestor",
+   "publishedAt": 1790959391000,
+   "firstSeenAt": 1791007204357,
+   "tags": [
+    "libreoffice",
+    "open-source",
+    "release",
+    "distro"
+   ],
+   "brief": "LibreOffice 26.8.1 is now available as the first point release in its series, delivering 40 bug fixes. Only a teaser was available, so details of the fixes are unknown.",
+   "keyPoints": [],
+   "whyItMatters": "LibreOffice users may want to update to pick up the 40 bug fixes.",
+   "kind": "release",
+   "imageUrl": null,
+   "readingMinutes": 0
+  },
+  {
+   "id": "78de17d8dd185413",
+   "sourceId": "omgubuntu",
+   "title": "Raspberry Pi raises 2GB Pi 4 and Pi 5 prices again on memory costs",
+   "url": "https://www.omgubuntu.co.uk/2026/10/raspberry-pi-2gb-costs-how-much-now",
+   "author": "Joey Sneddon",
+   "publishedAt": 1790957703000,
+   "firstSeenAt": 1791007204357,
+   "tags": [
+    "raspberry-pi",
+    "hardware",
+    "pricing",
+    "linux",
+    "ubuntu",
+    "desktop"
+   ],
+   "brief": "Raspberry Pi increased prices of its 2GB Pi 4 and Pi 5 by $12.50 from 1 October 2026, citing steeply rising memory component costs. The 2GB Pi 4 now costs $67.50, 50% more than its 2019 launch price.",
+   "keyPoints": [
+    "2GB Pi 4 rises to $67.50; 2GB Pi 5 to $77.50",
+    "1GB Pi 4 and Pi 5 variants remain unchanged",
+    "Pine64 stopped Linux hardware production over memory and storage costs"
+   ],
+   "whyItMatters": "Hobbyists and developers buying single-board computers face steadily rising prices with no relief until memory costs subside.",
+   "kind": "news",
+   "imageUrl": "https://www.omgubuntu.co.uk/wp-content/uploads/2026/02/pi-price-increase.jpg",
+   "readingMinutes": 2
+  },
+  {
+   "id": "7fefe8491f1a2f78",
+   "sourceId": "linuxiac",
+   "title": "LibreOffice 26.8.1 Lands With 40+ Fixes Across the Office Suite",
+   "url": "https://linuxiac.com/libreoffice-26-8-1-lands-with-40-fixes-across-the-office-suite/",
+   "author": "Bobby Borisov",
+   "publishedAt": 1790954623000,
+   "firstSeenAt": 1791007204357,
+   "tags": [
+    "libreoffice",
+    "release",
+    "office",
+    "open-source",
+    "distro",
+    "news"
+   ],
+   "brief": "LibreOffice 26.8.1 is out as the first maintenance update in the 26.8 series, delivering around 40 bug fixes across Writer, Calc, Impress, and import/export filters. A major focus is improved compatibility with Microsoft Office DOCX, XLSX, and PPTX files, plus crash fixes and PDF export corrections.",
+   "keyPoints": [
+    "Fixes DOCX table-of-contents hyperlinks, text alignment, and spacing issues in Writer",
+    "Calc fixes pivot table crash and rotated object dimensions in XLSX files",
+    "Impress no longer crashes on certain PPTX files; PDF export restores named hyperlinks"
+   ],
+   "whyItMatters": "LibreOffice users who exchange documents with Microsoft Office should update for better fidelity and stability.",
+   "kind": "release",
+   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/10/libreoffice2681.jpg",
+   "readingMinutes": 2
+  },
+  {
+   "id": "41e2e18153fd2151",
+   "sourceId": "lwn",
+   "title": "Beyond the &: making Rust smart pointers as flexible as references",
+   "url": "https://lwn.net/Articles/1096028/",
+   "author": "daroc",
+   "publishedAt": 1790953871000,
+   "firstSeenAt": 1791007204357,
+   "tags": [
+    "rust",
+    "programming",
+    "language-design",
+    "kernel",
+    "deep"
+   ],
+   "brief": "At RustConf 2026, Rust language team lead Tyler Mandry described the long-running effort to let user-defined smart pointers do everything built-in references can do. Today some operations possible with references remain impossible for custom smart pointers.",
+   "keyPoints": [],
+   "whyItMatters": "Rust developers working with custom smart pointers should care, as the change could remove long-standing limitations compared to built-in references.",
+   "kind": "news",
+   "imageUrl": null,
+   "readingMinutes": 0
+  },
+  {
+   "id": "9ebeaf3ea1f7dc78",
+   "sourceId": "linuxiac",
+   "title": "Nginx UI Turns Nginx Management Into a Modern Web Experience",
+   "url": "https://linuxiac.com/nginx-ui-turns-nginx-management-into-a-modern-web-experience/",
+   "author": "Bobby Borisov",
+   "publishedAt": 1790953831000,
+   "firstSeenAt": 1791007204357,
+   "tags": [
+    "nginx",
+    "web-server",
+    "open-source",
+    "sysadmin",
+    "distro",
+    "news"
+   ],
+   "brief": "Nginx UI is an open-source web interface that puts day-to-day Nginx administration—sites, upstreams, certificates, logs, and access lists—behind a dashboard. It validates configurations before applying them, automates HTTPS issuance, and can manage multiple nodes, including remote hosts over SSH or Docker.",
+   "keyPoints": [
+    "Graphical site and reverse-proxy management with pre-apply config checks",
+    "Built-in HTTPS with ACME HTTP-01 validation and failure diagnostics",
+    "Multi-node management, including remote hosts via SSH/SFTP and Docker"
+   ],
+   "whyItMatters": "Administrators running multiple Nginx sites or instances get a simpler, less error-prone alternative to hand-editing configuration files.",
+   "kind": "other",
+   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/10/nginx-ui.jpg",
+   "readingMinutes": 2
+  },
+  {
+   "id": "ff5b76b6ae2add97",
+   "sourceId": "phoronix",
+   "title": "AMD Ryzen AI Developer Platform OS Updated With ROCm 10.0, Linux 7.2",
+   "url": "https://www.phoronix.com/news/Ryzen-AI-Dev-Platform-Sep-2026",
+   "author": "Michael Larabel",
+   "publishedAt": 1790951145000,
+   "firstSeenAt": 1791007204357,
+   "tags": [
+    "amd",
+    "linux",
+    "rocm",
+    "ai",
+    "hardware",
+    "performance"
+   ],
+   "brief": "AMD released the September 2026 version of its Ryzen AI Developer Platform, the customized Debian-based distro preloaded on the Ryzen AI Halo mini PC. The update moves from Linux 6.18 LTS to Linux 7.2 and from ROCm 7.14 to ROCm 10.0, with AMD appearing to follow a monthly release cadence.",
+   "keyPoints": [
+    "Kernel upgraded from Linux 6.18 LTS to Linux 7.2 for AMDGPU/AMDKFD improvements",
+    "ROCm updated from 7.14 to 10.0",
+    "New AMD Developer Center bundle adds a security update section; 4.00 BIOS for Ryzen AI Halo"
+   ],
+   "whyItMatters": "Developers using the Ryzen AI Halo or AMD's Linux AI stack get newer kernel drivers and the latest ROCm for local AI work.",
+   "kind": "release",
+   "imageUrl": "https://www.phoronix.net/image.php?id=ryzen-ai-linux-os&image=ryzen_ai_dev_1",
+   "readingMinutes": 2
+  },
+  {
+   "id": "c81359eed0d96d6b",
+   "sourceId": "lwn",
+   "title": "Linux Test Project stable release for September 2026",
+   "url": "https://lwn.net/Articles/1098313/",
+   "author": "jzb",
+   "publishedAt": 1790948428000,
+   "firstSeenAt": 1791007204357,
+   "tags": [
+    "kernel",
+    "testing",
+    "release",
+    "deep"
+   ],
+   "brief": "The Linux Test Project has announced its September 2026 stable release, containing 382 patches from 41 authors since the May 2026 release.",
+   "keyPoints": [],
+   "whyItMatters": "Kernel testers and QA engineers use LTP to validate Linux syscalls and kernel behavior, so a new stable release brings updated tests.",
+   "kind": "release",
+   "imageUrl": null,
+   "readingMinutes": 0
+  },
+  {
+   "id": "88438fe349d7a7ea",
+   "sourceId": "phoronix",
+   "title": "systemd-appd draft PR proposes centralized tracking of user apps",
+   "url": "https://www.phoronix.com/news/systemd-appd",
+   "author": "Michael Larabel",
+   "publishedAt": 1790947740000,
+   "firstSeenAt": 1791007204357,
+   "tags": [
+    "systemd",
+    "flatpak",
+    "wayland",
+    "desktop",
+    "hardware",
+    "performance"
+   ],
+   "brief": "A draft pull request introduces systemd-appd, a new systemd app management service that lets session services like D-Bus, PipeWire, portals, and Wayland compositors identify apps and check their permissions. It uses a Varlink interface to manage running app instances and targets use cases like Flatpak 2.0.",
+   "keyPoints": [
+    "Apps register at startup; identity is tagged to their cgroup via XDG naming convention",
+    "Varlink interface stores metadata such as runtime permissions and entitlements",
+    "Aimed at Flatpak-Next / Flatpak 2.0; still in draft review"
+   ],
+   "whyItMatters": "Desktop Linux developers and Flatpak users should watch this, as it could become the standard way session services enforce per-app permissions.",
+   "kind": "news",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=systemd_appd",
+   "readingMinutes": 2
+  },
+  {
+   "id": "6cba4c3cb3cb1423",
+   "sourceId": "lwn",
+   "title": "Security updates for Friday",
+   "url": "https://lwn.net/Articles/1098312/",
+   "author": "jzb",
+   "publishedAt": 1790947287000,
+   "firstSeenAt": 1791007204357,
+   "tags": [
+    "security",
+    "kernel",
+    "openssl",
+    "distros",
+    "deep"
+   ],
+   "brief": "LWN's weekly roundup lists security updates from AlmaLinux, Debian, Fedora, Mageia, Oracle, Red Hat, SUSE, and Ubuntu. Notable patched packages include kernels, openssl-3, chromium, firefox, thunderbird, expat, and ghostscript.",
+   "keyPoints": [
+    "AlmaLinux and Oracle ship kernel, expat, openssh, and freerdp fixes",
+    "Debian patches chromium, firefox-esr, redis, and thunderbird",
+    "SUSE and Ubuntu issue multiple openssl and kernel updates"
+   ],
+   "whyItMatters": "System administrators should check whether any listed advisories affect packages they run.",
+   "kind": "news",
+   "imageUrl": null,
+   "readingMinutes": 6
+  },
+  {
+   "id": "5a4ea009b3253e7b",
+   "sourceId": "phoronix",
+   "title": "Imagination details open-source PowerVR Vulkan driver progress, Volcanic GPU plans",
+   "url": "https://www.phoronix.com/news/Mesa-PowerVR-Vulkan-2026",
+   "author": "Michael Larabel",
+   "publishedAt": 1790946003000,
+   "firstSeenAt": 1791007204357,
+   "tags": [
+    "graphics",
+    "vulkan",
+    "mesa",
+    "risc-v",
+    "hardware",
+    "performance"
+   ],
+   "brief": "At XDC 2026, Imagination Tech outlined progress on its open-source PowerVR Vulkan Mesa driver and DRM kernel driver. The driver reached Vulkan 1.2 conformance, OpenGL ES works via Zink, and work is planned toward Vulkan 1.3/1.4 and the new Volcanic GPU architecture.",
+   "keyPoints": [
+    "PowerVR Vulkan driver now formally Vulkan 1.2 conformant",
+    "OpenGL ES 2.0 works via Zink since Mesa 26.1; ES 3.1 targeted for Mesa 26.3",
+    "GPU support working on BeagleV-Ahead; experimental RISC-V VisionFive 2 support"
+   ],
+   "whyItMatters": "Linux users and developers working with PowerVR or RISC-V hardware can track improving open-source graphics support.",
+   "kind": "news",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=xdc_powervr",
+   "readingMinutes": 3
+  },
+  {
+   "id": "deda45b989f988ce",
+   "sourceId": "phoronix",
+   "title": "Intel Iris Open-Source Driver Gains Efficient 64-bit Addressing for Nova Lake P",
+   "url": "https://www.phoronix.com/news/Intel-Iris-Efficient-64-bit",
+   "author": "Michael Larabel",
+   "publishedAt": 1790941597000,
+   "firstSeenAt": 1791007204357,
+   "tags": [
+    "intel",
+    "mesa",
+    "opengl",
+    "drivers",
+    "hardware",
+    "performance"
+   ],
+   "brief": "Intel merged a 45-patch series adding efficient 64-bit addressing mode to the Iris Gallium3D OpenGL driver, matching support already added to the ANV Vulkan driver. The mode, toggleable via DriConf, targets Nova Lake P graphics and lands in Mesa 26.3, due in November.",
+   "keyPoints": [
+    "45 patches merged adding efficient 64-bit addressing to Iris Gallium3D",
+    "Follows same approach used in ANV Vulkan driver and blorp",
+    "Ships in Mesa 26.3, expected November; toggleable via DriConf"
+   ],
+   "whyItMatters": "Linux graphics developers and future Nova Lake P users should care, as it readies Mesa's OpenGL driver for Intel's next-gen GPU mode.",
+   "kind": "news",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=intel_efficient_64bit",
+   "readingMinutes": 2
+  },
+  {
+   "id": "0a38e8fe34cd4206",
+   "sourceId": "linuxiac",
+   "title": "Cloudflare Is Building a Free Public CA to Rival Let's Encrypt",
+   "url": "https://linuxiac.com/cloudflare-is-building-a-free-public-ca-to-rival-lets-encrypt/",
+   "author": "Bobby Borisov",
+   "publishedAt": 1790941105000,
+   "firstSeenAt": 1791007204357,
+   "tags": [
+    "cloudflare",
+    "tls",
+    "security",
+    "acme",
+    "distro",
+    "news"
+   ],
+   "brief": "Cloudflare plans to become a public Certificate Authority offering free, automated TLS certificates over ACME, and has applied to the Chrome, Apple, Microsoft, and Mozilla root programs. It is acquiring a trusted GlobalSign root for immediate compatibility and frames the service as redundancy for Let's Encrypt, though…",
+   "keyPoints": [
+    "ACME-compatible issuance; migration could mean only changing the directory URL",
+    "Buying a GlobalSign root trusted since 2012 to avoid years of root rollout",
+    "Requires automated renewal with ARI (RFC 9773); Merkle Tree Certificates targeted for Q1 2027"
+   ],
+   "whyItMatters": "Linux admins and self-hosters using automated TLS would gain a second large free ACME CA, reducing dependence on Let's Encrypt.",
+   "kind": "news",
+   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/10/cloudflare-free-certificates.jpg",
+   "readingMinutes": 3
+  },
+  {
+   "id": "460f0f3db6356d52",
+   "sourceId": "phoronix",
+   "title": "Ubuntu's Next Rust Effort May See OpenPGP Replaced By Sequoia PGP",
+   "url": "https://www.phoronix.com/news/Ubuntu-Rust-Sequoia-PGP",
+   "author": "Michael Larabel",
+   "publishedAt": 1790936840000,
+   "firstSeenAt": 1791007204357,
+   "tags": [
+    "ubuntu",
+    "rust",
+    "security",
+    "openpgp",
+    "hardware",
+    "performance"
+   ],
+   "brief": "Canonical's Rust status update for Ubuntu 26.10 says Sequoia PGP, a memory-safe Rust OpenPGP implementation, is now in the repositories. GnuPG stays the default for now, but Sequoia may become the default OpenPGP toolchain in a future release. The update also confirms the full switch to Rust Coreutils.",
+   "keyPoints": [
+    "Sequoia PGP provides sq and sqv as Rust counterparts to gpg and gpgv",
+    "Ubuntu 26.10 keeps OpenPGP as default; Sequoia only available in repos",
+    "Ubuntu 26.10 completes 100% transition to Rust Coreutils for cp, mv, rm"
+   ],
+   "whyItMatters": "Ubuntu users and packagers who rely on GPG tooling should know a Rust replacement is on the roadmap.",
+   "kind": "news",
+   "imageUrl": "https://www.phoronix.net/image.php?id=ubuntu-2610-panther-lake&image=ubuntu_2610_ptl_1",
+   "readingMinutes": 2
+  },
+  {
+   "id": "f55d3f72cf087036",
+   "sourceId": "phoronix",
+   "title": "Apex Compute developing open-source Mesa Vulkan driver for its AI accelerator",
+   "url": "https://www.phoronix.com/news/Apex-Compute-Mesa-Vulkan",
+   "author": "Michael Larabel",
+   "publishedAt": 1790936275000,
+   "firstSeenAt": 1791007204357,
+   "tags": [
+    "mesa",
+    "vulkan",
+    "ai",
+    "drivers",
+    "hardware",
+    "performance"
+   ],
+   "brief": "California startup Apex Compute, maker of a claimed low-power edge AI accelerator, is building an open-source Vulkan driver based on Mesa. The effort surfaced via a Vulkan-Docs merge request registering its vendor and driver IDs, with active development visible in a public GitHub Mesa branch.",
+   "keyPoints": [
+    "Driver is open source and Mesa-based, confirmed in a Vulkan-Docs merge request",
+    "Vulkan API enables use with existing software like Llama.cpp",
+    "Development happens openly on GitHub; upstream Mesa submission not yet made"
+   ],
+   "whyItMatters": "Linux graphics and AI developers should care: an open Vulkan driver avoids yet another proprietary vendor stack for edge AI hardware.",
+   "kind": "news",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=apex_compute",
+   "readingMinutes": 3
+  },
+  {
+   "id": "e2871dddf25da7e4",
+   "sourceId": "phoronix",
+   "title": "Coreboot 26.09 Released With Framework Laptop 12 Support, AI Review Policy",
+   "url": "https://www.phoronix.com/news/Coreboot-26.09-Released",
+   "author": "Michael Larabel",
+   "publishedAt": 1790935571000,
+   "firstSeenAt": 1791007204357,
+   "tags": [
+    "coreboot",
+    "firmware",
+    "amd",
+    "framework",
+    "hardware",
+    "performance"
+   ],
+   "brief": "Coreboot 26.09, the quarterly release of the open-source firmware, adds support for the Framework Laptop 12, an initial GIGABYTE MZ33-AR1 board for AMD EPYC Turin bring-up, and many other boards. It also switches to C23 and introduces a policy governing AI-generated code review comments.",
+   "keyPoints": [
+    "Framework Laptop 12 (13th Gen Intel Core) now supported",
+    "Initial GIGABYTE MZ33-AR1 port tied to AMD EPYC Turin openSIL bring-up",
+    "AI agents limited to review comments, must be prefixed \"[AI-generated]\""
+   ],
+   "whyItMatters": "Users of Coreboot-supported hardware and firmware developers should note the new board support and the project’s stance on AI-assisted code review.",
+   "kind": "release",
+   "imageUrl": "https://www.phoronix.net/image.php?id=framework-laptop-12&image=framework_12_1",
+   "readingMinutes": 3
+  },
+  {
+   "id": "60676da7948b0a8a",
+   "sourceId": "phoronix",
+   "title": "KDE Nearing Decision Point On BuildStream-Based KDE Linux",
+   "url": "https://www.phoronix.com/news/BuildStream-Based-KDE-Linux",
+   "author": "Michael Larabel",
+   "publishedAt": 1790934860000,
+   "firstSeenAt": 1791007204357,
+   "tags": [
+    "kde",
+    "linux",
+    "buildstream",
+    "distribution",
+    "hardware",
+    "performance"
+   ],
+   "brief": "KDE developers are close to deciding whether to replace KDE Linux's Arch Linux package base with a self-built stack using BuildStream. The change aims to give KDE full control over software versions for its planned time-based releases, rather than inheriting Arch's rolling release.",
+   "keyPoints": [
+    "Skunkworks project rebuilds the Arch-based OS stack with BuildStream",
+    "Users would not notice the switch since KDE Linux is image-based",
+    "BuildStream variant is based on the FreeDesktop Flatpak SDK, shared with GNOME OS"
+   ],
+   "whyItMatters": "KDE Linux users and distro watchers should care, since this determines whether KDE maintains its own base OS stack or stays on Arch packages.",
+   "kind": "news",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=kde_linux_dos",
+   "readingMinutes": 3
+  },
+  {
+   "id": "f7889dc6fc2c6027",
+   "sourceId": "linuxiac",
+   "title": "aerynOS Could Soon Welcome Budgie Desktop",
+   "url": "https://linuxiac.com/aerynos-could-soon-welcome-budgie-desktop/",
+   "author": "Bobby Borisov",
+   "publishedAt": 1790934513000,
+   "firstSeenAt": 1791007204357,
+   "tags": [
+    "aerynos",
+    "budgie",
+    "desktop",
+    "wayland",
+    "distro",
+    "news"
+   ],
+   "brief": "Joshua Strobl has submitted initial packaging work to bring Budgie Desktop 10.10.3 to aerynOS. The pull request, still under review, includes branding, a patched Budgie Control Center, and several integration fixes, and has been tested via the moss package manager.",
+   "keyPoints": [
+    "PR adds Budgie 10.10.3 with apps, branding, and patched Control Center",
+    "Tested on aerynOS volatile stream alongside KDE Plasma; SDDM suggested",
+    "Budgie 10.10 completed the project's X11-to-Wayland transition"
+   ],
+   "whyItMatters": "aerynOS users and Budgie fans should watch this PR, as it would add a fourth desktop option to the distribution.",
+   "kind": "news",
+   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/10/aerynos-budgie.jpg",
+   "readingMinutes": 2
+  },
+  {
+   "id": "61004db6c04ed9c2",
+   "sourceId": "9to5linux",
+   "title": "Debian 13 \"Trixie\" Kernel Security Update Patches More Than 1300 CVEs",
+   "url": "https://9to5linux.com/latest-debian-13-trixie-kernel-security-update-patches-more-than-1300-cves",
+   "author": "Marcus Nestor",
+   "publishedAt": 1790931169000,
+   "firstSeenAt": 1791007204357,
+   "tags": [
+    "debian",
+    "kernel",
+    "security",
+    "distro",
+    "release"
+   ],
+   "brief": "A new Linux kernel security update for Debian 13 \"Trixie\" fixes 1313 vulnerabilities that could allow privilege escalation, denial of service, or information leaks.",
+   "keyPoints": [],
+   "whyItMatters": "Debian 13 users should update promptly given the large number of patched security flaws.",
+   "kind": "news",
+   "imageUrl": null,
+   "readingMinutes": 0
+  },
+  {
    "id": "caaf0aa10eba8b04",
    "sourceId": "phoronix",
    "title": "Siemens Shuts Down Open-Source OpenRadioss Project, Deletes GitHub Repo",
@@ -6644,454 +7269,6 @@
    ],
    "brief": "New patches posted to the dri-devel mailing list add HDMI Deep Color support to Nouveau, the open-source NVIDIA Linux kernel driver, enabling 10, 12, or 16 bits per color channel. The patches currently support only RGB, and 16-bit output is untested on capable displays.",
    "imageUrl": "https://www.phoronix.net/image.php?id=nvidia-980-5080-linux&image=nouveau_980_5",
-   "readingMinutes": 2
-  },
-  {
-   "id": "b888bdaa3b25a3d2",
-   "sourceId": "drewdevault",
-   "title": "Drew DeVault: Hacker News's right-wing bias flows from Y Combinator itself",
-   "url": "https://drewdevault.com/blog/Why-is-HN-like-that/",
-   "author": "September",
-   "publishedAt": 1790121600000,
-   "firstSeenAt": 1790229602642,
-   "tags": [
-    "hacker-news",
-    "y-combinator",
-    "moderation",
-    "opinion",
-    "foss"
-   ],
-   "brief": "Drew DeVault argues that Hacker News systematically suppresses progressive views through flagging, automated moderation, and its moderators, citing flagged comments critical of Musk's Grok. He traces the bias to Y Combinator's leaders — Paul Graham, Sam Altman, and Garry Tan — and their politics and associations.",
-   "imageUrl": null,
-   "readingMinutes": 16
-  },
-  {
-   "id": "dcdeadf4ba629f15",
-   "sourceId": "omgubuntu",
-   "title": "OpenShot video editor now officially available as a snap",
-   "url": "https://www.omgubuntu.co.uk/2026/09/openshot-video-editor-snap",
-   "author": "Joey Sneddon",
-   "publishedAt": 1790114953000,
-   "firstSeenAt": 1790129584592,
-   "tags": [
-    "snap",
-    "ubuntu",
-    "video-editing",
-    "openshot",
-    "desktop"
-   ],
-   "brief": "OpenShot's official snap package went live on the Canonical Snap Store on 22 September, installable on all supported Ubuntu releases. It eases installation and brings newer versions to older LTS users, though sandbox permissions for microphone, camera, and removable media must be granted manually.",
-   "imageUrl": "https://www.omgubuntu.co.uk/wp-content/uploads/2026/08/openshot-color-grading-1.webp",
-   "readingMinutes": 2
-  },
-  {
-   "id": "2070db5c21b669c3",
-   "sourceId": "phoronix",
-   "title": "Linux 7.2 vs. Linux 7.3 Shows A Few Improvements With AMD Strix Halo",
-   "url": "https://www.phoronix.com/news/Linux-7.3-Strix-Halo",
-   "author": "Michael Larabel",
-   "publishedAt": 1790105028000,
-   "firstSeenAt": 1790129584592,
-   "tags": [
-    "kernel",
-    "amd",
-    "benchmarks",
-    "ubuntu",
-    "hardware",
-    "performance"
-   ],
-   "brief": "Phoronix benchmarked Linux 7.3 against 7.2 on an AMD Ryzen AI Max+ 395 Strix Halo Framework Desktop after Ubuntu 26.10 switched kernels. Most real-world workloads were unchanged, but NUMA performance improved significantly, network latency dropped slightly, and a few graphics and micro-benchmarks saw small gains.",
-   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=strix_halo_linux_73",
-   "readingMinutes": 3
-  },
-  {
-   "id": "f47f7edfb97fe794",
-   "sourceId": "linuxiac",
-   "title": "KDE Picks Enterprise, Documentation, and Styling as New Goals",
-   "url": "https://linuxiac.com/kde-picks-enterprise-documentation-and-styling-as-new-goals/",
-   "author": "Bobby Borisov",
-   "publishedAt": 1790101813000,
-   "firstSeenAt": 1790129584592,
-   "tags": [
-    "kde",
-    "plasma",
-    "enterprise",
-    "documentation",
-    "distro",
-    "news"
-   ],
-   "brief": "KDE has chosen three community goals for 2026–2028: making Plasma viable for enterprise and managed deployments, overhauling its fragmented documentation, and building a next-generation styling system via the Ocean design system and Union theming engine.",
-   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/09/new-kde-goals.jpg",
-   "readingMinutes": 2
-  },
-  {
-   "id": "3622e57b6da49e91",
-   "sourceId": "omgubuntu",
-   "title": "Ubuntu wiki gets its first overhaul in 16 years",
-   "url": "https://www.omgubuntu.co.uk/2026/09/ubuntu-wiki-redesign",
-   "author": "Joey Sneddon",
-   "publishedAt": 1790100492000,
-   "firstSeenAt": 1790129584592,
-   "tags": [
-    "ubuntu",
-    "canonical",
-    "documentation",
-    "infrastructure",
-    "desktop"
-   ],
-   "brief": "Canonical has launched a rebuilt Ubuntu Wiki, its first major update since 2010, now running on MediaWiki. The new wiki is smaller and aimed at Ubuntu users rather than contributors, replacing an aging Python 2 stack with security vulnerabilities.",
-   "imageUrl": "https://www.omgubuntu.co.uk/wp-content/uploads/2026/09/ubuntu-wiki-new.webp",
-   "readingMinutes": 2
-  },
-  {
-   "id": "7e078e2f92bacca3",
-   "sourceId": "itsfoss",
-   "title": "PeppermintOS switches from Xorg to XLibre, avoiding Wayland",
-   "url": "https://feed.itsfoss.com/link/24361/17470277/peppermintos-xlibre",
-   "author": "Abhishek Prakash",
-   "publishedAt": 1790099888000,
-   "firstSeenAt": 1790129584592,
-   "tags": [
-    "x11",
-    "xlibre",
-    "wayland",
-    "peppermintos",
-    "desktop",
-    "tutorial"
-   ],
-   "brief": "PeppermintOS is replacing the stalled xorg-server with XLibre, an X11 fork, in its upcoming ISO refreshes, and says it has no plans to move to Wayland. Testing has gone well so far, but XLibre is controversial: Artix Linux adopted it as default, then reverted after heavy bug reports and harassment of a developer.",
-   "imageUrl": "https://itsfoss.com/content/images/2026/09/peppermint-os.png",
-   "readingMinutes": 3
-  },
-  {
-   "id": "12124879d36e8d4e",
-   "sourceId": "itsfoss",
-   "title": "Survey: Organizations increasingly adopt OpenSearch for AI workloads, not just search",
-   "url": "https://feed.itsfoss.com/link/24361/17469935/opensearch-open-data-report-2026",
-   "author": "Sourav Rudra",
-   "publishedAt": 1790095293000,
-   "firstSeenAt": 1790129584592,
-   "tags": [
-    "opensearch",
-    "ai",
-    "open-source",
-    "linux-foundation",
-    "desktop",
-    "tutorial"
-   ],
-   "brief": "A Linux Foundation Research and OpenSearch Software Foundation report, based on 294 respondents surveyed in May 2026, finds OpenSearch awareness at 89% and production deployments doubled to 36% in two years. Among users, 62% run AI workloads on it, with cost and vendor independence driving adoption.",
-   "imageUrl": "https://itsfoss.com/content/images/2026/09/lf-opensearch-report-banner.png",
-   "readingMinutes": 3
-  },
-  {
-   "id": "d33b225b4fe210bf",
-   "sourceId": "linuxiac",
-   "title": "NetBSD 10.2 Released With New Hardware Support and Security Fixes",
-   "url": "https://linuxiac.com/netbsd-10-2-released-with-new-hardware-support-and-security-fixes/",
-   "author": "Bobby Borisov",
-   "publishedAt": 1790092152000,
-   "firstSeenAt": 1790129584592,
-   "tags": [
-    "netbsd",
-    "bsd",
-    "release",
-    "security",
-    "distro",
-    "news"
-   ],
-   "brief": "The NetBSD Project has released NetBSD 10.2, the second point release in the still-supported NetBSD 10 stable branch. It adds hardware support including Realtek RTL8126 5Gbps Ethernet, fixes security issues in IPFilter and TCP timestamps, and updates OpenSSL to 3.0.21 and Xorg to 21.1.24.",
-   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/09/netbsd102.jpg",
-   "readingMinutes": 3
-  },
-  {
-   "id": "40ba601350f0030c",
-   "sourceId": "lwn",
-   "title": "Compiling the kernel with gccrs",
-   "url": "https://lwn.net/Articles/1095553/",
-   "author": "daroc",
-   "publishedAt": 1790090855000,
-   "firstSeenAt": 1790129584592,
-   "tags": [
-    "rust",
-    "gcc",
-    "kernel",
-    "compilers",
-    "deep"
-   ],
-   "brief": "Talks at RustConf 2026 and Kangrejos covered the status of gccrs, the Rust frontend for GCC, with a focus on compiling the Linux kernel. The project is making good progress, but the compiler remains far from usable for that goal.",
-   "imageUrl": null,
-   "readingMinutes": 0
-  },
-  {
-   "id": "c9bf42680a3c344c",
-   "sourceId": "lwn",
-   "title": "Security updates for Tuesday",
-   "url": "https://lwn.net/Articles/1096022/",
-   "author": "jake",
-   "publishedAt": 1790089811000,
-   "firstSeenAt": 1790129584592,
-   "tags": [
-    "security",
-    "distros",
-    "fedora",
-    "ubuntu",
-    "kernel",
-    "deep"
-   ],
-   "brief": "LWN's daily roundup lists security updates from AlmaLinux, Debian, Fedora, Mageia, Oracle, Slackware, SUSE, and Ubuntu. Fedora 45 ships a large coordinated update touching ffmpeg, chromium, and many multimedia packages; Ubuntu fixes include the kernel, OpenJDK, glib2.0, and expat across multiple LTS releases.",
-   "imageUrl": null,
-   "readingMinutes": 10
-  },
-  {
-   "id": "cb7470f0b79e7c7a",
-   "sourceId": "phoronix",
-   "title": "AMD BC-250 Linux support expands with PSP secure processor enablement patches",
-   "url": "https://www.phoronix.com/news/AMD-BC-250-Linux-PSP-Support",
-   "author": "Michael Larabel",
-   "publishedAt": 1789986136000,
-   "firstSeenAt": 1790143202455,
-   "tags": [
-    "amd",
-    "kernel",
-    "hardware",
-    "drivers",
-    "performance"
-   ],
-   "brief": "New kernel patches enable the AMD PSP Secure Processor on the BC-250, a cut-down PlayStation 5 APU board originally sold for crypto mining. The three-patch series updates the AMD CCP driver so the board's secure processor works for encryption tasks under Linux.",
-   "imageUrl": "https://www.phoronix.net/image.php?id=2025&image=amd_bc250",
-   "readingMinutes": 3
-  },
-  {
-   "id": "cbf4b38d7c7db22f",
-   "sourceId": "phoronix",
-   "title": "Igalia Celebrates 25 Years of Linux and Open-Source Contributions",
-   "url": "https://www.phoronix.com/news/Igalia-Turns-25",
-   "author": "Michael Larabel",
-   "publishedAt": 1789985231000,
-   "firstSeenAt": 1790143202455,
-   "tags": [
-    "igalia",
-    "open-source",
-    "linux",
-    "consulting",
-    "hardware",
-    "performance"
-   ],
-   "brief": "Worker-owned consultancy Igalia, founded in September 2001 by University of A Coruña engineers, marks 25 years of open-source work. Now nearly 200 people, it contributes to the Linux kernel, WebKit, Chromium, Servo, Mesa, GStreamer, and LLVM, with recent projects for Valve and others.",
-   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=igalia_25",
-   "readingMinutes": 2
-  },
-  {
-   "id": "e279c5b153c30505",
-   "sourceId": "phoronix",
-   "title": "Linux perf script overhauled as fast Python C module",
-   "url": "https://www.phoronix.com/news/Linux-Perf-Python-Module",
-   "author": "Michael Larabel",
-   "publishedAt": 1789984636000,
-   "firstSeenAt": 1790143202455,
-   "tags": [
-    "kernel",
-    "perf",
-    "python",
-    "performance",
-    "hardware"
-   ],
-   "brief": "A 49-patch series from Google engineer Ian Rogers replaces perf's embedded Python/Perl scripting with a standalone Python C extension module, cutting overhead and build dependencies. One script that took 3.7 seconds now runs in 0.1 seconds.",
-   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=linux_perf_python",
-   "readingMinutes": 2
-  },
-  {
-   "id": "c2698c2cd236c05d",
-   "sourceId": "lwn",
-   "title": "Kernel prepatch 7.3-rc4",
-   "url": "https://lwn.net/Articles/1095491/",
-   "author": "jake",
-   "publishedAt": 1789944745000,
-   "firstSeenAt": 1790229602642,
-   "tags": [
-    "kernel",
-    "linux",
-    "deep"
-   ],
-   "brief": "Linus Torvalds has released the fourth release candidate of kernel 7.3, remarking that it is a large one. Only a teaser was available, so further details are not included here.",
-   "imageUrl": null,
-   "readingMinutes": 0
-  },
-  {
-   "id": "fa664a0dbdaefd16",
-   "sourceId": "phoronix",
-   "title": "Linux 7.3-rc4 Released: More Fixes Caught By LLMs, But Nothing Too Scary",
-   "url": "https://www.phoronix.com/news/Linux-7.3-rc4",
-   "author": "Michael Larabel",
-   "publishedAt": 1789939538000,
-   "firstSeenAt": 1790143202455,
-   "tags": [
-    "kernel",
-    "linux",
-    "btrfs",
-    "ai",
-    "hardware",
-    "performance"
-   ],
-   "brief": "Linus Torvalds released Linux 7.3-rc4, a larger-than-usual rc with fixes spread across drivers, filesystems, and networking, many flagged by LLM-based defect hunting. Notable merges include x86 fixes, new XPad game controller support, two Btrfs bug fixes, and a fix for silent user-space data loss present since 2023.",
-   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=linux_73_rc4",
-   "readingMinutes": 2
-  },
-  {
-   "id": "d10886537d235269",
-   "sourceId": "phoronix",
-   "title": "Important x86 Fixes Merged Ahead Of Linux 7.3-rc4",
-   "url": "https://www.phoronix.com/news/Linux-7.3-rc4-x86-Fixes",
-   "author": "Michael Larabel",
-   "publishedAt": 1789928352000,
-   "firstSeenAt": 1790143202455,
-   "tags": [
-    "kernel",
-    "intel",
-    "x86",
-    "microcode",
-    "hardware",
-    "performance"
-   ],
-   "brief": "A batch of x86/x86_64 fixes landed in Linux 7.3 Git ahead of 7.3-rc4. They block problematic Intel Granite Rapids microcode that could cause machine check exceptions, fix Intel FRED on Panther Lake crashing games under Wine/Steam Play, and disable APX register use in -march=native kernel builds.",
-   "imageUrl": "https://www.phoronix.net/image.php?id=2025&image=linux_615_amd_intel",
-   "readingMinutes": 3
-  },
-  {
-   "id": "b25566e448a21f4e",
-   "sourceId": "phoronix",
-   "title": "Gzip 1.15 Released, Fixing Bugs Present Since Its Inception",
-   "url": "https://www.phoronix.com/news/Gzip-1.15-Released",
-   "author": "Michael Larabel",
-   "publishedAt": 1789914732000,
-   "firstSeenAt": 1790143202455,
-   "tags": [
-    "gzip",
-    "gnu",
-    "release",
-    "security",
-    "hardware",
-    "performance"
-   ],
-   "brief": "Gzip 1.15 is out, following version 1.14 from April 2025, with over a hundred commits focused on bug fixes. Several bugs existed since the tool's beginning, including a race that could remove the wrong file, a buffer overflow in LZH decompression, and use of uninitialized memory.",
-   "imageUrl": "https://www.phoronix.net/image.php?id=2023&image=gnu",
-   "readingMinutes": 3
-  },
-  {
-   "id": "195dad8cb9d2d30a",
-   "sourceId": "phoronix",
-   "title": "KDE's 2026-2028 Goals: Enterprise Support, Better Docs, Next-Gen Styling",
-   "url": "https://www.phoronix.com/news/KDE-Goals-To-2028",
-   "author": "Michael Larabel",
-   "publishedAt": 1789907549000,
-   "firstSeenAt": 1790143202455,
-   "tags": [
-    "kde",
-    "plasma",
-    "desktop",
-    "enterprise",
-    "hardware",
-    "performance"
-   ],
-   "brief": "At KDE Akademy 2026 in Graz, KDE announced its three community-voted goals for the next two years: improving Plasma for enterprise deployments, overhauling documentation, and building a next-generation styling system via the Ocean design project and Union theming engine.",
-   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=kde_new_goals",
-   "readingMinutes": 2
-  },
-  {
-   "id": "0a44b9159cfe4211",
-   "sourceId": "phoronix",
-   "title": "Starling 0.5 desktop adds optional walkable 3D waterfront city mode",
-   "url": "https://www.phoronix.com/news/Starling-0.5-3D-Desktop",
-   "author": "Michael Larabel",
-   "publishedAt": 1789901368000,
-   "firstSeenAt": 1790143202455,
-   "tags": [
-    "wayland",
-    "desktop",
-    "ai",
-    "linux",
-    "hardware",
-    "performance"
-   ],
-   "brief": "Starling, the Swift-written Wayland desktop developed largely with Claude Code, released version 0.5 with an optional 3D desktop mode rendering a walkable waterfront city where apps remain real windows. The release also adds Windows support via WSL2 with RDP display mode.",
-   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=starling_05_3",
-   "readingMinutes": 2
-  },
-  {
-   "id": "0f8c0c25123311b5",
-   "sourceId": "phoronix",
-   "title": "Vulkan 1.4.363 Released With New VK_INTEL_device_info Extension",
-   "url": "https://www.phoronix.com/news/Vulkan-1.4.363",
-   "author": "Michael Larabel",
-   "publishedAt": 1789900428000,
-   "firstSeenAt": 1790143202455,
-   "tags": [
-    "vulkan",
-    "intel",
-    "graphics",
-    "api",
-    "hardware",
-    "performance"
-   ],
-   "brief": "Vulkan 1.4.363 is out with spec clarifications, fixes, and multi-instance VUs for DMA-BUF external memory. Its headline addition is VK_INTEL_device_info, an Intel vendor extension that exposes the graphics IP block version of Intel GPUs to applications.",
-   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=vulkan_14363",
-   "readingMinutes": 2
-  },
-  {
-   "id": "f2798a89e7665d83",
-   "sourceId": "phoronix",
-   "title": "AMD Strix Halo Shows Performance Gains on Ubuntu 26.10, Especially with amd64v3",
-   "url": "https://www.phoronix.com/review/ubuntu-2610-strix-halo",
-   "author": "Michael Larabel",
-   "publishedAt": 1789740000000,
-   "firstSeenAt": 1790143202455,
-   "tags": [
-    "amd",
-    "ubuntu",
-    "benchmarks",
-    "performance",
-    "hardware"
-   ],
-   "brief": "Phoronix benchmarked a Framework Desktop with a Ryzen AI Max+ 395 Strix Halo chip on Ubuntu 26.04 LTS versus an Ubuntu 26.10 daily ISO, plus an amd64v3 package build. Ubuntu 26.10 reportedly performs better than 26.04 LTS, with extra out-of-the-box gains from the experimental x86_64-v3 packages.",
-   "imageUrl": "https://www.phoronix.net/image.php?id=ubuntu-2610-strix-halo&image=ubuntu_2610_strix_halo_amd",
-   "readingMinutes": 2
-  },
-  {
-   "id": "031f040d4418c064",
-   "sourceId": "fedoramagazine",
-   "title": "Fedora CoreOS 45 Test Week starts September 21",
-   "url": "https://fedoramagazine.org/coreos-45-test-week/",
-   "author": "Lukáš Růžička",
-   "publishedAt": 1789545600000,
-   "firstSeenAt": 1790129584592,
-   "tags": [
-    "fedora",
-    "coreos",
-    "testing",
-    "community",
-    "tutorial"
-   ],
-   "brief": "The Fedora CoreOS and QA teams are running a Test Week starting September 21, 2026, inviting the community to test Fedora CoreOS based on Fedora 45 before it reaches testing and stable streams. Participants download test images, follow provided test cases, and report results on the wiki page.",
-   "imageUrl": "https://fedoramagazine.org/wp-content/uploads/2026/01/Test_Days-300x127.jpg",
-   "readingMinutes": 1
-  },
-  {
-   "id": "48695a35d790955e",
-   "sourceId": "fedoramagazine",
-   "title": "Fedora Linux Asahi Remix 45 Beta brings Fedora 45 to Apple Silicon",
-   "url": "https://fedoramagazine.org/announcing-fedora_asahi_remix_45_beta/",
-   "author": "Davide Cavalca",
-   "publishedAt": 1789481100000,
-   "firstSeenAt": 1790129584592,
-   "tags": [
-    "fedora",
-    "asahi",
-    "apple-silicon",
-    "release",
-    "tutorial"
-   ],
-   "brief": "Fedora Asahi Remix 45 Beta is out, bringing Fedora Linux 45 Beta to Apple Silicon Macs ahead of general availability in about a month. It is the first Remix release with out-of-the-box support for M3, M3 Pro, and M3 Max systems, though M3 GPU acceleration awaits a future Mesa update.",
-   "imageUrl": "https://fedoramagazine.org/wp-content/uploads/2026/09/f45_asahi_remix_beta_rls-300x127.jpg",
    "readingMinutes": 2
   }
  ]
