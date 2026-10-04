@@ -2,6 +2,450 @@
  "version": 1,
  "articles": [
   {
+   "id": "28aedc21fffc3b80",
+   "sourceId": "phoronix",
+   "title": "Arm Working On \"TLBID\" For Linux To Increase Performance On High Core Count CPUs",
+   "url": "https://www.phoronix.com/news/ARM64-Linux-TLBI-Domains",
+   "author": "Michael Larabel",
+   "publishedAt": 1791072609000,
+   "firstSeenAt": 1791093604576,
+   "tags": [
+    "arm",
+    "kernel",
+    "performance",
+    "hardware"
+   ],
+   "brief": "Arm posted initial Linux kernel patches for TLBI Domains (TLBID), a new architecture feature that lets TLB invalidation target only the cores a process ran on instead of the whole system. It aims to cut overhead on high core count Arm servers; no performance numbers or silicon yet.",
+   "keyPoints": [
+    "TLB invalidation sent only to cores where a process ran, not system-wide",
+    "Requires LLVM 23+ or GNU Binutils 2.46+ for instruction support",
+    "Not yet in the Arm Architecture Reference Manual; silicon is far off"
+   ],
+   "whyItMatters": "Kernel developers and Arm server users should care, as this reduces TLB flush overhead on many-core systems.",
+   "kind": "news",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=arm64_tlbid",
+   "readingMinutes": 2
+  },
+  {
+   "id": "fb53b8840dd5b712",
+   "sourceId": "linuxiac",
+   "title": "PhotoSuite Is a Free Photoshop-Like Editor With Native PSD Support",
+   "url": "https://linuxiac.com/photosuite-is-a-free-photoshop-like-editor-with-native-psd-support/",
+   "author": "Bobby Borisov",
+   "publishedAt": 1791070955000,
+   "firstSeenAt": 1791093604576,
+   "tags": [
+    "graphics",
+    "open-source",
+    "photoshop",
+    "linux",
+    "distro",
+    "news"
+   ],
+   "brief": "PhotoSuite is a new GPL-3.0 open-source image editor that mimics Photoshop's circa-2020 interface and uses PSD/PSB as native formats, aiming for 1:1 compatibility. Built on Tauri 2 with web technologies and Rust, it runs fully offline. Its compatibility claims are ambitious but not yet independently validated.",
+   "keyPoints": [
+    "Native PSD/PSB support with layers, masks, Smart Objects, effects, and text preserved",
+    "Extensive toolset including Liquify, Lensfun correction, scripting, and Photoshop Actions playback",
+    "Tauri 2 app with DEB/RPM Linux packages, no cloud or telemetry"
+   ],
+   "whyItMatters": "Photoshop users and Linux designers should watch it, since reliable PSD round-tripping has long been a gap in open-source graphics tools.",
+   "kind": "news",
+   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/10/photosuite.jpg",
+   "readingMinutes": 3
+  },
+  {
+   "id": "845d156ec0f79e1a",
+   "sourceId": "omgubuntu",
+   "title": "Kagi ends Orion browser development for Linux, will open source the code",
+   "url": "https://www.omgubuntu.co.uk/2026/10/orion-linux-browser-development-ended",
+   "author": "Joey Sneddon",
+   "publishedAt": 1791061202000,
+   "firstSeenAt": 1791093604576,
+   "tags": [
+    "browser",
+    "linux",
+    "open-source",
+    "kagi",
+    "ubuntu",
+    "desktop"
+   ],
+   "brief": "Kagi has stopped developing its Orion browser for Linux, months after the GTK port entered public beta. The company cites its small team and user-funded model, and plans to open source both the Linux and unfinished Windows codebases. macOS and iOS development continues.",
+   "keyPoints": [
+    "Linux beta gets no further updates; unpatched security issues expected",
+    "Kagi will open source Linux and WIP Windows ports, details within a month",
+    "Company rejected building on Chromium to preserve engine diversity"
+   ],
+   "whyItMatters": "Linux users and open-source developers gain a potentially reusable independent browser codebase, but lose a promising native GTK browser.",
+   "kind": "news",
+   "imageUrl": "https://www.omgubuntu.co.uk/wp-content/uploads/2026/09/kagi-orion-beta-linux.webp",
+   "readingMinutes": 2
+  },
+  {
+   "id": "737811d7489dff4e",
+   "sourceId": "phoronix",
+   "title": "Valve's Timur Kristóf on improving old AMD GCN GPUs on Linux",
+   "url": "https://www.phoronix.com/news/XDC-2026-Valve-Timur-AMDGPU",
+   "author": "Michael Larabel",
+   "publishedAt": 1791053788000,
+   "firstSeenAt": 1791093604576,
+   "tags": [
+    "kernel",
+    "amd",
+    "gpu",
+    "valve",
+    "hardware",
+    "performance"
+   ],
+   "brief": "At XDC2026 in Toronto, Valve's Timur Kristóf presented his work moving decade-old GCN 1.0/1.1 AMD cards from the legacy Radeon driver to the modern AMDGPU kernel driver. This unlocks the RADV Vulkan driver and better performance, and involved fixing display and power management issues plus adding soft reset support.",
+   "keyPoints": [
+    "GCN 1.0/1.1 cards migrated from legacy Radeon to AMDGPU driver",
+    "Enables RADV Vulkan support, better performance, soft reset",
+    "Linux 6.19 saw a ~30% performance boost for these old GPUs"
+   ],
+   "whyItMatters": "Owners of decade-old AMD GPUs and APUs get viable Linux gaming, and the talk offers a path into AMDGPU kernel development.",
+   "kind": "news",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=timur",
+   "readingMinutes": 3
+  },
+  {
+   "id": "732d224b8c6fd427",
+   "sourceId": "linuxiac",
+   "title": "Parrot OS 7.4 Released With AnonSurf 6.0 and Optimized amd64v3/arm64v8.2 ISOs",
+   "url": "https://linuxiac.com/security-focused-parrot-os-7-4-released-with-linux-kernel-7-1-anonsurf-6-0/",
+   "author": "Bobby Borisov",
+   "publishedAt": 1791051167000,
+   "firstSeenAt": 1791093604576,
+   "tags": [
+    "parrot-os",
+    "security",
+    "debian",
+    "tor",
+    "distro",
+    "news"
+   ],
+   "brief": "Parrot OS 7.4, the Debian-based security distro, ships AnonSurf 6.0 rebuilt on systemd for more reliable Tor routing. It also adds a Parrot Discovery first-run setup app, CPU-optimized ISO builds, a redesigned Rocket 2.0 container manager, and refreshed security tools.",
+   "keyPoints": [
+    "AnonSurf 6.0 uses systemd, adds IP/DNS checks, JSON output, Nyx support",
+    "New optimized ISOs target amd64v3 and arm64v8.2 CPU instruction levels",
+    "Rocket 2.0 gets PySide6 UI for managing containerized security tools"
+   ],
+   "whyItMatters": "Penetration testers and privacy-focused users get more reliable Tor anonymization and faster builds on modern hardware.",
+   "kind": "release",
+   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/10/parrot74.jpg",
+   "readingMinutes": 2
+  },
+  {
+   "id": "7e54c5517c934347",
+   "sourceId": "9to5linux",
+   "title": "Parrot OS 7.4 Released with AnonSurf 6.0, Updated Raspberry Pi Images",
+   "url": "https://9to5linux.com/parrot-os-7-4-released-with-anonsurf-6-0-updated-raspberry-pi-images",
+   "author": "Marcus Nestor",
+   "publishedAt": 1791049676000,
+   "firstSeenAt": 1791093604576,
+   "tags": [
+    "parrot-os",
+    "security",
+    "debian",
+    "raspberry-pi",
+    "distro",
+    "release"
+   ],
+   "brief": "ParrotSec released Parrot OS 7.4, the fourth update in the 7.0 series of the Debian-based penetration testing distribution. It runs Linux kernel 7.1, pulls updates from Debian 13.6 \"Trixie\", ships AnonSurf 6.0.1 and many updated security tools, and adds optimized x86-64-v3 ISOs plus refreshed Raspberry Pi and ARM…",
+   "keyPoints": [
+    "Powered by Linux kernel 7.1 with Debian 13.6 \"Trixie\" package updates and patches",
+    "AnonSurf 6.0.1, Metasploit 6.5.4, and many other security tools updated",
+    "Adds x86-64-v3 optimized ISOs, Discovery setup screen, and updated ARM/Raspberry Pi images"
+   ],
+   "whyItMatters": "Security professionals and pentesting enthusiasts using Parrot OS get a newer kernel, refreshed toolset, and better images for modern CPUs and ARM devices.",
+   "kind": "release",
+   "imageUrl": "https://9to5linux.com/wp-content/uploads/2026/10/pos74.webp",
+   "readingMinutes": 2
+  },
+  {
+   "id": "8f1f148adf1d408d",
+   "sourceId": "phoronix",
+   "title": "Linux Scheduler Patches Cut Latency for Short Slice Tasks",
+   "url": "https://www.phoronix.com/news/Linux-Latency-Short-Slice-Tasks",
+   "author": "Michael Larabel",
+   "publishedAt": 1791048338000,
+   "firstSeenAt": 1791093604576,
+   "tags": [
+    "kernel",
+    "scheduler",
+    "performance",
+    "linux",
+    "hardware"
+   ],
+   "brief": "Linaro engineer Vincent Guittot posted an 18-patch series improving Linux scheduler latency, especially when multiple short slice tasks run concurrently. Cyclictest and Hackbench benchmarks show notable improvements, particularly in peak latency. The patches build on Guittot's recent work fixing scheduler defects.",
+   "keyPoints": [
+    "18 patches target latency with concurrent short slice tasks",
+    "Cyclictest and Hackbench show improved peak latency",
+    "Changes include decay of positive lag and slice-aware CPU selection"
+   ],
+   "whyItMatters": "Developers and users running latency-sensitive workloads should watch these patches as they progress toward mainline.",
+   "kind": "news",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=short_slice_tasks",
+   "readingMinutes": 2
+  },
+  {
+   "id": "0d756baec8e3a43d",
+   "sourceId": "linuxiac",
+   "title": "Rust Is Now a Tier-1 Programming Language at Microsoft",
+   "url": "https://linuxiac.com/rust-is-now-a-tier-1-programming-language-at-microsoft/",
+   "author": "Bobby Borisov",
+   "publishedAt": 1791040256000,
+   "firstSeenAt": 1791093604576,
+   "tags": [
+    "rust",
+    "microsoft",
+    "windows",
+    "cpp",
+    "distro",
+    "news"
+   ],
+   "brief": "Microsoft has made Rust a Tier-1 internal language alongside C++, C#, and TypeScript, giving teams fully supported toolchains, CI, and compliance workflows. A custom backend, rustc_codegen_utc, links rustc to MSVC's code generator for Windows interoperability.",
+   "keyPoints": [
+    "Tier-1 status means Microsoft provides secure toolchains, CI, and platform integration for Rust",
+    "rustc_codegen_utc connects rustc to the MSVC backend for Windows ABI and tooling support",
+    "Backend production-ready since early 2026, self-compiling since Rust 1.90, used by 100+ repos"
+   ],
+   "whyItMatters": "Windows and systems developers gain a fully supported, production-ready path for mixing Rust with existing C++ codebases at Microsoft.",
+   "kind": "news",
+   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/10/microsoft-rust.jpg",
+   "readingMinutes": 2
+  },
+  {
+   "id": "4614fb24d7a0ee12",
+   "sourceId": "phoronix",
+   "title": "Moose: GNOME Gains Another Local AI Chat App Built on GTK and Ollama",
+   "url": "https://www.phoronix.com/news/GNOME-Moose-Local-AI",
+   "author": "Michael Larabel",
+   "publishedAt": 1791028021000,
+   "firstSeenAt": 1791093604576,
+   "tags": [
+    "gnome",
+    "ai",
+    "ollama",
+    "gtk",
+    "hardware",
+    "performance"
+   ],
+   "brief": "Moose is a new native GTK/libadwaita app for GNOME that chats with AI models via Ollama, joining Newelle as a GNOME-focused local AI option. Announced via This Week in GNOME, it is on Flathub with Rust GPLv3 source on GitHub. The same update covered GNOME Calendar improvements and the new Toolpak project.",
+   "keyPoints": [
+    "Moose can set up Ollama and manage local LLMs",
+    "Supports loading local documents and images with GNOME integration",
+    "GNOME Calendar gained better calendar management, no restart needed"
+   ],
+   "whyItMatters": "GNOME users wanting local, privacy-friendly AI chat now have a second native option with document and image support.",
+   "kind": "news",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=moose",
+   "readingMinutes": 2
+  },
+  {
+   "id": "1503d3996df92975",
+   "sourceId": "lwn",
+   "title": "Zig 0.17 released",
+   "url": "https://lwn.net/Articles/1098412/",
+   "author": "jzb",
+   "publishedAt": 1791027078000,
+   "firstSeenAt": 1791093604576,
+   "tags": [
+    "zig",
+    "programming-languages",
+    "kernel",
+    "deep"
+   ],
+   "brief": "Zig 0.17 is out after five months of work, with 925 commits from 206 contributors. Highlights include a reworked build system with a new Build Server Protocol and ELF linker improvements enabling incremental compilation on x86_64-linux.",
+   "keyPoints": [],
+   "whyItMatters": "",
+   "kind": "release",
+   "imageUrl": null,
+   "readingMinutes": 0
+  },
+  {
+   "id": "ff6994995f611f17",
+   "sourceId": "phoronix",
+   "title": "KosmicKrisp achieves Vulkan 1.4 conformance on Apple Silicon, nears native Metal performance",
+   "url": "https://www.phoronix.com/news/KosmicKrisp-Vulkan-1.4-2026",
+   "author": "Michael Larabel",
+   "publishedAt": 1791026647000,
+   "firstSeenAt": 1791093604576,
+   "tags": [
+    "vulkan",
+    "mesa",
+    "macos",
+    "graphics",
+    "hardware",
+    "performance"
+   ],
+   "brief": "LunarG's KosmicKrisp, a Vulkan-on-Metal driver for Apple systems built within Mesa, has passed the Vulkan 1.4 CTS and is now Khronos-certified as conformant. Presented at XDC2026, it is deemed production ready on modern macOS with Apple Silicon, performing comparably to MoltenVK and not far behind native Metal.",
+   "keyPoints": [
+    "Passed Vulkan 1.4 CTS; certified conformant by The Khronos Group",
+    "Production ready on modern macOS with Apple Silicon, per LunarG",
+    "Performance matches MoltenVK and approaches native Metal; iOS support not yet planned"
+   ],
+   "whyItMatters": "macOS and Apple Silicon users needing Vulkan support gain a conformant, production-ready Mesa driver alternative to MoltenVK.",
+   "kind": "news",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=kosmickrisp_1",
+   "readingMinutes": 2
+  },
+  {
+   "id": "2dbcbdf504734f7f",
+   "sourceId": "lwn",
+   "title": "Seven stable kernel releases ship with fixes across the tree",
+   "url": "https://lwn.net/Articles/1098404/",
+   "author": "jzb",
+   "publishedAt": 1791026502000,
+   "firstSeenAt": 1791093604576,
+   "tags": [
+    "kernel",
+    "linux",
+    "stable",
+    "release",
+    "deep"
+   ],
+   "brief": "Greg Kroah-Hartman announced stable kernels 7.2.9, 6.18.55, 6.12.112, 6.6.158, 6.1.189, 5.15.222, and 5.10.271. Each carries many important fixes throughout the tree, and users are advised to upgrade.",
+   "keyPoints": [],
+   "whyItMatters": "Users and administrators on any of these stable kernel branches should plan to update.",
+   "kind": "release",
+   "imageUrl": null,
+   "readingMinutes": 0
+  },
+  {
+   "id": "08cdf79e61899bf9",
+   "sourceId": "phoronix",
+   "title": "Linux 7.4 To Support The Raspberry Pi 10-Inch Touch Display 2",
+   "url": "https://www.phoronix.com/news/Linux-74-RPi-10-Touch-Display-2",
+   "author": "Michael Larabel",
+   "publishedAt": 1791023590000,
+   "firstSeenAt": 1791093604576,
+   "tags": [
+    "kernel",
+    "raspberry-pi",
+    "drm",
+    "drivers",
+    "hardware",
+    "performance"
+   ],
+   "brief": "A DRM-Misc-Next pull request ahead of the Linux 7.4 merge window adds mainline support for the Raspberry Pi 10-inch Touch Display 2, plus an NPU device ID for Ryzen AI Max 400 'Gorgon Halo' chips and Renesas RZ/G3L SoC support in the Renesas DRM driver.",
+   "keyPoints": [
+    "Device Tree additions enable the Touch Display 2's MIPI-DSI panel with Ilitek IL79600A controller",
+    "Display has 1200 x 1920 resolution, multi-touch, and retails around $80",
+    "Pull also adds AIE2 Revision 9 NPU ID for Ryzen AI Max 400 and Renesas RZ/G3L support"
+   ],
+   "whyItMatters": "Raspberry Pi users wanting the new 10-inch touch display on mainline kernels, and developers tracking DRM driver hardware support, should care.",
+   "kind": "news",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=raspberry_pi_touch_10_1",
+   "readingMinutes": 2
+  },
+  {
+   "id": "0a2fb16db12ee9d1",
+   "sourceId": "phoronix",
+   "title": "Linux 7.3 Adds Turtle Beach VelocityOne Race Wheel Support",
+   "url": "https://www.phoronix.com/news/Linux-7.3-TB-VelocityOne-Race",
+   "author": "Michael Larabel",
+   "publishedAt": 1791022685000,
+   "firstSeenAt": 1791093604576,
+   "tags": [
+    "kernel",
+    "hardware",
+    "gaming",
+    "hid",
+    "performance"
+   ],
+   "brief": "Linux 7.3-rc6 adds the Turtle Beach VelocityOne Race racing wheel and pedal kit, a $649-700 device without official Linux support, to the hid-universal-pidff driver. The change only required adding vendor and device IDs, so it was safe to merge late in the cycle.",
+   "keyPoints": [
+    "VelocityOne Race added to hid-universal-pidff driver for better simracing support",
+    "Only vendor and device IDs needed, so it merged late in Linux 7.3",
+    "HID pull also fixes Intel THC buffer overflows and reverts Logitech Bolt HID++ support"
+   ],
+   "whyItMatters": "Linux sim racers with Turtle Beach gear get proper force feedback support without vendor involvement.",
+   "kind": "news",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=velocityone_race",
+   "readingMinutes": 2
+  },
+  {
+   "id": "60109d07a5b845d8",
+   "sourceId": "phoronix",
+   "title": "KDE Plasma 6.8 Makes Tiled Windows Fit Together More Nicely",
+   "url": "https://www.phoronix.com/news/KDE-Plasma-6.8-Tiled-Windows",
+   "author": "Michael Larabel",
+   "publishedAt": 1791022030000,
+   "firstSeenAt": 1791093604576,
+   "tags": [
+    "kde",
+    "plasma",
+    "kwin",
+    "desktop",
+    "hardware",
+    "performance"
+   ],
+   "brief": "With a week until KDE Plasma 6.8, last-minute fixes include square corners for tiled windows, reverting a regression reported in 2024 so they fit together like on Windows. Other fixes address KWin crashes, remote desktop auth with FreeRDP 3.32+, and more accurate GPU memory reporting in System Monitor.",
+   "keyPoints": [
+    "Tiled windows get square corners in Plasma 6.8, fixing a 2024-reported regression",
+    "Plasma 6.7.6 fixes KWin crash with NVIDIA 610.57.04+ drivers",
+    "Remote desktop authentication now works with FreeRDP 3.32 and newer"
+   ],
+   "whyItMatters": "KDE Plasma users, especially those using tiling or NVIDIA hardware, get stability and polish fixes in the imminent 6.8 release.",
+   "kind": "news",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=kde_tiled_windows",
+   "readingMinutes": 2
+  },
+  {
+   "id": "1185c12d77b859e6",
+   "sourceId": "linuxiac",
+   "title": "KDE Plasma 6.8 Beta 2 Brings More Polish Ahead of October 14 Release",
+   "url": "https://linuxiac.com/kde-plasma-6-8-beta-2-brings-more-polish-ahead-of-october-14-release/",
+   "author": "Bobby Borisov",
+   "publishedAt": 1791021996000,
+   "firstSeenAt": 1791093604576,
+   "tags": [
+    "kde",
+    "plasma",
+    "desktop",
+    "release",
+    "distro",
+    "news"
+   ],
+   "brief": "KDE has released Plasma 6.8 Beta 2 with visual and stability fixes ahead of the final October 14 release. Highlights include square corners on tiled windows, Spectacle and remote desktop fixes, and quieter display-change notifications. A KDE history documentary also premieres the same day.",
+   "keyPoints": [
+    "Tiled windows now use square corners so adjacent windows fit together cleanly",
+    "Spectacle screen recording saves and Share functionality are fixed",
+    "Remote desktop authentication works with FreeRDP 3.32 and newer"
+   ],
+   "whyItMatters": "KDE Plasma users and beta testers should know what changed before the October 14 final release and where to report remaining regressions.",
+   "kind": "release",
+   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/10/kde68-beta2.jpg",
+   "readingMinutes": 3
+  },
+  {
+   "id": "5948c7ec5892a163",
+   "sourceId": "itsfoss",
+   "title": "Obscura VPN's Carl Dong on Split-Trust Privacy: 'We View Consumer Data as Toxic Waste'",
+   "url": "https://feed.itsfoss.com/link/24361/17484548/obscura-carl-dong",
+   "author": "Abhishek Prakash",
+   "publishedAt": 1791013636000,
+   "firstSeenAt": 1791093604576,
+   "tags": [
+    "vpn",
+    "privacy",
+    "security",
+    "open-source",
+    "desktop",
+    "tutorial"
+   ],
+   "brief": "An interview with Obscura VPN founder Carl Dong, a former Bitcoin Core contributor, on replacing the 'no-logs' promise with a two-party relay: Obscura's first hop and Mullvad's exit hop each see only half the picture.",
+   "keyPoints": [
+    "Two-party relay splits trust: Obscura sees your IP, Mullvad sees traffic, neither sees both",
+    "QUIC-based stealth protocol mimics HTTP/3 and resists deep packet inspection censorship",
+    "Open-source client with reproducible builds; accepts Monero and Lightning, no email required"
+   ],
+   "whyItMatters": "Privacy-conscious users skeptical of single-provider VPN promises get a concrete alternative trust model to evaluate.",
+   "kind": "deep-dive",
+   "imageUrl": "https://itsfoss.com/content/images/2026/10/obscura-carl-dong-1-.webp",
+   "readingMinutes": 10
+  },
+  {
    "id": "af5dc4c9ebbaff5b",
    "sourceId": "phoronix",
    "title": "Wine 11.19 adds Wayland color management for Vulkan, DNS query caching",
@@ -6938,338 +7382,6 @@
    "brief": "Systemd v262 has been released. Notable additions include building systemd as a single statically linked binary for small containers, support for the kernel coredump socket protocol from Linux 6.17, and OpenSSL 4 support.",
    "imageUrl": null,
    "readingMinutes": 0
-  },
-  {
-   "id": "593aa659a1185eb1",
-   "sourceId": "itsfoss",
-   "title": "Local AI Weekly #3: cheap frontier AI won't last, plus local tools and model news",
-   "url": "https://feed.itsfoss.com/link/24361/17471237/local-ai-weekly-3",
-   "author": "Abhishek Prakash",
-   "publishedAt": 1790175092000,
-   "firstSeenAt": 1790229602642,
-   "tags": [
-    "local-ai",
-    "open-source",
-    "llm",
-    "rust",
-    "desktop",
-    "tutorial"
-   ],
-   "brief": "This newsletter issue argues that cheap, generous AI subscriptions are a hook before prices rise, making local models a safer bet. It also covers open-source agent inboxes from Cloudflare and AWS, new tools like OpenPencil and Kalypta, and Microsoft's Rust rewrite of the Copilot runtime.",
-   "imageUrl": "https://itsfoss.com/content/images/2026/09/local-ai-token-rag-pull.webp",
-   "readingMinutes": 7
-  },
-  {
-   "id": "15635b103e5e9890",
-   "sourceId": "lwn",
-   "title": "Critical Radicle protocol flaws expose traffic and enable node impersonation",
-   "url": "https://lwn.net/Articles/1096200/",
-   "author": "jzb",
-   "publishedAt": 1790173246000,
-   "firstSeenAt": 1790229602642,
-   "tags": [
-    "security",
-    "radicle",
-    "p2p",
-    "vulnerabilities",
-    "kernel",
-    "deep"
-   ],
-   "brief": "Radicle disclosed two critical network-protocol flaws: traffic lacks expected confidentiality, and broken peer authentication lets attackers spoof Node IDs to read private repositories. Combined, an on-path attacker can observe allow-listed Node IDs, read exchanges, and fetch repositories; no setting or allow-list…",
-   "imageUrl": null,
-   "readingMinutes": 1
-  },
-  {
-   "id": "b67b36cd9c66192e",
-   "sourceId": "phoronix",
-   "title": "Benchmarking Java Performance Of JDK 8 Through OpenJDK 27",
-   "url": "https://www.phoronix.com/review/java-8-openjdk-27-benchmarks",
-   "author": "Michael Larabel",
-   "publishedAt": 1790173029000,
-   "firstSeenAt": 1790229602642,
-   "tags": [
-    "java",
-    "openjdk",
-    "benchmarks",
-    "performance",
-    "hardware"
-   ],
-   "brief": "Phoronix benchmarked every major OpenJDK release from 8 through the new 27 on a Threadripper 9980X workstation running Fedora 44. Tests used official binaries with default settings across DaCapoBench and Renaissance suites, though some benchmarks had issues with pre-OpenJDK 11 versions.",
-   "imageUrl": "https://www.phoronix.net/image.php?id=java-8-openjdk-27-benchmarks&image=openjdk_27_1",
-   "readingMinutes": 1
-  },
-  {
-   "id": "8a661421e7edc7d1",
-   "sourceId": "9to5linux",
-   "title": "KeePassXC 2.8 Beta Brings Auto-Type on Wayland and Qt 6 Port",
-   "url": "https://9to5linux.com/?p=33711",
-   "author": "",
-   "publishedAt": 1790172633000,
-   "firstSeenAt": 1790229602642,
-   "tags": [
-    "keepassxc",
-    "wayland",
-    "qt6",
-    "security",
-    "distro",
-    "release"
-   ],
-   "brief": "KeePassXC 2.8 is now in public beta, adding Auto-Type support on Wayland, quick unlock on Linux, and a long-awaited port to Qt 6.",
-   "imageUrl": null,
-   "readingMinutes": 0
-  },
-  {
-   "id": "391d2a5a41419e68",
-   "sourceId": "lwn",
-   "title": "Critical WordPress RCE vulnerability announced",
-   "url": "https://lwn.net/Articles/1096195/",
-   "author": "jzb",
-   "publishedAt": 1790171740000,
-   "firstSeenAt": 1790229602642,
-   "tags": [
-    "wordpress",
-    "security",
-    "kernel",
-    "deep"
-   ],
-   "brief": "A critical vulnerability in WordPress's get_page_template() function could allow unauthenticated remote-code execution in limited circumstances. Fixes are available for the latest branch and backported to 4.7; the ClassicPress fork is also affected but has no update yet.",
-   "imageUrl": null,
-   "readingMinutes": 0
-  },
-  {
-   "id": "7507aeca6219aa4c",
-   "sourceId": "lwn",
-   "title": "Security updates for Wednesday",
-   "url": "https://lwn.net/Articles/1096191/",
-   "author": "jzb",
-   "publishedAt": 1790169648000,
-   "firstSeenAt": 1790229602642,
-   "tags": [
-    "security",
-    "kernel",
-    "ubuntu",
-    "fedora",
-    "deep"
-   ],
-   "brief": "LWN's daily roundup of distribution security advisories covering AlmaLinux, Debian, Fedora, Mageia, Oracle, Red Hat, SUSE, and Ubuntu. Notable updates include kernel fixes for Fedora, SUSE, and Ubuntu, plus patches for chromium, firefox, openssh, sudo, and bind.",
-   "imageUrl": null,
-   "readingMinutes": 4
-  },
-  {
-   "id": "24fbbefde36448a6",
-   "sourceId": "phoronix",
-   "title": "NTFS-3G 2026.9.18 released with heap overflow and DoS security fixes",
-   "url": "https://www.phoronix.com/news/NTFS-3G-2026.9.18",
-   "author": "Michael Larabel",
-   "publishedAt": 1790166421000,
-   "firstSeenAt": 1790229602642,
-   "tags": [
-    "filesystems",
-    "ntfs",
-    "security",
-    "fuse",
-    "hardware",
-    "performance"
-   ],
-   "brief": "NTFS-3G 2026.9.18, the FUSE-based NTFS driver, fixes multiple heap buffer overflows, possible heap corruption, and a denial-of-service vector. It also addresses an ntfsresize issue with stale $MFTMirr data and is available from GitHub.",
-   "imageUrl": "https://www.phoronix.net/image.php?id=btrfs-sandisk-raid&image=sandisk_btrfs_raid2",
-   "readingMinutes": 2
-  },
-  {
-   "id": "2594c76cb4a2e102",
-   "sourceId": "9to5linux",
-   "title": "NTFS-3G 2026.9.18 NTFS Driver for Linux Released with Security and Bug Fixes",
-   "url": "https://9to5linux.com/?p=33708",
-   "author": "",
-   "publishedAt": 1790165467000,
-   "firstSeenAt": 1790229602642,
-   "tags": [
-    "ntfs",
-    "filesystems",
-    "security",
-    "linux",
-    "distro",
-    "release"
-   ],
-   "brief": "NTFS-3G 2026.9.18, the driver for handling NTFS partitions on Linux-based systems, is now available for download. The release brings various security and bug fixes.",
-   "imageUrl": null,
-   "readingMinutes": 0
-  },
-  {
-   "id": "7364ada1da0c0c76",
-   "sourceId": "phoronix",
-   "title": "Qualcomm Posts Open-Source GPU Driver Patches For Adreno 850 One Day After Announcement",
-   "url": "https://www.phoronix.com/news/Qualcomm-Adreno-850-Open-Source",
-   "author": "Michael Larabel",
-   "publishedAt": 1790163948000,
-   "firstSeenAt": 1790229602642,
-   "tags": [
-    "gpu",
-    "qualcomm",
-    "kernel",
-    "mesa",
-    "hardware",
-    "performance"
-   ],
-   "brief": "One day after announcing the Snapdragon 8 Elite Extreme Gen 6, Qualcomm engineers posted initial Linux kernel patches bringing up its Adreno 850 GPU in the MSM driver. The series also adds the similar Adreno 845 'Maili' GPU, which lacks the A850's new MALU matrix core. Mesa and linux-firmware support are promised soon.",
-   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=qualcomm_8eeg6",
-   "readingMinutes": 3
-  },
-  {
-   "id": "37c29e4a071bb8b7",
-   "sourceId": "phoronix",
-   "title": "AMD Upstreams AVX10_V2_AUX Support Into LLVM Clang 24",
-   "url": "https://www.phoronix.com/news/LLVM-Clang-AVX10_V2_AUX",
-   "author": "Michael Larabel",
-   "publishedAt": 1790159158000,
-   "firstSeenAt": 1790229602642,
-   "tags": [
-    "llvm",
-    "clang",
-    "amd",
-    "ai",
-    "hardware",
-    "performance"
-   ],
-   "brief": "AMD's AVX10_V2_AUX support has been merged into LLVM 24, exposed via the new -mavx10v2aux Clang flag. The instructions add data-type conversion to FP4/FP6, OCP microscaling formats, and new rounding modes as part of the Intel/AMD AI Compute Extensions. LLVM/Clang 24.1 stable is expected around March.",
-   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=llvm_avx10v2aux",
-   "readingMinutes": 2
-  },
-  {
-   "id": "d6fd59a3bc7d6ac8",
-   "sourceId": "phoronix",
-   "title": "Linux 7.3 Reverts Logitech Bolt Receiver HID++ Support After Bug Reports",
-   "url": "https://www.phoronix.com/news/Linux-Reverting-Logitech-Bolt",
-   "author": "Michael Larabel",
-   "publishedAt": 1790158537000,
-   "firstSeenAt": 1790229602642,
-   "tags": [
-    "kernel",
-    "hardware",
-    "logitech",
-    "hid",
-    "performance"
-   ],
-   "brief": "Linux 7.3 added Logitech Bolt receiver support to hid-logitech-dj with HID++, but it caused scroll-wheel and settings bugs with Logitech mice. Benjamin Tissoires has queued a revert to the generic HID driver, dropping HID++ functionality until the issues can be properly addressed.",
-   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=logitech_bolt",
-   "readingMinutes": 4
-  },
-  {
-   "id": "73582ccbb708ed02",
-   "sourceId": "linuxiac",
-   "title": "Sublime Text Build 4213 Adds Python 3.14 Runtime and File Icon Themes",
-   "url": "https://linuxiac.com/sublime-text-4213-code-editor-adds-python-3-14-file-icon-themes/",
-   "author": "Bobby Borisov",
-   "publishedAt": 1790156984000,
-   "firstSeenAt": 1790229602642,
-   "tags": [
-    "sublime-text",
-    "editors",
-    "python",
-    "linux",
-    "distro",
-    "news"
-   ],
-   "brief": "Sublime Text Build 4213 upgrades the plugin runtime from Python 3.8 to 3.14, adds file icon themes and an open_terminal command, and speeds up Git status and multi-file saving. It also ships a rewritten C# syntax definition plus Linux fixes for modal dialogs, KDE input, and Wayland tab dragging.",
-   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/09/sublime4213.jpg",
-   "readingMinutes": 2
-  },
-  {
-   "id": "b3367c6eb7404367",
-   "sourceId": "9to5linux",
-   "title": "NVIDIA 595.104.02 Linux Graphics Driver Released with Better Wayland Support",
-   "url": "https://9to5linux.com/?p=33704",
-   "author": "",
-   "publishedAt": 1790156155000,
-   "firstSeenAt": 1790229602642,
-   "tags": [
-    "nvidia",
-    "drivers",
-    "wayland",
-    "linux",
-    "distro",
-    "release"
-   ],
-   "brief": "NVIDIA 595.104.02 for Linux is available, bringing fixes for bugs and crashes to improve driver stability and reliability, plus better Wayland support.",
-   "imageUrl": null,
-   "readingMinutes": 0
-  },
-  {
-   "id": "75107613a0d7699e",
-   "sourceId": "linuxiac",
-   "title": "FreeRDP 3.32 Adds Microsoft Entra Integration on Linux",
-   "url": "https://linuxiac.com/freerdp-3-32-adds-microsoft-entra-integration-on-linux/",
-   "author": "Bobby Borisov",
-   "publishedAt": 1790153060000,
-   "firstSeenAt": 1790229602642,
-   "tags": [
-    "freerdp",
-    "rdp",
-    "security",
-    "wayland",
-    "distro",
-    "news"
-   ],
-   "brief": "FreeRDP 3.32.0 ships with Microsoft Entra/Azure integration for the SDL and xfreerdp clients, beta RemoteApp (RAIL) support on X11 and Wayland, and a reworked FFmpeg-based hardware video pipeline. The release also hardens security, including a default-deny certificate policy on the proxy side.",
-   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/09/freerdp332.jpg",
-   "readingMinutes": 2
-  },
-  {
-   "id": "4c01c2ccc0b53b09",
-   "sourceId": "fedoramagazine",
-   "title": "Installing Fedora 45 on Stratis storage",
-   "url": "https://fedoramagazine.org/installing-fedora-45-on-stratis-storage/",
-   "author": "Vojtěch Trefný",
-   "publishedAt": 1790150400000,
-   "firstSeenAt": 1790229602642,
-   "tags": [
-    "fedora",
-    "storage",
-    "anaconda",
-    "tutorial"
-   ],
-   "brief": "Fedora 45's Anaconda installer adds Stratis as a storage option. In the Web UI, Stratis layouts are built manually via the integrated Cockpit storage module; kickstart gains full support with a stratis autopart type and new stratispool and stratisfs commands.",
-   "imageUrl": "https://fedoramagazine.org/wp-content/uploads/2026/09/fedora_45_on_stratis-300x127.jpg",
-   "readingMinutes": 5
-  },
-  {
-   "id": "2c87d4c2751231ff",
-   "sourceId": "itsfoss",
-   "title": "Local AI Jargon Quiz: Do You Know All These Buzzwords?",
-   "url": "https://itsfoss.com/quiz/local-ai-jargon-test/",
-   "author": "Abhishek Prakash",
-   "publishedAt": 1790145513000,
-   "firstSeenAt": 1790229602642,
-   "tags": [
-    "ai",
-    "local-llm",
-    "quiz",
-    "desktop",
-    "tutorial"
-   ],
-   "brief": "A ten-question quiz tests how well you understand common local AI terms like tokens, harness, and quantization, with a correct description per term. It's aimed at people who run models locally with tools like Ollama or llama.cpp.",
-   "imageUrl": "https://itsfoss.com/content/images/2026/09/ai-quiz.webp",
-   "readingMinutes": 1
-  },
-  {
-   "id": "dfd164b9573ab639",
-   "sourceId": "phoronix",
-   "title": "Nouveau driver gets patches for HDMI Deep Color support",
-   "url": "https://www.phoronix.com/news/Nouveau-Deep-Color-Patches",
-   "author": "Michael Larabel",
-   "publishedAt": 1790124861000,
-   "firstSeenAt": 1790129584592,
-   "tags": [
-    "graphics",
-    "nvidia",
-    "kernel",
-    "nouveau",
-    "hardware",
-    "performance"
-   ],
-   "brief": "New patches posted to the dri-devel mailing list add HDMI Deep Color support to Nouveau, the open-source NVIDIA Linux kernel driver, enabling 10, 12, or 16 bits per color channel. The patches currently support only RGB, and 16-bit output is untested on capable displays.",
-   "imageUrl": "https://www.phoronix.net/image.php?id=nvidia-980-5080-linux&image=nouveau_980_5",
-   "readingMinutes": 2
   }
  ]
 }
