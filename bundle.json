@@ -2,6 +2,636 @@
  "version": 1,
  "articles": [
   {
+   "id": "4d895138deb3bd95",
+   "sourceId": "omgubuntu",
+   "title": "Unofficial Firefox GNOME theme updated for Firefox 157's Nova redesign",
+   "url": "https://www.omgubuntu.co.uk/2026/10/firefox-gnome-theme-nova-update",
+   "author": "Joey Sneddon",
+   "publishedAt": 1791260851000,
+   "firstSeenAt": 1791266404433,
+   "tags": [
+    "firefox",
+    "gnome",
+    "themes",
+    "linux",
+    "ubuntu",
+    "desktop"
+   ],
+   "brief": "The unofficial Firefox GNOME theme, a set of CSS tweaks that makes Firefox resemble native GNOME apps, has been updated to work with Firefox 157 and its rounder Nova theme. The update adapts to Nova's CSS class changes and new widget styles, keeping the Adwaita look intact.",
+   "keyPoints": [
+    "Updated for Firefox 157 and the new Nova theme's CSS changes",
+    "Install via one curl script; supports binary, Flatpak, deb, RPM, Snap",
+    "Features like tabs-as-headerbar require manual about:config toggles"
+   ],
+   "whyItMatters": "GNOME desktop users who want Firefox to match native Adwaita styling can keep the look after upgrading to Firefox 157.",
+   "kind": "news",
+   "imageUrl": "https://www.omgubuntu.co.uk/wp-content/uploads/2026/10/theme-for-firefox-gnome.webp",
+   "readingMinutes": 2
+  },
+  {
+   "id": "465471470244d28b",
+   "sourceId": "phoronix",
+   "title": "TrueNAS 27 RC.1 Released: Linux 6.18 LTS + OpenZFS 2.4",
+   "url": "https://www.phoronix.com/news/TrueNAS-27-RC.1-Release",
+   "author": "Michael Larabel",
+   "publishedAt": 1791246345000,
+   "firstSeenAt": 1791266404433,
+   "tags": [
+    "truenas",
+    "storage",
+    "openzfs",
+    "kernel",
+    "hardware",
+    "performance"
+   ],
+   "brief": "iXsystems released TrueNAS 27 RC.1, the first release candidate of its next major NAS operating system version, built on Linux 6.18 LTS and OpenZFS 2.4. Renamed from TrueNAS 26 to reflect its 2027 deployment, the stable release is expected in December.",
+   "keyPoints": [
+    "Built on Linux 6.18 LTS kernel and OpenZFS 2.4 with AVX2 optimizations",
+    "Adds TrueSearch, WebShare, Fusion Pools 2.0, and stateful SMB failover",
+    "Early access to TrueNAS Object Interface for native S3 access to ZFS datasets"
+   ],
+   "whyItMatters": "TrueNAS admins and homelab users should care, as this release brings performance gains, better hardware support, and new storage and sharing features.",
+   "kind": "release",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=truenas_webshare_1",
+   "readingMinutes": 3
+  },
+  {
+   "id": "ac4faf7e5b4395e4",
+   "sourceId": "phoronix",
+   "title": "AMD ROCm 10.1 Released With Many Improvements",
+   "url": "https://www.phoronix.com/news/AMD-ROCm-10.1",
+   "author": "Michael Larabel",
+   "publishedAt": 1791238136000,
+   "firstSeenAt": 1791266404433,
+   "tags": [
+    "amd",
+    "rocm",
+    "gpu",
+    "llvm",
+    "hardware",
+    "performance"
+   ],
+   "brief": "AMD has released ROCm 10.1, continuing its six-week release cycle after ROCm 10.0 in late August. The update adds hipFILE storage improvements, NUMA-aware HIP memory allocation, beta kernel replay in ROCprofiler, a move to the LLVM 24 compiler stack, and hipThreads for incremental GPU acceleration.",
+   "keyPoints": [
+    "hipFILE gains async fast-path backend, batch I/O API, and multi-tier I/O statistics",
+    "Compiler stack moves to LLVM 24 with faster rebuilds",
+    "ROCm six-week release cadence continues"
+   ],
+   "whyItMatters": "Developers running GPU compute or AI workloads on AMD hardware should review the toolchain and performance changes.",
+   "kind": "release",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2024&image=amd_rocm",
+   "readingMinutes": 2
+  },
+  {
+   "id": "c1e648183987cec7",
+   "sourceId": "omgubuntu",
+   "title": "Hylki is a modern, Rust-based email client for GNOME",
+   "url": "https://www.omgubuntu.co.uk/2026/10/hylki-email-client-for-gnome",
+   "author": "Joey Sneddon",
+   "publishedAt": 1791237575000,
+   "firstSeenAt": 1791266404433,
+   "tags": [
+    "gnome",
+    "email",
+    "rust",
+    "ai",
+    "ubuntu",
+    "desktop"
+   ],
+   "brief": "Hylki is a new Rust-based, GTK4/libadwaita email client for GNOME, positioned as a Geary-style alternative to Thunderbird and Evolution. It offers conversation threading, multiple accounts, OpenPGP, and extensive customization, and its developer says most of the code was written by Anthropic's Claude under human…",
+   "keyPoints": [
+    "Supports GNOME Online Accounts or manual IMAP/POP3, with unified inbox",
+    "Features reader mode, focus mode, Markdown composition, send-later, OpenPGP",
+    "Majority of code written by Claude LLM, reviewed and tested by a human"
+   ],
+   "whyItMatters": "GNOME users looking for a lightweight modern mail client get a new option, and the AI-built provenance raises questions about LLM-developed desktop apps.",
+   "kind": "news",
+   "imageUrl": "https://www.omgubuntu.co.uk/wp-content/uploads/2026/10/hykli-email-client-gnome.webp",
+   "readingMinutes": 4
+  },
+  {
+   "id": "e04b33d766cc48cd",
+   "sourceId": "linuxiac",
+   "title": "mold 3.0 High-Speed Linker Released, Rewritten in Rust",
+   "url": "https://linuxiac.com/mold-3-0-high-speed-linker-rewritten-in-rust/",
+   "author": "Bobby Borisov",
+   "publishedAt": 1791234397000,
+   "firstSeenAt": 1791266404433,
+   "tags": [
+    "linker",
+    "rust",
+    "toolchain",
+    "release",
+    "distro",
+    "news"
+   ],
+   "brief": "The mold linker hit version 3.0, its first release after a full rewrite from C++ to Rust, by Rui Ueyama, author of LLVM's lld. It keeps the same options, targets, and performance, but adds bounds-checked handling of corrupted input and switches builds from CMake to Cargo.",
+   "keyPoints": [
+    "First release based on the Rust rewrite; 2.42.1 is the last C++ build",
+    "Builds now require Cargo and Rust 1.95+; oneTBB dependency dropped",
+    "3.x goal: close GNU ld compatibility gaps, especially linker scripts"
+   ],
+   "whyItMatters": "Developers and distributions relying on fast link times should note the Rust rewrite, new build requirements, and the push toward making mold a default distro linker.",
+   "kind": "release",
+   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/10/mold3.jpg",
+   "readingMinutes": 2
+  },
+  {
+   "id": "d6fd850f0444af3f",
+   "sourceId": "phoronix",
+   "title": "Linux 7.4 To Land New BTB CTX Isolation Feature Of AMD Zen 6",
+   "url": "https://www.phoronix.com/news/AMD-Zen-6-BTB-CTX-Linux-7.4",
+   "author": "Michael Larabel",
+   "publishedAt": 1791226021000,
+   "firstSeenAt": 1791266404433,
+   "tags": [
+    "kernel",
+    "amd",
+    "security",
+    "zen-6",
+    "hardware",
+    "performance"
+   ],
+   "brief": "Linux 7.4 is set to support AMD Zen 6's Branch Target Buffer Context (BTB CTX) Isolation, a hardware defense against the SRSO vulnerability. The patch, queued in tip.git's x86/bugs branch, adapts the SRSO mitigation to use this new isolation instead of SafeRET.",
+   "keyPoints": [
+    "BTB CTX Isolation separates user/kernel and guest/host contexts against SRSO",
+    "SafeRET becomes unnecessary on Zen 6; IBPB covers user/user and guest/guest vectors",
+    "Patch queued in TIP branch ahead of the Linux 7.4 merge window"
+   ],
+   "whyItMatters": "Administrators and users of upcoming Zen 6 systems should care, as this shapes how the kernel mitigates SRSO on new AMD hardware.",
+   "kind": "news",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=btb_ctx",
+   "readingMinutes": 3
+  },
+  {
+   "id": "d45a45a631f991cc",
+   "sourceId": "linuxiac",
+   "title": "Auto-cpufreq 3.2 Adds Intel HWP Dynamic Boost, Lands in Debian Repos",
+   "url": "https://linuxiac.com/auto-cpufreq-3-2-adds-intel-hwp-dynamic-boost-lands-in-debian-repos/",
+   "author": "Bobby Borisov",
+   "publishedAt": 1791221083000,
+   "firstSeenAt": 1791266404433,
+   "tags": [
+    "power-management",
+    "intel",
+    "debian",
+    "release",
+    "distro",
+    "news"
+   ],
+   "brief": "Auto-cpufreq 3.2 is out, adding configurable Intel HWP Dynamic Boost (enabled by default on AC power) and Platform Profile reporting. The tool is now packaged as a .deb in Debian's official testing repositories. The release also brings battery detection fixes, GTK improvements, and Snap and power-profiles-daemon fixes.",
+   "keyPoints": [
+    "Intel HWP Dynamic Boost configurable, on by default when plugged in",
+    "Now available as a .deb in Debian's official testing repos",
+    "Battery detection and GTK fixes; idna dependency bumped to 3.15"
+   ],
+   "whyItMatters": "Linux laptop users—especially on Intel and Debian—get better power management and easier installation.",
+   "kind": "release",
+   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/10/autocpufreq32.jpg",
+   "readingMinutes": 2
+  },
+  {
+   "id": "2bb714b1bb7f5ed5",
+   "sourceId": "phoronix",
+   "title": "Auto-CPUFreq 3.2 Adds Configurable HWP Dynamic Boost, Platform Profile Reporting",
+   "url": "https://www.phoronix.com/news/Auto-CPUFreq-3.2",
+   "author": "Michael Larabel",
+   "publishedAt": 1791214572000,
+   "firstSeenAt": 1791266404433,
+   "tags": [
+    "power-management",
+    "intel",
+    "laptop",
+    "release",
+    "hardware",
+    "performance"
+   ],
+   "brief": "Auto-CPUFreq 3.2 is out with configurable Intel HWP Dynamic Boost, now enabled by default on AC power. The release also adds more robust ACPI Platform Profile reporting and unifies system reporting with the GTK runtime state.",
+   "keyPoints": [
+    "Configurable Intel HWP Dynamic Boost, enabled by default on AC power",
+    "Improved ACPI Platform Profile reporting over prior basic version",
+    "Unified system reporting and GTK runtime state for consistent view"
+   ],
+   "whyItMatters": "Linux laptop users who rely on Auto-CPUFreq for battery life get finer control over Intel power boosting and clearer reporting.",
+   "kind": "release",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=autocpufreq_32",
+   "readingMinutes": 1
+  },
+  {
+   "id": "8ba7f0c7c4a7bd55",
+   "sourceId": "lwn",
+   "title": "RustConf 2026 recordings posted",
+   "url": "https://lwn.net/Articles/1098610/",
+   "author": "daroc",
+   "publishedAt": 1791213071000,
+   "firstSeenAt": 1791266404433,
+   "tags": [
+    "rust",
+    "conferences",
+    "kernel",
+    "deep"
+   ],
+   "brief": "The Rust Foundation has published recordings and photos from RustConf 2026, held in Montreal, Canada. LWN notes it covered four talks from the event.",
+   "keyPoints": [],
+   "whyItMatters": "Rust developers who missed the conference can now watch the talks online.",
+   "kind": "news",
+   "imageUrl": null,
+   "readingMinutes": 0
+  },
+  {
+   "id": "b5f6b12c41ebc5a9",
+   "sourceId": "lwn",
+   "title": "An update on the Sashiko patch-review system",
+   "url": "https://lwn.net/Articles/1096963/",
+   "author": "corbet",
+   "publishedAt": 1791213037000,
+   "firstSeenAt": 1791266404433,
+   "tags": [
+    "kernel",
+    "patch-review",
+    "llm",
+    "development-tools",
+    "deep"
+   ],
+   "brief": "At Kernel Recipes 2026, Sashiko maintainer Roman Gushchin explained how the LLM-based system, which automatically generates kernel patch reviews, works and how it is being improved. Sashiko has become an important part of the kernel's development process amid a persistent shortage of reviewers.",
+   "keyPoints": [],
+   "whyItMatters": "Kernel developers and contributors should care, since automated review could ease the project's long-standing reviewer bottleneck.",
+   "kind": "news",
+   "imageUrl": null,
+   "readingMinutes": 0
+  },
+  {
+   "id": "6769f354c877c6d4",
+   "sourceId": "itsfoss",
+   "title": "Siemens Takes Down OpenRadioss Repo; Community Fork OpenCourant Already Live",
+   "url": "https://feed.itsfoss.com/link/24361/17489673/siemens-openradioss-fork",
+   "author": "Sourav Rudra",
+   "publishedAt": 1791212415000,
+   "firstSeenAt": 1791266404433,
+   "tags": [
+    "open-source",
+    "siemens",
+    "simulation",
+    "licensing",
+    "desktop",
+    "tutorial"
+   ],
+   "brief": "Siemens, which acquired Altair last year, abruptly deleted the OpenRadioss finite element solver repository instead of archiving it. Rocky Linux co-founder Brian Clemens has launched OpenCourant, an AGPLv3 fork with the full commit history that already ships Linux and Windows x86_64 packages.",
+   "keyPoints": [
+    "Siemens deleted the OpenRadioss GitHub repo and redirected users to Simcenter Radioss.",
+    "Fork OpenCourant preserves full commit history under the same GNU AGPLv3 license.",
+    "Build pipeline was rebuilt from scratch; a rescued hm_reader binary ships in every build."
+   ],
+   "whyItMatters": "Engineers and researchers using the Radioss crash-simulation solver need to know the upstream is gone and where the community continuation lives.",
+   "kind": "news",
+   "imageUrl": "https://itsfoss.com/content/images/2026/10/opencourant-openradioss-fork-banner.png",
+   "readingMinutes": 3
+  },
+  {
+   "id": "888f9cc7ddd0f5c0",
+   "sourceId": "phoronix",
+   "title": "AMD ROCm vs. Vulkan Benchmarks for Lemonade Local AI Server With Llama.cpp",
+   "url": "https://www.phoronix.com/review/lemonade-vulkan-rocm",
+   "author": "Michael Larabel",
+   "publishedAt": 1791208234000,
+   "firstSeenAt": 1791266404433,
+   "tags": [
+    "ai",
+    "amd",
+    "benchmarks",
+    "linux",
+    "hardware",
+    "performance"
+   ],
+   "brief": "Phoronix benchmarks AMD ROCm versus Vulkan back-ends in Llama.cpp via the Lemonade 2026.39.1 local AI server, testing a Radeon AI PRO R9700 workstation and a Ryzen AI Max+ 395 Strix Halo Framework Desktop. A year ago Vulkan was often faster than ROCm; this revisits whether that still holds.",
+   "keyPoints": [
+    "Tests compare ROCm and Vulkan Llama.cpp back-ends on two AMD systems",
+    "Uses Lemonade 2026.39.1 server with Llama.cpp b10825",
+    "Hardware: Radeon AI PRO R9700 and Ryzen AI Max+ 395 Strix Halo"
+   ],
+   "whyItMatters": "Users running local LLM inference on AMD GPUs under Linux need to know which back-end delivers better performance.",
+   "kind": "deep-dive",
+   "imageUrl": "https://www.phoronix.net/image.php?id=lemonade-vulkan-rocm&image=lemonade_rocm_vulkan_1",
+   "readingMinutes": 1
+  },
+  {
+   "id": "9b4a16f1f1411d07",
+   "sourceId": "lwn",
+   "title": "Picard 3.0 released",
+   "url": "https://lwn.net/Articles/1098600/",
+   "author": "jzb",
+   "publishedAt": 1791206504000,
+   "firstSeenAt": 1791266404433,
+   "tags": [
+    "musicbrainz",
+    "qt6",
+    "audio",
+    "release",
+    "kernel",
+    "deep"
+   ],
+   "brief": "Version 3.0 of the MusicBrainz Picard tag editor has been released. It moves to Qt6, introduces a new plugin system, and improves the user interface, cover art processing, and ISRC submission.",
+   "keyPoints": [],
+   "whyItMatters": "Users of the MusicBrainz Picard tag editor will want to know about the Qt6 upgrade and new plugin system.",
+   "kind": "release",
+   "imageUrl": null,
+   "readingMinutes": 0
+  },
+  {
+   "id": "3bef31acab986db1",
+   "sourceId": "lwn",
+   "title": "Security updates for Monday",
+   "url": "https://lwn.net/Articles/1098599/",
+   "author": "jzb",
+   "publishedAt": 1791205881000,
+   "firstSeenAt": 1791266404433,
+   "tags": [
+    "security",
+    "linux",
+    "debian",
+    "fedora",
+    "kernel",
+    "deep"
+   ],
+   "brief": "LWN's weekly roundup lists security updates issued around October 3-5, 2026, covering AlmaLinux, Debian, Fedora, Red Hat, SUSE, and Ubuntu. Notable fixes include Fedora updates for chromium, openssl, curl, and libX11, Debian patches for the 6.12 kernel, perl, php8.2, and xen, plus SUSE and Ubuntu advisories for…",
+   "keyPoints": [
+    "Debian LTS fixes linux-6.12, perl, php8.2, pcre2, and xen",
+    "Fedora ships updates for chromium, openssl, curl, flatpak, and cri-o",
+    "Ubuntu patches ceph across 18.04 through 26.04"
+   ],
+   "whyItMatters": "System administrators and security-conscious users should check whether any listed packages on their distributions need patching.",
+   "kind": "news",
+   "imageUrl": null,
+   "readingMinutes": 4
+  },
+  {
+   "id": "c62cfe816293210c",
+   "sourceId": "phoronix",
+   "title": "Mesa Developers Looking At A Formal Governance Model",
+   "url": "https://www.phoronix.com/news/Mesa-Governance-Model",
+   "author": "Michael Larabel",
+   "publishedAt": 1791205440000,
+   "firstSeenAt": 1791266404433,
+   "tags": [
+    "mesa",
+    "graphics",
+    "governance",
+    "open-source",
+    "hardware",
+    "performance"
+   ],
+   "brief": "Mesa developers are considering replacing their informal consensus approach with a formal governance council focused on conflict resolution. The idea, raised at XDC 2026 in Toronto, responds to developer burn-out; no concrete proposal exists yet.",
+   "keyPoints": [
+    "Council would handle conflict resolution, not proactive decision-making",
+    "Day-to-day development would stay consensus-based",
+    "Council would arbitrate driver additions/removals, legacy support, contentious features"
+   ],
+   "whyItMatters": "Mesa contributors and downstream Linux graphics users should care, since governance changes affect how driver and legacy-support disputes get settled.",
+   "kind": "news",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=mesa_council_2",
+   "readingMinutes": 2
+  },
+  {
+   "id": "0567a91907252544",
+   "sourceId": "phoronix",
+   "title": "Linux ZRAM Rework Promises Memory Savings and Performance Gains",
+   "url": "https://www.phoronix.com/news/Linux-ZRAM-Rework-Savings",
+   "author": "Michael Larabel",
+   "publishedAt": 1791204251000,
+   "firstSeenAt": 1791266404433,
+   "tags": [
+    "kernel",
+    "memory",
+    "performance",
+    "zram",
+    "hardware"
+   ],
+   "brief": "Google's Sergey Senozhatsky posted a patch series reworking ZRAM's zcomp backend, splitting compression into separate per-CPU read and write streams. This fixes a priority inversion where readers block on writers' stream locks, and saves double to triple-digit KB of memory per context per CPU.",
+   "keyPoints": [
+    "Read and write compression streams split so readers and writers no longer block each other",
+    "Saves tens to hundreds of KB per context per CPU, adding up across cores",
+    "Singleton recompression context saves memory with zstd, deflate, and lz4hc backends"
+   ],
+   "whyItMatters": "Kernel developers and users of memory-constrained systems should care, as ZRAM swap gets cheaper in memory and faster under preemption.",
+   "kind": "news",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2023&image=linux_objtool_ram",
+   "readingMinutes": 3
+  },
+  {
+   "id": "046049b3202126cb",
+   "sourceId": "phoronix",
+   "title": "Linux 7.4 to mainline Google Tensor G5 and Pixel 10 support",
+   "url": "https://www.phoronix.com/news/Linux-7.4-Google-Tensor-G5",
+   "author": "Michael Larabel",
+   "publishedAt": 1791199980000,
+   "firstSeenAt": 1791266404433,
+   "tags": [
+    "kernel",
+    "arm",
+    "android",
+    "hardware",
+    "performance"
+   ],
+   "brief": "A pull request for the SoC tree introduces a new ARCH_GOOGLE symbol and initial Device Tree files for the Tensor G5 (Laguna) SoC and Pixel 10, Pixel 10 Pro, and Pixel 10 Pro XL, targeting Linux 7.4. Unlike earlier Tensor chips derived from Samsung SoCs, the G5 shares no commonality with Samsung.",
+   "keyPoints": [
+    "New ARCH_GOOGLE symbol added for Tensor G5, breaking from Samsung SoC grouping",
+    "Basic support for Pixel 10, Pixel 10 Pro, and Pixel 10 Pro XL Device Trees",
+    "G5: Cortex-X4, five A725, two A520 cores; PowerVR DXT-48-1536 GPU, 4th Gen TPU"
+   ],
+   "whyItMatters": "Developers and enthusiasts wanting to run a mainline kernel on Pixel 10 devices can expect initial support in Linux 7.4.",
+   "kind": "news",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=tensor_g5",
+   "readingMinutes": 2
+  },
+  {
+   "id": "5ba4e88d359368ab",
+   "sourceId": "phoronix",
+   "title": "Mold 3.0 High-Speed Linker Released, Rewritten in Rust",
+   "url": "https://www.phoronix.com/news/Mold-3.0-Released",
+   "author": "Michael Larabel",
+   "publishedAt": 1791196155000,
+   "firstSeenAt": 1791266404433,
+   "tags": [
+    "linker",
+    "rust",
+    "toolchain",
+    "linux",
+    "hardware",
+    "performance"
+   ],
+   "brief": "Mold 3.0 is out as the first release of the linker's rewrite from C++ to Rust, serving as a drop-in replacement for Mold 2.42.1. The 3.x series aims to close remaining compatibility gaps with GNU ld, especially linker script support, with the goal of becoming the default linker in Linux distributions.",
+   "keyPoints": [
+    "First Rust-based release; 2.42.1 was the last C++ version",
+    "Requires Rust 1.95+, drops Intel oneTBB, builds with Cargo instead of CMake",
+    "Rust rewrite improves safety with corrupted input files and fixes many bugs"
+   ],
+   "whyItMatters": "Developers and distro maintainers relying on fast link times should track Mold's push toward GNU ld parity and default-linker adoption.",
+   "kind": "release",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=mold_30",
+   "readingMinutes": 3
+  },
+  {
+   "id": "979162af19dce3f5",
+   "sourceId": "linuxiac",
+   "title": "Phosh 0.58 Linux Mobile Shell Improves Screenshots and Flatpak Apps",
+   "url": "https://linuxiac.com/phosh-0-58-linux-mobile-shell-improves-screenshots-and-flatpak-apps/",
+   "author": "Bobby Borisov",
+   "publishedAt": 1791195981000,
+   "firstSeenAt": 1791266404433,
+   "tags": [
+    "phosh",
+    "linux-mobile",
+    "gnome",
+    "wayland",
+    "distro",
+    "news"
+   ],
+   "brief": "Phosh 0.58 is out with actionable screenshot notifications, a more configurable Caffeine quick setting, and better startup tracking for Flatpak and D-Bus apps. The release spans the Phoc compositor, Stevia keyboard, PFS file selector, and Phosh First Boot 0.2, and is based on GNOME 50 and wlroots 0.20.2.",
+   "keyPoints": [
+    "Screenshot notifications can open the image or its folder directly",
+    "Phoc adds text-input-v3 v2 and layer-shell-effects v4 support",
+    "Stevia keyboard dictionaries can install in $HOME for immutable systems"
+   ],
+   "whyItMatters": "Linux phone users and maintainers get usability fixes plus broader device support, including Pixel 3 XL, Pixel 9a, and Fairphone 5 tweaks.",
+   "kind": "release",
+   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/10/phosh058.jpg",
+   "readingMinutes": 2
+  },
+  {
+   "id": "a3d165f5a5f3e2b9",
+   "sourceId": "phoronix",
+   "title": "Linux 7.4 adds driver support for Intel's rugged Panther Lake R",
+   "url": "https://www.phoronix.com/news/Linux-7.4-Rugged-Panther-Lake",
+   "author": "Michael Larabel",
+   "publishedAt": 1791195798000,
+   "firstSeenAt": 1791266404433,
+   "tags": [
+    "kernel",
+    "intel",
+    "hardware",
+    "power-management",
+    "performance"
+   ],
+   "brief": "Linux 7.4 is picking up support for Panther Lake R, Intel's rugged Panther Lake variant believed to be the space-grade Starfire SoC. Patches add the new device ID to power management drivers and tools, making 7.4 the likely baseline kernel for the chip.",
+   "keyPoints": [
+    "intel-uncore-freq and Intel PMC drivers gain Panther Lake R support via x86 platform drivers tree",
+    "intel_tcc_cooling driver and turbostat tool also add support",
+    "Patches mostly add the PANTHERLAKE_R device ID; 7.4 seen as baseline kernel"
+   ],
+   "whyItMatters": "Developers and integrators targeting Intel's harsh-environment Starfire/Panther Lake R hardware should track Linux 7.4 as its first well-supported kernel.",
+   "kind": "news",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=intel_starfire_linux_1",
+   "readingMinutes": 3
+  },
+  {
+   "id": "ff18ab537b273fb5",
+   "sourceId": "phoronix",
+   "title": "Qualcomm patches Linux for hardware thermal binning on Snapdragon X laptops",
+   "url": "https://www.phoronix.com/news/Qualcomm-HW-BIn-Trip-Point",
+   "author": "Michael Larabel",
+   "publishedAt": 1791194693000,
+   "firstSeenAt": 1791266404433,
+   "tags": [
+    "kernel",
+    "qualcomm",
+    "snapdragon",
+    "thermal",
+    "hardware",
+    "performance"
+   ],
+   "brief": "Qualcomm has posted Linux kernel patches adding generic hardware-binned trip point support to the thermal framework's OF parser. The same silicon can ship in multiple thermal bins with different junction temperature limits set by manufacturing fuses, and the patches let the kernel read the correct limits, benefiting…",
+   "keyPoints": [
+    "Same silicon can have different junction temperature limits set via manufacturing fuses",
+    "TSENS reads QFPROM data to decode the thermal bin before trip points are parsed",
+    "Patches are under review on the Linux kernel mailing list"
+   ],
+   "whyItMatters": "Snapdragon X laptop users and kernel developers should care because accurate thermal limits affect throttling and performance on these machines.",
+   "kind": "news",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=qualcomm_thermal_binning",
+   "readingMinutes": 3
+  },
+  {
+   "id": "a8d9f4ab830a5795",
+   "sourceId": "itsfoss",
+   "title": "Ubuntu 26.10 Ships Rust-based Sequoia PGP, Eyes GnuPG Replacement",
+   "url": "https://feed.itsfoss.com/link/24361/17489445/ubuntu-sequoia-pgp-inclusion",
+   "author": "Sourav Rudra",
+   "publishedAt": 1791193808000,
+   "firstSeenAt": 1791266404433,
+   "tags": [
+    "ubuntu",
+    "rust",
+    "security",
+    "openpgp",
+    "desktop",
+    "tutorial"
+   ],
+   "brief": "Ubuntu 26.10 preinstalls Sequoia PGP, a Rust-based OpenPGP implementation, from the main archive. Canonical's long-term goal is for it to replace GnuPG as the default toolchain, but the gpg and gpgv commands still route to GnuPG for now.",
+   "keyPoints": [
+    "Sequoia PGP's sq and sqv commands are installed by default and work alongside GnuPG",
+    "Sequoia implements RFC 9580; GnuPG follows RFC 4880 and LibrePGP",
+    "Default replacement is a future goal with no announced timeline"
+   ],
+   "whyItMatters": "Ubuntu users and packagers relying on GnuPG tooling should track this slow transition, as command routing may eventually change.",
+   "kind": "news",
+   "imageUrl": "https://itsfoss.com/content/images/2026/10/ubuntu-sequoia-pgp-gnupg-banner.png",
+   "readingMinutes": 3
+  },
+  {
+   "id": "ae5ccff55865da88",
+   "sourceId": "phoronix",
+   "title": "Linux 7.4 AMD P-State driver adds Ryzen Zen 6 support",
+   "url": "https://www.phoronix.com/news/Linux-7.4-AMD-PState-Zen-6",
+   "author": "Michael Larabel",
+   "publishedAt": 1791193505000,
+   "firstSeenAt": 1791266404433,
+   "tags": [
+    "kernel",
+    "amd",
+    "zen-6",
+    "power-management",
+    "hardware",
+    "performance"
+   ],
+   "brief": "AMD P-State driver changes queued for Linux 7.4 add initial support for upcoming Ryzen Zen 6 client CPUs, including maximum frequency capacity handling and updated EPP tuning across performance, dense, and new low-power core types.",
+   "keyPoints": [
+    "amd-pstate gains max CPU frequency capacity handling for Zen 6 client processors",
+    "Updated EPP tuning covers performance, dense, and new low-power Zen 6 cores",
+    "Pull request also includes bug fixes found by the Sashiko AI agent"
+   ],
+   "whyItMatters": "Linux users planning to buy Ryzen Zen 6 systems will want kernel 7.4 or later for proper power and frequency management.",
+   "kind": "news",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=amd_pstate_zen6_good",
+   "readingMinutes": 2
+  },
+  {
+   "id": "87df647b55aedd0b",
+   "sourceId": "linuxiac",
+   "title": "MAKERphone 2.0 Is an Open, Hackable 4G Phone You Build Yourself",
+   "url": "https://linuxiac.com/makerphone-2-0-is-an-open-hackable-4g-phone-you-build-yourself/",
+   "author": "Bobby Borisov",
+   "publishedAt": 1791190907000,
+   "firstSeenAt": 1791266404433,
+   "tags": [
+    "hardware",
+    "open-source",
+    "esp32",
+    "kickstarter",
+    "distro",
+    "news"
+   ],
+   "brief": "CircuitMess has launched MAKERphone 2.0 on Kickstarter, a build-it-yourself 4G phone based on the ESP32-S3 that assembles in about two hours with no soldering. It makes real calls and SMS over 4G LTE Cat-1, is programmable in MicroPython or C++, and has raised over $385,000 against a $30,000 goal.",
+   "keyPoints": [
+    "ESP32-S3 based phone with 4G LTE Cat-1 calls and SMS, plus Wi-Fi and Bluetooth",
+    "Assembly takes ~2 hours with no soldering; parts click, screw, or plug in",
+    "Programmable via MicroPython, C++, or AI-assisted VibeBoy environment"
+   ],
+   "whyItMatters": "Makers and embedded hobbyists get a fully open, hackable alternative to locked-down smartphones that works as a real phone.",
+   "kind": "news",
+   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/10/makerphone.jpg",
+   "readingMinutes": 3
+  },
+  {
    "id": "92604f6f9447c910",
    "sourceId": "lwn",
    "title": "Kernel prepatch 7.3-rc6",
@@ -7019,475 +7649,6 @@
    "brief": "System76's Rust-based COSMIC desktop environment released Epoch 1.9, adding COSMIC Viewer, a native image viewer with built-in editing, and COSMIC OSK, an on-screen keyboard. The release also overhauls the COSMIC Store and updates the compositor, with downloads available on GitHub.",
    "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=cosmic_19_1",
    "readingMinutes": 1
-  },
-  {
-   "id": "9c00639fac0662f1",
-   "sourceId": "linuxiac",
-   "title": "COSMIC Desktop 1.9 Adds COSMIC Viewer Image App and On-Screen Keyboard",
-   "url": "https://linuxiac.com/cosmic-desktop-1-9-adds-cosmic-viewer-on-screen-keyboard/",
-   "author": "Bobby Borisov",
-   "publishedAt": 1790267756000,
-   "firstSeenAt": 1790316003434,
-   "tags": [
-    "cosmic",
-    "system76",
-    "desktop-environment",
-    "release",
-    "distro",
-    "news"
-   ],
-   "brief": "System76 released COSMIC Desktop 1.9, adding the COSMIC Viewer image editor/viewer and COSMIC OSK on-screen keyboard for touch and gamepad input. The release also overhauls the COSMIC Store visually, fixes numerous UI bugs, and improves COSMIC Files and Settings.",
-   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/09/cosmic-desktop-19.jpg",
-   "readingMinutes": 2
-  },
-  {
-   "id": "779c674b2a747ca9",
-   "sourceId": "phoronix",
-   "title": "AMD Posts GCC Compiler Patches For AVX10V1AUX ISA Support",
-   "url": "https://www.phoronix.com/news/GCC-Patches-AVX10V1AUX",
-   "author": "Michael Larabel",
-   "publishedAt": 1790266377000,
-   "firstSeenAt": 1790316003434,
-   "tags": [
-    "gcc",
-    "amd",
-    "avx10",
-    "compilers",
-    "hardware",
-    "performance"
-   ],
-   "brief": "AMD compiler engineers posted initial GCC patches enabling AVX10V1AUX, the auxiliary update to AVX10.1 under the ACE AI Compute Extensions initiative. The patches add infrastructure, reuse AVX10.2 built-ins and CONVERT intrinsics, and are enabled via -mavx10v1aux.",
-   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=avx10v1aux",
-   "readingMinutes": 2
-  },
-  {
-   "id": "0e5af03a8797d52a",
-   "sourceId": "itsfoss",
-   "title": "Ubuntu Moves Kernel SRUs to a Two-Week Cycle Driven by AI Bug Hunting",
-   "url": "https://feed.itsfoss.com/link/24361/17472488/ubuntu-kernel-sru-cycle-update",
-   "author": "Sourav Rudra",
-   "publishedAt": 1790266245000,
-   "firstSeenAt": 1790316003434,
-   "tags": [
-    "ubuntu",
-    "kernel",
-    "security",
-    "canonical",
-    "desktop",
-    "tutorial"
-   ],
-   "brief": "Canonical is replacing its split kernel update tracks with a single two-week SRU cycle, with cycles overlapping weekly so a kernel release ships every week. The change responds to LLMs and AI agents discovering kernel vulnerabilities faster than humans can, aiming for workarounds within 24-48 hours of a public CVE.",
-   "imageUrl": "https://itsfoss.com/content/images/2026/09/ubuntu-2-week-kernel-sru-banner.png",
-   "readingMinutes": 3
-  },
-  {
-   "id": "9f33b0f98cdc83a8",
-   "sourceId": "9to5linux",
-   "title": "COSMIC 1.9 Desktop Environment Released with COSMIC Viewer and COSMIC OSK",
-   "url": "https://9to5linux.com/?p=33717",
-   "author": "",
-   "publishedAt": 1790264792000,
-   "firstSeenAt": 1790316003434,
-   "tags": [
-    "cosmic",
-    "desktop",
-    "release",
-    "distro"
-   ],
-   "brief": "System76's COSMIC 1.9 desktop environment is out, adding the COSMIC Viewer image viewer and COSMIC OSK on-screen keyboard apps. Further details were not available in the teaser.",
-   "imageUrl": null,
-   "readingMinutes": 0
-  },
-  {
-   "id": "7b26e8328c503137",
-   "sourceId": "lwn",
-   "title": "[$] Listening to the radio with Rust",
-   "url": "https://lwn.net/Articles/1095721/",
-   "author": "daroc",
-   "publishedAt": 1790259990000,
-   "firstSeenAt": 1790316003434,
-   "tags": [
-    "rust",
-    "software-defined-radio",
-    "rustconf",
-    "kernel",
-    "deep"
-   ],
-   "brief": "At RustConf 2026 in Montreal, Thomas Eckert presented his hobby of decoding radio transmissions with Rust using a cheap hardware dongle. He covered the math behind software-defined radio and demonstrated AM/FM reception plus decoding aircraft transponder signals, with slides and code on GitHub.",
-   "imageUrl": null,
-   "readingMinutes": 0
-  },
-  {
-   "id": "7c9299593771b020",
-   "sourceId": "lwn",
-   "title": "The Kernel Report 2026 edition",
-   "url": "https://lwn.net/Articles/1096411/",
-   "author": "jzb",
-   "publishedAt": 1790258264000,
-   "firstSeenAt": 1790316003434,
-   "tags": [
-    "kernel",
-    "linux",
-    "conference",
-    "deep"
-   ],
-   "brief": "After a two-year hiatus, Jonathan Corbet presented an updated Kernel Report at Kernel Recipes, covering the kernel community's state amid accelerated change and its future direction. Video of the talk is available on YouTube.",
-   "imageUrl": null,
-   "readingMinutes": 0
-  },
-  {
-   "id": "766c80310f0243d2",
-   "sourceId": "phoronix",
-   "title": "Fedora discussion floats replacing LibreOffice with Collabora Office by default",
-   "url": "https://www.phoronix.com/news/Fedora-Discuss-Collabora-Office",
-   "author": "Michael Larabel",
-   "publishedAt": 1790257140000,
-   "firstSeenAt": 1790316003434,
-   "tags": [
-    "fedora",
-    "libreoffice",
-    "collabora",
-    "desktop",
-    "hardware",
-    "performance"
-   ],
-   "brief": "A Fedora Discourse thread proposing Collabora Office replace LibreOffice as Fedora Workstation's default office suite has drawn lively debate. Supporters cite LibreOffice's \"very ancient\" UI; critics raise licensing, Flatpak-only distribution, and paid-service concerns. No formal change proposal has reached FESCo.",
-   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=libreoffice_collabora_1a",
-   "readingMinutes": 3
-  },
-  {
-   "id": "d52a768cbec57b83",
-   "sourceId": "phoronix",
-   "title": "KDE Plasma 6.8 Beta 2 Released With Union Theming Engine Maturing",
-   "url": "https://www.phoronix.com/news/KDE-Plasma-6.8-Beta-2",
-   "author": "Michael Larabel",
-   "publishedAt": 1790256453000,
-   "firstSeenAt": 1790316003434,
-   "tags": [
-    "kde",
-    "plasma",
-    "wayland",
-    "release",
-    "hardware",
-    "performance"
-   ],
-   "brief": "KDE Plasma 6.8 Beta 2, the final beta before the stable release, is out for testing. Its Union theming system now covers QtWidgets apps like Dolphin and Kate, and a KWin Wayland memory leak is fixed. Plasma 6.8.0 stable is due 14 October.",
-   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=union_qtwidgets",
-   "readingMinutes": 2
-  },
-  {
-   "id": "1e092d1979ddf0c3",
-   "sourceId": "lwn",
-   "title": "Security updates for Thursday",
-   "url": "https://lwn.net/Articles/1096407/",
-   "author": "jzb",
-   "publishedAt": 1790255118000,
-   "firstSeenAt": 1790316003434,
-   "tags": [
-    "security",
-    "kernel",
-    "distros",
-    "updates",
-    "deep"
-   ],
-   "brief": "LWN's daily roundup lists security updates issued by eight Linux distributions on September 23-24, 2026. AlmaLinux, Oracle, Fedora, Ubuntu, Debian, SUSE, and Mageia patched packages including kernels, firefox, postgresql, openssh, and container tooling.",
-   "imageUrl": null,
-   "readingMinutes": 4
-  },
-  {
-   "id": "3a3ce35eb8dc6107",
-   "sourceId": "phoronix",
-   "title": "AlmaLinux launches certification portal and alma-certify self-certification app",
-   "url": "https://www.phoronix.com/news/AlmaLinux-New-Certification",
-   "author": "Michael Larabel",
-   "publishedAt": 1790254967000,
-   "firstSeenAt": 1790316003434,
-   "tags": [
-    "almalinux",
-    "rhel",
-    "certification",
-    "enterprise-linux",
-    "hardware",
-    "performance"
-   ],
-   "brief": "AlmaLinux expanded its two-year-old hardware certification program to cover third-party software and released a rewritten self-certification app plus a public catalog at catalog.almalinux.org. The app, installable via dnf as alma-certify, runs certification tests in under ten minutes.",
-   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=almalinux_catalog",
-   "readingMinutes": 2
-  },
-  {
-   "id": "e684fd72823b34bb",
-   "sourceId": "itsfoss",
-   "title": "FOSS Weekly #26.39: Snapdragon X2 Linux Support, Ubuntu 26.10, Portainer Goes Closed Source",
-   "url": "https://feed.itsfoss.com/link/24361/17472237/foss-weekly-26-39",
-   "author": "Abhishek Prakash",
-   "publishedAt": 1790254596000,
-   "firstSeenAt": 1790316003434,
-   "tags": [
-    "linux",
-    "ubuntu",
-    "open-source",
-    "newsletter",
-    "desktop",
-    "tutorial"
-   ],
-   "brief": "This week's Linux roundup covers Qualcomm's early Snapdragon X2 developer preview for Linux, Ubuntu 26.10's smarter low-memory handling, and Portainer moving its 3.0 rebuild to closed source. Also featured: Valve open-sourcing its Lepton Android layer, Mozilla's Mistral partnership, and Signal testing numberless…",
-   "imageUrl": "https://itsfoss.com/content/images/2026/09/foss-weekly-3.webp",
-   "readingMinutes": 5
-  },
-  {
-   "id": "e12ef305ea4d70e0",
-   "sourceId": "phoronix",
-   "title": "Linux Kernel Adds TAINT_FORCED_BIND to Flag Impractical Fuzzing Bot Bug Reports",
-   "url": "https://www.phoronix.com/news/Linux-Taint-Forced-Bind",
-   "author": "Michael Larabel",
-   "publishedAt": 1790251716000,
-   "firstSeenAt": 1790316003434,
-   "tags": [
-    "kernel",
-    "debugging",
-    "drivers",
-    "fuzzing",
-    "hardware",
-    "performance"
-   ],
-   "brief": "Greg Kroah-Hartman is adding a new kernel taint flag, TAINT_FORCED_BIND, set whenever a driver's sysfs bind/unbind files are written. The goal is to mark bug reports caused by fuzzing bots like Syzbot that bind arbitrary devices to drivers, creating impractical combinations no real user would hit.",
-   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=random_mobos",
-   "readingMinutes": 3
-  },
-  {
-   "id": "c5988e6b7d0fba8b",
-   "sourceId": "phoronix",
-   "title": "Mir 2.30 Released: Rust Compiler Now Required, Public Roadmap Published",
-   "url": "https://www.phoronix.com/news/Mir-2.30-Released",
-   "author": "Michael Larabel",
-   "publishedAt": 1790250671000,
-   "firstSeenAt": 1790316003434,
-   "tags": [
-    "wayland",
-    "mir",
-    "canonical",
-    "rust",
-    "hardware",
-    "performance"
-   ],
-   "brief": "Canonical released Mir 2.30, its Wayland compositor library, now mandating a Rust compiler for builds as it uses Rust evdev input code and targets Ubuntu 26.04 LTS. The release adds wl_fixes protocol support, bug fixes, and a public roadmap covering plans like an all-Rust compositor and a new rendering pipeline.",
-   "imageUrl": "https://www.phoronix.net/image.php?id=2021&image=ubuntu_mirrors_2",
-   "readingMinutes": 2
-  },
-  {
-   "id": "64da94573b3bc012",
-   "sourceId": "linuxiac",
-   "title": "What's Up Docker 9.0 Released With SQLite Backend, RBAC, and API Tokens",
-   "url": "https://linuxiac.com/whats-up-docker-9-0-released-with-sqlite-backend-rbac-and-api-tokens/",
-   "author": "Bobby Borisov",
-   "publishedAt": 1790249843000,
-   "firstSeenAt": 1790316003434,
-   "tags": [
-    "docker",
-    "release",
-    "self-hosting",
-    "security",
-    "distro",
-    "news"
-   ],
-   "brief": "What's Up Docker 9.0, a container update monitoring tool, switches its persistence layer from LokiJS to SQLite with Drizzle ORM and automatic migrations. It adds role-based access control, personal API tokens, expanded OIDC support, and removes anonymous access, making authentication mandatory.",
-   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/09/wud90.jpg",
-   "readingMinutes": 2
-  },
-  {
-   "id": "2feb13a0b884b700",
-   "sourceId": "9to5linux",
-   "title": "Canonical Releases Mir 2.30 with wl_fixes Wayland Protocol Support",
-   "url": "https://9to5linux.com/?p=33728",
-   "author": "",
-   "publishedAt": 1790248014000,
-   "firstSeenAt": 1790316003434,
-   "tags": [
-    "wayland",
-    "mir",
-    "canonical",
-    "release",
-    "distro"
-   ],
-   "brief": "Canonical has released Mir 2.30, adding support for the wl_fixes Wayland protocol, a typed wrapper for wl_array, and a new command in the workshop tooling, among other changes.",
-   "imageUrl": null,
-   "readingMinutes": 0
-  },
-  {
-   "id": "5def8c1368cd30d3",
-   "sourceId": "linuxiac",
-   "title": "Fwupd 2.1.8 Adds New Hardware Support and Firmware Update Fixes",
-   "url": "https://linuxiac.com/fwupd-2-1-8-adds-new-hardware-support-and-firmware-update-fixes/",
-   "author": "Bobby Borisov",
-   "publishedAt": 1790247999000,
-   "firstSeenAt": 1790316003434,
-   "tags": [
-    "fwupd",
-    "firmware",
-    "linux",
-    "hardware",
-    "distro",
-    "news"
-   ],
-   "brief": "Fwupd 2.1.8 is out, adding support for new docks, fingerprint sensors, and other hardware alongside fixes for crashes, memory leaks, and firmware recovery. New features include a bootupd notification plugin and RSA-3072 signature verification for Lenovo accessories.",
-   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/09/fwupd218.jpg",
-   "readingMinutes": 2
-  },
-  {
-   "id": "af809c912ad4f786",
-   "sourceId": "9to5linux",
-   "title": "Fwupd 2.1.8 Linux Firmware Updater Released with Support for More Devices",
-   "url": "https://9to5linux.com/?p=33725",
-   "author": "",
-   "publishedAt": 1790245440000,
-   "firstSeenAt": 1790316003434,
-   "tags": [
-    "fwupd",
-    "firmware",
-    "linux",
-    "distro",
-    "release"
-   ],
-   "brief": "Fwupd 2.1.8 is now available for download, adding support for new devices including the ASUS GX5407 and Elan PID 0CB6. Only a teaser was available, so further changes are unknown.",
-   "imageUrl": null,
-   "readingMinutes": 0
-  },
-  {
-   "id": "7586695cdc74ee8d",
-   "sourceId": "phoronix",
-   "title": "Fwupd 2.1.8 Released With New Hardware Support From ASUS, Lenovo & Others",
-   "url": "https://www.phoronix.com/news/Fwupd-2.1.8-Released",
-   "author": "Michael Larabel",
-   "publishedAt": 1790245398000,
-   "firstSeenAt": 1790316003434,
-   "tags": [
-    "firmware",
-    "fwupd",
-    "linux",
-    "hardware",
-    "performance"
-   ],
-   "brief": "Fwupd 2.1.8 is out, adding support for new devices including the ASUS ProArt P16, Lenovo ThinkPad Thunderbolt 4 Dock Gen 2, and various MediaTek, MaxLinear, and PixArt hardware. It also adds a plug-in to notify bootupd of ESP changes, RSA-3072 signature verification for Lenovo hardware, and bug fixes.",
-   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=new_fwupdmgr",
-   "readingMinutes": 2
-  },
-  {
-   "id": "18ed74efd863acf0",
-   "sourceId": "phoronix",
-   "title": "\"slab_tiny\" Boot Option Proposed For Tiny Linux Systems With Very Limited RAM",
-   "url": "https://www.phoronix.com/news/Linux-Slab-Tiny-Boot-Option",
-   "author": "Michael Larabel",
-   "publishedAt": 1790244630000,
-   "firstSeenAt": 1790316003434,
-   "tags": [
-    "kernel",
-    "memory",
-    "embedded",
-    "hardware",
-    "performance"
-   ],
-   "brief": "SUSE's Vlastimil Babka posted an RFC patch series replacing the CONFIG_SLUB_TINY Kconfig option with a boot-time \"slab_tiny\" parameter, simplifying the kernel's small-memory slab allocator handling. It targets embedded systems with 16MB of RAM or less.",
-   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=slab_tiny",
-   "readingMinutes": 2
-  },
-  {
-   "id": "085949d7ab3724d9",
-   "sourceId": "phoronix",
-   "title": "Linux 7.4 DRM gains HDMI 2.0 helpers via drm-misc-next",
-   "url": "https://www.phoronix.com/news/Linux-7.4-DRM-Helpers-HDMI-2.0",
-   "author": "Michael Larabel",
-   "publishedAt": 1790243376000,
-   "firstSeenAt": 1790316003434,
-   "tags": [
-    "kernel",
-    "drm",
-    "hdmi",
-    "graphics",
-    "hardware",
-    "performance"
-   ],
-   "brief": "This week's drm-misc-next pull for Linux 7.4 adds new HDMI 2.0 infrastructure to the DRM core, including scrambler support and SCDC helper code. The work comes from Collabora's Cristian Ciocaltea, who is enabling HDMI 2.0 on the Synopsys DW HDMI QP TX controller used in Rockchip SoCs, and will also serve VC4 and…",
-   "imageUrl": "https://www.phoronix.net/image.php?id=2018&image=hdmi_cec_usbc",
-   "readingMinutes": 2
-  },
-  {
-   "id": "c18b7e1f20a38ab4",
-   "sourceId": "linuxiac",
-   "title": "PhotoPrism AI-Powered Photos App Gets Better Face Detection",
-   "url": "https://linuxiac.com/photoprism-ai-powered-photos-app-gets-better-face-detection/",
-   "author": "Bobby Borisov",
-   "publishedAt": 1790241925000,
-   "firstSeenAt": 1790316003434,
-   "tags": [
-    "photoprism",
-    "self-hosting",
-    "photos",
-    "ai",
-    "distro",
-    "news"
-   ],
-   "brief": "Self-hosted photo app PhotoPrism released an update with new face detection and embedding models that catch more faces, including smaller ones in group shots. Existing libraries must opt in via a new `photoprism faces migrate` command.",
-   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/09/photoprism-sept-2026.jpg",
-   "readingMinutes": 3
-  },
-  {
-   "id": "c8e005ebc9f7b4d8",
-   "sourceId": "itsfoss",
-   "title": "Qualcomm Announces Snapdragon X2 Linux Developer Preview",
-   "url": "https://feed.itsfoss.com/link/24361/17472084/snapdragon-x2-linux-developer-preview",
-   "author": "Sourav Rudra",
-   "publishedAt": 1790241196000,
-   "firstSeenAt": 1790316003434,
-   "tags": [
-    "qualcomm",
-    "kernel",
-    "arm",
-    "linux-hardware",
-    "desktop",
-    "tutorial"
-   ],
-   "brief": "Qualcomm released an early Linux developer preview for Snapdragon X2 laptops, targeting kernel developers and distro maintainers rather than end users. It pairs a Debian 13 userspace with a custom kernel and pushes drivers toward mainline instead of out-of-tree patches.",
-   "imageUrl": "https://itsfoss.com/content/images/2026/09/qualcomm-snapdragon-x2-linux-banner.png",
-   "readingMinutes": 3
-  },
-  {
-   "id": "0afd3e2609c53887",
-   "sourceId": "linuxiac",
-   "title": "GNOME 50.5 Released With Numerous Bug and Security Fixes",
-   "url": "https://linuxiac.com/gnome-50-5-released-with-numerous-bug-and-security-fixes/",
-   "author": "Bobby Borisov",
-   "publishedAt": 1790235501000,
-   "firstSeenAt": 1790316003434,
-   "tags": [
-    "gnome",
-    "release",
-    "security",
-    "desktop",
-    "distro",
-    "news"
-   ],
-   "brief": "GNOME 50.5 is a maintenance update for the old-stable GNOME 50 series, now that GNOME 51 is current, updating 22 components. It brings bug fixes across Shell, Mutter, GTK, and GDM plus security fixes in GVfs, librsvg, and Epiphany. Users on GNOME 50 are advised to update via their distribution.",
-   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/09/gnome505.jpg",
-   "readingMinutes": 2
-  },
-  {
-   "id": "56c25ba781f52514",
-   "sourceId": "omgubuntu",
-   "title": "How to test Ubuntu's AI dictation tool Myna ahead of its official release",
-   "url": "https://www.omgubuntu.co.uk/2026/09/ubuntu-myna-ai-install",
-   "author": "Joey Sneddon",
-   "publishedAt": 1790220853000,
-   "firstSeenAt": 1790229602642,
-   "tags": [
-    "ubuntu",
-    "ai",
-    "accessibility",
-    "gnome",
-    "desktop"
-   ],
-   "brief": "Canonical's local AI speech-to-text tool Myna isn't officially ready, but its components are available to test on Ubuntu 26.04 LTS and 26.10. Installation requires a PPA settings app, a Myna snap, and a local Whisper or Parakeet AI model, with an on-screen HUD via a GNOME Shell extension on 26.10.",
-   "imageUrl": "https://www.omgubuntu.co.uk/wp-content/uploads/2026/09/myna.webp",
-   "readingMinutes": 5
   }
  ]
 }
