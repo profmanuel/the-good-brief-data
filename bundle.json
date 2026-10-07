@@ -2,6 +2,750 @@
  "version": 1,
  "articles": [
   {
+   "id": "87ede738a45b011e",
+   "sourceId": "phoronix",
+   "title": "Twelve New Vulnerabilities Disclosed in X.Org Server and XWayland",
+   "url": "https://www.phoronix.com/news/X.Org-12-New-Issues-2026",
+   "author": "Michael Larabel",
+   "publishedAt": 1791336671000,
+   "firstSeenAt": 1791352804639,
+   "tags": [
+    "security",
+    "xorg",
+    "xwayland",
+    "vulnerabilities",
+    "hardware",
+    "performance"
+   ],
+   "brief": "TrendAI's Zero Day Initiative, aided by AI, disclosed twelve security vulnerabilities in the X.Org Server and XWayland. The flaws are mostly use-after-free bugs, heap buffer overflows, and out-of-bounds reads/writes. They are fixed in xorg-server 21.1.25 and xwayland 24.1.14.",
+   "keyPoints": [
+    "Twelve CVEs spanning XKB, XInput, GLX, RandR, XFixes, Glamor, and Present code",
+    "Flaw classes include double free, use-after-free, heap overflows, OOB reads/writes",
+    "Fixed in xorg-server 21.1.25 and xwayland 24.1.14"
+   ],
+   "whyItMatters": "Anyone running X11 sessions or XWayland should update, as the longstanding X.Org codebase continues to yield memory-safety bugs.",
+   "kind": "news",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2020&image=acpi_platform_profiles",
+   "readingMinutes": 2
+  },
+  {
+   "id": "e7a1c2cec5e3da1e",
+   "sourceId": "phoronix",
+   "title": "New Zswap patches cut worst-case swap read latency from 314ms to 7ms",
+   "url": "https://www.phoronix.com/news/Linux-Better-Zswap-Performance",
+   "author": "Michael Larabel",
+   "publishedAt": 1791334564000,
+   "firstSeenAt": 1791352804639,
+   "tags": [
+    "kernel",
+    "memory-management",
+    "zswap",
+    "performance",
+    "hardware"
+   ],
+   "brief": "Usama Arif posted two patches splitting Zswap's per-CPU compression requests so loads no longer share a mutex with stores, eliminating preemption stalls. Synchronous compressors can now decompress lock-free.",
+   "keyPoints": [
+    "Stores and loads previously shared a per-CPU acomp request and mutex, causing priority-inversion stalls",
+    "Patches give loads separate requests and use lock-free on-stack requests for synchronous compressors",
+    "Slowest read fell from 314ms to 7.0ms at 8 vCPUs; mirrors earlier zRAM work by Sergey Senozhatsky"
+   ],
+   "whyItMatters": "Kernel developers and users of swap-heavy systems should care, since Zswap tail latency improves dramatically under contention.",
+   "kind": "news",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=better_zswap",
+   "readingMinutes": 4
+  },
+  {
+   "id": "0ccc24590e13094a",
+   "sourceId": "linuxiac",
+   "title": "RTIPC Brings Near-Zero-Overhead Inter-Process Communication to Linux",
+   "url": "https://linuxiac.com/rtipc-brings-near-zero-overhead-inter-process-communication-to-linux/",
+   "author": "Bobby Borisov",
+   "publishedAt": 1791325591000,
+   "firstSeenAt": 1791352804639,
+   "tags": [
+    "linux",
+    "ipc",
+    "real-time",
+    "open-source",
+    "distro",
+    "news"
+   ],
+   "brief": "RTIPC is a new Linux IPC library for hard real-time workloads, combining shared memory with a wait-free single-producer/single-consumer queue so data transfers avoid kernel copies and syscalls. It offers a formally verified 'force push' mode, cacheline-aligned messages, and optional eventfd integration, at the cost of…",
+   "keyPoints": [
+    "Data path uses shared memory with no syscalls after channel setup",
+    "Force push discards oldest message when full; queue verified with SPIN/Modex",
+    "Setup exchanges file descriptors via Unix socket or D-Bus"
+   ],
+   "whyItMatters": "Developers of latency-sensitive Linux applications get a middle ground between kernel-buffered IPC and hand-rolled shared-memory synchronization.",
+   "kind": "news",
+   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/10/rtipc.jpg",
+   "readingMinutes": 3
+  },
+  {
+   "id": "c473729b7a9e2005",
+   "sourceId": "phoronix",
+   "title": "Canonical Reaffirms Plans For Ubuntu 27.04 To Use ntpd-rs By Default",
+   "url": "https://www.phoronix.com/news/Ubuntu-27.04-ntpd-rs-Plans",
+   "author": "Michael Larabel",
+   "publishedAt": 1791320931000,
+   "firstSeenAt": 1791352804639,
+   "tags": [
+    "ubuntu",
+    "rust",
+    "security",
+    "ntp",
+    "hardware",
+    "performance"
+   ],
+   "brief": "Canonical reaffirmed plans to make ntpd-rs, a Rust-based, memory-safe NTP/NTS implementation, the default time synchronization package in Ubuntu 27.04. An updated ntpd-rs is available for testing in Ubuntu 26.10, whose release highlights also include Rust Coreutils, OpenSSL 4.0, Linux 7.3, and Dbus-Broker.",
+   "keyPoints": [
+    "ntpd-rs targeted as default NTP implementation for Ubuntu 27.04",
+    "Updated ntpd-rs available for testing in Ubuntu 26.10 archive",
+    "Ubuntu 26.10 also ships Rust Coreutils, OpenSSL 4.0, Linux 7.3, Dbus-Broker"
+   ],
+   "whyItMatters": "Ubuntu users and admins should care since accurate, memory-safe time sync underpins TLS validation, Kerberos, and reliable logging.",
+   "kind": "news",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=ntpd_rs",
+   "readingMinutes": 3
+  },
+  {
+   "id": "d1a4ff6b5786ecc3",
+   "sourceId": "9to5linux",
+   "title": "Ubuntu 26.10 adds signed slim GRUB, TPM encryption, and VPN hardware tokens",
+   "url": "https://9to5linux.com/canonical-beefs-up-security-for-ubuntu-26-10-with-slimmed-down-grub-linux-7-3",
+   "author": "Marcus Nestor",
+   "publishedAt": 1791310959000,
+   "firstSeenAt": 1791352804639,
+   "tags": [
+    "ubuntu",
+    "security",
+    "encryption",
+    "vpn",
+    "distro",
+    "release"
+   ],
+   "brief": "Ubuntu 26.10 will add new security features: a signed, slimmed-down GRUB bootloader, TPM-backed encryption on machines lacking a hardware root of trust, and hardware-token VPN sign-in in NetworkManager.",
+   "keyPoints": [],
+   "whyItMatters": "Ubuntu users and admins tracking security hardening in the next release will want to know what is coming.",
+   "kind": "news",
+   "imageUrl": null,
+   "readingMinutes": 0
+  },
+  {
+   "id": "488de9291dac827b",
+   "sourceId": "phoronix",
+   "title": "Meta engineer presents AMD P-State patches boosting Steam Deck gaming at LPC",
+   "url": "https://www.phoronix.com/news/Boost-Recently-Busy-CPUs",
+   "author": "Michael Larabel",
+   "publishedAt": 1791310861000,
+   "firstSeenAt": 1791352804639,
+   "tags": [
+    "kernel",
+    "amd",
+    "gaming",
+    "steam-deck",
+    "hardware",
+    "performance"
+   ],
+   "brief": "Meta kernel engineer David Vernet presented at Linux Plumbers Conference on AMD P-State work using a per-CPU EPP boost heuristic for recently busy cores, improving frame-time tails and load times on the Steam Deck.",
+   "keyPoints": [
+    "Per-CPU EPP boost for recently busy cores improves 1%-low frame rates, up to 31% earlier",
+    "Review feedback pushed design from driver heuristic to governor-level mechanism",
+    "Wine/Proton thread hints are being considered as part of the approach"
+   ],
+   "whyItMatters": "Steam Deck and AMD Linux gamers could see better frame-time consistency and load times if this lands in the kernel.",
+   "kind": "news",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=steam_deck_meta_2",
+   "readingMinutes": 2
+  },
+  {
+   "id": "1c5a91e7d1c23d00",
+   "sourceId": "itsfoss",
+   "title": "Red Hat's Lightwell Backports Security Fixes Without Waiting for Upstream",
+   "url": "https://feed.itsfoss.com/link/24361/17490619/red-hat-lightwell-status-update",
+   "author": "Sourav Rudra",
+   "publishedAt": 1791305037000,
+   "firstSeenAt": 1791352804639,
+   "tags": [
+    "security",
+    "red-hat",
+    "enterprise",
+    "open-source",
+    "desktop",
+    "tutorial"
+   ],
+   "brief": "Red Hat and IBM's Lightwell backports vulnerability fixes directly into the pinned library versions enterprises actually run, instead of waiting for upstream patches. It has cleared 400 vulnerabilities in Java libraries so far, and its tailored Clearinghouse Premier tier is now generally available to any enterprise.",
+   "keyPoints": [
+    "Lightwell backports fixes to pinned library versions, patching them in place",
+    "400 previously unknown Java vulnerabilities fixed; Python, JavaScript, .NET planned",
+    "Clearinghouse Premier now open to all enterprises, offering prioritized fixes and early notice"
+   ],
+   "whyItMatters": "Enterprises stuck on unpatched legacy dependencies, especially in Java, get a way to close known vulnerabilities without upgrading versions.",
+   "kind": "news",
+   "imageUrl": "https://itsfoss.com/content/images/2026/10/redhat-ibm-lightwell-banner.png",
+   "readingMinutes": 3
+  },
+  {
+   "id": "61ddc26a4c7962b6",
+   "sourceId": "linuxiac",
+   "title": "Ubuntu 26.10 Brings Rust Coreutils, OpenSSL 4.0, and a Slimmer GRUB",
+   "url": "https://linuxiac.com/ubuntu-26-10-will-bring-rust-coreutils-openssl-4-0-and-a-slimmer-grub/",
+   "author": "Bobby Borisov",
+   "publishedAt": 1791303550000,
+   "firstSeenAt": 1791352804639,
+   "tags": [
+    "ubuntu",
+    "security",
+    "rust",
+    "kernel",
+    "distro",
+    "news"
+   ],
+   "brief": "Ubuntu 26.10, in beta ahead of its October 15 release, delivers sweeping security changes: a slimmed-down signed GRUB, fully Rust-based coreutils, OpenSSL 4.0, and expanded TPM disk encryption. It also switches to dbus-broker and ships kernel 7.3 with security fixes.",
+   "keyPoints": [
+    "Signed GRUB drops Btrfs, ZFS, XFS drivers and LVM/LUKS /boot under Secure Boot",
+    "cp, mv, rm join uutils migration, making default coreutils entirely Rust",
+    "OpenSSL 4.0 adds Encrypted Client Hello; ENGINE and SSLv3 removed"
+   ],
+   "whyItMatters": "Ubuntu users and admins should test scripts and Secure Boot setups before upgrading, since coreutils and GRUB changes can break existing workflows.",
+   "kind": "release",
+   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/10/ubuntu2610-strong-security.jpg",
+   "readingMinutes": 3
+  },
+  {
+   "id": "d2754317838aa87b",
+   "sourceId": "phoronix",
+   "title": "NVIDIA Vera HPC benchmarks vs AMD EPYC and Intel Xeon",
+   "url": "https://www.phoronix.com/review/nvidia-vera-hpc",
+   "author": "Michael Larabel",
+   "publishedAt": 1791302408000,
+   "firstSeenAt": 1791352804639,
+   "tags": [
+    "hardware",
+    "hpc",
+    "benchmarks",
+    "arm",
+    "performance"
+   ],
+   "brief": "Phoronix benchmarks a dual NVIDIA Vera server (176 cores, 352 threads, 1.2TB/s LPDDR5x bandwidth) on HPC workloads against AMD EPYC Turin and Intel Xeon 6 Granite Rapids systems. Testing uses NVIDIA's recommended patched Linux 6.17 stack and tracks per-test CPU power and peak frequency.",
+   "keyPoints": [
+    "Dual Vera: 176 cores, 352 threads, 16x96GB LPDDR5-9600 memory",
+    "Compared with EPYC 9575F, EPYC 9755, and dual Xeon 6980P systems",
+    "Vera ran patched Linux 6.17 with 64K kernel and GCC 15.3"
+   ],
+   "whyItMatters": "HPC buyers and admins evaluating Arm-based NVIDIA Vera systems get a rare independent comparison against current x86 flagships.",
+   "kind": "deep-dive",
+   "imageUrl": "https://www.phoronix.net/image.php?id=nvidia-vera-hpc&image=nvidia_vera_hpc2",
+   "readingMinutes": 2
+  },
+  {
+   "id": "73a16407a4d6b2c8",
+   "sourceId": "omgubuntu",
+   "title": "Scrcpy 5.0 adds hardware decoding for Android mirroring",
+   "url": "https://www.omgubuntu.co.uk/2026/10/scrcpy-hardware-decoding-added",
+   "author": "Joey Sneddon",
+   "publishedAt": 1791300269000,
+   "firstSeenAt": 1791352804639,
+   "tags": [
+    "android",
+    "scrcpy",
+    "release",
+    "linux",
+    "ubuntu",
+    "desktop"
+   ],
+   "brief": "Scrcpy 5.0 adds zero-copy hardware decoding for mirroring Android screens to a desktop, enabled by default with autodetected backends like VA-API on Linux. Benchmarks show up to a 10x drop in host CPU usage. The release also adds broader audio capture via --audio-dup and several bug fixes.",
+   "keyPoints": [
+    "Hardware decoding on by default, up to 10x lower CPU usage",
+    "VA-API on Ubuntu needs the va-driver-all package; --hwdec selects a decoder",
+    "--audio-dup captures broader audio, fixing missing game audio"
+   ],
+   "whyItMatters": "Linux users who mirror Android devices to their desktop get much lower CPU usage with no extra setup.",
+   "kind": "release",
+   "imageUrl": "https://www.omgubuntu.co.uk/wp-content/uploads/2026/05/scrcpy-keep-awake.webp",
+   "readingMinutes": 2
+  },
+  {
+   "id": "06189c667175b8cd",
+   "sourceId": "9to5linux",
+   "title": "Raspberry Pi OS Updated with Battery and Squeekboard Dock Widgets",
+   "url": "https://9to5linux.com/raspberry-pi-os-updated-with-battery-and-squeekboard-dock-widgets",
+   "author": "Marcus Nestor",
+   "publishedAt": 1791300147000,
+   "firstSeenAt": 1791352804639,
+   "tags": [
+    "raspberry-pi",
+    "kernel",
+    "release",
+    "distro"
+   ],
+   "brief": "The Raspberry Pi OS 2026-10-06 release is available for download, adding battery and Squeekboard dock widgets, Control Centre improvements, and Linux kernel 6.18.50 LTS.",
+   "keyPoints": [],
+   "whyItMatters": "Raspberry Pi users get new dock widgets and an updated LTS kernel in this release.",
+   "kind": "release",
+   "imageUrl": null,
+   "readingMinutes": 0
+  },
+  {
+   "id": "1d647ba945258ad3",
+   "sourceId": "linuxiac",
+   "title": "OpenSSH 10.6 Released with Security Hardening, Post-Quantum Support",
+   "url": "https://linuxiac.com/openssh-10-6-released-with-security-hardening-post-quantum-support/",
+   "author": "Bobby Borisov",
+   "publishedAt": 1791300061000,
+   "firstSeenAt": 1791352804639,
+   "tags": [
+    "openssh",
+    "security",
+    "post-quantum",
+    "release",
+    "distro",
+    "news"
+   ],
+   "brief": "OpenSSH 10.6 ships security fixes, including disabling LZ77 compression to block a chosen-plaintext side-channel attack, plus hybrid post-quantum signature support. SFTP path validation is tightened, scp -R begins deprecation, and the project plans more frequent releases due to AI-assisted security bug discovery.",
+   "keyPoints": [
+    "LZ77 SSH compression disabled to prevent chosen-plaintext side-channel attack",
+    "Hybrid post-quantum ssh-mldsa44-ed25519 signature enabled; WarnWeakCrypto on by default",
+    "scp -R deprecated with warning; default private key KDF rounds raised from 24 to 32"
+   ],
+   "whyItMatters": "Anyone administering SSH servers or clients should upgrade soon and review compression, key types, and scp usage.",
+   "kind": "release",
+   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/10/openssh106.jpg",
+   "readingMinutes": 2
+  },
+  {
+   "id": "c4310f71f463f137",
+   "sourceId": "lwn",
+   "title": "Python's two modules for random numbers",
+   "url": "https://lwn.net/Articles/1097468/",
+   "author": "jake",
+   "publishedAt": 1791298929000,
+   "firstSeenAt": 1791352804639,
+   "tags": [
+    "python",
+    "security",
+    "cryptography",
+    "kernel",
+    "deep"
+   ],
+   "brief": "An LWN article examines Python's random and secrets modules: both produce random values, but only secrets is suitable for passwords and security tokens. Despite long-standing misuse of random for cryptography, Python's core team added secrets in 3.6 rather than making random secure by default.",
+   "keyPoints": [],
+   "whyItMatters": "Python developers generating tokens or passwords should know which module is safe to use.",
+   "kind": "deep-dive",
+   "imageUrl": null,
+   "readingMinutes": 0
+  },
+  {
+   "id": "a6dc57f7578cbd4f",
+   "sourceId": "9to5linux",
+   "title": "Debian Trixie-Based Raspberry Pi Desktop Is Now Available for PC and Mac",
+   "url": "https://9to5linux.com/debian-trixie-based-raspberry-pi-desktop-is-now-available-for-pc-and-mac",
+   "author": "Marcus Nestor",
+   "publishedAt": 1791296662000,
+   "firstSeenAt": 1791352804639,
+   "tags": [
+    "debian",
+    "raspberry-pi",
+    "linux",
+    "distro",
+    "release"
+   ],
+   "brief": "Raspberry Pi Desktop for PC and Mac has been updated to the Debian 13 \"Trixie\" series, bringing the new features from Raspberry Pi OS.",
+   "keyPoints": [],
+   "whyItMatters": "Users running Raspberry Pi Desktop on standard PCs or Macs can now move to a Trixie-based system.",
+   "kind": "release",
+   "imageUrl": null,
+   "readingMinutes": 0
+  },
+  {
+   "id": "1b6d02aac9982d3d",
+   "sourceId": "phoronix",
+   "title": "RADV Vulkan reliability fixes land for AMD Polaris GPUs, transfer queues in progress",
+   "url": "https://www.phoronix.com/news/More-Reliable-Vulkan-Polaris",
+   "author": "Michael Larabel",
+   "publishedAt": 1791296479000,
+   "firstSeenAt": 1791352804639,
+   "tags": [
+    "mesa",
+    "vulkan",
+    "amd",
+    "gpu-drivers",
+    "hardware",
+    "performance"
+   ],
+   "brief": "Valve developer Timur Kristóf merged fixes into Mesa 26.3-devel that make Vulkan on AMD RX 400/500 \"Polaris\" GPUs far more reliable, enabling 20 consecutive full VK CTS runs in CI versus a 50% failure rate before.",
+   "keyPoints": [
+    "Fixes merged to Mesa 26.3-devel make Polaris Vulkan more reliable",
+    "VK CTS stress test went from 50% failure to 20 clean runs",
+    "Transfer queue work lives in radv_sdma_legacy branch, needs RADV_EXPERIMENTAL=transfer_queue"
+   ],
+   "whyItMatters": "Linux gamers and users still running decade-old AMD Polaris GPUs get more dependable Vulkan performance in Mesa.",
+   "kind": "news",
+   "imageUrl": "https://www.phoronix.net/image.php?id=radeon-rx580-linux&image=radeon_rx580_3",
+   "readingMinutes": 2
+  },
+  {
+   "id": "09f6c336b9dea63d",
+   "sourceId": "lwn",
+   "title": "Last rites for Gentoo's Chromium package",
+   "url": "https://lwn.net/Articles/1097760/",
+   "author": "jzb",
+   "publishedAt": 1791294290000,
+   "firstSeenAt": 1791352804639,
+   "tags": [
+    "gentoo",
+    "chromium",
+    "packaging",
+    "kernel",
+    "deep"
+   ],
+   "brief": "Gentoo's maintainers are dropping the Chromium package, citing its complex build system, bundled dependencies, frequent releases, and user complaints. Chromium has long been considered one of the hardest browsers for distributions to package.",
+   "keyPoints": [],
+   "whyItMatters": "Gentoo users who rely on Chromium will need an alternative browser or another way to install it.",
+   "kind": "news",
+   "imageUrl": null,
+   "readingMinutes": 0
+  },
+  {
+   "id": "4cbe3862be33b4a2",
+   "sourceId": "lwn",
+   "title": "OpenSSH 10.6 released",
+   "url": "https://lwn.net/Articles/1098980/",
+   "author": "jzb",
+   "publishedAt": 1791294168000,
+   "firstSeenAt": 1791352804639,
+   "tags": [
+    "openssh",
+    "security",
+    "release",
+    "post-quantum",
+    "kernel",
+    "deep"
+   ],
+   "brief": "OpenSSH 10.6 enables the hybrid post-quantum ssh-mldsa44-ed25519 signature algorithm and disables the LZ77 dictionary coder to mitigate side-channel leaks, at the cost of weaker compression. It also deprecates scp -R remote-to-remote copies over security risks and adds a -p option to sftp's mkdir commands.",
+   "keyPoints": [],
+   "whyItMatters": "OpenSSH users and administrators should review the compression and scp changes before upgrading.",
+   "kind": "release",
+   "imageUrl": null,
+   "readingMinutes": 0
+  },
+  {
+   "id": "fc5026cdf7dc889b",
+   "sourceId": "phoronix",
+   "title": "IBM and Red Hat use AI agents to find 400+ Java vulnerabilities",
+   "url": "https://www.phoronix.com/news/IBM-Red-Hat-Java-400-Vulns",
+   "author": "Michael Larabel",
+   "publishedAt": 1791293013000,
+   "firstSeenAt": 1791352804639,
+   "tags": [
+    "java",
+    "security",
+    "red-hat",
+    "ai",
+    "hardware",
+    "performance"
+   ],
+   "brief": "IBM and Red Hat say their Lightwell supply-chain initiative, built on specialized AI agents, found and remediated over 400 previously unknown vulnerabilities in popular Java libraries. The announcement coincides with Lightwell Clearinghouse reaching GA, an enterprise service for priority review of open-source…",
+   "keyPoints": [
+    "400+ new vulnerabilities found in popular Java code via Lightwell AI agents",
+    "Lightwell Clearinghouse service reaches general availability for enterprise customers",
+    "IBM cites AI agents chaining low-risk flaws as a growing attack risk"
+   ],
+   "whyItMatters": "Java developers and security teams should note the scale of AI-driven vulnerability discovery in widely used libraries.",
+   "kind": "news",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=redhat_400",
+   "readingMinutes": 2
+  },
+  {
+   "id": "190fd469d28dca52",
+   "sourceId": "9to5linux",
+   "title": "GNOME 52 \"Terengganu\" Scheduled for March 17th, 2027",
+   "url": "https://9to5linux.com/gnome-52-terengganu-desktop-environment-is-scheduled-for-march-17th-2027",
+   "author": "Marcus Nestor",
+   "publishedAt": 1791292869000,
+   "firstSeenAt": 1791352804639,
+   "tags": [
+    "gnome",
+    "desktop",
+    "release-schedule",
+    "distro",
+    "release"
+   ],
+   "brief": "GNOME 52, codenamed \"Terengganu,\" now has a draft release schedule with the final release planned for March 17th, 2027.",
+   "keyPoints": [],
+   "whyItMatters": "GNOME users and distro maintainers can plan ahead for the desktop's next major release cycle.",
+   "kind": "news",
+   "imageUrl": null,
+   "readingMinutes": 0
+  },
+  {
+   "id": "737af0d4133bcf1c",
+   "sourceId": "lwn",
+   "title": "Security updates for Tuesday",
+   "url": "https://lwn.net/Articles/1098979/",
+   "author": "jzb",
+   "publishedAt": 1791292344000,
+   "firstSeenAt": 1791352804639,
+   "tags": [
+    "security",
+    "kernel",
+    "debian",
+    "ubuntu",
+    "deep"
+   ],
+   "brief": "LWN's daily roundup of Linux distribution security advisories. AlmaLinux, Debian, Fedora, Oracle, Red Hat, Slackware, SUSE, and Ubuntu all shipped updates, with numerous kernel patches and fixes for sudo, openssh, cups, libreoffice, and many other packages.",
+   "keyPoints": [
+    "AlmaLinux, Oracle, Fedora, and Ubuntu all issued multiple kernel security updates",
+    "Debian patched libreoffice, roundcube, sabnzbdplus, and ruby-oauth2",
+    "Ubuntu fixed unbound, edk2, rabbitmq-server, and aodh/watcher across releases"
+   ],
+   "whyItMatters": "System administrators can scan this list for advisories affecting the distributions and packages they run.",
+   "kind": "news",
+   "imageUrl": null,
+   "readingMinutes": 15
+  },
+  {
+   "id": "fef59551ecec3077",
+   "sourceId": "phoronix",
+   "title": "Intel shows LPMD boosts Linux gaming performance-per-Watt on Panther Lake",
+   "url": "https://www.phoronix.com/news/Intel-LPMD-Linux-Gaming",
+   "author": "Michael Larabel",
+   "publishedAt": 1791292297000,
+   "firstSeenAt": 1791352804639,
+   "tags": [
+    "intel",
+    "gaming",
+    "power-management",
+    "linux",
+    "hardware",
+    "performance"
+   ],
+   "brief": "At LPC 2026 in Prague, Intel engineers presented findings on the Low Power Mode Daemon (LPMD) for Core Ultra systems. Default LPMD settings, without game-specific tuning, delivered up to an 11% performance-per-Watt gain on a Panther Lake handheld, with single-digit to low double-digit efficiency improvements across…",
+   "keyPoints": [
+    "LPMD optimizes hybrid P/E/LPE core layouts on Core Ultra desktops, laptops, and handhelds",
+    "Up to 11% performance-per-Watt improvement on a Panther Lake handheld, e.g. Strange Brigade",
+    "Gains come from default LPMD configuration without per-game tuning"
+   ],
+   "whyItMatters": "Linux gamers on Intel Core Ultra laptops and handhelds should enable LPMD for better efficiency at no tuning cost.",
+   "kind": "news",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=lpmd_gaming_1",
+   "readingMinutes": 3
+  },
+  {
+   "id": "f16793b408ea0d52",
+   "sourceId": "phoronix",
+   "title": "Blender 6.0 May Drop OpenGL Support in Favor of Vulkan",
+   "url": "https://www.phoronix.com/news/Blender-6.0-May-Remove-OpenGL",
+   "author": "Michael Larabel",
+   "publishedAt": 1791288701000,
+   "firstSeenAt": 1791352804639,
+   "tags": [
+    "blender",
+    "vulkan",
+    "opengl",
+    "graphics",
+    "hardware",
+    "performance"
+   ],
+   "brief": "Blender developers are considering removing OpenGL support in Blender 6.0, targeted for November 2027, now that the Vulkan backend in Blender 5.0 has matured. No decision has been made; virtual texturing is the main blocker. Blender 5.5 LTS would be the last release for OpenGL-only platforms.",
+   "keyPoints": [
+    "Internal proposal to remove OpenGL in Blender 6.0 (November 2027)",
+    "Virtual texturing is the blocker; no decision made yet",
+    "Blender 5.5 LTS would be the last option for OpenGL-only systems"
+   ],
+   "whyItMatters": "Blender users on older hardware without Vulkan support should watch this, as it determines how long they can keep upgrading.",
+   "kind": "news",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=blender_opengl",
+   "readingMinutes": 2
+  },
+  {
+   "id": "2892669c4eb85a8b",
+   "sourceId": "linuxiac",
+   "title": "aerynOS October update brings COSMIC 1.9, GNOME 51, and Budgie 10.10.3 for testing",
+   "url": "https://linuxiac.com/aerynos-adds-budgie-10-10-3-for-testing-updates-cosmic-to-1-9/",
+   "author": "Bobby Borisov",
+   "publishedAt": 1791284612000,
+   "firstSeenAt": 1791352804639,
+   "tags": [
+    "aerynos",
+    "budgie",
+    "cosmic",
+    "distro",
+    "news"
+   ],
+   "brief": "aerynOS pushed a large October update to its unstable stream, including COSMIC Desktop 1.9, GNOME 51, kernel 7.2.8, Qt 6.12, and OpenSSL 4.0.3. Budgie 10.10.3 was later added to the volatile stream for testing. The project still classifies the distro as alpha quality.",
+   "keyPoints": [
+    "Budgie 10.10.3 now in volatile stream for testing",
+    "Update includes COSMIC 1.9, GNOME 51, Qt 6.12, OpenSSL 4.0.3",
+    "Kernels: 7.2.8 for gaming/stable, 6.18.54 LTS; Mesa 26.2.4"
+   ],
+   "whyItMatters": "aerynOS testers and followers of the Serpent OS successor get a broad stack refresh plus an early Budgie option.",
+   "kind": "news",
+   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/10/aerynos-oct-2026.jpg",
+   "readingMinutes": 2
+  },
+  {
+   "id": "aa603a3f2a8ac1b0",
+   "sourceId": "phoronix",
+   "title": "Meta Developing Compressed RAM \"CRAM\" For Linux, Faster Than ZRAM & Zswap",
+   "url": "https://www.phoronix.com/news/Linux-CRAM-Compressed-RAM",
+   "author": "Michael Larabel",
+   "publishedAt": 1791282186000,
+   "firstSeenAt": 1791352804639,
+   "tags": [
+    "kernel",
+    "memory",
+    "hardware",
+    "meta",
+    "performance"
+   ],
+   "brief": "Meta engineers presented Compressed RAM (CRAM) at Linux Plumbers Conference 2026, a hardware-offloaded memory compression approach for Linux. It allows cacheline/byte access to compressed memory, delivering near-native DRAM read speeds and much faster writes than ZRAM, Zswap, or swap.",
+   "keyPoints": [
+    "Hardware-offloaded compression with cacheline/byte access to compressed memory",
+    "Read-only data matches raw DRAM performance; writes beat ZRAM, Zswap, and swap",
+    "Most pieces needed for CRAM support are already mainline"
+   ],
+   "whyItMatters": "Linux users and admins facing memory shortages and high DRAM prices should care, as CRAM could expand usable memory capacity with little performance cost.",
+   "kind": "news",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=cram_2",
+   "readingMinutes": 2
+  },
+  {
+   "id": "525e56d7c639b415",
+   "sourceId": "phoronix",
+   "title": "WSL 3.0.2 adds vNUMA support for large servers and experimental sparse VHDs",
+   "url": "https://www.phoronix.com/news/Microsoft-WSL-3.0.2",
+   "author": "Michael Larabel",
+   "publishedAt": 1791281134000,
+   "firstSeenAt": 1791352804639,
+   "tags": [
+    "wsl",
+    "windows",
+    "linux",
+    "virtualization",
+    "hardware",
+    "performance"
+   ],
+   "brief": "Microsoft released WSL 3.0.2, adding automatic virtual NUMA support so WSL can run on hosts with more than 256 threads, including multi-socket servers. The update also brings experimental sparse VHD creation, an IPv4 forwarding fix, and container health notifications for WSLC.",
+   "keyPoints": [
+    "Automatic vNUMA support fixes WSL failing to launch on hosts with over 256 threads",
+    "Experimental sparse VHD support consumes disk space only for written data",
+    "Also fixes IPv4 forwarding and adds container health notifications to WSLC events"
+   ],
+   "whyItMatters": "Developers and admins running WSL on large multi-socket servers can now use it reliably, and sparse VHDs can reduce disk usage.",
+   "kind": "release",
+   "imageUrl": "https://www.phoronix.net/image.php?id=windows-11-wsl2-2025&image=windows_wsl2_3",
+   "readingMinutes": 2
+  },
+  {
+   "id": "0176b5b967a80122",
+   "sourceId": "phoronix",
+   "title": "Intel Compiler Engineer Shares Latest Projected Gains For APX",
+   "url": "https://www.phoronix.com/news/Intel-APX-Projected-Gains",
+   "author": "Michael Larabel",
+   "publishedAt": 1791280457000,
+   "firstSeenAt": 1791352804639,
+   "tags": [
+    "gcc",
+    "intel",
+    "amd",
+    "x86",
+    "hardware",
+    "performance"
+   ],
+   "brief": "At GNU Tools Cauldron 2026 in Prague, Intel and AMD engineers presented GCC enablement for APX and ACE. Intel's simulations project APX cuts loads, stores, and instructions in SPEC CPU 2017; GCC support is ready from GCC 15.1.",
+   "keyPoints": [
+    "APX projects 10%+ fewer loads, 20%+ fewer stores, 10%+ fewer instructions in SPEC 2017",
+    "GCC 15.1 supports APX with Binutils 2.44+, Glibc 2.39+, Linux 6.16+; LLVM 20.1 too",
+    "AMD's ACE V1 work is landing in GCC Git, targeting GCC 17.1"
+   ],
+   "whyItMatters": "Compiler developers and performance-focused Linux users get a preview of APX toolchain readiness and expected gains before the hardware ships.",
+   "kind": "news",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=gcc_x86_1",
+   "readingMinutes": 3
+  },
+  {
+   "id": "c799efb6d90efb5d",
+   "sourceId": "phoronix",
+   "title": "YSERVER 1.7 Rust X11 Server Narrows Memory Usage Difference With X.Org",
+   "url": "https://www.phoronix.com/news/YSERVER-1.7",
+   "author": "Michael Larabel",
+   "publishedAt": 1791279565000,
+   "firstSeenAt": 1791352804639,
+   "tags": [
+    "x11",
+    "rust",
+    "graphics",
+    "release",
+    "hardware",
+    "performance"
+   ],
+   "brief": "YSERVER 1.7, a Rust-written X11 server built largely with Claude Code, cuts video memory use from 2–4GB to around 1.2GB on a 4K desktop, close to X.Org's 0.9GB. The release also speeds up CDE and Motif app startup and adds Vulkan correctness fixes.",
+   "keyPoints": [
+    "vRAM use down from 2–4GB to ~1.2GB on 4K desktops, vs X.Org's ~0.9GB",
+    "Hidden windows no longer hold vRAM; GLX memory leaks fixed",
+    "CDE/Motif apps now start as fast as on X.Org via cached font look-ups"
+   ],
+   "whyItMatters": "Developers watching Rust rewrites of X11 infrastructure get a data point on how close this alternative server is getting to X.Org parity.",
+   "kind": "release",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=yserver",
+   "readingMinutes": 2
+  },
+  {
+   "id": "daa6473fa2386d7d",
+   "sourceId": "linuxiac",
+   "title": "Raspberry Pi OS October 2026 Update Gets Better Dock Handling and Many Fixes",
+   "url": "https://linuxiac.com/raspberry-pi-os-october-2026-update-gets-better-dock-handling-and-many-fixes/",
+   "author": "Bobby Borisov",
+   "publishedAt": 1791277876000,
+   "firstSeenAt": 1791352804639,
+   "tags": [
+    "raspberry-pi",
+    "linux",
+    "desktop",
+    "kernel",
+    "distro",
+    "news"
+   ],
+   "brief": "The October 6, 2026 Raspberry Pi OS update improves dock and taskbar handling, fixes Control Centre crashes and panel bugs, and resolves PCManFM and system tray issues. It ships with Linux kernel 6.18.50 LTS; users can update via apt full-upgrade.",
+   "keyPoints": [
+    "Dock/taskbar switching no longer resets appearance; default dock adds battery and Squeekboard widgets",
+    "Ejecter plugin can auto-mount encrypted drives; automount conflict with PCManFM fixed",
+    "Ships with Linux kernel 6.18.50 LTS; update via sudo apt full-upgrade"
+   ],
+   "whyItMatters": "Raspberry Pi desktop users get a batch of stability fixes for the panel, file manager, and tray, plus a newer LTS kernel.",
+   "kind": "release",
+   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/10/raspberrypios-october-2026.jpg",
+   "readingMinutes": 3
+  },
+  {
+   "id": "b5fdbcd374333c53",
+   "sourceId": "linuxiac",
+   "title": "LibreSSL 4.3.3 Released with OCSP Authorization Bypass Fix",
+   "url": "https://linuxiac.com/libressl-4-3-3-released-with-ocsp-authorization-bypass-fix/",
+   "author": "Bobby Borisov",
+   "publishedAt": 1791276544000,
+   "firstSeenAt": 1791352804639,
+   "tags": [
+    "libressl",
+    "security",
+    "tls",
+    "openbsd",
+    "distro",
+    "news"
+   ],
+   "brief": "LibreSSL 4.3.3 is a maintenance release of the OpenBSD-developed TLS library, headlined by a fix for an OCSP responder authorization bypass in libtls and ocspcheck. It also corrects several DTLS bugs, tightens certificate verification, and improves macOS and Windows portability.",
+   "keyPoints": [
+    "Fixes OCSP responder authorization bypass in libtls and ocspcheck",
+    "DTLS fixes: fragment size check, buffered handshake limit, retransmission overread",
+    "Hostname mismatch now caught even when verification callbacks always succeed"
+   ],
+   "whyItMatters": "Developers and distro maintainers shipping LibreSSL should update to close a certificate-revocation validation flaw.",
+   "kind": "release",
+   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/10/libressl443.jpg",
+   "readingMinutes": 2
+  },
+  {
    "id": "4d895138deb3bd95",
    "sourceId": "omgubuntu",
    "title": "Unofficial Firefox GNOME theme updated for Firefox 157's Nova redesign",
@@ -6964,691 +7708,6 @@
    "kind": "news",
    "imageUrl": null,
    "readingMinutes": 0
-  },
-  {
-   "id": "b46ce2a2b5cd4793",
-   "sourceId": "omgubuntu",
-   "title": "Banshee music player returns as a Snap package",
-   "url": "https://www.omgubuntu.co.uk/2026/09/banshee-music-player-snap-ubuntu",
-   "author": "Joey Sneddon",
-   "publishedAt": 1790351630000,
-   "firstSeenAt": 1790402402904,
-   "tags": [
-    "snap",
-    "ubuntu",
-    "music",
-    "gtk",
-    "desktop"
-   ],
-   "brief": "Alan Pope packaged Banshee 2.6.2, the final 2014 stable release, as a Snap with compatibility fixes and some restored online services. It works as a functional music player on modern desktops, though some features like Last.fm login and video playback fail, and its GTK2 UI scales poorly on modern displays.",
-   "keyPoints": [
-    "Snap bundles old dependencies via Core22 without affecting the host system",
-    "Music playback, album art, MPRIS, and media keys all work",
-    "Last.fm auth and video playback broken; GTK2 UI struggles with fractional scaling"
-   ],
-   "whyItMatters": "Nostalgic Linux users and software preservation fans can run a classic app that distros dropped years ago.",
-   "kind": "news",
-   "imageUrl": "https://www.omgubuntu.co.uk/wp-content/uploads/2026/09/banshee-snap.webp",
-   "readingMinutes": 4
-  },
-  {
-   "id": "1cf8d92ec37f9cc9",
-   "sourceId": "phoronix",
-   "title": "Redox OS Adds IO_uring-Like API, NUMA Support, and Working QEMU",
-   "url": "https://www.phoronix.com/news/Redox-OS-August-2026",
-   "author": "Michael Larabel",
-   "publishedAt": 1790351498000,
-   "firstSeenAt": 1790402402904,
-   "tags": [
-    "redox",
-    "rust",
-    "kernel",
-    "virtualization",
-    "hardware",
-    "performance"
-   ],
-   "brief": "Redox OS's August status update covers an IO_uring-like ring buffer API, initial NUMA support, and QEMU now running on the OS, though without hardware acceleration. The update also brings dual boot support from Linux, initial multi-core support on ARM64, about 5% lower IPC overhead, and a smaller kernel binary.",
-   "keyPoints": [
-    "Ring buffer API akin to Linux's IO_uring, targeting better NVMe I/O performance",
-    "QEMU runs on Redox but lacks KVM-like acceleration, so it is very slow",
-    "Initial NUMA support, ARM64 multi-core support, and dual boot from Linux"
-   ],
-   "whyItMatters": "Developers following alternative operating systems can see how Redox, the Rust-based OS, is closing feature gaps with Linux.",
-   "kind": "news",
-   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=redoxos_qemu",
-   "readingMinutes": 2
-  },
-  {
-   "id": "18fc3bc3cfaabf93",
-   "sourceId": "geerling",
-   "title": "Jeff Geerling announces HomelabFest, St. Louis, September 2027",
-   "url": "https://www.jeffgeerling.com/blog/2026/homelabfest-announcement/",
-   "author": "jeff@jeffgeerling.com (Jeff Geerling)",
-   "publishedAt": 1790349360000,
-   "firstSeenAt": 1790402402904,
-   "tags": [
-    "homelab",
-    "self-hosting",
-    "events",
-    "community",
-    "hardware"
-   ],
-   "brief": "Jeff Geerling is launching HomelabFest, a conference for the homelab community, set for September 12-14, 2027 in St. Louis (technically St. Charles). He is inviting content creators, self-hosting companies, and attendees, with 250 'Super Early Bird' tickets at $100.",
-   "keyPoints": [
-    "Event runs September 12-14, 2027 in St. Charles, near St. Louis",
-    "Focus areas include networking, mini racks, servers, 3D printing, self-hosted software",
-    "250 Super Early Bird tickets at $100; community tables offered near cost"
-   ],
-   "whyItMatters": "Homelab enthusiasts and self-hosting fans get a first dedicated in-person gathering organized by a prominent community figure.",
-   "kind": "news",
-   "imageUrl": "https://www.jeffgeerling.com/blog/2026/homelabfest-announcement/homelabfest-featured-creators.jpg",
-   "readingMinutes": 3
-  },
-  {
-   "id": "c2ed3ca5dd6526b0",
-   "sourceId": "lwn",
-   "title": "Linux 7.2.8 and 6.18.54 stable kernels released",
-   "url": "https://lwn.net/Articles/1096818/",
-   "author": "jzb",
-   "publishedAt": 1790349205000,
-   "firstSeenAt": 1790402402904,
-   "tags": [
-    "kernel",
-    "stable",
-    "linux",
-    "deep"
-   ],
-   "brief": "Greg Kroah-Hartman announced the 7.2.8 and 6.18.54 stable kernel releases. Both contain important fixes throughout the tree, and users are advised to upgrade.",
-   "keyPoints": [],
-   "whyItMatters": "Administrators and users tracking stable kernels should plan to update.",
-   "kind": "release",
-   "imageUrl": null,
-   "readingMinutes": 0
-  },
-  {
-   "id": "a7ca9a6277ed3f4f",
-   "sourceId": "lwn",
-   "title": "A summary from the 2026 Git Contributors' Summit",
-   "url": "https://lwn.net/Articles/1096819/",
-   "author": "corbet",
-   "publishedAt": 1790349125000,
-   "firstSeenAt": 1790488804051,
-   "tags": [
-    "git",
-    "development",
-    "community",
-    "kernel",
-    "deep"
-   ],
-   "brief": "Johannes Schindelin has posted a detailed summary of the 2026 Git Contributors' Summit discussions. Topics include Git 3.0, the security process, documentation, the pluggable object database, and use of LLMs.",
-   "keyPoints": [],
-   "whyItMatters": "Git contributors and users interested in the project's direction will find the summit outcomes relevant.",
-   "kind": "news",
-   "imageUrl": null,
-   "readingMinutes": 0
-  },
-  {
-   "id": "1fee5be235da82f8",
-   "sourceId": "phoronix",
-   "title": "Phoronix: Linux kernel builds approach the 10-second mark",
-   "url": "https://www.phoronix.com/review/near-10-sec-kernel-build",
-   "author": "Michael Larabel",
-   "publishedAt": 1790347586000,
-   "firstSeenAt": 1790402402904,
-   "tags": [
-    "kernel",
-    "kbuild",
-    "benchmarks",
-    "amd",
-    "hardware",
-    "performance"
-   ],
-   "brief": "Phoronix reports that defconfig x86_64 kernel builds now take about 15-20 seconds on high-end dual EPYC hardware, with 10 seconds in sight. Lorenzo Stoakes' AI-assisted kbuild patch series, now at v4, cuts build times ~36% (and incremental builds ~70%) by removing parallelism bottlenecks, and may land in Linux 7.4.",
-   "keyPoints": [
-    "Stoakes' kbuild patches make kernel builds ~36% faster, incremental builds ~70% faster",
-    "Dual EPYC 9754 server defconfig build dropped from 28 to 20 seconds",
-    "allmodconfig builds now drop under two minutes"
-   ],
-   "whyItMatters": "Kernel developers and anyone bisecting or building kernels benefit from dramatically faster clean and incremental builds, even on non-flagship hardware.",
-   "kind": "news",
-   "imageUrl": "https://www.phoronix.net/image.php?id=near-10-sec-kernel-build&image=fast_linux_kernel_1",
-   "readingMinutes": 4
-  },
-  {
-   "id": "42b74a013979529a",
-   "sourceId": "lwn",
-   "title": "Security updates for Friday",
-   "url": "https://lwn.net/Articles/1096637/",
-   "author": "jzb",
-   "publishedAt": 1790342230000,
-   "firstSeenAt": 1790402402904,
-   "tags": [
-    "security",
-    "kernel",
-    "debian",
-    "fedora",
-    "deep"
-   ],
-   "brief": "LWN's roundup of security updates published September 24-25, 2026, covering AlmaLinux, Debian, Fedora, Mageia, Oracle, Slackware, SUSE, and Ubuntu. Notable updates include kernel fixes across several distributions, plus curl, expat, openssl, unbound, squid, and webkitgtk patches.",
-   "keyPoints": [
-    "Kernel updates for AlmaLinux 8, SUSE, and multiple Ubuntu releases",
-    "Ubuntu patched curl, expat, gdal, libpcap, and kernel packages across many LTS releases",
-    "SUSE and openSUSE issued a large batch including chromium, libsoup, libx11, and rabbitmq-server"
-   ],
-   "whyItMatters": "System administrators should scan this list for packages running on their systems and apply relevant patches.",
-   "kind": "news",
-   "imageUrl": null,
-   "readingMinutes": 7
-  },
-  {
-   "id": "0744dca7632bd077",
-   "sourceId": "linuxiac",
-   "title": "systemd Gets Built-In System Reporting With systemd-report",
-   "url": "https://linuxiac.com/systemd-gets-built-in-system-reporting-with-systemd-report/",
-   "author": "Bobby Borisov",
-   "publishedAt": 1790337198000,
-   "firstSeenAt": 1790402402904,
-   "tags": [
-    "systemd",
-    "monitoring",
-    "fleet-management",
-    "security",
-    "distro",
-    "news"
-   ],
-   "brief": "systemd is gaining a reporting subsystem called systemd-report that collects static system facts and dynamic runtime metrics into a single timestamped, optionally signed JSON report. Reports can be uploaded to a central HTTPS server on a timer or on boot, reboot, and shutdown events, targeting fleet management.",
-   "keyPoints": [
-    "Gathers system facts and runtime metrics via a generic Varlink interface into one JSON report",
-    "Supports three signing methods: local software key, TPM quote, or CPU TSM quote",
-    "Periodic or event-triggered HTTPS PUT uploads for remote fleet management"
-   ],
-   "whyItMatters": "Admins managing large Linux fleets get a signed, snapshot-based reporting framework built into systemd instead of separate monitoring agents.",
-   "kind": "news",
-   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/09/systemd-report.jpg",
-   "readingMinutes": 3
-  },
-  {
-   "id": "87ec6f167b2686d6",
-   "sourceId": "itsfoss",
-   "title": "Dutch Government Builds NixOS-Based Desktop After Microsoft Cut Off the ICC",
-   "url": "https://feed.itsfoss.com/link/24361/17473313/netherlands-dawo-initiative",
-   "author": "Sourav Rudra",
-   "publishedAt": 1790336309000,
-   "firstSeenAt": 1790402402904,
-   "tags": [
-    "nixos",
-    "linux",
-    "government",
-    "digital-sovereignty",
-    "desktop",
-    "tutorial"
-   ],
-   "brief": "After US sanctions cut the ICC prosecutor off from Microsoft services, the Dutch government launched DAWO, a sovereign digital work environment built on NixOS. The framework covers OS, office suite, collaboration, cloud, and AI, with eight municipalities running pilots and a stable release planned for next year.",
-   "keyPoints": [
-    "DAWO is a full sovereign stack covering OS, office suite, cloud, and AI",
-    "NixOS chosen as a Dutch project; openSUSE and Fedora rejected over US commercial ties",
-    "Pilots run on decommissioned laptops; 80-90% of configuration carries between deployments"
-   ],
-   "whyItMatters": "Linux users and open-source advocates should care: a national government is standardizing on NixOS specifically to escape US vendor dependency.",
-   "kind": "news",
-   "imageUrl": "https://itsfoss.com/content/images/2026/09/netherlands-dawo-banner.png",
-   "readingMinutes": 3
-  },
-  {
-   "id": "292efef2f33ee66d",
-   "sourceId": "phoronix",
-   "title": "Patches Posted For Enabling NVMe On All Apple M3 SoCs With Linux",
-   "url": "https://www.phoronix.com/news/NVMe-Apple-M3-Linux-Patches",
-   "author": "Michael Larabel",
-   "publishedAt": 1790332071000,
-   "firstSeenAt": 1790402402904,
-   "tags": [
-    "kernel",
-    "apple-silicon",
-    "nvme",
-    "asahi-linux",
-    "hardware",
-    "performance"
-   ],
-   "brief": "Janne Grunau posted a seven-patch series enabling NVMe storage on all Apple M3, M3 Pro, Max, and Ultra devices under Linux. The NVMe works as on M2 Pro/Max/Ultra, but needs ~140 lines of Device Tree and YAML additions. The patches may land in the Linux 7.4 merge window.",
-   "keyPoints": [
-    "Seven-patch series enables NVMe across all Apple M3 variants",
-    "Requires ~140 lines of Device Tree and YAML additions",
-    "May make the Linux 7.4 merge window; M3 users should use Asahi Linux meanwhile"
-   ],
-   "whyItMatters": "Developers and users running Linux on Apple M3 hardware need mainline NVMe support for usable storage.",
-   "kind": "news",
-   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=apple_m3_nvme",
-   "readingMinutes": 2
-  },
-  {
-   "id": "1b9d6957902b0c5e",
-   "sourceId": "phoronix",
-   "title": "AMD Linux patches improve HDMI 2.1 reliability ahead of Linux 7.4",
-   "url": "https://www.phoronix.com/news/AMDGPU-HDMI-2.1-Reliability",
-   "author": "Michael Larabel",
-   "publishedAt": 1790331129000,
-   "firstSeenAt": 1790402402904,
-   "tags": [
-    "amd",
-    "kernel",
-    "graphics",
-    "hdmi",
-    "hardware",
-    "performance"
-   ],
-   "brief": "AMD sent out new AMDGPU Display Core patches fixing HDMI 2.1 reliability issues, such as skipping FRL status polling when the link is down and aligning LT timeout with the HDMI spec. This comes ahead of Linux 7.4, where HDMI 2.1 will be enabled by default with FreeSync, VRR, and ALLM.",
-   "keyPoints": [
-    "Fix skips HDMI FRL status polling when link is down, avoiding blank displays on hot-plug",
-    "HDMI 2.1 LT timeout fix aligns with spec; FRL polling serialized against link detect",
-    "Patches also advance DCN 4.2 and DCN 6.0 support; DCN 6 likely tied to next-gen RDNA5 GPUs"
-   ],
-   "whyItMatters": "AMD GPU users on Linux with HDMI 2.1 displays should care, as these fixes reduce display failures ahead of default HDMI 2.1 support in Linux 7.4.",
-   "kind": "news",
-   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=hdmi_21_reliability",
-   "readingMinutes": 3
-  },
-  {
-   "id": "de60fbc4de60753a",
-   "sourceId": "phoronix",
-   "title": "Last call for Phoronix Premium autumn sale: $35/year or $160 lifetime",
-   "url": "https://www.phoronix.com/news/Autumn-2026-Special-Final-Call",
-   "author": "Michael Larabel",
-   "publishedAt": 1790330426000,
-   "firstSeenAt": 1790402402904,
-   "tags": [
-    "phoronix",
-    "linux",
-    "subscription",
-    "hardware",
-    "performance"
-   ],
-   "brief": "Phoronix's autumn Premium sale ends Sunday, 27 September, offering ad-free subscriptions at $35/year (normally $45) or $160 lifetime (normally $250). The site says Premium revenue funds its Linux hardware reviews and benchmarks, noting that under 1% of readers subscribe while most ads are blocked.",
-   "keyPoints": [
-    "Sale ends end of day Sunday, 27 September, any timezone",
-    "$35/year instead of $45; $160 lifetime instead of $250",
-    "Premium includes ad-free reading, single-page articles, dark mode, priority feedback"
-   ],
-   "whyItMatters": "Regular Phoronix readers who want to support independent Linux hardware coverage can get the discounted rate this weekend.",
-   "kind": "news",
-   "imageUrl": "https://www.phoronix.net/image.php?id=2023&image=dark_eoy_2023",
-   "readingMinutes": 2
-  },
-  {
-   "id": "f988b1de70570bd5",
-   "sourceId": "phoronix",
-   "title": "Go's expanding SIMD support adds platform-independent interface",
-   "url": "https://www.phoronix.com/news/Go-SIMD-2026",
-   "author": "Michael Larabel",
-   "publishedAt": 1790329822000,
-   "firstSeenAt": 1790402402904,
-   "tags": [
-    "go",
-    "simd",
-    "performance",
-    "programming-languages",
-    "hardware"
-   ],
-   "brief": "A new Go.dev blog post details Go's experimental SIMD support, introduced in Go 1.26 for x86_64 AVX and expanded in Go 1.27 to ARM64 NEON plus a portable, platform- and size-agnostic interface modeled on Google's Highway library. Go 1.28 plans to add Arm SVE support and more SIMD operations.",
-   "keyPoints": [
-    "Go 1.26 added experimental SIMD APIs targeting x86_64 AVX",
-    "SIMD package covers AVX, AVX2, AVX-512, ARM NEON, and WASM SIMD",
-    "Go 1.27 added a portable, platform-agnostic SIMD interface inspired by Google Highway"
-   ],
-   "whyItMatters": "Go developers writing performance-critical code can use vectorized CPU instructions without architecture-specific code.",
-   "kind": "news",
-   "imageUrl": "https://www.phoronix.net/image.php?id=2023&image=linux_66_wq",
-   "readingMinutes": 2
-  },
-  {
-   "id": "e02ed8c1ecb19835",
-   "sourceId": "phoronix",
-   "title": "Samba 4.25 Released With Experimental SMB3 Persistent Handles",
-   "url": "https://www.phoronix.com/news/Samba-4.25-Released",
-   "author": "Michael Larabel",
-   "publishedAt": 1790329123000,
-   "firstSeenAt": 1790402402904,
-   "tags": [
-    "samba",
-    "smb",
-    "file-sharing",
-    "ceph",
-    "hardware",
-    "performance"
-   ],
-   "brief": "Samba 4.25 is out, adding experimental SMB3 Persistent Handles so clients can reconnect after a server restart while keeping their file handles, though at a significant performance cost. It also adds a Ceph RGW VFS module, improved JSON audit logging, and AES as the default domain encryption type.",
-   "keyPoints": [
-    "Experimental SMB3 Persistent Handles enable uninterrupted file access after server restarts",
-    "Persistent handles carry a significant performance cost from double storage per operation",
-    "New Ceph RGW VFS module exports Ceph Object Gateway buckets as SMB shares"
-   ],
-   "whyItMatters": "Admins running Samba file services gain failover resilience and new Ceph integration, but must weigh the performance trade-off of persistent handles.",
-   "kind": "release",
-   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=samba",
-   "readingMinutes": 2
-  },
-  {
-   "id": "11a985e7dbe00766",
-   "sourceId": "linuxiac",
-   "title": "Mageia 9 support ends September 30, users urged to upgrade to Mageia 10",
-   "url": "https://linuxiac.com/mageia-9-support-ends-september-30-upgrade-to-mageia-10/",
-   "author": "Bobby Borisov",
-   "publishedAt": 1790327378000,
-   "firstSeenAt": 1790402402904,
-   "tags": [
-    "mageia",
-    "linux",
-    "distribution",
-    "security",
-    "distro",
-    "news"
-   ],
-   "brief": "Mageia 9, released in August 2023, reaches end of support on September 30, 2026 and will stop receiving security fixes. Users can upgrade via the system tray update tool or command line, or do a clean install of Mageia 10.",
-   "keyPoints": [
-    "Support ends September 30, 2026, three months after Mageia 10's June 30 release",
-    "Upgrade via system tray app, command line, or clean install; Live images cannot upgrade",
-    "Mageia 10 ships kernel 6.18 LTS, Plasma 6.5, GNOME 49, DNF 5"
-   ],
-   "whyItMatters": "Mageia 9 users must upgrade before September 30 to keep receiving security updates.",
-   "kind": "news",
-   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/09/mageia9eol.jpg",
-   "readingMinutes": 2
-  },
-  {
-   "id": "f96b4826c178d796",
-   "sourceId": "linuxiac",
-   "title": "Samba 4.25 Released With New High-Availability and Clustering Features",
-   "url": "https://linuxiac.com/samba-4-25-released-with-new-high-availability-and-clustering-features/",
-   "author": "Bobby Borisov",
-   "publishedAt": 1790324629000,
-   "firstSeenAt": 1790402402904,
-   "tags": [
-    "samba",
-    "smb",
-    "clustering",
-    "security",
-    "distro",
-    "news"
-   ],
-   "brief": "Samba 4.25 is out as the first stable release in the new series. Its headline addition is experimental SMB3 Persistent Handles for high-availability setups, plus a new Ceph RGW VFS module, safer cluster rolling upgrades, and stronger Kerberos encryption defaults.",
-   "keyPoints": [
-    "Experimental SMB3 Persistent Handles let clients keep open files across server restarts",
-    "New vfs_ceph_rgw module exposes Ceph Object Gateway buckets as SMB shares",
-    "Kerberos defaults to AES encryption for domains at functional level 2008 or newer"
-   ],
-   "whyItMatters": "Administrators running clustered Samba, Active Directory, or HA storage should review the release notes before upgrading.",
-   "kind": "release",
-   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/09/samba425.jpg",
-   "readingMinutes": 2
-  },
-  {
-   "id": "7cdd35180b72332d",
-   "sourceId": "fedoramagazine",
-   "title": "Installing Navidrome on Fedora Linux using Podman",
-   "url": "https://fedoramagazine.org/installing-navidrome-on-fedora-linux-using-podman/",
-   "author": "Nico Shetty",
-   "publishedAt": 1790323200000,
-   "firstSeenAt": 1790402402904,
-   "tags": [
-    "fedora",
-    "podman",
-    "containers",
-    "self-hosting",
-    "tutorial"
-   ],
-   "brief": "Fedora Magazine walks through running Navidrome, an open-source personal music streaming server, in Podman on Fedora. It covers pulling the official multi-arch image, SELinux contexts and ownership for data and music directories, and starting the service via podman-compose or the podman CLI.",
-   "keyPoints": [
-    "Official deluan/navidrome image supports amd64, arm64, and arm/v6/v7",
-    "Set container_file_t SELinux context and UID 1000 ownership on Data and Music dirs",
-    "Run with podman-compose or podman run; configure via environment variables"
-   ],
-   "whyItMatters": "Fedora users who want to self-host music streaming get a concrete, SELinux-aware Podman setup that also works on ARM devices like Raspberry Pi.",
-   "kind": "tutorial",
-   "imageUrl": "https://fedoramagazine.org/wp-content/uploads/2026/09/install_navidrom_using_podman-300x127.jpg",
-   "readingMinutes": 3
-  },
-  {
-   "id": "b28b110cefacedd6",
-   "sourceId": "itsfoss",
-   "title": "Vicharak Axon-Lite: a tiny SBC with swappable interface modules",
-   "url": "https://feed.itsfoss.com/link/24361/17473150/vicharak-axon-lite",
-   "author": "Abhishek Prakash",
-   "publishedAt": 1790321565000,
-   "firstSeenAt": 1790402402904,
-   "tags": [
-    "sbc",
-    "hardware",
-    "linux",
-    "edge-ai",
-    "desktop",
-    "tutorial"
-   ],
-   "brief": "Vicharak's Axon-Lite is a small ARM SBC built around the Rockchip RK3576 with a 6 TOPS NPU. Its hook is a modular connector letting users snap on voice, vision, sensing, or AI hub modules instead of stacking HATs. It's on pre-order at about $165-$200, shipping January 2027.",
-   "keyPoints": [
-    "RK3576 SoC, 6 TOPS NPU, LPDDR5, eMMC/UFS/microSD storage",
-    "Four swappable modules shown: Voice Processing, Smart Sensing, AI Data Hub, AI Vision",
-    "Pre-order $165 (4GB) or $200 (8GB), ships January 2027"
-   ],
-   "whyItMatters": "Makers and teams prototyping edge AI or vision projects get a modular alternative to stacking Raspberry Pi HATs, though the proprietary connector ties them to Vicharak's lineup.",
-   "kind": "news",
-   "imageUrl": "https://itsfoss.com/content/images/2026/09/axion-lite-1-.webp",
-   "readingMinutes": 4
-  },
-  {
-   "id": "69efd9eba1c84617",
-   "sourceId": "itsfoss",
-   "title": "openEuler 24.03 LTS SP3 positions itself as the first open-source SuperPoD OS",
-   "url": "https://feed.itsfoss.com/link/24361/17472969/openeuler-unifiedbus",
-   "author": "Edmar Pereira",
-   "publishedAt": 1790309339000,
-   "firstSeenAt": 1790316003434,
-   "tags": [
-    "openeuler",
-    "linux",
-    "ai",
-    "clusters",
-    "desktop",
-    "tutorial"
-   ],
-   "brief": "openEuler's 24.03 LTS SP3 release targets AI clusters, using Huawei's UnifiedBus interconnect to let applications treat memory and accelerators across many nodes as one system. The project claims 30-50% performance gains in large-scale AI compute, and also ships Intelligence BooM, a full-stack AI layer, plus an…",
-   "imageUrl": "https://itsfoss.com/content/images/2026/09/open-euler-ai-era.webp",
-   "readingMinutes": 4
-  },
-  {
-   "id": "48d3d0de3b2c53b1",
-   "sourceId": "phoronix",
-   "title": "Linux Kernel Developers Consider Adding AGENTS.md To Guide AI/LLM Agents",
-   "url": "https://www.phoronix.com/news/Linux-Considers-AGENTS-MD",
-   "author": "Michael Larabel",
-   "publishedAt": 1790297594000,
-   "firstSeenAt": 1790316003434,
-   "tags": [
-    "kernel",
-    "ai",
-    "lkml",
-    "development",
-    "hardware",
-    "performance"
-   ],
-   "brief": "Sasha Levin has proposed adding an AGENTS.md file to the Linux kernel tree to steer AI coding agents toward kernel standards. The file links to the kernel README and assistant documentation; testing showed it fixed improper Signed-off-by and attribution tags. Some LKML members object over increased token consumption.",
-   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=agents_md",
-   "readingMinutes": 3
-  },
-  {
-   "id": "08b38106b48ebe0a",
-   "sourceId": "phoronix",
-   "title": "Qualcomm Posts GPU Patches for Lower-Tier Snapdragon X2 'Mahua' SoC",
-   "url": "https://www.phoronix.com/news/Qualcomm-Mahua-GPU-Support",
-   "author": "Michael Larabel",
-   "publishedAt": 1790295901000,
-   "firstSeenAt": 1790316003434,
-   "tags": [
-    "kernel",
-    "gpu",
-    "arm",
-    "drivers",
-    "hardware",
-    "performance"
-   ],
-   "brief": "Qualcomm posted Linux kernel patches enabling the Adreno X2-85 GPU in its Mahua SoC, the codename for lower-tier 10 and 12 core Snapdragon X2 chips. The enablement requires only a few dozen lines of new graphics driver code and is now under review on the kernel mailing list.",
-   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=x2_plus",
-   "readingMinutes": 2
-  },
-  {
-   "id": "65c81edf5972c6d1",
-   "sourceId": "omgubuntu",
-   "title": "Ubuntu 26.10 adds Windows 11-style snap layout picker",
-   "url": "https://www.omgubuntu.co.uk/2026/09/ubuntu-2610-tiling",
-   "author": "Joey Sneddon",
-   "publishedAt": 1790287288000,
-   "firstSeenAt": 1790316003434,
-   "tags": [
-    "ubuntu",
-    "gnome",
-    "desktop",
-    "window-management"
-   ],
-   "brief": "Ubuntu 26.10 will show a layout picker that slides from the top of the screen when you drag a window, letting you snap apps into preset tile zones, similar to Windows 11. It was merged into the Tiling Assistant extension late in the cycle, past UI freeze. There is no off switch in Settings.",
-   "imageUrl": "https://www.omgubuntu.co.uk/wp-content/uploads/2026/09/picker.webp",
-   "readingMinutes": 2
-  },
-  {
-   "id": "36879906ab2ce130",
-   "sourceId": "phoronix",
-   "title": "ReactOS merges Wine 10.0-based DirectX stack overhaul, enabling hundreds more games",
-   "url": "https://www.phoronix.com/news/ReactOS-Updated-Wine-DirectX",
-   "author": "Michael Larabel",
-   "publishedAt": 1790286229000,
-   "firstSeenAt": 1790316003434,
-   "tags": [
-    "reactos",
-    "wine",
-    "directx",
-    "gaming",
-    "hardware",
-    "performance"
-   ],
-   "brief": "ReactOS has merged a major update bringing its DirectX stack to the Wine 10.0 state, replacing old hacks with 498k new lines of code. The work, led by developer Justin Miller, enables OpenGL and Vulkan translation for DirectX and reportedly unlocks hundreds of games.",
-   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=reactos_0416_1",
-   "readingMinutes": 2
-  },
-  {
-   "id": "6dc815d8d5c2cd44",
-   "sourceId": "linuxiac",
-   "title": "Firefox Smart Window Expands in Beta With Built-In AI Assistant",
-   "url": "https://linuxiac.com/firefox-smart-window-expands-in-beta-with-built-in-ai-assistant/",
-   "author": "Bobby Borisov",
-   "publishedAt": 1790280938000,
-   "firstSeenAt": 1790316003434,
-   "tags": [
-    "firefox",
-    "mozilla",
-    "ai",
-    "privacy",
-    "distro",
-    "news"
-   ],
-   "brief": "Mozilla has detailed Smart Window, a third Firefox window type with a built-in AI assistant, now rolling out in beta to users in the US, Canada, and France. It offers tab grouping, page summarization, cross-tab comparison, and local 'Memories,' with a waitlist for other regions.",
-   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/09/firefox-smart-window.jpg",
-   "readingMinutes": 3
-  },
-  {
-   "id": "1314c96f6d7aca57",
-   "sourceId": "phoronix",
-   "title": "Ubuntu 26.10 shows early gains on Intel Panther Lake Framework Laptop 13 Pro",
-   "url": "https://www.phoronix.com/review/ubuntu-2610-panther-lake",
-   "author": "Michael Larabel",
-   "publishedAt": 1790275573000,
-   "firstSeenAt": 1790316003434,
-   "tags": [
-    "ubuntu",
-    "intel",
-    "graphics",
-    "benchmarks",
-    "hardware",
-    "performance"
-   ],
-   "brief": "Phoronix reports Ubuntu 26.10 \"Stonking Stingray\" delivers out-of-the-box improvements over Ubuntu 26.04 LTS on Intel Core Ultra Series 3 \"Panther Lake\" hardware, tested on a Framework Laptop 13 Pro. Gains come from the Linux 7.3 kernel and newer Mesa, especially for Arc B390 Vulkan graphics.",
-   "imageUrl": "https://www.phoronix.net/image.php?id=ubuntu-2610-panther-lake&image=ubuntu_2610_ptl_1",
-   "readingMinutes": 1
-  },
-  {
-   "id": "f5436ed5a4f555c6",
-   "sourceId": "lwn",
-   "title": "F-Droid 2.0: A new chapter for Android freedom",
-   "url": "https://lwn.net/Articles/1096444/",
-   "author": "jzb",
-   "publishedAt": 1790272915000,
-   "firstSeenAt": 1790316003434,
-   "tags": [
-    "f-droid",
-    "android",
-    "open-source",
-    "release",
-    "kernel",
-    "deep"
-   ],
-   "brief": "The F-Droid project has released version 2.0 of its official app, a complete redesign with better app discovery, improved search, and more useful categories. Key components were rewritten in Kotlin Compose and the UI updated to fit current Material Design patterns while keeping familiar interactions.",
-   "imageUrl": null,
-   "readingMinutes": 1
-  },
-  {
-   "id": "538d4dd7730acdd2",
-   "sourceId": "lwn",
-   "title": "File-notification attacks enable keystroke timing and KDE clickjacking on Linux",
-   "url": "https://lwn.net/Articles/1096431/",
-   "author": "jzb",
-   "publishedAt": 1790271636000,
-   "firstSeenAt": 1790316003434,
-   "tags": [
-    "security",
-    "kernel",
-    "kde",
-    "linux",
-    "deep"
-   ],
-   "brief": "Graz University of Technology researchers disclosed file-notification attacks affecting Android, Linux, macOS, and Windows. On Linux, inotify can be abused for inter-keystroke timing attacks without file read access, and monitoring pkexec enables clickjacking of Polkit prompts on KDE 5 and 6.",
-   "imageUrl": null,
-   "readingMinutes": 1
-  },
-  {
-   "id": "537e2fe29e928487",
-   "sourceId": "omgubuntu",
-   "title": "Ubuntu 26.10 beta delayed by a week, now due 1 October",
-   "url": "https://www.omgubuntu.co.uk/2026/09/ubuntu-2610-beta-release-delay",
-   "author": "Joey Sneddon",
-   "publishedAt": 1790269980000,
-   "firstSeenAt": 1790316003434,
-   "tags": [
-    "ubuntu",
-    "linux",
-    "release",
-    "gnome",
-    "desktop"
-   ],
-   "brief": "Canonical has pushed the Ubuntu 26.10 beta back from 24 September to 1 October, citing unforeseen infrastructure issues. The final stable release on 15 October 2026 is unaffected. Testers can use daily builds in the meantime.",
-   "imageUrl": "https://www.omgubuntu.co.uk/wp-content/uploads/2026/09/ubuntu-2610-stonking-beta-delay.webp",
-   "readingMinutes": 2
-  },
-  {
-   "id": "1e6f2e3f0a671bb3",
-   "sourceId": "phoronix",
-   "title": "COSMIC Epoch 1.9 Released With New Image Viewer and On-Screen Keyboard",
-   "url": "https://www.phoronix.com/news/COSMIC-Epoch-1.9-Released",
-   "author": "Michael Larabel",
-   "publishedAt": 1790269911000,
-   "firstSeenAt": 1790316003434,
-   "tags": [
-    "cosmic",
-    "desktop",
-    "rust",
-    "system76",
-    "hardware",
-    "performance"
-   ],
-   "brief": "System76's Rust-based COSMIC desktop environment released Epoch 1.9, adding COSMIC Viewer, a native image viewer with built-in editing, and COSMIC OSK, an on-screen keyboard. The release also overhauls the COSMIC Store and updates the compositor, with downloads available on GitHub.",
-   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=cosmic_19_1",
-   "readingMinutes": 1
   }
  ]
 }
