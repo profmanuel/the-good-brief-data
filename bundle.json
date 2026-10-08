@@ -2,6 +2,795 @@
  "version": 1,
  "articles": [
   {
+   "id": "eade478c971c1571",
+   "sourceId": "phoronix",
+   "title": "Steam Beta Defaults Non-Steam Windows Binaries to Proton",
+   "url": "https://www.phoronix.com/news/Steam-Beta-Use-Proton-Default",
+   "author": "Michael Larabel",
+   "publishedAt": 1791421745000,
+   "firstSeenAt": 1791439204133,
+   "tags": [
+    "steam",
+    "proton",
+    "linux",
+    "gaming",
+    "hardware",
+    "performance"
+   ],
+   "brief": "Valve's latest Steam client beta now runs Windows binaries registered as non-Steam games through Proton by default on Linux. The update also fixes launch and stop-button issues for non-Steam games, adds a Big Picture screensaver setting, and patches a Steam Input bug.",
+   "keyPoints": [
+    "Non-Steam Windows binaries now default to running via Proton",
+    "Fixed non-Steam games failing to launch after changing target binary",
+    "Big Picture can now disable the screensaver while in-game"
+   ],
+   "whyItMatters": "Linux gamers who add Windows games to Steam manually get smoother out-of-box compatibility.",
+   "kind": "release",
+   "imageUrl": "https://www.phoronix.net/image.php?id=plasma-67-wayland-cachyos&image=kde_plasma_wayland_1",
+   "readingMinutes": 2
+  },
+  {
+   "id": "dfc3974dddbda074",
+   "sourceId": "phoronix",
+   "title": "Microsoft Releases LiteBox v0.1, a Rust-Based Sandboxing Library OS",
+   "url": "https://www.phoronix.com/news/Microsoft-LiteBox-0.1",
+   "author": "Michael Larabel",
+   "publishedAt": 1791420191000,
+   "firstSeenAt": 1791439204133,
+   "tags": [
+    "security",
+    "rust",
+    "microsoft",
+    "virtualization",
+    "hardware",
+    "performance"
+   ],
+   "brief": "Microsoft has tagged the first release, v0.1, of LiteBox, its open-source Rust-based sandboxing library OS first revealed in February. LiteBox uses Linux virtualization security features to sandbox Linux apps on Linux, Linux programs on Windows, and other security-focused deployments.",
+   "keyPoints": [
+    "First tagged v0.1 release of Microsoft's open-source LiteBox project",
+    "Rust-based library OS using Linux virtualization features for sandboxing",
+    "Supports sandboxing Linux apps on Linux and Linux programs on Windows"
+   ],
+   "whyItMatters": "Developers interested in sandboxing and security isolation should note that Microsoft's Rust-based library OS is actively progressing.",
+   "kind": "release",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=litebox_01",
+   "readingMinutes": 2
+  },
+  {
+   "id": "9259ae398b0b89d9",
+   "sourceId": "lwn",
+   "title": "LWN.net Weekly Edition for October 8, 2026",
+   "url": "https://lwn.net/Articles/1097859/",
+   "author": "corbet",
+   "publishedAt": 1791418951000,
+   "firstSeenAt": 1791439204133,
+   "tags": [
+    "linux",
+    "kernel",
+    "rust",
+    "open-source",
+    "deep"
+   ],
+   "brief": "LWN's weekly edition covers kernel bugs, Gentoo's Chromium package, Rust smart pointers, the LAVD scheduler, and Python random-number modules, plus briefs on OpenSSH 10.6, Rust 1.99.0, and Zig 0.17.",
+   "keyPoints": [],
+   "whyItMatters": "Linux and open-source developers get a curated roundup of the week's kernel, tooling, and distribution news.",
+   "kind": "news",
+   "imageUrl": null,
+   "readingMinutes": 0
+  },
+  {
+   "id": "fd99a3c0b40d2e67",
+   "sourceId": "phoronix",
+   "title": "AI-Built \"Clean-Room\" Rust Reimplementations of Photoshop, Premiere, Lightroom Appear",
+   "url": "https://www.phoronix.com/news/Photocraft-Filmcraft-AI",
+   "author": "Michael Larabel",
+   "publishedAt": 1791418364000,
+   "firstSeenAt": 1791439204133,
+   "tags": [
+    "ai",
+    "rust",
+    "open-source",
+    "graphics",
+    "hardware",
+    "performance"
+   ],
+   "brief": "The ArtCraft project has released Photocraft, Filmcraft, and Lightcraft, described as AI-generated, open-source clean-room reimplementations of Adobe Photoshop, Premiere, and Lightroom written in Rust.",
+   "keyPoints": [
+    "Photocraft, Filmcraft, Lightcraft mimic Photoshop, Premiere, Lightroom",
+    "Written in Rust, built predominantly with Claude Code and AI agents",
+    "Native binaries for Linux, FreeBSD, macOS, Windows; multiple releases already"
+   ],
+   "whyItMatters": "Open-source developers and Adobe users should watch this test of whether AI clean-room clones can be credible alternatives, and of the legal questions they raise.",
+   "kind": "news",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=artcraft_1",
+   "readingMinutes": 2
+  },
+  {
+   "id": "f835cd1ea2fe7112",
+   "sourceId": "omgubuntu",
+   "title": "A pair of flashy-looking weather extensions for GNOME Shell",
+   "url": "https://www.omgubuntu.co.uk/2026/10/modern-gnome-weather-extensions",
+   "author": "Joey Sneddon",
+   "publishedAt": 1791416002000,
+   "firstSeenAt": 1791439204133,
+   "tags": [
+    "gnome",
+    "extensions",
+    "weather",
+    "desktop",
+    "ubuntu"
+   ],
+   "brief": "A review of two new GNOME Shell weather extensions. Weatherglass adds animated conditions and graphed forecasts but pegs CPU and GPU even when idle. Weather Prime offers a polished, stat-packed dropdown with no API key needed, though some promised features didn't work in testing.",
+   "keyPoints": [
+    "Weatherglass: animated panel icons, 8-day graphed forecast, multiple backends including Open-Meteo and NOAA",
+    "Weatherglass heavily uses CPU/GPU in the background, hurting battery life",
+    "Weather Prime: preconfigured Open-Meteo, no API key, but radar and astro features missing in practice"
+   ],
+   "whyItMatters": "GNOME users wanting a polished panel weather applet can weigh the visual appeal against Weatherglass's resource drain and Weather Prime's uneven feature set.",
+   "kind": "other",
+   "imageUrl": "https://www.omgubuntu.co.uk/wp-content/uploads/2026/10/weather-2.webp",
+   "readingMinutes": 3
+  },
+  {
+   "id": "100d4895e96329f9",
+   "sourceId": "9to5linux",
+   "title": "Ubuntu Summit for Ubuntu 26.10 Set for November 12-13, 2026",
+   "url": "https://9to5linux.com/ubuntu-summit-for-ubuntu-26-10-takes-place-on-november-12-13-2026",
+   "author": "Marcus Nestor",
+   "publishedAt": 1791412601000,
+   "firstSeenAt": 1791439204133,
+   "tags": [
+    "ubuntu",
+    "events",
+    "distro",
+    "release"
+   ],
+   "brief": "The Ubuntu Summit 26.10 event will take place on November 12-13, 2026, covering the upcoming Ubuntu 26.10 (Stonking Stingray) release. Only a teaser was available, so further details are not included.",
+   "keyPoints": [],
+   "whyItMatters": "Ubuntu contributors and community members can note the summit dates.",
+   "kind": "news",
+   "imageUrl": null,
+   "readingMinutes": 0
+  },
+  {
+   "id": "4385bfed56a5ee0d",
+   "sourceId": "phoronix",
+   "title": "FEX 2610 Released With AVX-VNNI Handling and Disk Cache Improvements",
+   "url": "https://www.phoronix.com/news/FEX-2610-Released",
+   "author": "Michael Larabel",
+   "publishedAt": 1791407807000,
+   "firstSeenAt": 1791439204133,
+   "tags": [
+    "emulation",
+    "arm64",
+    "gaming",
+    "release",
+    "hardware",
+    "performance"
+   ],
+   "brief": "FEX 2610, the monthly release of the open-source emulator for running x86_64 games and apps on ARM64 Linux, adds AVX-VNNI support in its JIT, SSE4.2 and AVX gather optimizations, and restored 3DNow! handling. It also caps disk cache growth and fixes Vulkan thunks that help games on NVIDIA DGX Spark.",
+   "keyPoints": [
+    "JIT gains AVX-VNNI support, SSE4.2 optimizations, restored 3DNow!, and RDRAND/RDSEED software fall-backs",
+    "Disk caches now have a size limit and flush on FEX updates",
+    "Vulkan thunk fixes help some games run on NVIDIA DGX Spark"
+   ],
+   "whyItMatters": "Users running x86_64 games on ARM64 Linux, including on Valve's Steam Frame headset, get better compatibility with newer game libraries.",
+   "kind": "release",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=fex_new",
+   "readingMinutes": 2
+  },
+  {
+   "id": "592bf9b641724051",
+   "sourceId": "linuxiac",
+   "title": "IBM and Red Hat's Lightwell Fixes 400+ Previously Unknown Java Vulnerabilities",
+   "url": "https://linuxiac.com/ibm-and-red-hats-lightwell-fixes-400-previously-unknown-java-vulnerabilities/",
+   "author": "Bobby Borisov",
+   "publishedAt": 1791404464000,
+   "firstSeenAt": 1791439204133,
+   "tags": [
+    "security",
+    "java",
+    "red-hat",
+    "open-source",
+    "distro",
+    "news"
+   ],
+   "brief": "IBM and Red Hat report that their $5 billion Lightwell initiative has identified, remediated, and backported fixes for over 400 previously unknown vulnerabilities in widely used Java libraries. They also announced general availability of Lightwell Clearinghouse, a service letting enterprises submit dependencies for…",
+   "keyPoints": [
+    "400+ previously unknown vulnerabilities fixed and backported in Java libraries",
+    "Lightwell Clearinghouse reaches general availability for enterprise priority remediation",
+    "Fixes contributed upstream under responsible disclosure; initiative covers Linux, Kubernetes, Kafka, and more"
+   ],
+   "whyItMatters": "Enterprise teams running older Java stacks should care, since backported fixes and priority remediation reduce exposure without forced upgrades.",
+   "kind": "news",
+   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/10/lightwell-fixes-400-vulnerabilities.jpg",
+   "readingMinutes": 2
+  },
+  {
+   "id": "90a383a8f51d7ae2",
+   "sourceId": "linuxiac",
+   "title": "Over Half a Million Leaked GitHub Credentials Still Active, Study Finds",
+   "url": "https://linuxiac.com/over-half-a-million-credentials-leaked-on-github-remain-active/",
+   "author": "Bobby Borisov",
+   "publishedAt": 1791396185000,
+   "firstSeenAt": 1791439204133,
+   "tags": [
+    "security",
+    "github",
+    "credentials",
+    "devops",
+    "distro",
+    "news"
+   ],
+   "brief": "Truffle Security scanned The Stack v3 dataset of 224 million GitHub repos and found 543,699 unique credentials that still authenticated, with a median exposure of 784 days and one database login valid for 16 years.",
+   "keyPoints": [
+    "543,699 unique leaked credentials still worked; oldest dated to June 2009",
+    "Push protection cut supported leaks 53%, but 51.8% of active secrets are unsupported types",
+    "Database strings rarely revoked: 88% of PostgreSQL credentials still live versus one npm token"
+   ],
+   "whyItMatters": "Developers and security teams should treat any committed credential as compromised and rotate it immediately, since automated revocation rarely covers database or API keys.",
+   "kind": "news",
+   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/10/github-credentials-exposed.jpg",
+   "readingMinutes": 3
+  },
+  {
+   "id": "ea58ef30472b72ae",
+   "sourceId": "fedoramagazine",
+   "title": "Podman Test Week: Help test the Rust-based conmon v3",
+   "url": "https://fedoramagazine.org/podman-test-week-help-test-the-rust-based-conmon-v3/",
+   "author": "Petr Sklenar",
+   "publishedAt": 1791390350000,
+   "firstSeenAt": 1791439204133,
+   "tags": [
+    "podman",
+    "containers",
+    "rust",
+    "fedora",
+    "tutorial"
+   ],
+   "brief": "Podman and Fedora Quality teams are running a test week October 12-18, 2026 for conmon v3, a Rust rewrite of the C container monitor used with Podman. Users install the conmon-v3 package, point Podman at it via a config drop-in, and report any behavioral differences.",
+   "keyPoints": [
+    "Test week runs October 12-18, 2026; install conmon-v3 via dnf and configure conmon_path",
+    "conmon v3 replaces the C implementation with Rust for memory safety and extensible logging",
+    "Test interactive sessions, podman exec, logging, Quadlet services, rootless and rootful modes"
+   ],
+   "whyItMatters": "Podman and Fedora users can help validate the Rust-based conmon before it becomes the default container monitor.",
+   "kind": "news",
+   "imageUrl": "https://fedoramagazine.org/wp-content/uploads/2024/09/podman-2-300x143.jpg",
+   "readingMinutes": 3
+  },
+  {
+   "id": "e6e58ef72b395ef2",
+   "sourceId": "omgubuntu",
+   "title": "Ubuntu 26.10 drops Btrfs, XFS and ZFS /boot support under Secure Boot",
+   "url": "https://www.omgubuntu.co.uk/2026/10/ubuntu-2610-secure-boot-grub-change",
+   "author": "Joey Sneddon",
+   "publishedAt": 1791389754000,
+   "firstSeenAt": 1791439204133,
+   "tags": [
+    "ubuntu",
+    "grub",
+    "secure-boot",
+    "security",
+    "desktop"
+   ],
+   "brief": "Ubuntu 26.10's signed GRUB build no longer reads /boot on Btrfs, XFS, ZFS, LVM, LUKS, or non-RAID1 software RAID when Secure Boot is enabled, to shrink the pre-kernel attack surface. Affected setups will fail to boot; ext4, FAT, ISO9660 and squashfs remain supported, and disabling Secure Boot restores full GRUB…",
+   "keyPoints": [
+    "Signed GRUB drops Btrfs, XFS, ZFS, LVM, LUKS, non-RAID1 RAID for /boot under Secure Boot",
+    "Aim is fewer filesystem parsers running before the kernel loads",
+    "Ubuntu 26.04 LTS keeps full GRUB for those who need it; most users unaffected"
+   ],
+   "whyItMatters": "Ubuntu users with custom /boot layouts on Secure Boot systems should verify their setup before upgrading to 26.10.",
+   "kind": "news",
+   "imageUrl": "https://www.omgubuntu.co.uk/wp-content/uploads/2023/08/ubuntu-logo-with-linux-tux.jpg",
+   "readingMinutes": 3
+  },
+  {
+   "id": "996b957d94ed6179",
+   "sourceId": "phoronix",
+   "title": "Star Labs StarFighter: High-End Linux Laptop With Coreboot, Core Ultra 9",
+   "url": "https://www.phoronix.com/review/star-labs-starfighter",
+   "author": "Michael Larabel",
+   "publishedAt": 1791388800000,
+   "firstSeenAt": 1791439204133,
+   "tags": [
+    "hardware",
+    "laptops",
+    "coreboot",
+    "intel",
+    "performance"
+   ],
+   "brief": "Phoronix reviews the UK-based Star Labs StarFighter, a Clevo-built 16-inch Linux laptop shipping with Coreboot and LVFS firmware updates. The review unit pairs a Core Ultra 9 285H with 64GB LPDDR5X, a 3840x2400 120Hz display, and a 1TB PCIe Gen4 SSD; AMD Ryzen 7 8845HS configs are also offered.",
+   "keyPoints": [
+    "Core Ultra 9 285H (16 cores, up to 5.4GHz) with Arc Pro 140T graphics",
+    "16-inch 3840x2400 120Hz matte IPS display, 64GB LPDDR5X-7500 RAM",
+    "Coreboot firmware with LVFS/Fwupd updates; removable 1080p webcam"
+   ],
+   "whyItMatters": "Linux users wanting a high-end, open-firmware mobile workstation get a detailed look at one of the few Coreboot-based options.",
+   "kind": "deep-dive",
+   "imageUrl": "https://www.phoronix.net/image.php?id=star-labs-starfighter&image=star_fighter_7",
+   "readingMinutes": 3
+  },
+  {
+   "id": "f56ef20f938feadc",
+   "sourceId": "lwn",
+   "title": "Analyzing Rust programs with Charon",
+   "url": "https://lwn.net/Articles/1097198/",
+   "author": "daroc",
+   "publishedAt": 1791386399000,
+   "firstSeenAt": 1791439204133,
+   "tags": [
+    "rust",
+    "compilers",
+    "tooling",
+    "kernel",
+    "deep"
+   ],
+   "brief": "Charon, from rustc pattern-matching maintainer Nadrieril, aims to make it easier to extract information from Rust crates for external tooling. It provides a stable API for accessing internal Rust compiler data.",
+   "keyPoints": [],
+   "whyItMatters": "Rust tooling developers who need compiler internals without relying on unstable APIs should care.",
+   "kind": "deep-dive",
+   "imageUrl": null,
+   "readingMinutes": 0
+  },
+  {
+   "id": "fec3f37a279b2462",
+   "sourceId": "9to5linux",
+   "title": "OpenVPN 2.7.8 Released with Security and Bug Fixes",
+   "url": "https://9to5linux.com/openvpn-2-7-8-released-with-security-and-bug-fixes-various-improvements",
+   "author": "Marcus Nestor",
+   "publishedAt": 1791384500000,
+   "firstSeenAt": 1791439204133,
+   "tags": [
+    "openvpn",
+    "security",
+    "vpn",
+    "distro",
+    "release"
+   ],
+   "brief": "OpenVPN 2.7.8 is available as the eighth maintenance update to the 2.7 series, shipping bug and security fixes plus a few user-visible changes.",
+   "keyPoints": [],
+   "whyItMatters": "OpenVPN users should update to get the latest security fixes.",
+   "kind": "release",
+   "imageUrl": null,
+   "readingMinutes": 0
+  },
+  {
+   "id": "f70b0ce729b230d8",
+   "sourceId": "linuxiac",
+   "title": "OpenVPN 2.7.8 Released with Certificate and Windows Security Fixes",
+   "url": "https://linuxiac.com/openvpn-2-7-8-released-with-certificate-and-windows-security-fixes/",
+   "author": "Bobby Borisov",
+   "publishedAt": 1791383619000,
+   "firstSeenAt": 1791439204133,
+   "tags": [
+    "openvpn",
+    "security",
+    "vpn",
+    "windows",
+    "distro",
+    "news"
+   ],
+   "brief": "OpenVPN 2.7.8 fixes three security vulnerabilities, including stricter certificate validation against embedded NULL bytes and a Windows issue where cmd.exe expanded variables in quoted arguments. The release also improves DCO and server reliability, fixing errors that could terminate the whole server process.",
+   "keyPoints": [
+    "Rejects certificates with embedded NULL bytes in subject fields (CVE-2026-84790)",
+    "Fixes unsigned underflow in domain_search_list and Windows cmd.exe variable expansion",
+    "DCO fixes: stale iroutes, Netlink races, and setup errors no longer kill the server"
+   ],
+   "whyItMatters": "OpenVPN administrators, especially on Windows servers or large multi-client deployments, should update to close security holes and avoid server-wide crashes.",
+   "kind": "release",
+   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/10/openvpn278.jpg",
+   "readingMinutes": 1
+  },
+  {
+   "id": "66865ad7417ac887",
+   "sourceId": "9to5linux",
+   "title": "NVIDIA 615.78.08 Linux Graphics Driver Improves Support for The Last of Us Part II",
+   "url": "https://9to5linux.com/nvidia-615-78-08-linux-graphics-driver-improves-support-for-the-last-of-us-part-ii",
+   "author": "Marcus Nestor",
+   "publishedAt": 1791381977000,
+   "firstSeenAt": 1791439204133,
+   "tags": [
+    "nvidia",
+    "drivers",
+    "gaming",
+    "wayland",
+    "distro",
+    "release"
+   ],
+   "brief": "NVIDIA has released version 615.78.08 of its Linux graphics driver. The update brings bug fixes improving gaming, Wayland support, and overall driver performance.",
+   "keyPoints": [],
+   "whyItMatters": "Linux gamers and Wayland users on NVIDIA hardware should care about the improved game compatibility and performance.",
+   "kind": "release",
+   "imageUrl": null,
+   "readingMinutes": 0
+  },
+  {
+   "id": "883e14d7d413998c",
+   "sourceId": "itsfoss",
+   "title": "Vinix: a V-language, non-Linux OS that runs Docker, QEMU, and games",
+   "url": "https://feed.itsfoss.com/link/24361/17491352/vinix-overview",
+   "author": "Sourav Rudra",
+   "publishedAt": 1791380912000,
+   "firstSeenAt": 1791439204133,
+   "tags": [
+    "operating-systems",
+    "apple-silicon",
+    "docker",
+    "v-language",
+    "desktop",
+    "tutorial"
+   ],
+   "brief": "Vinix is an open-source OS with its own V-written kernel that runs Alpine Linux binaries natively by answering their system calls. It now supports Docker, QEMU, and games like DOOM and Minecraft, targeting Apple Silicon Macs, though with limits like software rendering and ARM64-only app support.",
+   "keyPoints": [
+    "Runs stock Alpine Docker via its own namespaces, cgroups, overlayfs, and seccomp",
+    "Uses 50 MB RAM after boot; only M1 Macs supported so far",
+    "Limitations: no bridge networking, software emulation, ARM64 packages only"
+   ],
+   "whyItMatters": "Developers curious about alternative kernels or lightweight macOS replacements get a working proof that Linux app compatibility doesn't require the Linux kernel.",
+   "kind": "news",
+   "imageUrl": "https://itsfoss.com/content/images/2026/10/vinix-banner.png",
+   "readingMinutes": 4
+  },
+  {
+   "id": "6a1a1d7c4fb934fb",
+   "sourceId": "phoronix",
+   "title": "NVIDIA 615.78.08 Linux Driver Adds VK_NV_low_latency2 r3 for VKD3D-Proton",
+   "url": "https://www.phoronix.com/news/NVIDIA-615.78.08-Linux",
+   "author": "Michael Larabel",
+   "publishedAt": 1791380710000,
+   "firstSeenAt": 1791439204133,
+   "tags": [
+    "nvidia",
+    "gaming",
+    "vulkan",
+    "drivers",
+    "hardware",
+    "performance"
+   ],
+   "brief": "NVIDIA released the 615.78.08 Linux driver, adding VK_NV_low_latency2 revision 3 support to cut latency and stutter in VKD3D-Proton, notably with Frame Generation enabled. The release also fixes corruption in The Last of Us Part II, SELinux kernel module issues, and a crash with Vulkan HDR on Wayland.",
+   "keyPoints": [
+    "VK_NV_low_latency2 r3 improves latency and stutter in VKD3D-Proton, especially with Frame Generation",
+    "Fixes blocky corruption in The Last of Us Part II and GPU page table allocation failures over 2GB",
+    "Enables NVreg_UseKernelSuspendNotifiers=1 by default for sleep/hibernation memory handling"
+   ],
+   "whyItMatters": "Linux gamers using NVIDIA GPUs with Steam Play/Proton get lower latency and several crash and corruption fixes.",
+   "kind": "release",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=nvidia_615_okt",
+   "readingMinutes": 2
+  },
+  {
+   "id": "5a825e8dbc052286",
+   "sourceId": "lwn",
+   "title": "Evolving the LAVD scheduler from gaming to servers",
+   "url": "https://lwn.net/Articles/1097209/",
+   "author": "corbet",
+   "publishedAt": 1791380028000,
+   "firstSeenAt": 1791439204133,
+   "tags": [
+    "kernel",
+    "scheduling",
+    "bpf",
+    "deep"
+   ],
+   "brief": "At Kernel Recipes 2026, Changwoo Min and Gavin Guo presented the LAVD scheduler, a BPF-based extensible scheduler originally built for gaming workloads that has since expanded to other uses.",
+   "keyPoints": [],
+   "whyItMatters": "Developers following Linux CPU scheduling and BPF-based sched_ext may want to see how LAVD has broadened beyond its gaming origins.",
+   "kind": "news",
+   "imageUrl": null,
+   "readingMinutes": 0
+  },
+  {
+   "id": "5e0cee4ef749719c",
+   "sourceId": "linuxiac",
+   "title": "NVIDIA 615.78.08 Linux Driver Brings Vulkan Latency, Wayland Fixes",
+   "url": "https://linuxiac.com/nvidia-615-78-08-linux-driver-brings-vulkan-latency-wayland-fixes/",
+   "author": "Bobby Borisov",
+   "publishedAt": 1791379668000,
+   "firstSeenAt": 1791439204133,
+   "tags": [
+    "nvidia",
+    "drivers",
+    "vulkan",
+    "wayland",
+    "distro",
+    "news"
+   ],
+   "brief": "NVIDIA released the 615.78.08 Linux driver on its New Feature Branch, adding support for revision 3 of the VK_NV_low_latency2 Vulkan extension to cut latency and stuttering in vkd3d-proton with Frame Generation.",
+   "keyPoints": [
+    "Supports VK_NV_low_latency2 revision 3 for lower latency with Frame Generation",
+    "Fixes blocky corruption in The Last of Us Part II",
+    "Fixes Wayland color-management crash from unvalidated HDR metadata"
+   ],
+   "whyItMatters": "Linux gamers on NVIDIA GPUs and Wayland users should care, as it improves latency and fixes crashes and suspend issues.",
+   "kind": "release",
+   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/10/nvidia-615-78-linux-driver.jpg",
+   "readingMinutes": 1
+  },
+  {
+   "id": "dba6eeb732caf7c9",
+   "sourceId": "lwn",
+   "title": "Raspberry Pi Desktop for x86-64 returns, now based on Debian 13",
+   "url": "https://lwn.net/Articles/1099206/",
+   "author": "jzb",
+   "publishedAt": 1791379585000,
+   "firstSeenAt": 1791439204133,
+   "tags": [
+    "raspberry-pi",
+    "debian",
+    "desktop",
+    "release",
+    "kernel",
+    "deep"
+   ],
+   "brief": "Simon Long announced the first new Raspberry Pi Desktop release for PCs in years, now built on 64-bit Debian 13 (trixie). The project had stalled after Bullseye due to lack of time, despite steady user demand. The move to amd64 follows Debian dropping 32-bit PC support.",
+   "keyPoints": [
+    "First PC Desktop update since the Bullseye era, after repeated user requests",
+    "Switches from 32-bit to 64-bit Debian (amd64) on the trixie base",
+    "Runs on most recent PCs and Intel Macs; Apple Silicon unsupported"
+   ],
+   "whyItMatters": "Users who run Raspberry Pi's desktop environment on old PCs or Macs finally get a current, 64-bit release.",
+   "kind": "release",
+   "imageUrl": null,
+   "readingMinutes": 2
+  },
+  {
+   "id": "3a21ca6b2f85285d",
+   "sourceId": "lwn",
+   "title": "Security updates for Wednesday, October 7, 2026",
+   "url": "https://lwn.net/Articles/1099202/",
+   "author": "jzb",
+   "publishedAt": 1791378533000,
+   "firstSeenAt": 1791439204133,
+   "tags": [
+    "security",
+    "kernel",
+    "sudo",
+    "updates",
+    "deep"
+   ],
+   "brief": "LWN's daily roundup lists security updates from AlmaLinux, Debian, Fedora, Mageia, Oracle, Red Hat, Slackware, SUSE, and Ubuntu. Notable packages include kernel updates for AlmaLinux, Oracle, and Ubuntu, plus sudo, freerdp, expat, openssh, and redis fixes across distributions.",
+   "keyPoints": [
+    "Kernel updates for AlmaLinux 9, Oracle Linux 8, and Ubuntu 26.04 variants",
+    "sudo fixed across AlmaLinux 10 and Oracle Linux 8, 9, 10",
+    "freerdp patched in AlmaLinux, Fedora, Oracle, and Ubuntu"
+   ],
+   "whyItMatters": "System administrators running these distributions should check for applicable patches, especially kernel, sudo, and freerdp updates.",
+   "kind": "news",
+   "imageUrl": null,
+   "readingMinutes": 5
+  },
+  {
+   "id": "ae32b568feddc212",
+   "sourceId": "9to5linux",
+   "title": "XOrg Server 21.1.25 and Xwayland 24.1.14 patch multiple security flaws",
+   "url": "https://9to5linux.com/multiple-security-issues-patched-in-xorg-server-21-1-25-and-xwayland-24-1-14",
+   "author": "Marcus Nestor",
+   "publishedAt": 1791377844000,
+   "firstSeenAt": 1791439204133,
+   "tags": [
+    "security",
+    "xorg",
+    "xwayland",
+    "release",
+    "distro"
+   ],
+   "brief": "XOrg Server 21.1.25 and Xwayland 24.1.14 fix several vulnerabilities that could cause heap corruption, denial of service, or information disclosure.",
+   "keyPoints": [],
+   "whyItMatters": "Linux desktop users and admins running X11 or Xwayland should update to avoid the disclosed security risks.",
+   "kind": "release",
+   "imageUrl": null,
+   "readingMinutes": 0
+  },
+  {
+   "id": "23212b0111007ed0",
+   "sourceId": "phoronix",
+   "title": "Kage: Google Experimenting With Linux Driver Isolation Using In-Kernel LFI Sandboxes",
+   "url": "https://www.phoronix.com/news/Kage-Linux-Driver-Isolation",
+   "author": "Michael Larabel",
+   "publishedAt": 1791377416000,
+   "firstSeenAt": 1791439204133,
+   "tags": [
+    "kernel",
+    "security",
+    "drivers",
+    "google",
+    "hardware",
+    "performance"
+   ],
+   "brief": "Google engineers are building Kage, a Linux kernel subsystem that sandboxes device drivers using LLVM's Lightweight Fault Isolation. Sandboxed drivers keep kernel privilege but are confined to a subset of virtual memory. Prototypes using inverted VirtIO (VKage) already run NVMe, network, and WiFi drivers.",
+   "keyPoints": [
+    "LFI, developed at Stanford with Google support, offers lower-overhead software fault isolation",
+    "LFI is upstream in LLVM for AArch64; x86 support targets LLVM 24",
+    "VKage prototypes sandboxed NVMe, network, and WiFi drivers"
+   ],
+   "whyItMatters": "Kernel developers and Android engineers should watch this as a potential path to containing buggy or malicious drivers without full virtualization overhead.",
+   "kind": "news",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=kage_1",
+   "readingMinutes": 2
+  },
+  {
+   "id": "3d721c9050d025db",
+   "sourceId": "phoronix",
+   "title": "Qualcomm Posts QPaCE Linux Driver Code For Faster ZRAM On Newest SoCs",
+   "url": "https://www.phoronix.com/news/Qialcomm-QPaCE-Linux-ZRAM",
+   "author": "Michael Larabel",
+   "publishedAt": 1791372100000,
+   "firstSeenAt": 1791439204133,
+   "tags": [
+    "kernel",
+    "qualcomm",
+    "zram",
+    "drivers",
+    "hardware",
+    "performance"
+   ],
+   "brief": "Qualcomm has posted Linux patches for its QPaCE hardware compression engine, found on the new Snapdragon 8 Elite Gen 6 \"Hawi\" SoC, to accelerate ZRAM page compression and decompression. The initial driver adds a \"qpace-lz4\" Zcomp back-end targeting low-latency synchronous single-page operations.",
+   "keyPoints": [
+    "QPaCE hardware accelerator appears on new Qualcomm SoCs like Snapdragon 8 Elite Gen 6",
+    "Patches add a \"qpace-lz4\" Zcomp back-end for ZRAM compressed swap",
+    "Initial driver covers only the synchronous urgent path, not asynchronous ring mode"
+   ],
+   "whyItMatters": "Developers and users of Linux on new Qualcomm SoCs can expect faster compressed swap and lower-latency memory compression.",
+   "kind": "news",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=qpace",
+   "readingMinutes": 2
+  },
+  {
+   "id": "583e4e59eec16afa",
+   "sourceId": "9to5linux",
+   "title": "Debian 14 \"Forky\" Artwork Proposals Are Now Open for Submission",
+   "url": "https://9to5linux.com/debian-14-forky-artwork-proposals-are-now-open-for-submission",
+   "author": "Marcus Nestor",
+   "publishedAt": 1791370937000,
+   "firstSeenAt": 1791439204133,
+   "tags": [
+    "debian",
+    "artwork",
+    "linux",
+    "distro",
+    "release"
+   ],
+   "brief": "The Debian Project has opened its artwork contest for the upcoming Debian 14 \"Forky\" release, inviting artists and designers to submit proposals for the system's desktop look and feel.",
+   "keyPoints": [],
+   "whyItMatters": "Designers who want to contribute to Debian can submit artwork for the next major release.",
+   "kind": "news",
+   "imageUrl": null,
+   "readingMinutes": 0
+  },
+  {
+   "id": "9a76daba1834d4d2",
+   "sourceId": "itsfoss",
+   "title": "Google Suspends Product Vulnerability Payouts in Its OSS Bug Bounty Program",
+   "url": "https://feed.itsfoss.com/link/24361/17491198/google-oss-vrp-product-reports-closed",
+   "author": "Sourav Rudra",
+   "publishedAt": 1791370005000,
+   "firstSeenAt": 1791439204133,
+   "tags": [
+    "security",
+    "google",
+    "open-source",
+    "bug-bounty",
+    "desktop",
+    "tutorial"
+   ],
+   "brief": "Google has stopped accepting product vulnerability reports through its Open Source Software Vulnerability Reward Program, calling the change temporary with an update promised in Q1 2027. Supply chain reports still pay, and reports filed before October 1 are unaffected.",
+   "keyPoints": [
+    "Product vulnerability reports closed; supply chain reports remain open, paying $500 to $31,337",
+    "Google cited AI-generated submissions with hallucinated or low-impact findings",
+    "Some Google Cloud bugs may still qualify via the separate Cloud VRP"
+   ],
+   "whyItMatters": "Security researchers reporting bugs in Google open source projects like Go, Flutter, and Angular lose a payout channel with no set return date.",
+   "kind": "news",
+   "imageUrl": "https://itsfoss.com/content/images/2026/10/google-oss-vrp-pause-banner.png",
+   "readingMinutes": 3
+  },
+  {
+   "id": "3b1a5fbd81c87d13",
+   "sourceId": "phoronix",
+   "title": "Huawei experiments with XMFS, a POSIX file-system for CXL shared memory servers",
+   "url": "https://www.phoronix.com/news/XMFS-Linux-File-System",
+   "author": "Michael Larabel",
+   "publishedAt": 1791368428000,
+   "firstSeenAt": 1791439204133,
+   "tags": [
+    "kernel",
+    "filesystems",
+    "cxl",
+    "huawei",
+    "hardware",
+    "performance"
+   ],
+   "brief": "Huawei engineers presented XMFS at LPC 2026, an experimental file-system that makes cross-node shared memory over CXL 3.0 or Huawei United Bus accessible via standard POSIX interfaces. It positions itself against FAMFS and DAXFS, with promising early benchmarks versus TMPFS.",
+   "keyPoints": [
+    "Makes remote CXL 3.0 or Huawei United Bus memory addressable through POSIX file operations",
+    "Alternative to FAMFS and DAXFS; early benchmarks look promising relative to TMPFS",
+    "Tested for container image sharing and metadata-intensive workloads; still experimental"
+   ],
+   "whyItMatters": "Kernel and server developers tracking CXL memory sharing should note a new POSIX-friendly contender, though it is far from upstream review.",
+   "kind": "news",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=xmfs_2",
+   "readingMinutes": 2
+  },
+  {
+   "id": "9dc812fae62b08c6",
+   "sourceId": "linuxiac",
+   "title": "Debian Opens Artwork Call for Debian 14 \"Forky\"",
+   "url": "https://linuxiac.com/debian-opens-artwork-call-for-debian-14-forky/",
+   "author": "Bobby Borisov",
+   "publishedAt": 1791367740000,
+   "firstSeenAt": 1791439204133,
+   "tags": [
+    "debian",
+    "artwork",
+    "community",
+    "distro",
+    "news"
+   ],
+   "brief": "The Debian Project is accepting artwork proposals for Debian 14 \"Forky,\" expected in mid-2027. Submissions close November 26, 2026, after which the community votes on the entries. Six proposals are already listed on the Debian wiki.",
+   "keyPoints": [
+    "Submission deadline is November 26, 2026, followed by a community vote",
+    "Six proposals so far, including Alborz, Cutlery, and Orange Sunshine",
+    "Themes must fit Debian style without major GTK or GDM changes"
+   ],
+   "whyItMatters": "Debian contributors and artists can shape the next release's visual identity, and users can follow or join the vote.",
+   "kind": "news",
+   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/10/debian-14-artwork-contest.jpg",
+   "readingMinutes": 2
+  },
+  {
+   "id": "a7519b65e0c79f81",
+   "sourceId": "phoronix",
+   "title": "Microsoft Updates WSL2 Linux Kernel to 6.18.54.1 with DXGKRNL Fence Sharing",
+   "url": "https://www.phoronix.com/news/WSL2-Linux-Kernel-Fence-Sharing",
+   "author": "Michael Larabel",
+   "publishedAt": 1791367055000,
+   "firstSeenAt": 1791439204133,
+   "tags": [
+    "wsl",
+    "kernel",
+    "microsoft",
+    "linux",
+    "hardware",
+    "performance"
+   ],
+   "brief": "Microsoft released linux-msft-wsl-6.18.54.1, rebasing its WSL2 kernel on upstream Linux 6.18.54 to pick up the latest bug and security fixes. The update adds native fence sharing for the DXGKRNL DirectX driver, re-enables DRM and VGEM support, restores PPP, and enables BPF LSM by default.",
+   "keyPoints": [
+    "Kernel rebased on upstream Linux 6.18.54 for latest fixes",
+    "Native fence sharing added for DXGKRNL DirectX driver",
+    "DRM/VGEM re-enabled, PPP restored, BPF LSM on by default"
+   ],
+   "whyItMatters": "WSL2 users, especially those relying on GPU graphics via DirectX, get improved graphics synchronization and a more secure, feature-complete kernel.",
+   "kind": "release",
+   "imageUrl": "https://www.phoronix.net/image.php?id=windows11-wsl2-good&image=windows_11_wsl1",
+   "readingMinutes": 3
+  },
+  {
+   "id": "206a48b205b817f8",
+   "sourceId": "phoronix",
+   "title": "AMD Engineer Details Zen 6 IBS Memory Profiler for Linux Hot Page Detection",
+   "url": "https://www.phoronix.com/news/AMD-Zen-6-IBS-Memory-Profiler",
+   "author": "Michael Larabel",
+   "publishedAt": 1791366474000,
+   "firstSeenAt": 1791439204133,
+   "tags": [
+    "amd",
+    "kernel",
+    "memory",
+    "hardware",
+    "performance"
+   ],
+   "brief": "At Linux Plumbers Conference 2026, AMD engineer Bharata Bhasker Rao presented the IBS Memory Profiler, a new Zen 6 feature for lightweight per-access memory profiling. It feeds the Linux kernel hints for hot page detection and promotion on EPYC servers with tiered DRAM/CXL memory, and benchmarks show low overhead.",
+   "keyPoints": [
+    "IBS Memory Profiler tracks virtual/physical addresses and NUMA nodes per memory access",
+    "Integrates with Linux pghot patches for hot page promotion on tiered memory systems",
+    "256-core EPYC Venice benchmarks show low overhead; pghot work still ongoing"
+   ],
+   "whyItMatters": "Kernel developers and EPYC server operators should care, as this hardware sampling could improve memory tiering performance on future AMD systems.",
+   "kind": "news",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=ibs_memory_profiler_1",
+   "readingMinutes": 3
+  },
+  {
    "id": "87ede738a45b011e",
    "sourceId": "phoronix",
    "title": "Twelve New Vulnerabilities Disclosed in X.Org Server and XWayland",
@@ -6902,812 +7691,6 @@
    "kind": "release",
    "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/09/noctalia52.jpg",
    "readingMinutes": 3
-  },
-  {
-   "id": "fe529a4df7cd7040",
-   "sourceId": "phoronix",
-   "title": "Linux Kernel's LZ4 Compression Code Being Resynced for Better Performance",
-   "url": "https://www.phoronix.com/news/Linux-LZ4-Clean-Resync",
-   "author": "Michael Larabel",
-   "publishedAt": 1790514980000,
-   "firstSeenAt": 1790575204177,
-   "tags": [
-    "kernel",
-    "lz4",
-    "compression",
-    "performance",
-    "hardware"
-   ],
-   "brief": "Samsung's Michal Wilczynski posted patches to overhaul the kernel's LZ4 code, which has been a stale fork of upstream since 2017-2018. The changes vendor upstream LZ4 unmodified, bringing bug fixes and up to 21% higher in-kernel benchmark performance.",
-   "keyPoints": [
-    "In-kernel LZ4 fork last synced with upstream around 2017-2018",
-    "Patches let upstream LZ4 code be copied into kernel tree unmodified",
-    "EROFS sees ~11-14% higher read throughput; other benchmarks up to 21% faster"
-   ],
-   "whyItMatters": "Kernel developers and users of LZ4-compressed filesystems like EROFS gain performance and easier future updates.",
-   "kind": "news",
-   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=linux_faster_lz4",
-   "readingMinutes": 2
-  },
-  {
-   "id": "a7504a1174afa7e7",
-   "sourceId": "linuxiac",
-   "title": "Apprise 2.0 Notification Tool Released With Smarter Retries and Async Support",
-   "url": "https://linuxiac.com/apprise-2-0-notification-tool-released-with-smarter-retries-and-async-support/",
-   "author": "Bobby Borisov",
-   "publishedAt": 1790507564000,
-   "firstSeenAt": 1790575204177,
-   "tags": [
-    "notifications",
-    "python",
-    "open-source",
-    "release",
-    "distro",
-    "news"
-   ],
-   "brief": "Apprise 2.0 launches the notification framework's new major series with a rebuilt architecture, adding template variables, tag escalation, selective retries, parallel delivery, timeouts, and native async support. It is a breaking release for 1.x API users; a supported apprise-v1-release branch remains available.",
-   "keyPoints": [
-    "Retries now track per-recipient results and resend only to failed destinations",
-    "New AppriseResult object gives detailed per-service statuses and logs from notify()",
-    "Adds Delta Chat, WPUSH, YouLMK, and Telnyx SMS services; breaking change for 1.x API"
-   ],
-   "whyItMatters": "Developers and sysadmins using Apprise for multi-service notifications should review the breaking API changes before upgrading.",
-   "kind": "release",
-   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/09/apprise20.jpg",
-   "readingMinutes": 2
-  },
-  {
-   "id": "e730c65c0b1d6043",
-   "sourceId": "phoronix",
-   "title": "Intel lands big memory hotplugging speedup for Linux 7.4",
-   "url": "https://www.phoronix.com/news/Linux-7.4-Faster-RAM-Hotplug",
-   "author": "Michael Larabel",
-   "publishedAt": 1790506145000,
-   "firstSeenAt": 1790575204177,
-   "tags": [
-    "kernel",
-    "memory-management",
-    "intel",
-    "cxl",
-    "hardware",
-    "performance"
-   ],
-   "brief": "Intel's Yuan Liu has queued patches into mm/core.git's for-next branch that optimize zone contiguous checks to speed up memory hotplugging, expected for the Linux 7.4 merge window. Testing shows up to an 81% time reduction for VM memory hotplugging and up to 75% for unplugging, with Samsung also seeing large CXL…",
-   "keyPoints": [
-    "Avoids page block by page block scans across entire zones during hotplug",
-    "Up to 81% faster VM memory hotplug, 75% faster unplug",
-    "Expected in Linux 7.4 via mm/core.git for-next branch"
-   ],
-   "whyItMatters": "Operators of virtual machines and CXL-based memory expansion systems will see much faster memory hot add/remove operations.",
-   "kind": "news",
-   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=memory_hot_plug_1",
-   "readingMinutes": 2
-  },
-  {
-   "id": "7da5ff1a604d12a3",
-   "sourceId": "phoronix",
-   "title": "Linux Patches Enable ThinkPad X1 Carbon G14's IR Camera",
-   "url": "https://www.phoronix.com/news/Linux-X1-Carbon-G14-MIPI-Cam",
-   "author": "Michael Larabel",
-   "publishedAt": 1790505180000,
-   "firstSeenAt": 1790575204177,
-   "tags": [
-    "kernel",
-    "hardware",
-    "lenovo",
-    "drivers",
-    "performance"
-   ],
-   "brief": "New kernel patches from Ruslan Koreev enable the second MIPI IR camera on Lenovo's Panther Lake-based ThinkPad X1 Carbon Gen 14, which is used for Windows Hello-style face authentication. The main RGB camera already works on Linux. The patches are under review and may land in Linux v7.4.",
-   "keyPoints": [
-    "Sensor is an ST VD55G1 monochrome global-shutter unit, powered via an INT3472 device.",
-    "Patches add ACPI wiring and monochrome pixel formats to the Intel IPU7 ISYS.",
-    "Tested on Fedora 44: streams via libcamera and works with howdy face authentication."
-   ],
-   "whyItMatters": "Owners or prospective buyers of the ThinkPad X1 Carbon Gen 14 on Linux gain IR face-authentication support if these patches are merged.",
-   "kind": "news",
-   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=x1_carbon_g14",
-   "readingMinutes": 3
-  },
-  {
-   "id": "bd8fa313d395fbff",
-   "sourceId": "phoronix",
-   "title": "New Patch Series Working Toward DRBD 9 Support In The Linux Kernel",
-   "url": "https://www.phoronix.com/news/Linux-Patches-Toward-DRBD-9",
-   "author": "Michael Larabel",
-   "publishedAt": 1790504587000,
-   "firstSeenAt": 1790575204177,
-   "tags": [
-    "kernel",
-    "storage",
-    "drbd",
-    "lkml",
-    "hardware",
-    "performance"
-   ],
-   "brief": "LINBIT developers sent a new patch series to the LKML preparing to bring DRBD 9 support into the mainline Linux kernel. The prep patches restructure the in-kernel DRBD 8.4 code to match the out-of-tree layout and raise limits to DRBD 9 values, with the full DRBD 9 patches hoped to follow.",
-   "keyPoints": [
-    "Patches restructure in-kernel DRBD 8.4 code to align with LINBIT's out-of-tree driver",
-    "Series raises various limits to match DRBD 9 values",
-    "DRBD 9 adds 32-node replication, load balancing, quorum management, faster I/O"
-   ],
-   "whyItMatters": "Cluster and storage administrators relying on out-of-tree DRBD builds should care, since mainline DRBD 9 would simplify deployment and maintenance of replicated block storage.",
-   "kind": "news",
-   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=drbd",
-   "readingMinutes": 2
-  },
-  {
-   "id": "5676d13b2eed9f25",
-   "sourceId": "itsfoss",
-   "title": "AlmaLinux Opens Free, Community-Driven Software and Hardware Certification",
-   "url": "https://feed.itsfoss.com/link/24361/17474965/almalinux-software-certification-launched",
-   "author": "Sourav Rudra",
-   "publishedAt": 1790485279000,
-   "firstSeenAt": 1790488804051,
-   "tags": [
-    "almalinux",
-    "enterprise-linux",
-    "certification",
-    "hardware",
-    "desktop",
-    "tutorial"
-   ],
-   "brief": "AlmaLinux now offers free software certification: publishers list products and users confirm they work on their own hardware. The alma-certify hardware tool was rewritten for sub-10-minute runs, works from live media without installation, and all results land in a public, searchable catalog.",
-   "keyPoints": [
-    "Software certification is free; users confirm compatibility via an account on the portal",
-    "alma-certify rewritten: sub-10-minute runs, live-media support, QR-code registration",
-    "Results go to a public catalog with a free read-only API, tracked per major release"
-   ],
-   "whyItMatters": "AlmaLinux users and admins can verify hardware and software compatibility before deploying, and submissions push vendors toward official support.",
-   "kind": "news",
-   "imageUrl": "https://itsfoss.com/content/images/2026/09/almalinux-software-certification-banner.png",
-   "readingMinutes": 3
-  },
-  {
-   "id": "6a00edc95a4b0e11",
-   "sourceId": "phoronix",
-   "title": "Improved GPU Reset Coming For Raspberry Pi Boards With Linux 7.4",
-   "url": "https://www.phoronix.com/news/Linux-7.4-Better-RPI-GPU-Reset",
-   "author": "Michael Larabel",
-   "publishedAt": 1790469933000,
-   "firstSeenAt": 1790488804051,
-   "tags": [
-    "kernel",
-    "raspberry-pi",
-    "gpu",
-    "drm",
-    "hardware",
-    "performance"
-   ],
-   "brief": "A DRM-Misc-Next pull request adds improved GPU reset support for the Broadcom V3D GPU in the VC4 kernel driver. Igalia's Maíra Canal switched the driver to use the V3D reset controller, replacing a cumbersome private refcount workaround. The code targets the Linux 7.4 merge window in October.",
-   "keyPoints": [
-    "VC4 driver now uses the BCM2835 PM block's V3D reset line instead of forcing PM counts to zero",
-    "GPU can be reset without power-cycling its domain, improving hang recovery",
-    "Reset line is optional; device trees without it keep driver-side recovery"
-   ],
-   "whyItMatters": "Raspberry Pi and Broadcom-based hardware users should see more reliable recovery from GPU hangs.",
-   "kind": "news",
-   "imageUrl": "https://www.phoronix.net/image.php?id=raspberrypi-3-bplus&image=raspberrypi_3bp_4",
-   "readingMinutes": 3
-  },
-  {
-   "id": "f86fb9777ea6f762",
-   "sourceId": "jvns",
-   "title": "Replacing the old battery on rechargeable bike lights",
-   "url": "https://jvns.ca/blog/2026/09/27/replacing-the-old-battery-on-rechargeable-bike-lights/",
-   "author": "",
-   "publishedAt": 1790467200000,
-   "firstSeenAt": 1790575204177,
-   "tags": [
-    "repair",
-    "electronics",
-    "diy",
-    "soldering",
-    "explainer",
-    "tooling"
-   ],
-   "brief": "Julia Evans revived ten-year-old rechargeable bike lights by replacing their dead batteries. With minimal electronics experience, she cut open the silicone casing, desoldered the old cells, identified them as LIR2477 coin cells, and soldered in replacements ordered from AliExpress for about $20 CAD in parts.",
-   "keyPoints": [
-    "Identified the mystery battery as an LIR2477 by asking an LLM",
-    "Used a desoldering pump and iFixit guide for a first-ever desoldering job",
-    "Repair cost about $20 CAD; both lights work again"
-   ],
-   "whyItMatters": "Encouraging read for anyone curious about repairing old electronics without prior soldering experience.",
-   "kind": "tutorial",
-   "imageUrl": null,
-   "readingMinutes": 5
-  },
-  {
-   "id": "4815d84d28f20570",
-   "sourceId": "linuxiac",
-   "title": "Solus Linux Adopts Formal AI and LLM Contribution Policy",
-   "url": "https://linuxiac.com/solus-linux-adopts-formal-ai-and-llm-contribution-policy/",
-   "author": "Bobby Borisov",
-   "publishedAt": 1790460889000,
-   "firstSeenAt": 1790488804051,
-   "tags": [
-    "solus",
-    "ai",
-    "linux",
-    "open-source",
-    "distro",
-    "news"
-   ],
-   "brief": "Solus Linux has published a policy governing AI and LLM use in contributions. AI-assisted code is allowed if developers test it, take responsibility, and mark commits with an 'Assisted-by LLM' note, but AI-generated content is banned from blogs and official communications.",
-   "keyPoints": [
-    "AI-assisted contributions allowed; submitters must test and take full responsibility",
-    "Commits using AI must carry an 'Assisted-by LLM' note; no bot submissions",
-    "No AI-generated material in Solus blog or official communications"
-   ],
-   "whyItMatters": "Solus contributors and packagers need to know the disclosure rules to avoid having work rejected or being blocked.",
-   "kind": "news",
-   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/09/solus-ai-policy.jpg",
-   "readingMinutes": 2
-  },
-  {
-   "id": "7651bfb570089bc8",
-   "sourceId": "linuxiac",
-   "title": "Incus 7.5 Adds OVN Child Networks, Live Instance Moves",
-   "url": "https://linuxiac.com/incus-7-5-adds-ovn-child-networks-live-instance-moves/",
-   "author": "Bobby Borisov",
-   "publishedAt": 1790447347000,
-   "firstSeenAt": 1790488804051,
-   "tags": [
-    "incus",
-    "containers",
-    "virtualization",
-    "security",
-    "distro",
-    "news"
-   ],
-   "brief": "Incus 7.5 lands with OVN child networks, live migration of instances across projects and cluster members, and improvements to storage, authorization, monitoring, and VM support. It also fixes 11 security vulnerabilities, several critical, including arbitrary host file writes via migration and Btrfs backup paths.",
-   "keyPoints": [
-    "OVN child networks share a parent router, uplink, and peerings while keeping own subnets",
-    "Instances can move projects while live-migrating to another cluster member",
-    "11 vulnerabilities fixed, including critical host file write and auth bypass flaws"
-   ],
-   "whyItMatters": "Incus administrators should upgrade promptly given the critical security fixes, and cluster operators gain useful networking and migration features.",
-   "kind": "release",
-   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/09/incus75.jpg",
-   "readingMinutes": 2
-  },
-  {
-   "id": "fbec4bea8530be8b",
-   "sourceId": "phoronix",
-   "title": "GNOME OS Developers Unveil Toolpak, a Flatpak-Like System for Developer Tools",
-   "url": "https://www.phoronix.com/news/Toolpak",
-   "author": "Michael Larabel",
-   "publishedAt": 1790441400000,
-   "firstSeenAt": 1790488804051,
-   "tags": [
-    "gnome",
-    "toolpak",
-    "packaging",
-    "developer-tools",
-    "hardware",
-    "performance"
-   ],
-   "brief": "GNOME developer Jordan Petridis introduced Toolpak, a packaging concept from GNOME OS developers aimed at developer tools that don't fit Flatpak's sandboxing model. It uses UAPL3 discoverable disk images, mount namespaces, and unrestricted system access, with a prototype in progress.",
-   "keyPoints": [
-    "Flatpak's confinement doesn't suit tools like QEMU and strace; Toolpak fills that gap",
-    "Uses UAPL3 disk images, mount namespaces, and $PATH prepending with full system access",
-    "Aims for reproducible builds, SBOM/licensing compliance; apps fit for Flatpak are rejected"
-   ],
-   "whyItMatters": "Developers on GNOME OS who need containerized tools without sandboxing restrictions should watch this prototype.",
-   "kind": "news",
-   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=toolpak",
-   "readingMinutes": 3
-  },
-  {
-   "id": "611bf87cfb997e0d",
-   "sourceId": "phoronix",
-   "title": "MM Change Slated For Linux 7.4 Yields +22904539.81% In One Metric",
-   "url": "https://www.phoronix.com/news/Linux-7.4-Refill-Sheaves-Barn",
-   "author": "Michael Larabel",
-   "publishedAt": 1790435262000,
-   "firstSeenAt": 1790488804051,
-   "tags": [
-    "kernel",
-    "memory-management",
-    "performance",
-    "slab",
-    "hardware"
-   ],
-   "brief": "A memory management patch queued for Linux 7.4 lets sheaf refills draw from the barn first, fixing saturation that forced RCU sheaf flushes. The 81-line change improves a will-it-scale mmap1 test by 24% and shows extreme gains in barn_get/barn_put metrics.",
-   "keyPoints": [
-    "Sheaf refills now take objects from the barn first, using a new partial sheaf for leftovers",
-    "Benchmarks show 24% mmap1 improvement and huge barn_get/barn_put gains",
-    "81 lines of new code, queued for the Linux 7.4 merge window in late October"
-   ],
-   "whyItMatters": "Kernel developers and performance-focused admins should track allocator changes that may improve memory-heavy workloads in Linux 7.4.",
-   "kind": "news",
-   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=sheaves_go_wow",
-   "readingMinutes": 3
-  },
-  {
-   "id": "13ef7fd338b20e24",
-   "sourceId": "lwn",
-   "title": "GDB 18.1 released with Windows improvements, new commands, and Python API additions",
-   "url": "https://lwn.net/Articles/1096897/",
-   "author": "corbet",
-   "publishedAt": 1790435000000,
-   "firstSeenAt": 1790488804051,
-   "tags": [
-    "gdb",
-    "debugger",
-    "gnu",
-    "release",
-    "kernel",
-    "deep"
-   ],
-   "brief": "Version 18.1 of the GNU Debugger is out. Highlights include major Windows native target improvements such as non-stop mode and true-color support, new commands for saving history and managing subprocess environments, two new targets, and a long list of Python API and remote protocol additions, alongside several…",
-   "keyPoints": [
-    "Windows target gains non-stop mode, scheduler-locking, TLS support, and true-color console output",
-    "New commands save history, skips, and user commands; new MicroBlaze Linux and AArch64 MinGW targets",
-    "Removes stabs, mdebug, CTF trace support, old .gdb_index versions, and AIX 7.1 support"
-   ],
-   "whyItMatters": "Developers who debug with GDB, especially on Windows or via its Python API, should review the incompatible changes before upgrading.",
-   "kind": "release",
-   "imageUrl": null,
-   "readingMinutes": 7
-  },
-  {
-   "id": "a5972246538e7d89",
-   "sourceId": "linuxiac",
-   "title": "virtio-nvgpu Brings Shared NVIDIA GPU Access to Linux KVM Guests",
-   "url": "https://linuxiac.com/virtio-nvgpu-brings-shared-nvidia-gpu-access-to-linux-kvm-guests/",
-   "author": "Bobby Borisov",
-   "publishedAt": 1790431728000,
-   "firstSeenAt": 1790488804051,
-   "tags": [
-    "virtualization",
-    "kvm",
-    "nvidia",
-    "gpu",
-    "distro",
-    "news"
-   ],
-   "brief": "Nestri Labs is building virtio-nvgpu, an experimental virtio device that lets multiple Linux KVM guests share a single NVIDIA GPU without PCI passthrough. It works at the NVIDIA kernel-driver ABI level, claims about 2% overhead versus bare metal, and was demoed with four guests on one RTX 3060.",
-   "keyPoints": [
-    "GPU stays on host; multiple guests share it via a custom virtio device",
-    "Demoed four guests on one GeForce RTX 3060 simultaneously",
-    "Supports Vulkan, Wayland, NVENC, basic CUDA enumeration"
-   ],
-   "whyItMatters": "Developers and homelabbers wanting shared NVIDIA GPUs for game streaming or virtualized desktops should watch this, as it removes the one-GPU-per-VM passthrough constraint.",
-   "kind": "news",
-   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/09/virtio-nvgpu.jpg",
-   "readingMinutes": 2
-  },
-  {
-   "id": "93f4d3917f48fd2d",
-   "sourceId": "linuxiac",
-   "title": "OBS Studio 33 Nears Release: Here's What to Expect",
-   "url": "https://linuxiac.com/obs-studio-33-nears-release-heres-what-to-expect/",
-   "author": "Bobby Borisov",
-   "publishedAt": 1790429893000,
-   "firstSeenAt": 1790488804051,
-   "tags": [
-    "obs",
-    "streaming",
-    "linux",
-    "open-source",
-    "distro",
-    "news"
-   ],
-   "brief": "OBS Studio 33 is approaching stable release, now at Beta 4. Headline changes include a Chromium Embedded Framework upgrade, a reworked plugin loading system, improved source snapping, and numerous usability and platform-specific fixes, including dropping Ubuntu 24.04 support.",
-   "keyPoints": [
-    "CEF browser backend updated from July 2024 to September 2026 codebase",
-    "Plugin loading overhauled; old third-party locations work only until OBS 34",
-    "Source snapping improved with visual indicator and axis-wide snapping"
-   ],
-   "whyItMatters": "Streamers and OBS plugin developers should review the plugin path changes and test browser sources before the stable release.",
-   "kind": "release",
-   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/09/obsstudio33.jpg",
-   "readingMinutes": 2
-  },
-  {
-   "id": "e4a42fcbcec47ed8",
-   "sourceId": "9to5linux",
-   "title": "GNOME 50.5 Improves Multi-Monitor Support, HDR Support, and More",
-   "url": "https://9to5linux.com/?p=33751",
-   "author": "",
-   "publishedAt": 1790427112000,
-   "firstSeenAt": 1790488804051,
-   "tags": [
-    "gnome",
-    "release",
-    "desktop",
-    "distro"
-   ],
-   "brief": "GNOME 50.5 is out as the fifth update to the GNOME 50 desktop series, bringing bug fixes, updated translations, and improvements to multi-monitor and HDR support.",
-   "keyPoints": [],
-   "whyItMatters": "GNOME users on multi-monitor or HDR setups may want to update for these fixes.",
-   "kind": "release",
-   "imageUrl": null,
-   "readingMinutes": 0
-  },
-  {
-   "id": "5a9d702d75febfa7",
-   "sourceId": "linuxiac",
-   "title": "Fastfetch 2.69 Adds Animated Logos, Better Linux and Bluetooth Support",
-   "url": "https://linuxiac.com/fastfetch-2-69-system-information-tool-adds-animated-logos-better-linux-support/",
-   "author": "Bobby Borisov",
-   "publishedAt": 1790425910000,
-   "firstSeenAt": 1790488804051,
-   "tags": [
-    "cli",
-    "release",
-    "linux",
-    "tools",
-    "distro",
-    "news"
-   ],
-   "brief": "Fastfetch 2.69, the command-line system information tool, adds animated GIF and APNG logo support via the Kitty graphics protocol, plus a logo.position auto mode for narrow terminals. It drops the ImageMagick dependency on Windows, macOS, and Android, and expands Linux detection for CRUX, SPARC CPUs, and COSMIC.",
-   "keyPoints": [
-    "Animated GIF/APNG logos via Kitty protocol, with fallback to built-in logo",
-    "Native image libraries replace ImageMagick on Windows, macOS, Android",
-    "Bluetooth LE detection, Core versions up to 6.3, signal quality reporting"
-   ],
-   "whyItMatters": "Users and package maintainers of the popular system info tool get richer logo display and fewer dependencies.",
-   "kind": "release",
-   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/09/fastfetch269.jpg",
-   "readingMinutes": 2
-  },
-  {
-   "id": "bdf52d33b771f4bb",
-   "sourceId": "phoronix",
-   "title": "Linux 7.3-rc5 DRM fixes: Nouveau suspend/resume, Intel Xe power brake, AI-found bugs",
-   "url": "https://www.phoronix.com/news/Linux-7.3-rc5-DRM",
-   "author": "Michael Larabel",
-   "publishedAt": 1790421196000,
-   "firstSeenAt": 1790488804051,
-   "tags": [
-    "kernel",
-    "drm",
-    "nouveau",
-    "intel",
-    "hardware",
-    "performance"
-   ],
-   "brief": "A heavy batch of DRM subsystem fixes landed ahead of Linux 7.3-rc5, many of them AI-inspired fixes for error paths, leaks, and use-after-frees. Nouveau got the most fixes, including a suspend/resume regression from the move to NVIDIA R570 firmware, while Intel's Xe driver gained a new \"power brake\" throttle reason for…",
-   "keyPoints": [
-    "Many fixes for error handling, leaks, and use-after-frees were found via AI/LLMs",
-    "Nouveau fixed suspend/resume regressions and vRAM pinning with R570 firmware",
-    "Intel Xe now reports PWRBRK power brake throttling for Crescent Island accelerators"
-   ],
-   "whyItMatters": "Kernel graphics users, especially NVIDIA-on-Nouveau users hit by suspend/resume bugs, should track these fixes in Linux 7.3.",
-   "kind": "news",
-   "imageUrl": "https://www.phoronix.net/image.php?id=nvidia-980-5080-linux&image=nouveau_980_5",
-   "readingMinutes": 2
-  },
-  {
-   "id": "27cb6951dfe809f7",
-   "sourceId": "phoronix",
-   "title": "Wisp GNOME Shell Extension Simplifies Btrfs Snapshot Management",
-   "url": "https://www.phoronix.com/news/GNOME-Wisp-Btrfs-Snapshots",
-   "author": "Michael Larabel",
-   "publishedAt": 1790419513000,
-   "firstSeenAt": 1790488804051,
-   "tags": [
-    "gnome",
-    "btrfs",
-    "snapshots",
-    "extension",
-    "hardware",
-    "performance"
-   ],
-   "brief": "Wisp is a new GNOME Shell extension that provides a graphical interface to Snapper for managing Btrfs file-system snapshots, highlighted in the latest This Week in GNOME. It lets users view changed files between snapshots, adjust retention policies, and create snapshots manually.",
-   "keyPoints": [
-    "Wisp wraps Snapper with a GUI for Btrfs snapshots on GNOME",
-    "Shows file changes between snapshots and adjusts retention policies",
-    "Available from extensions.gnome.org and GitHub"
-   ],
-   "whyItMatters": "GNOME users on Btrfs systems who prefer not to use Snapper from the command line gain a graphical management option.",
-   "kind": "news",
-   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=gnome_wisp_1",
-   "readingMinutes": 2
-  },
-  {
-   "id": "05b4fd9255424c6c",
-   "sourceId": "phoronix",
-   "title": "AMDXDNA Linux driver gains NPU3 kernel-mode command submission patches",
-   "url": "https://www.phoronix.com/news/AMDXDNA-NPU3-Enhancements",
-   "author": "Michael Larabel",
-   "publishedAt": 1790418798000,
-   "firstSeenAt": 1790488804051,
-   "tags": [
-    "amd",
-    "kernel",
-    "drivers",
-    "npu",
-    "hardware",
-    "performance"
-   ],
-   "brief": "AMD engineer David Zhang has posted 21 patches extending the open-source AMDXDNA kernel driver for NPU3 (AIE4) hardware found in Ryzen AI 300 series SoCs. The series adds kernel-mode command submission, device telemetry queries, and full system and runtime power management including suspend/resume.",
-   "keyPoints": [
-    "21 patches on LKML target AIE4/NPU3 hardware in Ryzen AI 300 SoCs",
-    "Kernel-mode command submission replaces userspace doorbell mapping as default path",
-    "Adds suspend/resume and runtime PM across PF, VF, and Classic devices with SR-IOV linking"
-   ],
-   "whyItMatters": "Developers and users of Ryzen AI 300 laptops should care, as this work improves upstream Linux support and power behavior for their NPU hardware.",
-   "kind": "news",
-   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=ryzen_ai_npu",
-   "readingMinutes": 2
-  },
-  {
-   "id": "03c2bf4d5e765096",
-   "sourceId": "phoronix",
-   "title": "KDE Plasma 6.8 Continues With Last Minute Tweaks & Fixes",
-   "url": "https://www.phoronix.com/news/Plasma-6.8-Last-Minute-UI-Fixes",
-   "author": "Michael Larabel",
-   "publishedAt": 1790416612000,
-   "firstSeenAt": 1790488804051,
-   "tags": [
-    "kde",
-    "plasma",
-    "desktop",
-    "hardware",
-    "performance"
-   ],
-   "brief": "Alongside Plasma 6.8 Beta 2 and the Akademy conference, KDE developers landed last-minute UI refinements, a crash fix, and a Bluetooth wizard improvement for Plasma 6.8. Early Plasma 6.9 work includes better currency conversion handling in KRunner searches.",
-   "keyPoints": [
-    "Improved click feedback for system tray icons in Plasma 6.8",
-    "Fixes crash when deleting starred clipboard entry from Meta+V pop-up",
-    "Bluetooth wizard can find BLE devices while other apps hold a discovery session"
-   ],
-   "whyItMatters": "KDE Plasma users and testers tracking the 6.8 release should know what late fixes to expect in the final build.",
-   "kind": "news",
-   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=kde_linux_dos",
-   "readingMinutes": 2
-  },
-  {
-   "id": "ce05d1a90349f040",
-   "sourceId": "linuxiac",
-   "title": "PeaZip 11.3 File Archiver Adds Safer PEA Extraction",
-   "url": "https://linuxiac.com/peazip-11-3-file-archiver-adds-safer-pea-extraction/",
-   "author": "Bobby Borisov",
-   "publishedAt": 1790414155000,
-   "firstSeenAt": 1790488804051,
-   "tags": [
-    "peazip",
-    "security",
-    "archiving",
-    "release",
-    "distro",
-    "news"
-   ],
-   "brief": "PeaZip 11.3 tightens security: a master password is now mandatory for the password manager, sensitive file types require confirmation before opening, and PEA archives extract to a temporary directory until validated. The release also fixes ZPAQ crashes, adds an 'Open with' screen, and updates 7z/p7zip and PEA backends.",
-   "keyPoints": [
-    "Master password now mandatory; export stored passwords before upgrading",
-    "PEA extraction validated in temp directory before moving to output",
-    "New Shift+F12 'Open with' screen, themes, and 7z 26.03 / PEA 1.33 backends"
-   ],
-   "whyItMatters": "PeaZip users get safer archive extraction and file launching, and should export saved passwords before upgrading.",
-   "kind": "release",
-   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/09/peazip113.jpg",
-   "readingMinutes": 2
-  },
-  {
-   "id": "e5e5f3245db917a3",
-   "sourceId": "9to5linux",
-   "title": "PeaZip 11.3 Archive Manager Improves ZPAQ Support, Adds New Themes",
-   "url": "https://9to5linux.com/?p=33746",
-   "author": "",
-   "publishedAt": 1790412508000,
-   "firstSeenAt": 1790488804051,
-   "tags": [
-    "peazip",
-    "archiving",
-    "release",
-    "distro"
-   ],
-   "brief": "PeaZip 11.3, the open-source archive manager, is now available with improved ZPAQ support, new themes, a new keyboard shortcut, and better handling of invalid filenames.",
-   "keyPoints": [],
-   "whyItMatters": "PeaZip users get improved ZPAQ archive handling and a refreshed look.",
-   "kind": "release",
-   "imageUrl": null,
-   "readingMinutes": 0
-  },
-  {
-   "id": "d5b705f90dfd63f3",
-   "sourceId": "omgubuntu",
-   "title": "Era, a Rust-based calendar app for GNOME, enters beta on Flathub",
-   "url": "https://www.omgubuntu.co.uk/2026/09/era-rust-calendar-gnome-beta",
-   "author": "Joey Sneddon",
-   "publishedAt": 1790391883000,
-   "firstSeenAt": 1790402402904,
-   "tags": [
-    "gnome",
-    "rust",
-    "calendar",
-    "flathub",
-    "ubuntu",
-    "desktop"
-   ],
-   "brief": "Era is a new GTK4/libadwaita calendar app for GNOME written in Rust, now available in beta on Flathub. It offers year, month and agenda views, event editing, .ics import and online sync, routing Evolution Data Server calls through a swappable middle layer called Clepsydre.",
-   "keyPoints": [
-    "Beta installable from Flathub; clean, adaptive GTK4/libadwaita UI",
-    "Uses Evolution Data Server indirectly via hot-swappable Clepsydre layer",
-    "Supports local use, .ics import and sync with online providers"
-   ],
-   "whyItMatters": "GNOME users looking for a modern alternative to GNOME Calendar can test it now.",
-   "kind": "release",
-   "imageUrl": "https://www.omgubuntu.co.uk/wp-content/uploads/2026/09/era-calendar.webp",
-   "readingMinutes": 2
-  },
-  {
-   "id": "1b01fe43791a3990",
-   "sourceId": "9to5linux",
-   "title": "OBS Studio 33 beta adds latest NVIDIA Broadcast SDK support",
-   "url": "https://9to5linux.com/?p=33743",
-   "author": "",
-   "publishedAt": 1790376962000,
-   "firstSeenAt": 1790402402904,
-   "tags": [
-    "obs",
-    "nvidia",
-    "streaming",
-    "beta",
-    "distro",
-    "release"
-   ],
-   "brief": "OBS Studio 33 entered public beta with support for the newest NVIDIA Broadcast SDKs for audio and video effects. It also adds a check for missing encoders when loading a profile.",
-   "keyPoints": [],
-   "whyItMatters": "Streamers and content creators using OBS with NVIDIA GPUs can test the beta for updated effects support.",
-   "kind": "release",
-   "imageUrl": null,
-   "readingMinutes": 0
-  },
-  {
-   "id": "9b4d920979fd2b47",
-   "sourceId": "phoronix",
-   "title": "New FUTEX syscalls back in development to aid Valve's ARM64 gaming efforts",
-   "url": "https://www.phoronix.com/news/FUTEX-Robust-List2-Syscalls",
-   "author": "Michael Larabel",
-   "publishedAt": 1790376136000,
-   "firstSeenAt": 1790402402904,
-   "tags": [
-    "kernel",
-    "futex",
-    "arm64",
-    "gaming",
-    "hardware",
-    "performance"
-   ],
-   "brief": "Igalia has posted an updated version of its get_robust_list2 and set_robust_list2 FUTEX syscall patches, designed to improve FEX-Emu and other emulation layers running x86 games on ARM64, including Valve's Steam Frame. The rebase against mainline was delayed while a race condition was fixed.",
-   "keyPoints": [
-    "Patches target shortcomings of existing robust list syscalls for emulation layers like FEX-Emu",
-    "First update since late November; rebased on mainline with VDSO adaptations",
-    "Work supports Steam Play gaming on ARM64 devices such as Steam Frame"
-   ],
-   "whyItMatters": "Developers working on Linux gaming, ARM64 emulation, or kernel FUTEX code should track these patches as they underpin Valve's ARM64 gaming strategy.",
-   "kind": "news",
-   "imageUrl": "https://www.phoronix.net/image.php?id=2025&image=fex_emu_syscall",
-   "readingMinutes": 2
-  },
-  {
-   "id": "24f23da66346c67a",
-   "sourceId": "linuxiac",
-   "title": "Shelly 3.1.5 Arch Linux Package Manager Expands AUR Support",
-   "url": "https://linuxiac.com/shelly-3-1-5-arch-linux-package-manager-expands-aur-support/",
-   "author": "Bobby Borisov",
-   "publishedAt": 1790364516000,
-   "firstSeenAt": 1790402402904,
-   "tags": [
-    "arch-linux",
-    "aur",
-    "package-manager",
-    "release",
-    "distro",
-    "news"
-   ],
-   "brief": "Shelly 3.1.5, a graphical Arch package manager covering repos, AUR, Flatpaks, and AppImages, adds an optional atoll-powered AUR browser with sorting and search. It also introduces a `shelly build --install` workflow, a `repo-db` command for pacman-compatible databases, and numerous build, search, and error-handling…",
-   "keyPoints": [
-    "Optional atoll-based AUR browser with pagination, sorting, and multiple search modes",
-    "New `shelly build --install` and `shelly repo-db` command families",
-    "Fixes for repository search, AUR `--needed` support, and corrupt config recovery"
-   ],
-   "whyItMatters": "Arch Linux users who manage packages graphically gain broader AUR tooling and more reliable builds in a single app.",
-   "kind": "release",
-   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/09/shelly315.jpg",
-   "readingMinutes": 3
-  },
-  {
-   "id": "c6ce21d970fcb9b8",
-   "sourceId": "linuxiac",
-   "title": "Nginx Proxy Manager 2.16 Adds Built-In Log Viewer",
-   "url": "https://linuxiac.com/nginx-proxy-manager-2-16-adds-built-in-log-viewer/",
-   "author": "Bobby Borisov",
-   "publishedAt": 1790363999000,
-   "firstSeenAt": 1790402402904,
-   "tags": [
-    "nginx",
-    "self-hosting",
-    "security",
-    "release",
-    "distro",
-    "news"
-   ],
-   "brief": "Nginx Proxy Manager 2.16 adds a web-based log viewer and per-path access lists for proxy hosts. Security changes include token invalidation after password changes, local 2FA QR generation, and removal of DNS credentials after Certbot runs. A Certbot update may break some DNS plugins.",
-   "keyPoints": [
-    "New integrated log viewer and per-path access lists in the web UI",
-    "Security fixes: token invalidation, local 2FA QR codes, DNS credential cleanup",
-    "Certbot update may break existing DNS plugins; check setups after upgrading"
-   ],
-   "whyItMatters": "Self-hosters using Nginx Proxy Manager for reverse proxying and TLS should review the release, especially if they rely on DNS-based certificate validation.",
-   "kind": "release",
-   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/09/npm216.jpg",
-   "readingMinutes": 2
-  },
-  {
-   "id": "686303a45769c30c",
-   "sourceId": "9to5linux",
-   "title": "Shelly 3.1.5 GUI Package Manager for Arch Linux Adds Atoll-Powered AUR Browser",
-   "url": "https://9to5linux.com/?p=33739",
-   "author": "",
-   "publishedAt": 1790363518000,
-   "firstSeenAt": 1790402402904,
-   "tags": [
-    "arch-linux",
-    "aur",
-    "package-manager",
-    "distro",
-    "release"
-   ],
-   "brief": "Shelly 3.1.5, a graphical package manager for Arch Linux, is now available. It adds an Atoll-powered AUR browser, a build-and-install command, and native tools for maintaining your own package repositories.",
-   "keyPoints": [],
-   "whyItMatters": "Arch Linux users who prefer GUI tools for AUR packages and personal repositories may find this update useful.",
-   "kind": "release",
-   "imageUrl": null,
-   "readingMinutes": 0
-  },
-  {
-   "id": "f943406659a948f9",
-   "sourceId": "phoronix",
-   "title": "GDB 18.1 Debugger Brings Better Windows Support",
-   "url": "https://www.phoronix.com/news/GNU-Debugger-GDB-18.1",
-   "author": "Michael Larabel",
-   "publishedAt": 1790354872000,
-   "firstSeenAt": 1790402402904,
-   "tags": [
-    "gdb",
-    "debugger",
-    "windows",
-    "gnu",
-    "hardware",
-    "performance"
-   ],
-   "brief": "GDB 18.1 is out with major Windows improvements: native TLS variable support, non-stop mode on Windows 10 and later, scheduler locking, better Windows Terminal console support, and consistent forward-slash filenames.",
-   "keyPoints": [
-    "Windows gains native TLS variables, non-stop mode, and scheduler locking",
-    "Adds AArch64 MinGW target and FPMR support on AArch64",
-    "New commands: \"save history\", \"set/show/unset local-environment\", \"info proc environ\""
-   ],
-   "whyItMatters": "Developers who debug C/C++, Rust, or other languages on Windows get a substantially improved GNU Debugger experience.",
-   "kind": "release",
-   "imageUrl": "https://www.phoronix.net/image.php?id=ryzen-ai-max-390-windows-linux&image=ai_max_390_windows",
-   "readingMinutes": 2
-  },
-  {
-   "id": "c1e4f38cbe1db44a",
-   "sourceId": "lwn",
-   "title": "How KDE got funding to add enterprise features",
-   "url": "https://lwn.net/Articles/1096245/",
-   "author": "jzb",
-   "publishedAt": 1790351995000,
-   "firstSeenAt": 1790402402904,
-   "tags": [
-    "kde",
-    "funding",
-    "kernel",
-    "deep"
-   ],
-   "brief": "The Sovereign Tech Agency is investing nearly €1.3 million in KDE through 2027. At Akademy 2026, Nate Graham and Kevin Ottens explained how the funding was secured and offered tips for other projects seeking similar support.",
-   "keyPoints": [],
-   "whyItMatters": "",
-   "kind": "news",
-   "imageUrl": null,
-   "readingMinutes": 0
   }
  ]
 }
