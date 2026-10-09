@@ -2,6 +2,919 @@
  "version": 1,
  "articles": [
   {
+   "id": "dc0d0ef16e43c0a1",
+   "sourceId": "9to5linux",
+   "title": "Ventoy 1.1.18 Adds Experimental Support for SteamOS Recovery Images",
+   "url": "https://9to5linux.com/ventoy-1-1-18-adds-experimental-support-for-steamos-recovery-images",
+   "author": "Marcus Nestor",
+   "publishedAt": 1791524719000,
+   "firstSeenAt": 1791525604776,
+   "tags": [
+    "ventoy",
+    "usb",
+    "steamos",
+    "release",
+    "distro"
+   ],
+   "brief": "Ventoy 1.1.18, the open-source bootable USB tool, is out with experimental support for SteamOS recovery images and an improved Linux remount feature.",
+   "keyPoints": [],
+   "whyItMatters": "Users who boot multiple Linux or SteamOS images from one USB stick should check this update.",
+   "kind": "release",
+   "imageUrl": null,
+   "readingMinutes": 0
+  },
+  {
+   "id": "16635a196a146ff2",
+   "sourceId": "9to5linux",
+   "title": "Calibre 9.16 E-Book Manager Improves Read Aloud, PDF Input, and Kobo Support",
+   "url": "https://9to5linux.com/calibre-9-16-e-book-manager-improves-read-aloud-pdf-input-and-kobo-support",
+   "author": "Marcus Nestor",
+   "publishedAt": 1791517462000,
+   "firstSeenAt": 1791525604776,
+   "tags": [
+    "calibre",
+    "ebooks",
+    "release",
+    "open-source",
+    "distro"
+   ],
+   "brief": "Calibre 9.16, the open-source e-book manager, is now available with high-quality Kokoro voices for Read Aloud and support for reading images in the AVIF format. The release also includes improvements to PDF input and Kobo device support.",
+   "keyPoints": [],
+   "whyItMatters": "Calibre users who rely on text-to-speech, PDF conversion, or Kobo devices will benefit from this update.",
+   "kind": "release",
+   "imageUrl": null,
+   "readingMinutes": 0
+  },
+  {
+   "id": "8455d033f4f68b63",
+   "sourceId": "phoronix",
+   "title": "New AI Agent Resources Proposed For The Linux Kernel",
+   "url": "https://www.phoronix.com/news/Linux-AI-Agent-Resources",
+   "author": "Michael Larabel",
+   "publishedAt": 1791506477000,
+   "firstSeenAt": 1791525604776,
+   "tags": [
+    "kernel",
+    "ai",
+    "development",
+    "hardware",
+    "performance"
+   ],
+   "brief": "Sasha Levin of NVIDIA proposed new AI agent resources for the upstream Linux kernel: a directory of skills, prompts, and other resources for coding assistants. The initial skill would let LLMs automatically determine the \"Fixes: \" tag on patches, identifying the commit a patch fixes.",
+   "keyPoints": [
+    "Proposed as an agents/ directory in the kernel source tree, or under documentation",
+    "First skill: LLMs determine \"Fixes: \" tags for new patches automatically",
+    "Levin previously proposed AGENTS.md, AI merge-conflict resolution, and AI backporting"
+   ],
+   "whyItMatters": "Kernel developers and maintainers should care, as this could standardize how AI coding assistants interact with kernel workflows like patch tagging.",
+   "kind": "news",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=linux_ai_resources",
+   "readingMinutes": 2
+  },
+  {
+   "id": "3326251a13bfbc22",
+   "sourceId": "phoronix",
+   "title": "Valve's VK_AMD_anti_lag support lands in RADV driver for Mesa 26.3",
+   "url": "https://www.phoronix.com/news/Mesa-26.3-RADV-VK_AMD_anti_lag",
+   "author": "Michael Larabel",
+   "publishedAt": 1791505413000,
+   "firstSeenAt": 1791525604776,
+   "tags": [
+    "mesa",
+    "vulkan",
+    "amd",
+    "gaming",
+    "hardware",
+    "performance"
+   ],
+   "brief": "Valve-contributed VK_AMD_anti_lag support has been merged into Mesa's Radeon RADV driver for the Mesa 26.3 release. It replaces Mesa's earlier implicit-layer implementation with a new generic vk_frame_pacer framework, reducing input-to-screen latency for AMD Linux gamers.",
+   "keyPoints": [
+    "VK_AMD_anti_lag paces the CPU so it stays close to the GPU, minimizing input latency",
+    "New generic vk_frame_pacer framework can be shared across Mesa Vulkan drivers",
+    "Framework could also support NVIDIA's VK_NV_low_latency_2 extension"
+   ],
+   "whyItMatters": "AMD Linux gamers and Vulkan developers get lower-latency gaming and a reusable frame-pacing base for future latency extensions.",
+   "kind": "news",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=radv_anti_lag",
+   "readingMinutes": 2
+  },
+  {
+   "id": "841a680c2f0c9bc1",
+   "sourceId": "linuxiac",
+   "title": "Flathub Reverses AI-Generated App Ban, Now Requires Disclosure",
+   "url": "https://linuxiac.com/flathub-reverses-ai-generated-app-ban-now-requires-disclosure/",
+   "author": "Bobby Borisov",
+   "publishedAt": 1791498320000,
+   "firstSeenAt": 1791525604776,
+   "tags": [
+    "flathub",
+    "flatpak",
+    "ai",
+    "policy",
+    "distro",
+    "news"
+   ],
+   "brief": "Flathub has dropped its May ban on AI-generated content in Flatpak apps, replacing it with a disclosure requirement covering code, documentation, and packaging. Reviewers can still reject apps based on the amount of AI content, and manifests remain strictly AI-free.",
+   "keyPoints": [
+    "AI-generated code, docs, and packaging allowed if disclosed with extent identified",
+    "Flathub manifests must never contain AI-generated or AI-assisted content",
+    "AI agents banned from opening pull requests, commit messages, and review comments"
+   ],
+   "whyItMatters": "Flatpak app developers and packagers need to know the new disclosure rules and restrictions to avoid rejection or bans.",
+   "kind": "news",
+   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/10/flathub-reverse-ai-ban.jpg",
+   "readingMinutes": 2
+  },
+  {
+   "id": "15e0448debc1b974",
+   "sourceId": "linuxiac",
+   "title": "PhotoPrism update adds ONNX image recognition and NVIDIA GPU support",
+   "url": "https://linuxiac.com/photoprism-ai-powered-photos-app-gets-nvidia-gpu-support/",
+   "author": "Bobby Borisov",
+   "publishedAt": 1791488826000,
+   "firstSeenAt": 1791525604776,
+   "tags": [
+    "self-hosting",
+    "open-source",
+    "ai",
+    "photo-management",
+    "distro",
+    "news"
+   ],
+   "brief": "PhotoPrism's October 2026 release overhauls its AI features: image classification and NSFW detection now use ONNX models, and NVIDIA GPUs can run all built-in models. Face recognition, Insta360 support, backups, and WebDAV syncing also get improvements.",
+   "keyPoints": [
+    "New ONNX classification model improves accuracy, especially for wide photos",
+    "All built-in AI models can now run on supported NVIDIA GPUs",
+    "Face clusters auto-named when all matches agree"
+   ],
+   "whyItMatters": "Self-hosters running PhotoPrism should read the upgrade notes, since the ONNX switch deprecates custom TensorFlow models.",
+   "kind": "release",
+   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/10/photoprism-oct-2026.jpg",
+   "readingMinutes": 2
+  },
+  {
+   "id": "c82785010983bf63",
+   "sourceId": "omgubuntu",
+   "title": "PhotoCraft is an open-source, AI-built Photoshop clone written in Rust",
+   "url": "https://www.omgubuntu.co.uk/2026/10/artcraft-free-photoshop-ai-clone",
+   "author": "Joey Sneddon",
+   "publishedAt": 1791487507000,
+   "firstSeenAt": 1791525604776,
+   "tags": [
+    "photoshop",
+    "rust",
+    "ai",
+    "image-editing",
+    "ubuntu",
+    "desktop"
+   ],
+   "brief": "PhotoCraft is a cross-platform, open-source image editor built with AI coding tools as a clean-room reimplementation of Photoshop. It mimics Photoshop's UI, shortcuts, and PSD support, but the author finds its output and behavior fall short of the real thing, making it unsuitable for professionals for now.",
+   "keyPoints": [
+    "Rust-based alpha with layers, masks, smart objects, 34 tools, 27 blend modes, PSD support",
+    "GPU-accelerated via Vulkan, Metal, DX12, or WebGPU; includes hooks for AI agents",
+    "Free alpha builds for Linux, macOS, Windows; development pace is rapid with 17k GitHub stars"
+   ],
+   "whyItMatters": "Linux users frustrated with Adobe subscriptions may find a familiar Photoshop alternative worth watching, though pros should temper expectations.",
+   "kind": "news",
+   "imageUrl": "https://www.omgubuntu.co.uk/wp-content/uploads/2026/10/not-photoshop.webp",
+   "readingMinutes": 4
+  },
+  {
+   "id": "4f8e036f4c0347ef",
+   "sourceId": "9to5linux",
+   "title": "Q4OS 6.10 \"Andromeda\" Is Out with KDE Plasma 6.3.6 and Trinity Desktop 14.1.5",
+   "url": "https://9to5linux.com/q4os-6-10-andromeda-is-out-with-kde-plasma-6-3-6-and-trinity-desktop-14-1-5",
+   "author": "Marcus Nestor",
+   "publishedAt": 1791482723000,
+   "firstSeenAt": 1791525604776,
+   "tags": [
+    "q4os",
+    "debian",
+    "kde-plasma",
+    "trinity-desktop",
+    "distro",
+    "release"
+   ],
+   "brief": "Q4OS 6.10 is now available for download, based on Debian 13.7 \"Trixie\". It ships with a choice of KDE Plasma 6.3.6 or Trinity Desktop Environment 14.1.5.",
+   "keyPoints": [],
+   "whyItMatters": "Q4OS users and those wanting a lightweight Debian-based desktop with KDE or Trinity should note the update.",
+   "kind": "release",
+   "imageUrl": null,
+   "readingMinutes": 0
+  },
+  {
+   "id": "774b06a24d6e8415",
+   "sourceId": "linuxiac",
+   "title": "Raspberry Pi Imager 2.0.12 Brings WPA3 Fixes, Safer Image Writing",
+   "url": "https://linuxiac.com/raspberry-pi-imager-2-0-12-brings-wpa3-fixes-safer-image-writing/",
+   "author": "Bobby Borisov",
+   "publishedAt": 1791482692000,
+   "firstSeenAt": 1791525604776,
+   "tags": [
+    "raspberry-pi",
+    "release",
+    "linux",
+    "security",
+    "distro",
+    "news"
+   ],
+   "brief": "Raspberry Pi Imager 2.0.12 is a maintenance update that fixes false success messages on canceled writes, detects incomplete downloads, and corrects WPA3 Wi-Fi key storage. It also improves the network installer, Linux AppImage compatibility, and security when running with elevated privileges.",
+   "keyPoints": [
+    "Canceled writes no longer falsely report success; truncated images are now detected",
+    "Stores actual WPA3 passphrase instead of unusable derived key",
+    "Network installer retries failed downloads and handles incorrect system clocks"
+   ],
+   "whyItMatters": "Raspberry Pi users who flash SD cards or configure Wi-Fi and remote access should update to avoid failed writes and WPA3 connection problems.",
+   "kind": "release",
+   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/10/rpi2012.jpg",
+   "readingMinutes": 2
+  },
+  {
+   "id": "af72b31e2bbee219",
+   "sourceId": "linuxiac",
+   "title": "COSMIC Desktop 1.10 Released with Launcher and Compositor Updates",
+   "url": "https://linuxiac.com/cosmic-desktop-1-10-released-with-launcher-and-compositor-updates/",
+   "author": "Bobby Borisov",
+   "publishedAt": 1791481420000,
+   "firstSeenAt": 1791525604776,
+   "tags": [
+    "cosmic",
+    "system76",
+    "rust",
+    "wayland",
+    "distro",
+    "news"
+   ],
+   "brief": "System76 has released COSMIC Desktop 1.10, updating its Rust-based, Wayland-native desktop environment. Highlights include GPU-accelerated rendering in the Launcher, a screenshot gallery in COSMIC Store, initial drawing tablet support in Settings, and compositor fixes for cursor handling.",
+   "keyPoints": [
+    "Launcher now uses GPU-accelerated wGPU rendering, fixing software-rendering slowdowns",
+    "Settings gains initial drawing tablet configuration, including per-display mapping",
+    "Compositor fixes cursor hiding while typing, image copying, and tiled window resizing"
+   ],
+   "whyItMatters": "COSMIC users and those watching System76's Rust-based desktop should note the performance and hardware-support improvements.",
+   "kind": "release",
+   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/10/cosmic-desktop-110.jpg",
+   "readingMinutes": 2
+  },
+  {
+   "id": "74cf2151ce854b29",
+   "sourceId": "linuxiac",
+   "title": "GStreamer 1.28.8 Released with Streaming, Audio, and Video Fixes",
+   "url": "https://linuxiac.com/gstreamer-1-28-8-multimedia-framework-gets-security-fixes/",
+   "author": "Bobby Borisov",
+   "publishedAt": 1791480696000,
+   "firstSeenAt": 1791525604776,
+   "tags": [
+    "gstreamer",
+    "multimedia",
+    "streaming",
+    "release",
+    "distro",
+    "news"
+   ],
+   "brief": "GStreamer 1.28.8, the eighth maintenance update in the 1.28 series, fixes a regression in adaptivedemux2 affecting HLS and DASH playback, resolves FLAC seeking issues, and corrects VA-API alpha blending on Intel graphics. The team recommends all 1.28.x users upgrade.",
+   "keyPoints": [
+    "Fixes adaptivedemux2 regression that broke HLS and DASH playback",
+    "Resolves FLAC seeking regression plus RTP and RTSP handling fixes",
+    "Fixes VA-API alpha blending on Intel and AMD AMF AV1 keyframes"
+   ],
+   "whyItMatters": "Users and distributors shipping GStreamer 1.28.x should upgrade to regain reliable streaming playback and stability.",
+   "kind": "release",
+   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/10/gstreamet1288.jpg",
+   "readingMinutes": 2
+  },
+  {
+   "id": "e67029c74916d8d8",
+   "sourceId": "9to5linux",
+   "title": "GStreamer 1.28.8 Multimedia Framework Improves the AMD AMF AV1 Video Encoder",
+   "url": "https://9to5linux.com/gstreamer-1-28-8-multimedia-framework-improves-the-amd-amf-av1-video-encoder",
+   "author": "Marcus Nestor",
+   "publishedAt": 1791480666000,
+   "firstSeenAt": 1791525604776,
+   "tags": [
+    "gstreamer",
+    "multimedia",
+    "amd",
+    "av1",
+    "distro",
+    "release"
+   ],
+   "brief": "GStreamer 1.28.8 is available with improvements to the AMD AMF AV1 video encoder and support for reading AAF AIFF-AIFC audio in the MXF demuxer, among other changes.",
+   "keyPoints": [],
+   "whyItMatters": "Linux users and developers relying on GStreamer for AMD hardware AV1 encoding should check this update.",
+   "kind": "release",
+   "imageUrl": null,
+   "readingMinutes": 0
+  },
+  {
+   "id": "e31a7e465627873e",
+   "sourceId": "9to5linux",
+   "title": "Raspberry Pi Imager 2.0.12 Released with Sequential Writes via io_uring on Linux",
+   "url": "https://9to5linux.com/raspberry-pi-imager-2-0-12-released-with-sequential-writes-via-io_uring-on-linux",
+   "author": "Marcus Nestor",
+   "publishedAt": 1791479219000,
+   "firstSeenAt": 1791525604776,
+   "tags": [
+    "raspberry-pi",
+    "linux",
+    "tools",
+    "distro",
+    "release"
+   ],
+   "brief": "Raspberry Pi Imager 2.0.12 is out, adding sequential writes via io_uring on Linux plus improvements to networking, write reliability, security, and the embedded installer experience.",
+   "keyPoints": [],
+   "whyItMatters": "Raspberry Pi users who flash SD cards on Linux may see faster, more reliable writes.",
+   "kind": "release",
+   "imageUrl": null,
+   "readingMinutes": 0
+  },
+  {
+   "id": "616c2e372808a5c8",
+   "sourceId": "phoronix",
+   "title": "EXT4 Deprecates Its Journaled \"data=journal\" Mode",
+   "url": "https://www.phoronix.com/news/EXT4-Deprecates-Journal-Mode",
+   "author": "Michael Larabel",
+   "publishedAt": 1791479041000,
+   "firstSeenAt": 1791525604776,
+   "tags": [
+    "ext4",
+    "kernel",
+    "filesystems",
+    "hardware",
+    "performance"
+   ],
+   "brief": "EXT4 has deprecated its data=journal mount mode, with removal planned for early 2028 after the 2027 Linux LTS kernel. The mode writes all data and metadata to the journal first, boosting crash safety but hurting write performance and disabling delayed allocation and Direct I/O.",
+   "keyPoints": [
+    "data=journal mode deprecated via Git merge for Linux 7.3",
+    "Removal planned for early 2028, after the 2027 LTS kernel",
+    "Mode trades write performance for stronger data integrity"
+   ],
+   "whyItMatters": "Anyone relying on EXT4's data=journal mode for maximum data safety should plan a migration before its 2028 removal.",
+   "kind": "news",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=ext4_journal_deprecated",
+   "readingMinutes": 2
+  },
+  {
+   "id": "63400231639bbd68",
+   "sourceId": "lwn",
+   "title": "An update on Rust's project goals",
+   "url": "https://lwn.net/Articles/1098617/",
+   "author": "daroc",
+   "publishedAt": 1791478830000,
+   "firstSeenAt": 1791525604776,
+   "tags": [
+    "rust",
+    "linux",
+    "kernel",
+    "deep"
+   ],
+   "brief": "At Kangrejos 2026, Rust Foundation program manager Tomáš Šedovič explained how the Rust project organizes, tracks, and amends its goals, aimed at Rust for Linux developers. The Rust for Linux project has inspired several current Rust project goals.",
+   "keyPoints": [],
+   "whyItMatters": "Rust for Linux developers and Rust contributors get an inside view of how project goals are set and managed.",
+   "kind": "news",
+   "imageUrl": null,
+   "readingMinutes": 0
+  },
+  {
+   "id": "13e73d551d3acc18",
+   "sourceId": "phoronix",
+   "title": "COSMIC Epoch 1.10 Released With GPU-Accelerated Launcher Rendering",
+   "url": "https://www.phoronix.com/news/COSMIC-Epoch-1.10",
+   "author": "Michael Larabel",
+   "publishedAt": 1791477799000,
+   "firstSeenAt": 1791525604776,
+   "tags": [
+    "cosmic",
+    "system76",
+    "pop-os",
+    "desktop",
+    "hardware",
+    "performance"
+   ],
+   "brief": "System76 released COSMIC Epoch 1.10, the latest update to its Rust-based desktop for Pop!_OS. The COSMIC Launcher now uses GPU rendering via the WGPU code path by default, fixing reports of extreme slowness with the software renderer.",
+   "keyPoints": [
+    "Launcher switches to GPU WGPU rendering by default to fix ~1fps scrolling",
+    "Drawing tablets can now be mapped to specific displays",
+    "Initial Setup shows WiFi page only if a WiFi adapter is present"
+   ],
+   "whyItMatters": "COSMIC and Pop!_OS users get a noticeably faster launcher plus smaller usability and compositor fixes.",
+   "kind": "release",
+   "imageUrl": "https://www.phoronix.net/image.php?id=popos-2404-beta&image=popos_2404_4",
+   "readingMinutes": 3
+  },
+  {
+   "id": "0a91fc4a769bd876",
+   "sourceId": "9to5linux",
+   "title": "COSMIC 1.10 Adds Support for Mapping Drawing Tablets to Specific Displays",
+   "url": "https://9to5linux.com/cosmic-1-10-adds-support-for-mapping-drawing-tablets-to-specific-displays",
+   "author": "Marcus Nestor",
+   "publishedAt": 1791476742000,
+   "firstSeenAt": 1791525604776,
+   "tags": [
+    "cosmic",
+    "desktop",
+    "linux",
+    "distro",
+    "release"
+   ],
+   "brief": "COSMIC 1.10 desktop environment is now available, adding support for mapping drawing tablets to specific displays and for setting environment variables via ~/.config/environment.d.",
+   "keyPoints": [],
+   "whyItMatters": "COSMIC users with drawing tablets or custom environment setups gain per-display tablet mapping and environment.d support.",
+   "kind": "release",
+   "imageUrl": null,
+   "readingMinutes": 0
+  },
+  {
+   "id": "3eaad800ec5b6da8",
+   "sourceId": "omgubuntu",
+   "title": "Ubuntu websites offline due to 'sustained' DDoS attack [Resolved]",
+   "url": "https://www.omgubuntu.co.uk/2026/10/ubuntu-website-ddos-part-2",
+   "author": "Joey Sneddon",
+   "publishedAt": 1791475719000,
+   "firstSeenAt": 1791525604776,
+   "tags": [
+    "ubuntu",
+    "canonical",
+    "security",
+    "ddos",
+    "desktop"
+   ],
+   "brief": "Canonical's main websites, including ubuntu.com and canonical.com, went offline on 8 October 2026 due to a sustained DDoS attack, the second major incident this year. Unlike May's attack, PPAs, Launchpad, the Snap Store, and Ubuntu SSO remained operational.",
+   "keyPoints": [
+    "Main Ubuntu and Canonical domains hit by sustained DDoS, intermittently unavailable",
+    "Security API and notices pages also affected; no ETA given for restoration",
+    "PPAs, Launchpad, Snap Store, CD images, and SSO stayed operational"
+   ],
+   "whyItMatters": "Ubuntu users and developers relying on Canonical's websites for documentation, security notices, or blogs should know which services were affected and where to monitor status.",
+   "kind": "news",
+   "imageUrl": "https://www.omgubuntu.co.uk/wp-content/uploads/2026/09/Ubuntu-Security-Bug.webp",
+   "readingMinutes": 2
+  },
+  {
+   "id": "ad89f2a745f68dc9",
+   "sourceId": "9to5linux",
+   "title": "Blender 5.3 Enters Public Beta with Vulkan Backend by Default on Linux",
+   "url": "https://9to5linux.com/blender-5-3-enters-public-beta-testing-with-vulkan-backend-by-default-on-linux",
+   "author": "Marcus Nestor",
+   "publishedAt": 1791475088000,
+   "firstSeenAt": 1791525604776,
+   "tags": [
+    "blender",
+    "vulkan",
+    "linux",
+    "graphics",
+    "distro",
+    "release"
+   ],
+   "brief": "Blender 5.3 is now available for public beta testing. It makes the Vulkan backend the default on Linux and adds support for panoramic cameras, among other changes.",
+   "keyPoints": [],
+   "whyItMatters": "Linux-based 3D artists and Blender users should know Vulkan is now the default graphics backend in this beta.",
+   "kind": "news",
+   "imageUrl": null,
+   "readingMinutes": 0
+  },
+  {
+   "id": "2e63067bdc0f2593",
+   "sourceId": "phoronix",
+   "title": "Ubuntu Suffering From Sustained DDoS Attack",
+   "url": "https://www.phoronix.com/news/Ubuntu-DDoS-October-2026",
+   "author": "Michael Larabel",
+   "publishedAt": 1791474111000,
+   "firstSeenAt": 1791525604776,
+   "tags": [
+    "ubuntu",
+    "canonical",
+    "ddos",
+    "security",
+    "hardware",
+    "performance"
+   ],
+   "brief": "Ubuntu's website, ISO downloads, and related web resources are inoperable due to a confirmed ongoing distributed denial of service attack. Canonical's IT team is working on mitigation, with the incident tracked on the Canonical status page and confirmed on Ubuntu Discourse.",
+   "keyPoints": [
+    "Ubuntu website and ISO downloads are down due to a DDoS attack",
+    "Canonical's IT team is actively mitigating the attack",
+    "Incident tracked on Canonical status page and Ubuntu Discourse"
+   ],
+   "whyItMatters": "Anyone needing Ubuntu downloads or web resources today will be affected and should monitor Canonical's status page.",
+   "kind": "news",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=ubuntu_down",
+   "readingMinutes": 1
+  },
+  {
+   "id": "d994a01080147750",
+   "sourceId": "phoronix",
+   "title": "Ubuntu 26.10 Shows I/O Performance Gains Over 26.04 LTS on AMD EPYC Turin",
+   "url": "https://www.phoronix.com/review/ubuntu-2610-amd-epyc",
+   "author": "Michael Larabel",
+   "publishedAt": 1791473331000,
+   "firstSeenAt": 1791525604776,
+   "tags": [
+    "ubuntu",
+    "benchmarks",
+    "amd",
+    "storage",
+    "hardware",
+    "performance"
+   ],
+   "brief": "Phoronix benchmarks Ubuntu 26.10 against Ubuntu 26.04 LTS on a 64-core AMD EPYC 9655P \"Turin\" server and reports notable I/O performance wins. The comparison pairs 26.04's Linux 7.0 kernel and GCC 15.2 against 26.10's Linux 7.3 and GCC 15.3.",
+   "keyPoints": [
+    "Tested on EPYC 9655P with 768GB DDR5 and a Micron 7450 MAX NVMe SSD",
+    "Ubuntu 26.10 ships Linux 7.3 kernel versus 7.0 in 26.04 LTS",
+    "Full benchmark results not included in available text"
+   ],
+   "whyItMatters": "Server administrators weighing the interim Ubuntu release over the LTS on new AMD EPYC hardware may find the I/O gains relevant.",
+   "kind": "deep-dive",
+   "imageUrl": "https://www.phoronix.net/image.php?id=ubuntu-2610-amd-epyc&image=ubuntu_2610_epyc_1",
+   "readingMinutes": 2
+  },
+  {
+   "id": "4038ca5174e8e0f7",
+   "sourceId": "itsfoss",
+   "title": "FOSS Weekly #26.41: Open Source Funding Trouble, Rust in Ubuntu, and More",
+   "url": "https://feed.itsfoss.com/link/24361/17492189/foss-weekly-26-41",
+   "author": "Abhishek Prakash",
+   "publishedAt": 1791473236000,
+   "firstSeenAt": 1791525604776,
+   "tags": [
+    "open-source",
+    "ubuntu",
+    "security",
+    "rust",
+    "desktop",
+    "tutorial"
+   ],
+   "brief": "This week's roundup covers DigitalOcean quietly ending infrastructure credits for open source projects, Gentoo seeking new sponsors, and yt-dlp landing on the EU piracy watchlist. Also featured: Sequoia PGP arriving in Ubuntu 26.10, Red Hat's Lightwell Java security tool, and assorted Linux tips and tools.",
+   "keyPoints": [
+    "DigitalOcean ended its open source infrastructure credit program; Gentoo seeks new sponsors",
+    "IFPI submitted yt-dlp to the EU piracy watchlist, naming four maintainers",
+    "Sequoia PGP, a Rust-based OpenPGP tool, ships in Ubuntu 26.10 alongside GnuPG"
+   ],
+   "whyItMatters": "Linux and open source users get a quick digest of funding shifts, legal threats to tools like yt-dlp, and new software worth trying.",
+   "kind": "news",
+   "imageUrl": "https://itsfoss.com/content/images/2026/10/foss-weekly-1.webp",
+   "readingMinutes": 5
+  },
+  {
+   "id": "5cb190e8a639b061",
+   "sourceId": "phoronix",
+   "title": "Secretive Rosaic Labs hires veteran Linux x86 developer H. Peter Anvin",
+   "url": "https://www.phoronix.com/news/H-Peter-Anvin-Rosaic-Labs",
+   "author": "Michael Larabel",
+   "publishedAt": 1791470035000,
+   "firstSeenAt": 1791525604776,
+   "tags": [
+    "kernel",
+    "x86",
+    "hardware",
+    "intel",
+    "performance"
+   ],
+   "brief": "H. Peter Anvin, Linux x86 co-maintainer and SYSLINUX creator, has joined secretive semiconductor startup Rosaic Labs after reportedly being laid off from Intel this summer. His affiliation was confirmed via an 'Acked-by: H. Peter Anvin (Rosaic)' sign-off on the kernel mailing list.",
+   "keyPoints": [
+    "Anvin worked on Linux since 1992 and at Intel since 2008",
+    "Confirmed on LKML while acking patches removing the x32 ABI",
+    "Rosaic reportedly has Intel Atom RTL access; hints at future x86 chips"
+   ],
+   "whyItMatters": "Kernel developers and x86 watchers should care, since the hire signals serious Linux support plans for Rosaic's future processors.",
+   "kind": "news",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=hpa_rosaic_1",
+   "readingMinutes": 2
+  },
+  {
+   "id": "ab65a16f084a0ae8",
+   "sourceId": "lwn",
+   "title": "The [vx]swap showdown: competing fixes for swap cache inefficiency",
+   "url": "https://lwn.net/Articles/1098399/",
+   "author": "corbet",
+   "publishedAt": 1791467007000,
+   "firstSeenAt": 1791525604776,
+   "tags": [
+    "kernel",
+    "memory-management",
+    "swap",
+    "deep"
+   ],
+   "brief": "The mainline kernel still ties swap cache slots directly to persistent swap file space, causing inefficient resource use. Two competing solutions exist, but neither is ready to merge and developers disagree on the best path forward.",
+   "keyPoints": [],
+   "whyItMatters": "Kernel developers and memory-management watchers should care, as the outcome affects swap efficiency in Linux.",
+   "kind": "deep-dive",
+   "imageUrl": null,
+   "readingMinutes": 0
+  },
+  {
+   "id": "ad3a13383c0be83a",
+   "sourceId": "phoronix",
+   "title": "Nova Rust Driver Progresses Toward Replacing NVIDIA's Out-of-Tree Kernel Module",
+   "url": "https://www.phoronix.com/news/Nova-Driver-LPC-2026",
+   "author": "Michael Larabel",
+   "publishedAt": 1791466177000,
+   "firstSeenAt": 1791525604776,
+   "tags": [
+    "nvidia",
+    "kernel",
+    "rust",
+    "drivers",
+    "hardware",
+    "performance"
+   ],
+   "brief": "At LPC2026, NVIDIA and Red Hat engineers presented the Nova driver, a Rust-based open-source NVIDIA kernel driver intended long-term to replace both Nouveau and NVIDIA's out-of-tree Open RM modules.",
+   "keyPoints": [
+    "Nova aims to eventually replace NVIDIA's out-of-tree Open RM kernel modules",
+    "GSP firmware boots on Turing through Blackwell; not yet end-user ready",
+    "Not API-compatible with existing driver interfaces; user-space must adapt"
+   ],
+   "whyItMatters": "Linux users and driver developers should watch Nova as NVIDIA's path to a fully upstream, Rust-based kernel driver.",
+   "kind": "news",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=nova_lpc_1",
+   "readingMinutes": 3
+  },
+  {
+   "id": "0fdae28bf5294673",
+   "sourceId": "lwn",
+   "title": "Security updates for Thursday",
+   "url": "https://lwn.net/Articles/1099388/",
+   "author": "jzb",
+   "publishedAt": 1791465060000,
+   "firstSeenAt": 1791525604776,
+   "tags": [
+    "security",
+    "linux",
+    "kernel",
+    "deep"
+   ],
+   "brief": "LWN's daily roundup lists security updates from AlmaLinux, Debian, Fedora, Mageia, Oracle, Slackware, SUSE, and Ubuntu. Notable patches cover kernels, Firefox, Chromium, glibc, ghostscript, sudo, and xz-utils across multiple distribution releases.",
+   "keyPoints": [
+    "Kernel updates from AlmaLinux, Oracle, and Fedora",
+    "Browser fixes for Firefox and Chromium",
+    "Ubuntu patches sudo, erlang, lxml, and poppler"
+   ],
+   "whyItMatters": "System administrators and users of these distributions should check for applicable patches.",
+   "kind": "news",
+   "imageUrl": null,
+   "readingMinutes": 5
+  },
+  {
+   "id": "3747d661b15cd577",
+   "sourceId": "linuxiac",
+   "title": "Microsoft Releases LiteBox 0.1, a Rust-Based Sandboxing Library OS",
+   "url": "https://linuxiac.com/microsoft-releases-litebox-0-1-a-rust-based-sandboxing-library-os/",
+   "author": "Bobby Borisov",
+   "publishedAt": 1791463132000,
+   "firstSeenAt": 1791525604776,
+   "tags": [
+    "rust",
+    "security",
+    "sandboxing",
+    "microsoft",
+    "distro",
+    "news"
+   ],
+   "brief": "Microsoft has open-sourced LiteBox 0.1, a Rust-based Library OS that isolates applications from the host operating system to reduce attack surface. It uses a modular North/South interface design and targets Linux sandboxing, unmodified Linux apps on Windows, and secure environments like AMD SEV-SNP and OP-TEE.",
+   "keyPoints": [
+    "North interface exposes a Rust API inspired by nix and rustix; South connects to the execution platform",
+    "Supports Linux app sandboxing, Linux apps on Windows, AMD SEV-SNP, OP-TEE, and Linux VBS",
+    "MIT-licensed on GitHub, but APIs may change; not stable yet"
+   ],
+   "whyItMatters": "Developers building sandboxed or trusted-execution applications get a new Microsoft-backed, Rust-based isolation layer to evaluate.",
+   "kind": "release",
+   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/10/litebox.jpg",
+   "readingMinutes": 2
+  },
+  {
+   "id": "b094d040c7a0904c",
+   "sourceId": "phoronix",
+   "title": "Patches Updated To Begin Removing The Linux x32 ABI",
+   "url": "https://www.phoronix.com/news/Patches-Removing-Linux-x32-ABI",
+   "author": "Michael Larabel",
+   "publishedAt": 1791461393000,
+   "firstSeenAt": 1791525604776,
+   "tags": [
+    "kernel",
+    "x86",
+    "abi",
+    "deprecation",
+    "hardware",
+    "performance"
+   ],
+   "brief": "New patches from Linutronix engineer Sebastian Andrzej Siewior propose retiring the little-used Linux x32 ABI, starting by marking it as BROKEN in Kconfig. Removal would follow after this year's LTS kernel, expected to be Linux 7.3 or 7.4.",
+   "keyPoints": [
+    "x32 combines 32-bit pointers with x86_64 registers but saw little adoption",
+    "Debian disabled x32 by default over attack-surface concerns; Fedora ships it disabled",
+    "Plan: mark x32 BROKEN, keep it in the 2026 LTS kernel, then remove it"
+   ],
+   "whyItMatters": "Kernel developers and the few x32 users should know the ABI is on a deprecation path with removal planned after the next LTS.",
+   "kind": "news",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=start_removing_x32",
+   "readingMinutes": 3
+  },
+  {
+   "id": "5d560093f171e51d",
+   "sourceId": "phoronix",
+   "title": "Google's Sashiko AI Has Completed 191k Patch Reviews, Cited On Nearly 500 Kernel CVEs",
+   "url": "https://www.phoronix.com/news/Sashiko-Linux-AI-Metrics",
+   "author": "Michael Larabel",
+   "publishedAt": 1791458283000,
+   "firstSeenAt": 1791525604776,
+   "tags": [
+    "kernel",
+    "ai",
+    "google",
+    "security",
+    "hardware",
+    "performance"
+   ],
+   "brief": "At Linux Plumbers Conference 2026, Google engineer Roman Gushchin reported that Sashiko, an open-source agentic AI reviewer for kernel patches, completed over 191k reviews across 99 mailing lists in under a year. More than 1,277 upstream commits and 463 kernel CVEs cite it this year.",
+   "keyPoints": [
+    "Over 191k patch reviews and 19 million autonomous Git lookups since launch",
+    "463 kernel CVEs and 1,277 upstream commits cite Sashiko this year",
+    "Planned: terminal review mode, persistent bug database, self-review dogfooding"
+   ],
+   "whyItMatters": "Kernel developers and maintainers can gauge how AI-assisted review is scaling and contributing to bug and CVE detection.",
+   "kind": "news",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=sashiko_191",
+   "readingMinutes": 2
+  },
+  {
+   "id": "545ae8b306ea1dd7",
+   "sourceId": "phoronix",
+   "title": "SpacemiT RISC-V SoCs gain CPU scaling, thermal, fan support in Linux 7.4",
+   "url": "https://www.phoronix.com/news/SpacemiT-Linux-7.4",
+   "author": "Michael Larabel",
+   "publishedAt": 1791454434000,
+   "firstSeenAt": 1791525604776,
+   "tags": [
+    "risc-v",
+    "kernel",
+    "linux",
+    "hardware",
+    "performance"
+   ],
+   "brief": "A pull request with Device Tree updates brings more upstream Linux 7.4 support for SpacemiT RISC-V hardware, including the RVA23 K3 SoC. Changes enable CPU scaling on more boards, RFKILL, and thermal/fan control via the CTF2301 sensor, plus EEPROM support on the K1.",
+   "keyPoints": [
+    "Thermal and fan control added for CTF2301 sensor on K3 CoM260 module",
+    "CPU scaling enabled for Muse Pi Pro, Orange Pi R2S, and Orange Pi RV2",
+    "K1 SoC gains onboard EEPROM support and MAC address setup from EEPROM"
+   ],
+   "whyItMatters": "Users and developers running SpacemiT-based RISC-V SBCs get better power management and hardware support from the upstream kernel.",
+   "kind": "news",
+   "imageUrl": "https://www.phoronix.net/image.php?id=spacemit-k3-pico-itx&image=spacemit_k3_7",
+   "readingMinutes": 2
+  },
+  {
+   "id": "bb5d382c93486d82",
+   "sourceId": "9to5linux",
+   "title": "KDE Gear 26.08.2 Released with More Improvements for KDE Apps",
+   "url": "https://9to5linux.com/kde-gear-26-08-2-released-with-more-improvements-for-your-favorite-kde-apps",
+   "author": "Marcus Nestor",
+   "publishedAt": 1791454328000,
+   "firstSeenAt": 1791525604776,
+   "tags": [
+    "kde",
+    "release",
+    "distro"
+   ],
+   "brief": "KDE Gear 26.08.2 is out as the second maintenance update to the KDE Gear 26.08 open-source software suite series. It brings additional fixes for KDE applications.",
+   "keyPoints": [],
+   "whyItMatters": "KDE Gear users should know this maintenance release is available for their apps.",
+   "kind": "release",
+   "imageUrl": null,
+   "readingMinutes": 0
+  },
+  {
+   "id": "5655e2da08be0c6e",
+   "sourceId": "linuxiac",
+   "title": "KDE Gear 26.08.2 Released with Kdenlive, NeoChat, and Dolphin Fixes",
+   "url": "https://linuxiac.com/kde-gear-26-08-2-released-with-kdenlive-neochat-and-dolphin-fixes/",
+   "author": "Bobby Borisov",
+   "publishedAt": 1791454164000,
+   "firstSeenAt": 1791525604776,
+   "tags": [
+    "kde",
+    "release",
+    "kdenlive",
+    "dolphin",
+    "distro",
+    "news"
+   ],
+   "brief": "KDE has released Gear 26.08.2, the second maintenance update to the 26.08 application suite. It fixes Kdenlive proxy and NVIDIA encoding bugs, NeoChat crashes, Dolphin readability and zoom issues, and adds fixes across Okular, KMail, KDE Connect, and more. The final 26.08.3 release is scheduled for November 5.",
+   "keyPoints": [
+    "Kdenlive fixes NVIDIA hardware encoding proxy bug and proxy clip crashes",
+    "NeoChat gains stability fixes for threads, polls, and tray notifications",
+    "Dolphin, Okular, KMail, KDE Connect, Konsole, and others receive bug fixes"
+   ],
+   "whyItMatters": "KDE users should watch for this update in their distro repositories, especially if they rely on Kdenlive or NeoChat.",
+   "kind": "release",
+   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/10/kdegear26082.jpg",
+   "readingMinutes": 2
+  },
+  {
+   "id": "94d31a9b81c8c698",
+   "sourceId": "phoronix",
+   "title": "Google Working To Leverage More Compiler Optimizations Within The Linux Kernel",
+   "url": "https://www.phoronix.com/news/Google-More-Kernel-Compiler-Opt",
+   "author": "Michael Larabel",
+   "publishedAt": 1791453456000,
+   "firstSeenAt": 1791525604776,
+   "tags": [
+    "kernel",
+    "performance",
+    "google",
+    "compilers",
+    "hardware"
+   ],
+   "brief": "At LPC 2026 in Prague, Google engineers pushed to upstream PGO support in the Linux kernel despite Linus Torvalds' earlier rejection, and to extend PGO, AutoFDO, and Propeller optimizations to kernel modules. They propose a unified Kbuild interface so modules can easily generate profile data.",
+   "keyPoints": [
+    "Google wants PGO upstreamed and extended to kernel modules, not just the main image",
+    "Torvalds previously rejected PGO from mainline; convincing him remains uncertain",
+    "Proposed unified Kbuild interface would simplify profile data generation for modules"
+   ],
+   "whyItMatters": "Kernel developers and performance engineers should care, since PGO has shown measurable speedups and module support would widen its reach.",
+   "kind": "news",
+   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=google_more_pgo_1",
+   "readingMinutes": 2
+  },
+  {
+   "id": "af2ec851b7095af4",
+   "sourceId": "linuxiac",
+   "title": "GNU Guix Speeds Up Extension Loading and Adds New Community Commands",
+   "url": "https://linuxiac.com/nu-guix-package-manager-improves-extension-loading/",
+   "author": "Bobby Borisov",
+   "publishedAt": 1791452817000,
+   "firstSeenAt": 1791525604776,
+   "tags": [
+    "guix",
+    "package-management",
+    "linux",
+    "gnu",
+    "distro",
+    "news"
+   ],
+   "brief": "GNU Guix now loads extensions via precompiled Guile modules instead of evaluating code at load time, improving performance, and introduces a revised extension directory layout. A new guix-extension-collection package bundles practical commands like explore, removals, compose, toys, and xsearch.",
+   "keyPoints": [
+    "Extensions now load from precompiled Guile modules for faster startup",
+    "New extension directory structure; developers urged to adopt it",
+    "guix-extension-collection adds five commands, tryable via guix shell"
+   ],
+   "whyItMatters": "Guix users and extension developers gain faster command loading and an easier way to discover and share community commands.",
+   "kind": "news",
+   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/10/gnu-guix-new-commands.jpg",
+   "readingMinutes": 2
+  },
+  {
+   "id": "47364e409cf89786",
+   "sourceId": "itsfoss",
+   "title": "Gentoo seeks new infrastructure sponsors after several backers pull out",
+   "url": "https://feed.itsfoss.com/link/24361/17491985/gentoo-infrastructure-sponsors-call",
+   "author": "Sourav Rudra",
+   "publishedAt": 1791451049000,
+   "firstSeenAt": 1791525604776,
+   "tags": [
+    "gentoo",
+    "linux",
+    "infrastructure",
+    "sponsorship",
+    "desktop",
+    "tutorial"
+   ],
+   "brief": "Gentoo, which runs largely on sponsored infrastructure, says multiple long-time sponsors have stopped contributing and has put out a call for replacements. The project lists five ways to help: donated machines, colocation, virtual machines, hosted physical servers, and money.",
+   "keyPoints": [
+    "Several long-term Gentoo sponsors have ended their contributions",
+    "Most urgent need is colocation capacity outside the US",
+    "VM offers need at least 2 vCPUs, 4GB RAM, 25GB storage"
+   ],
+   "whyItMatters": "Gentoo users and organizations with spare hosting capacity should know the distribution's infrastructure is at risk without new sponsors.",
+   "kind": "news",
+   "imageUrl": "https://itsfoss.com/content/images/2026/10/gentoo-infra-sponsor-call-banner.png",
+   "readingMinutes": 3
+  },
+  {
+   "id": "b5d20858ba31ae52",
+   "sourceId": "linuxiac",
+   "title": "Tmux 3.8 Terminal Multiplexer Brings Floating Pane Improvements, Built-In Themes",
+   "url": "https://linuxiac.com/tmux-3-8-terminal-multiplexer-brings-floating-pane-improvements-built-in-themes/",
+   "author": "Bobby Borisov",
+   "publishedAt": 1791447784000,
+   "firstSeenAt": 1791525604776,
+   "tags": [
+    "tmux",
+    "terminal",
+    "release",
+    "open-source",
+    "distro",
+    "news"
+   ],
+   "brief": "Tmux 3.8 is out with major upgrades to floating panes, new modal panes, built-in light and dark themes, and a fuzzy window switcher. The release also redesigns the hooks system around events and fixes numerous rendering bugs, crashes, and memory leaks. Users must fully restart tmux after upgrading.",
+   "keyPoints": [
+    "Floating panes can now be moved, resized, and converted between floating and tiled",
+    "Built-in light/dark themes with automatic selection based on terminal preference",
+    "New fuzzy switcher via Ctrl+B Tab for windows, Shift+Tab for sessions"
+   ],
+   "whyItMatters": "Terminal users and developers who rely on tmux daily gain more flexible pane management and theming without external configuration.",
+   "kind": "release",
+   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/10/tmux38.jpg",
+   "readingMinutes": 2
+  },
+  {
    "id": "eade478c971c1571",
    "sourceId": "phoronix",
    "title": "Steam Beta Defaults Non-Steam Windows Binaries to Proton",
@@ -6768,929 +7681,6 @@
    "kind": "release",
    "imageUrl": null,
    "readingMinutes": 0
-  },
-  {
-   "id": "c83c4dbd1accddaf",
-   "sourceId": "linuxiac",
-   "title": "Git 2.56 Released With Safer Conflict Resolution and Performance Gains",
-   "url": "https://linuxiac.com/git-2-56-released-with-safer-conflict-resolution-and-performance-gains/",
-   "author": "Bobby Borisov",
-   "publishedAt": 1790619332000,
-   "firstSeenAt": 1790661603974,
-   "tags": [
-    "git",
-    "release",
-    "vcs",
-    "performance",
-    "distro",
-    "news"
-   ],
-   "brief": "Git 2.56 adds a safer way to stage conflict resolutions, easier branch cleanup, and new history-editing features. It also delivers notable performance gains on very large repositories, per GitHub, plus improved repacking and bisect behavior.",
-   "keyPoints": [
-    "git add --resolved stages conflict fixes and checks for leftover conflict markers",
-    "New git branch --delete-merged and expanded git refs command",
-    "Large-repo performance gains in merge-base calculations and path-walk repacking"
-   ],
-   "whyItMatters": "Developers, especially those maintaining large repositories, gain safer conflict workflows and faster Git operations.",
-   "kind": "release",
-   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/09/git256.jpg",
-   "readingMinutes": 2
-  },
-  {
-   "id": "3fd0e5b60fb48ce5",
-   "sourceId": "lwn",
-   "title": "Git v2.56.0 released",
-   "url": "https://lwn.net/Articles/1097213/",
-   "author": "jake",
-   "publishedAt": 1790616838000,
-   "firstSeenAt": 1790661603974,
-   "tags": [
-    "git",
-    "release",
-    "version-control",
-    "open-source",
-    "kernel",
-    "deep"
-   ],
-   "brief": "Git 2.56.0 is out with 748 non-merge commits from 104 contributors, 39 of them new. Highlights include new `git refs` subcommands, an experimental `git history drop` subcommand, a `git add --resolved` option, and numerous performance and refactoring improvements.",
-   "keyPoints": [
-    "New `git refs` create, delete, update, and rename subcommands",
-    "`git add --resolved` stages conflict-resolved paths only",
-    "Experimental `git history drop` removes a commit and replays descendants"
-   ],
-   "whyItMatters": "Anyone using Git daily will benefit from the new workflow commands and performance fixes; packagers should note the new release.",
-   "kind": "release",
-   "imageUrl": null,
-   "readingMinutes": 55
-  },
-  {
-   "id": "73efba1102daed8b",
-   "sourceId": "phoronix",
-   "title": "Fedora 45 to Offer Smoother Experience on Snapdragon X1 Laptops",
-   "url": "https://www.phoronix.com/news/Fedora-45-Snapdragon-X1",
-   "author": "Michael Larabel",
-   "publishedAt": 1790611636000,
-   "firstSeenAt": 1790661603974,
-   "tags": [
-    "fedora",
-    "arm",
-    "qualcomm",
-    "kernel",
-    "hardware",
-    "performance"
-   ],
-   "brief": "Fedora 45, due in October, will ship with improved Qualcomm Snapdragon X1 laptop support thanks to upstream kernel work and distribution-level fixes led by Hans de Goede, who moved from Red Hat to Qualcomm last year.",
-   "keyPoints": [
-    "Snapdragon X1 support polished via mainline kernel work and Fedora-level enhancements",
-    "Fedora 45 ships Linux 7.2; X2 support lands in future kernels",
-    "A few hardware-specific workarounds may still be required"
-   ],
-   "whyItMatters": "Users considering ARM-based Snapdragon X1 laptops now have a more viable Fedora option.",
-   "kind": "news",
-   "imageUrl": "https://www.phoronix.net/image.php?id=snapdragon-x-elite-linux-benchmarks&image=snapdragon_x_elite_11",
-   "readingMinutes": 2
-  },
-  {
-   "id": "19dad65fe509ea68",
-   "sourceId": "lwn",
-   "title": "Reducing undefined behavior in the C language",
-   "url": "https://lwn.net/Articles/1095811/",
-   "author": "corbet",
-   "publishedAt": 1790608582000,
-   "firstSeenAt": 1790661603974,
-   "tags": [
-    "c",
-    "memory-safety",
-    "kernel",
-    "deep"
-   ],
-   "brief": "At Kernel Recipes, biomedical engineering professor and longtime Linux user Martin Uecker talked about undefined behavior in C and whether the language can eventually be made memory-safe. He works on free software for controlling MRI scanners.",
-   "keyPoints": [],
-   "whyItMatters": "C programmers and kernel developers interested in memory safety will want to see the talk's arguments.",
-   "kind": "news",
-   "imageUrl": null,
-   "readingMinutes": 0
-  },
-  {
-   "id": "3a39100e3db95507",
-   "sourceId": "lwn",
-   "title": "Security updates for Monday",
-   "url": "https://lwn.net/Articles/1097191/",
-   "author": "jake",
-   "publishedAt": 1790608085000,
-   "firstSeenAt": 1790661603974,
-   "tags": [
-    "security",
-    "updates",
-    "distributions",
-    "kernel",
-    "deep"
-   ],
-   "brief": "LWN's weekly roundup lists security updates from AlmaLinux, Debian, Fedora, Mageia, Oracle, SUSE, and Ubuntu. Affected packages include kernel, firefox, chromium, libxml2, exim4, libvirt, and lxc, among many others.",
-   "keyPoints": [
-    "AlmaLinux and Oracle issued kernel and libxml2 updates across multiple releases",
-    "Debian patched exim4, ghostscript, chromium, and php8.4 in stable",
-    "Ubuntu fixed libvirt, lxc, exim4, and freerdp3 across supported LTS releases"
-   ],
-   "whyItMatters": "System administrators should review the list for packages they run and apply the relevant patches.",
-   "kind": "news",
-   "imageUrl": null,
-   "readingMinutes": 7
-  },
-  {
-   "id": "08390b02d2afee1e",
-   "sourceId": "phoronix",
-   "title": "Firefox 157 Now Available With Visual Refresh, WebRTC Hardware AV1 Decode",
-   "url": "https://www.phoronix.com/news/Firefox-157-Released",
-   "author": "Michael Larabel",
-   "publishedAt": 1790606788000,
-   "firstSeenAt": 1790661603974,
-   "tags": [
-    "firefox",
-    "mozilla",
-    "browser",
-    "release",
-    "hardware",
-    "performance"
-   ],
-   "brief": "Mozilla released Firefox 157, featuring the Nova UI, described as the browser's biggest visual refresh in years, updating chrome, sidebar, and menus. It also adds hardware AV1 decoding for WebRTC video calls on supported devices, HDR video fixes, and removes Amazon as a built-in search engine.",
-   "keyPoints": [
-    "Nova UI modernizes browser chrome, sidebar, and menus",
-    "WebRTC now supports hardware AV1 decoding on supported devices",
-    "HDR video fixes; Amazon removed as built-in search engine"
-   ],
-   "whyItMatters": "Firefox users and web developers should care about the visual overhaul and improved WebRTC video performance.",
-   "kind": "release",
-   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=firefox_157_1",
-   "readingMinutes": 2
-  },
-  {
-   "id": "1d131f8b4843366e",
-   "sourceId": "linuxiac",
-   "title": "Flatpak 1.18.4 Released With Fixes for Six Security Vulnerabilities",
-   "url": "https://linuxiac.com/flatpak-1-18-4-released-with-fixes-for-six-security-vulnerabilities/",
-   "author": "Bobby Borisov",
-   "publishedAt": 1790606171000,
-   "firstSeenAt": 1790661603974,
-   "tags": [
-    "flatpak",
-    "security",
-    "linux",
-    "sandboxing",
-    "distro",
-    "news"
-   ],
-   "brief": "Flatpak 1.18.4 is a security update fixing six newly disclosed vulnerabilities in the Linux app sandboxing framework, plus related hardening. Fixes cover arbitrary file overwrite and deletion, OCI token exposure, desktop file filtering, and sandbox signal escapes.",
-   "keyPoints": [
-    "CVE-2026-97024 and CVE-2026-97023: malicious apps could overwrite or delete arbitrary files with elevated privileges.",
-    "CVE-2026-97025/26: OCI auth tokens and temp repository directory permissions are now restricted.",
-    "CVE-2026-97027/29: stricter .desktop and D-Bus file filtering; fixes signal escape that could kill the desktop."
-   ],
-   "whyItMatters": "Linux users and distributions shipping Flatpak should update promptly to close sandbox-escape and privilege issues.",
-   "kind": "release",
-   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/09/flatpak1184.jpg",
-   "readingMinutes": 2
-  },
-  {
-   "id": "82527148c30ed29e",
-   "sourceId": "linuxiac",
-   "title": "Firefox 157 'Nova' Released With Biggest Visual Refresh in Years",
-   "url": "https://linuxiac.com/firefox-157-nova-released-with-its-biggest-visual-refresh-in-years/",
-   "author": "Bobby Borisov",
-   "publishedAt": 1790605716000,
-   "firstSeenAt": 1790661603974,
-   "tags": [
-    "firefox",
-    "mozilla",
-    "browser",
-    "release",
-    "distro",
-    "news"
-   ],
-   "brief": "Mozilla shipped Firefox 157, featuring Project Nova, a visual overhaul of the browser chrome, sidebar, and menus with a cleaner, rounded design. It also adds built-in light and dark themes, a compact mode, and hardware AV1 decoding for WebRTC calls.",
-   "keyPoints": [
-    "Project Nova redesigns browser chrome, sidebar, and menus with updated design system",
-    "New built-in themes and compact mode for smaller screens",
-    "Hardware AV1 decoding now supported for WebRTC video calls"
-   ],
-   "whyItMatters": "Firefox users on all platforms get a major UI refresh and better video call performance, rolling out via updates and distro repositories.",
-   "kind": "release",
-   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/09/firefox157.jpg",
-   "readingMinutes": 2
-  },
-  {
-   "id": "2678705bd8db3e99",
-   "sourceId": "9to5linux",
-   "title": "Mozilla Firefox 157 Is Now Available with New Nova Design",
-   "url": "https://9to5linux.com/?p=33769",
-   "author": "",
-   "publishedAt": 1790603394000,
-   "firstSeenAt": 1790661603974,
-   "tags": [
-    "firefox",
-    "mozilla",
-    "browser",
-    "release",
-    "distro"
-   ],
-   "brief": "Mozilla Firefox 157 is available for download with the new Nova design, HDR improvements, and better audio/video synchronization.",
-   "keyPoints": [],
-   "whyItMatters": "Firefox users and Linux desktop readers may care about the visual refresh and media playback improvements.",
-   "kind": "release",
-   "imageUrl": null,
-   "readingMinutes": 0
-  },
-  {
-   "id": "83fc0eb46d72304d",
-   "sourceId": "itsfoss",
-   "title": "postmarketOS rebrands to Nura",
-   "url": "https://feed.itsfoss.com/link/24361/17476371/postmarketos-nura-rebranding",
-   "author": "Sourav Rudra",
-   "publishedAt": 1790603156000,
-   "firstSeenAt": 1790661603974,
-   "tags": [
-    "mobile",
-    "linux",
-    "postmarketos",
-    "rebranding",
-    "desktop",
-    "tutorial"
-   ],
-   "brief": "postmarketOS, the mobile Linux OS for reviving old smartphones, has been renamed Nura. The old descriptive name couldn't be trademarked and was often misstated; the new name references Sardinia's ancient Nuraghe stone towers, symbolizing longevity. Current release is v26.06.",
-   "keyPoints": [
-    "Rename closed a year-long process with 300+ community name submissions",
-    "Trademark application filed for Nura, which was legally impossible with the old name",
-    "Project recommends Snapdragon 845 or 410/412 devices as entry points"
-   ],
-   "whyItMatters": "Users of Linux phones and anyone reviving old smartphones should know the project's new identity and trademark status.",
-   "kind": "news",
-   "imageUrl": "https://itsfoss.com/content/images/2026/09/postmarketos-nura-rebrand-banner.png",
-   "readingMinutes": 3
-  },
-  {
-   "id": "0b7ff14381614b34",
-   "sourceId": "phoronix",
-   "title": "Flatpak 1.18.4 Released With Important Security Fixes",
-   "url": "https://www.phoronix.com/news/Flatpak-1.18.4-Released",
-   "author": "Michael Larabel",
-   "publishedAt": 1790601624000,
-   "firstSeenAt": 1790661603974,
-   "tags": [
-    "flatpak",
-    "security",
-    "linux",
-    "sandboxing",
-    "hardware",
-    "performance"
-   ],
-   "brief": "Flatpak 1.18.4 is out with several security fixes for the app sandboxing and distribution framework. Fixes cover privileged file overwrites and deletions by malicious apps, leaked OCI authentication tokens, and multiple denial-of-service vectors. A 1.19.2 development release with the same fixes is also available.",
-   "keyPoints": [
-    "Blocks privileged overwrite or deletion of arbitrary files by malicious apps",
-    "Stops OCI repository authentication tokens from being visible to other users",
-    "Filters .desktop and D-Bus service files; blocks signals to host process groups"
-   ],
-   "whyItMatters": "Linux users and distributors relying on Flatpak should update promptly, since the fixes close sandbox escapes and denial-of-service holes.",
-   "kind": "release",
-   "imageUrl": "https://www.phoronix.net/image.php?id=2024&image=flatpak",
-   "readingMinutes": 2
-  },
-  {
-   "id": "0adc6540baad2be7",
-   "sourceId": "9to5linux",
-   "title": "Flatpak 1.18.4 Linux App Sandboxing Framework Fixes Security Issues",
-   "url": "https://9to5linux.com/?p=33766",
-   "author": "",
-   "publishedAt": 1790601579000,
-   "firstSeenAt": 1790661603974,
-   "tags": [
-    "flatpak",
-    "linux",
-    "security",
-    "distro",
-    "release"
-   ],
-   "brief": "Flatpak 1.18.4, a maintenance release of the Linux app sandboxing and distribution framework, is now available. It delivers security fixes for the stable 1.18 series; the teaser does not detail which vulnerabilities are addressed.",
-   "keyPoints": [],
-   "whyItMatters": "",
-   "kind": "release",
-   "imageUrl": null,
-   "readingMinutes": 0
-  },
-  {
-   "id": "6a93559ccac61455",
-   "sourceId": "phoronix",
-   "title": "NVIDIA Vera SMT Performance Benchmarks: First Look",
-   "url": "https://www.phoronix.com/review/nvidia-vera-smt",
-   "author": "Michael Larabel",
-   "publishedAt": 1790600063000,
-   "firstSeenAt": 1790661603974,
-   "tags": [
-    "hardware",
-    "benchmarks",
-    "nvidia",
-    "cpu",
-    "performance"
-   ],
-   "brief": "Phoronix begins benchmarking a dual-socket NVIDIA Vera system with 176 Olympus cores and 352 threads, testing the impact of Vera's new Spatial Multithreading, which partitions core resources physically rather than time-slicing. Results are not included in this teaser.",
-   "keyPoints": [
-    "Vera SMT gives two threads per core via physical resource partitioning, unlike AMD/Intel SMT",
-    "Tests compare SMT on vs off on a 176-core dual-socket Vera system",
-    "Power and frequency also monitored; more Vera articles coming"
-   ],
-   "whyItMatters": "Readers interested in NVIDIA's new Vera ARM server CPUs get an early look at how its unusual SMT design performs.",
-   "kind": "deep-dive",
-   "imageUrl": "https://www.phoronix.net/image.php?id=nvidia-vera-smt&image=nvidia_vera_smt_3",
-   "readingMinutes": 2
-  },
-  {
-   "id": "f00c4b19933d1da6",
-   "sourceId": "linuxiac",
-   "title": "F-Droid 2.0 Android App Store Launches With New UI, Improved Search",
-   "url": "https://linuxiac.com/f-droid-2-0-android-app-store-launches-with-new-ui-improved-search/",
-   "author": "Bobby Borisov",
-   "publishedAt": 1790597036000,
-   "firstSeenAt": 1790661603974,
-   "tags": [
-    "f-droid",
-    "android",
-    "open-source",
-    "app-store",
-    "distro",
-    "news"
-   ],
-   "brief": "F-Droid released version 2.0 of its official Android client, its biggest update in a decade, with a Kotlin/Jetpack Compose interface and overhauled discovery, search, and filtering. It drops Android 6 and Privileged Extension support, and the Nearby sharing feature is being rebuilt.",
-   "keyPoints": [
-    "Redesigned UI in Kotlin and Jetpack Compose with Discover, Search, and My Apps sections",
-    "Search now covers descriptions, categories, and translations, with better CJK handling",
-    "Uses newer Android install APIs for smoother background installs and updates"
-   ],
-   "whyItMatters": "Android users who rely on FOSS apps get a modernized store, but those on older devices or using the Privileged Extension must stay on legacy releases.",
-   "kind": "release",
-   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/09/f-droid-20.jpg",
-   "readingMinutes": 2
-  },
-  {
-   "id": "dbebc02b68d26977",
-   "sourceId": "phoronix",
-   "title": "AMD PerfOpt brings IOMMU bypass for AMD iGPUs in Linux 7.4",
-   "url": "https://www.phoronix.com/news/AMD-PerfOpt-Linux-7.4",
-   "author": "Michael Larabel",
-   "publishedAt": 1790594768000,
-   "firstSeenAt": 1790661603974,
-   "tags": [
-    "kernel",
-    "amd",
-    "gpu",
-    "performance",
-    "hardware"
-   ],
-   "brief": "Linux 7.4 will enable AMD PerfOpt by default, letting AMD integrated GPUs bypass the IOMMU when directly accessing system memory to cut overhead and boost performance. The feature applies to iGPUs only, can be disabled via the amdgpu.iommu_perfopt module parameter, and shows as \"PerfOpt\" in dmesg.",
-   "keyPoints": [
-    "PerfOpt lets AMD iGPUs bypass IOMMU GPA->SPA translations, keeping IR/IW permission checks",
-    "Enabled by default for AMD iGPUs in Linux 7.4 via the IOMMU tree",
-    "Disable with amdgpu.iommu_perfopt parameter; not for discrete GPUs"
-   ],
-   "whyItMatters": "Linux users with AMD integrated graphics, especially Ryzen AI Max systems, should see lower memory-access overhead and better iGPU performance.",
-   "kind": "news",
-   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=amd_perfopt",
-   "readingMinutes": 3
-  },
-  {
-   "id": "ddd3006d33007b13",
-   "sourceId": "omgubuntu",
-   "title": "Firefox 157 released with Nova theme, its biggest visual refresh in years",
-   "url": "https://www.omgubuntu.co.uk/2026/09/firefox-157-released-nova-theme",
-   "author": "Joey Sneddon",
-   "publishedAt": 1790593380000,
-   "firstSeenAt": 1790661603974,
-   "tags": [
-    "firefox",
-    "mozilla",
-    "browsers",
-    "linux",
-    "ubuntu",
-    "desktop"
-   ],
-   "brief": "Firefox 157 ships with the Nova theme enabled by default, bringing rounder tabs, menus, and address bars with pastel gradients across Windows, macOS, and opt-in Linux. It also restores an official compact mode, and Nova can be disabled via the browser.nova.enabled flag in about:config.",
-   "keyPoints": [
-    "Nova theme is default; toned down from earlier Nightly 'floating islands' mockups",
-    "Compact mode returns officially, with an auto setting for small screens",
-    "Warning shown if SSLKEYLOGFILE key logging is enabled"
-   ],
-   "whyItMatters": "Firefox users should know how the UI changes, how to revert Nova, and when the update reaches their Linux distribution.",
-   "kind": "release",
-   "imageUrl": "https://www.omgubuntu.co.uk/wp-content/uploads/2026/09/firefox-157-1.webp",
-   "readingMinutes": 4
-  },
-  {
-   "id": "769023eafb85b103",
-   "sourceId": "itsfoss",
-   "title": "GhostBSD is Replacing MATE With a New Desktop Named After a Typo",
-   "url": "https://feed.itsfoss.com/link/24361/17476197/ghostbsd-new-desktop",
-   "author": "Sourav Rudra",
-   "publishedAt": 1790591292000,
-   "firstSeenAt": 1790661603974,
-   "tags": [
-    "bsd",
-    "desktop-environment",
-    "mate",
-    "open-source",
-    "desktop",
-    "tutorial"
-   ],
-   "brief": "GhostBSD lead Eric Turgeon is building Mocka, a from-scratch desktop environment meant to eventually replace MATE one component at a time. The first piece, Mocka Dock, is available as an alpha, with a menu, settings app, and website also in early development. Nothing changes for current users yet.",
-   "keyPoints": [
-    "Mocka replaces MATE component by component until full feature parity",
-    "Mocka Dock alpha available now; menu and settings app in planning",
-    "New components stay MATE-compatible so users can mix and match"
-   ],
-   "whyItMatters": "GhostBSD users and BSD desktop watchers should know the distribution's default desktop experience is being rebuilt from scratch.",
-   "kind": "news",
-   "imageUrl": "https://itsfoss.com/content/images/2026/09/ghostbsd-new-de.webp",
-   "readingMinutes": 3
-  },
-  {
-   "id": "4494159d898e2b70",
-   "sourceId": "phoronix",
-   "title": "openSUSE Leap 16.1 RC Released With New Immutable Mode",
-   "url": "https://www.phoronix.com/news/openSUSE-Leap-16.1-RC",
-   "author": "Michael Larabel",
-   "publishedAt": 1790590822000,
-   "firstSeenAt": 1790661603974,
-   "tags": [
-    "opensuse",
-    "release",
-    "immutable",
-    "kde",
-    "hardware",
-    "performance"
-   ],
-   "brief": "openSUSE Leap 16.1 has entered release candidate testing alongside SUSE Linux Enterprise Server 16.1. Its headline feature is a new immutable mode with transactional updates and a read-only root filesystem, selectable in the installer. The RC also ships KDE Plasma 6.6, GNOME 48, and LXQt 2.4.",
-   "keyPoints": [
-    "Immutable mode offers transactional updates with a read-only root filesystem",
-    "Immutable mode is intended to replace Leap Micro for container and VM hosts",
-    "RC includes KDE Plasma 6.6, GNOME 48, and LXQt 2.4"
-   ],
-   "whyItMatters": "openSUSE users and admins running container or VM hosts should care, since immutable mode changes how Leap systems will be deployed and updated going forward.",
-   "kind": "release",
-   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=opensuse_leap_161_immutable",
-   "readingMinutes": 2
-  },
-  {
-   "id": "8ea4b52164c9718b",
-   "sourceId": "phoronix",
-   "title": "Linux 7.4 to introduce steal governor for virtualized workloads",
-   "url": "https://www.phoronix.com/news/Linux-7.4-Land-Steal-Governor",
-   "author": "Michael Larabel",
-   "publishedAt": 1790590373000,
-   "firstSeenAt": 1790661603974,
-   "tags": [
-    "kernel",
-    "virtualization",
-    "scheduler",
-    "performance",
-    "hardware"
-   ],
-   "brief": "IBM's steal governor driver, now queued in tip's sched/core branch, is expected for the Linux 7.4 merge window. It tracks vCPU steal time and dynamically adjusts preferred CPU masks so the scheduler avoids over-committed, contended CPUs, helping both POWER and x86_64 VMs.",
-   "keyPoints": [
-    "Tracks steal time to avoid placing tasks on heavily contended CPUs",
-    "Benchmarks: Kernbench up to 14% faster, Hackbench up to 44%, Daytrader 1.53x",
-    "Best for preemption-sensitive workloads like databases; may slightly regress pure CPU tasks"
-   ],
-   "whyItMatters": "Operators running over-committed VMs on high-core-count servers can expect better scheduler throughput for contention-sensitive workloads.",
-   "kind": "news",
-   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=steal_governor_1",
-   "readingMinutes": 3
-  },
-  {
-   "id": "9f4bc748e6622ee9",
-   "sourceId": "phoronix",
-   "title": "Shotcut 26.9 Video Editor Released with UI Refresh and Audio Ducking",
-   "url": "https://www.phoronix.com/news/Shotcut-26.9",
-   "author": "Michael Larabel",
-   "publishedAt": 1790588690000,
-   "firstSeenAt": 1790661603974,
-   "tags": [
-    "video-editing",
-    "shotcut",
-    "ffmpeg",
-    "open-source",
-    "hardware",
-    "performance"
-   ],
-   "brief": "Shotcut 26.9, the open-source non-linear video editor, is out in stable form after a September beta. The release adds UI refinements with more rounded corners, a new logo, fully 32-bit float audio processing, automatic audio ducking, and an update to FFmpeg 9.0.",
-   "keyPoints": [
-    "UI improvements, more rounded corners, and a new logo",
-    "Audio pipeline now fully 32-bit float; optional automatic audio ducking",
-    "Updated against FFmpeg 9.0; binaries and source on GitHub"
-   ],
-   "whyItMatters": "Shotcut users and Linux video editors get a refreshed interface and better audio handling in this release.",
-   "kind": "release",
-   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=shotcut_269_2",
-   "readingMinutes": 1
-  },
-  {
-   "id": "bbd82bbd22a380db",
-   "sourceId": "linuxiac",
-   "title": "GNOME 49.10 Released as the Final Update in the GNOME 49 Series",
-   "url": "https://linuxiac.com/gnome-49-10-released-as-the-final-update-in-the-gnome-49-series/",
-   "author": "Bobby Borisov",
-   "publishedAt": 1790582969000,
-   "firstSeenAt": 1790661603974,
-   "tags": [
-    "gnome",
-    "release",
-    "security",
-    "desktop",
-    "distro",
-    "news"
-   ],
-   "brief": "GNOME 49.10 is the final maintenance release for the GNOME 49 series, now end-of-life, updating 14 components with bug and stability fixes. GNOME 51 is the current stable generation and GNOME 50 the old-stable branch.",
-   "keyPoints": [
-    "GNOME Shell fixes workspace glitches, Thunderbolt authorization, and lock-screen issues",
-    "Mutter fixes blurred rendering, rotated-display redraws, and multi-GPU scanout",
-    "GVfs fixes CVE-2026-88924; Epiphany patches autofill injection and path traversal flaws"
-   ],
-   "whyItMatters": "Users on distributions still shipping GNOME 49 get a final round of fixes, including security patches, before support ends.",
-   "kind": "release",
-   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/09/gnome4910.jpg",
-   "readingMinutes": 2
-  },
-  {
-   "id": "00b02dff821ce573",
-   "sourceId": "linuxiac",
-   "title": "Shotcut 26.9 Video Editor Adds Audio Ducking, FFmpeg 9.0",
-   "url": "https://linuxiac.com/shotcut-26-9-video-editor-adds-audio-ducking-ffmpeg-9-0/",
-   "author": "Bobby Borisov",
-   "publishedAt": 1790581351000,
-   "firstSeenAt": 1790661603974,
-   "tags": [
-    "shotcut",
-    "video-editing",
-    "ffmpeg",
-    "linux",
-    "distro",
-    "news"
-   ],
-   "brief": "Shotcut 26.9 adds automatic audio ducking, per-track volume controls and meters in timeline headers, and Adjustment Clips that apply filters across all tracks beneath them. Audio now stays in 32-bit float internally, the multimedia framework moves to FFmpeg 9.0, and Linux gets VA-API HEVC, Vulkan, and SMB-share fixes.",
-   "keyPoints": [
-    "Automatic audio ducking lowers music when dialogue tracks become active",
-    "Adjustment Clips apply filters to all video tracks underneath",
-    "Internal audio pipeline now 32-bit float; upgraded to FFmpeg 9.0"
-   ],
-   "whyItMatters": "Video editors and podcast producers on Linux get mixing tools and hardware-encoding fixes without leaving a free, open-source editor.",
-   "kind": "release",
-   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/09/shotcut269.jpg",
-   "readingMinutes": 3
-  },
-  {
-   "id": "3c5905277376b388",
-   "sourceId": "9to5linux",
-   "title": "OpenShot 4.0.1 Video Editor Released with Timeline and Zoom Improvements",
-   "url": "https://9to5linux.com/?p=33763",
-   "author": "",
-   "publishedAt": 1790559034000,
-   "firstSeenAt": 1790575204177,
-   "tags": [
-    "openshot",
-    "video-editing",
-    "release",
-    "open-source",
-    "distro"
-   ],
-   "brief": "OpenShot 4.0.1, a bug-fix release of the open-source video editor, is available for download. It brings timeline and zoom improvements, an updated Razor tool, and faster keyframe and color editing.",
-   "keyPoints": [],
-   "whyItMatters": "OpenShot users get smoother timeline work and quicker editing tools in this update.",
-   "kind": "release",
-   "imageUrl": null,
-   "readingMinutes": 0
-  },
-  {
-   "id": "a14efad0d3e50978",
-   "sourceId": "9to5linux",
-   "title": "Shotcut 26.9 Video Editor Improves VA-API HEVC Hardware Encoding on Linux",
-   "url": "https://9to5linux.com/?p=33760",
-   "author": "",
-   "publishedAt": 1790556113000,
-   "firstSeenAt": 1790575204177,
-   "tags": [
-    "video-editing",
-    "linux",
-    "release",
-    "distro"
-   ],
-   "brief": "Shotcut 26.9 is out, improving the VA-API HEVC hardware encoder on Linux and adding Automatic Ducking for audio, volume control, and an audio level meter for timeline track headers.",
-   "keyPoints": [],
-   "whyItMatters": "",
-   "kind": "release",
-   "imageUrl": null,
-   "readingMinutes": 0
-  },
-  {
-   "id": "7580cc020a29544c",
-   "sourceId": "linuxiac",
-   "title": "OpenShot 4.0.1 Video Editor Improves Razor Tool, Timeline Editing, and Linux Support",
-   "url": "https://linuxiac.com/openshot-4-0-1-video-editor-improves-razor-tool-timeline-editing-and-linux-support/",
-   "author": "Bobby Borisov",
-   "publishedAt": 1790552720000,
-   "firstSeenAt": 1790575204177,
-   "tags": [
-    "openshot",
-    "video-editing",
-    "linux",
-    "release",
-    "distro",
-    "news"
-   ],
-   "brief": "OpenShot 4.0.1 upgrades the Razor tool with source-frame previews, snapping, and ripple cuts, and improves timeline navigation and editing responsiveness. Linux users get official Snap support, native webcam discovery, and an optional Wayland capture module.",
-   "keyPoints": [
-    "Razor tool gains frame previews, snapping, and automatic ripple cuts",
-    "Linux: official Snap support, webcam discovery, optional Wayland capture module",
-    "Fixes for undo history, exports, project saving, and macOS startup failures"
-   ],
-   "whyItMatters": "Linux video editors and OpenShot users should care, as this update improves daily editing workflows and Linux integration.",
-   "kind": "release",
-   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/09/openshot401.jpg",
-   "readingMinutes": 2
-  },
-  {
-   "id": "a3228981b95ccfe0",
-   "sourceId": "omgubuntu",
-   "title": "Silent Horizon gives Linux Mint a dramatic makeover — but at a CPU cost",
-   "url": "https://www.omgubuntu.co.uk/2026/09/linux-mint-silent-horizon-design",
-   "author": "Joey Sneddon",
-   "publishedAt": 1790549763000,
-   "firstSeenAt": 1790575204177,
-   "tags": [
-    "linux-mint",
-    "cinnamon",
-    "desktop",
-    "themes",
-    "ubuntu"
-   ],
-   "brief": "Silent Horizon is a transformation script for Linux Mint's Cinnamon desktop that installs animated desklets, Plank dock themes and panel applets for a sleek, dark look. The animated weather and system monitor desklets look striking but drove Cinnamon CPU usage above 24% on low-powered hardware, causing slowdowns and…",
-   "keyPoints": [
-    "Installs desklets, Plank dock theme, workspace switcher and tray applets via script",
-    "Weather desklet shows sun, moon and planet positions for your actual location",
-    "Animated desklets pushed Cinnamon CPU above 24%; removing them dropped it below 1%"
-   ],
-   "whyItMatters": "Linux Mint users wanting a modern-looking desktop should know this pack delivers the visuals but may cripple weaker hardware.",
-   "kind": "news",
-   "imageUrl": "https://www.omgubuntu.co.uk/wp-content/uploads/2026/09/linux-mint-silent-horizon.webp",
-   "readingMinutes": 5
-  },
-  {
-   "id": "ec38376711042d34",
-   "sourceId": "linuxiac",
-   "title": "Linuxiac Weekly Wrap-Up: Week 39, 2026 (September 21–27)",
-   "url": "https://linuxiac.com/linuxiac-weekly-wrap-up-week-39-2026-september-21-27/",
-   "author": "Bobby Borisov",
-   "publishedAt": 1790548251000,
-   "firstSeenAt": 1790575204177,
-   "tags": [
-    "linux",
-    "systemd",
-    "gnome",
-    "security",
-    "distro",
-    "news"
-   ],
-   "brief": "Linuxiac's weekly roundup for September 21–27, 2026, covers a light week for distribution news but a long list of open-source software releases. Highlights include Systemd 262, COSMIC Desktop 1.9, GNOME 50.5, Samba 4.25, and Wireshark 4.6.9.",
-   "keyPoints": [
-    "Systemd 262 adds static PID 1 builds plus better container, TPM, and VM support",
-    "COSMIC 1.9 adds a viewer and on-screen keyboard; GNOME 50.5 ships bug and security fixes",
-    "Wireshark 4.6.9 fixes 19 security vulnerabilities; Samba 4.25 adds clustering features"
-   ],
-   "whyItMatters": "Linux users and admins wanting a quick scan of the week's FOSS releases and security fixes.",
-   "kind": "news",
-   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/09/linuxiac-weekly-wrap-up-39-2026.jpg",
-   "readingMinutes": 3
-  },
-  {
-   "id": "4795e07ae228e29c",
-   "sourceId": "lwn",
-   "title": "Kernel prepatch 7.3-rc5 released",
-   "url": "https://lwn.net/Articles/1096959/",
-   "author": "corbet",
-   "publishedAt": 1790545251000,
-   "firstSeenAt": 1790575204177,
-   "tags": [
-    "kernel",
-    "linux",
-    "deep"
-   ],
-   "brief": "Linus Torvalds released the fifth 7.3 release candidate, describing it as large but without an alarming pattern—just routine changes despite the sizable diffstat.",
-   "keyPoints": [],
-   "whyItMatters": "Kernel testers and developers tracking the 7.3 cycle should know this rc is large but considered normal.",
-   "kind": "release",
-   "imageUrl": null,
-   "readingMinutes": 0
-  },
-  {
-   "id": "d2ee542f18bd7c45",
-   "sourceId": "phoronix",
-   "title": "Linux 7.3-rc5 Released: \"Another Week, Another Large RC\"",
-   "url": "https://www.phoronix.com/news/Linux-7.3-rc5-Released",
-   "author": "Michael Larabel",
-   "publishedAt": 1790543841000,
-   "firstSeenAt": 1790575204177,
-   "tags": [
-    "kernel",
-    "linux",
-    "release",
-    "testing",
-    "hardware",
-    "performance"
-   ],
-   "brief": "Linus Torvalds released Linux 7.3-rc5, an unusually large weekly test candidate, targeting a stable release around 18 October. Torvalds noted an odd diffstat with fewer driver patches and a quarter being selftests, but saw nothing alarming. Linux 7.3 will ship in Ubuntu 26.10 and other autumn distributions.",
-   "keyPoints": [
-    "rc5 includes Cache Aware Scheduling fixes, new HID device support, and graphics driver fixes",
-    "Logitech Holt Receiver HID++ support reverted due to issues",
-    "AI/LLM agents credited with uncovering new issues in the ~41 million line codebase"
-   ],
-   "whyItMatters": "Kernel testers and distro maintainers should test rc5 ahead of the mid-October Linux 7.3 stable release that will power Ubuntu 26.10.",
-   "kind": "release",
-   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=linux_73_rc5",
-   "readingMinutes": 3
-  },
-  {
-   "id": "3009c59e2da19a6e",
-   "sourceId": "9to5linux",
-   "title": "9to5Linux Weekly Roundup: September 27th, 2026",
-   "url": "https://9to5linux.com/?p=33719",
-   "author": "",
-   "publishedAt": 1790541983000,
-   "firstSeenAt": 1790575204177,
-   "tags": [
-    "linux",
-    "gnome",
-    "firefox",
-    "release",
-    "distro"
-   ],
-   "brief": "This week's 9to5Linux roundup covers a long list of Linux software releases, including COSMIC 1.9, VLC 3.0.24, GNU Wget 2.3, Flatpak 1.18.3, GNOME 50.5, Firefox 156.0.1, OBS Studio 33 beta, and KeePassXC 2.8 beta.",
-   "keyPoints": [],
-   "whyItMatters": "Linux users who want a quick overview of the week's application and driver releases.",
-   "kind": "news",
-   "imageUrl": null,
-   "readingMinutes": 0
-  },
-  {
-   "id": "48b48757e0217b38",
-   "sourceId": "linuxiac",
-   "title": "Klassik Revives the KDE 3 Desktop on Modern Plasma 6",
-   "url": "https://linuxiac.com/klassik-revives-the-kde-3-desktop-on-modern-plasma-6/",
-   "author": "Bobby Borisov",
-   "publishedAt": 1790531282000,
-   "firstSeenAt": 1790575204177,
-   "tags": [
-    "kde",
-    "plasma",
-    "qt",
-    "desktop",
-    "distro",
-    "news"
-   ],
-   "brief": "Klassik is a new open-source project recreating the KDE 3 desktop on top of the modern KDE Plasma 6 stack. Rather than just a theme, it rebuilds original KDE 3 components in Qt 6 and Qt Quick, with support for Wayland and fractional scaling.",
-   "keyPoints": [
-    "Recreated KDE 3 panel applets include K Menu, Quicklaunch, task manager, and clocks, written in C++ and QML",
-    "The KDE 2/3 QStyle theme is rewritten for Qt 6; old KWin decorations are being ported to KDecoration3",
-    "Requires Qt 6, KDE Frameworks 6, and Plasma 6; install via CMake, use the latest tagged release"
-   ],
-   "whyItMatters": "KDE users nostalgic for KDE 3 can get an authentic recreation on a fully modern, Wayland-capable Plasma 6 base.",
-   "kind": "news",
-   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/09/klassik-kde3.jpg",
-   "readingMinutes": 2
-  },
-  {
-   "id": "7f52e4b58e9f1b14",
-   "sourceId": "phoronix",
-   "title": "Budgie 10.10.3 Adds Favorites to Budgie Menu, Improves Labwc Bridge",
-   "url": "https://www.phoronix.com/news/Budgie-10.10.3-Released",
-   "author": "Michael Larabel",
-   "publishedAt": 1790530627000,
-   "firstSeenAt": 1790575204177,
-   "tags": [
-    "budgie",
-    "desktop",
-    "wayland",
-    "release",
-    "hardware",
-    "performance"
-   ],
-   "brief": "Budgie 10.10.3 is out, headlined by a Favorites area in the Budgie Menu so apps can finally be pinned there. The point release also improves the Labwc bridge for the recommended Wayland compositor and adds primary monitor designation, freely placed desktop icons, and oo7 Secret Service support.",
-   "keyPoints": [
-    "Budgie Menu gains a Favorites area for pinning applications",
-    "Labwc bridge gets keybinding, multimedia key, and reliability fixes",
-    "Adds primary monitor selection and oo7 Secret Service support"
-   ],
-   "whyItMatters": "Budgie desktop users, especially those on Wayland with Labwc, get long-requested menu favorites and smoother compositor integration.",
-   "kind": "release",
-   "imageUrl": "https://www.phoronix.net/image.php?id=2026&image=budgie_10103",
-   "readingMinutes": 2
-  },
-  {
-   "id": "f959a6997c811059",
-   "sourceId": "9to5linux",
-   "title": "Budgie 10.10.3 Desktop Environment Introduces Free Placement of Desktop Icons",
-   "url": "https://9to5linux.com/?p=33754",
-   "author": "",
-   "publishedAt": 1790525967000,
-   "firstSeenAt": 1790575204177,
-   "tags": [
-    "budgie",
-    "desktop",
-    "wayland",
-    "distro",
-    "release"
-   ],
-   "brief": "Budgie 10.10.3 is out as the third maintenance update to the Wayland-only Budgie 10.10 series, adding free placement of desktop icons among various improvements and bug fixes.",
-   "keyPoints": [],
-   "whyItMatters": "Budgie users tracking the Wayland-only 10.10 series will want to know about this maintenance update and its desktop icon feature.",
-   "kind": "release",
-   "imageUrl": null,
-   "readingMinutes": 0
-  },
-  {
-   "id": "c7fbbdbc4bd0362e",
-   "sourceId": "linuxiac",
-   "title": "Budgie Desktop 10.10.3 Released With Menu Favorites, Free Desktop Icon Placement",
-   "url": "https://linuxiac.com/budgie-desktop-10-10-3-released-with-menu-favorites/",
-   "author": "Bobby Borisov",
-   "publishedAt": 1790523853000,
-   "firstSeenAt": 1790575204177,
-   "tags": [
-    "budgie",
-    "desktop",
-    "wayland",
-    "release",
-    "distro",
-    "news"
-   ],
-   "brief": "Budgie 10.10.3, the third maintenance update in the 10.10 series, adds favorites to Budgie Menu, restores the Wayland-compatible Keyboard Layout applet, and lets users place desktop icons freely instead of on a fixed grid.",
-   "keyPoints": [
-    "Right-click apps to add them to a new Favorites category in Budgie Menu",
-    "Desktop icons can now be placed freely, with auto-arrange, snap-to-grid, and multi-select",
-    "Keyboard Layout applet rewritten in C to work under Wayland"
-   ],
-   "whyItMatters": "Budgie users, especially on Wayland or multi-monitor setups, get long-requested usability fixes and features; packagers can note the optional oo7 Secret Service support.",
-   "kind": "release",
-   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/09/budgie-desktop-10103.jpg",
-   "readingMinutes": 3
-  },
-  {
-   "id": "ed25026856ac4d6a",
-   "sourceId": "linuxiac",
-   "title": "postmarketOS Rebrands as Nura After 18-Month Naming Process",
-   "url": "https://linuxiac.com/postmarketos-is-now-nura-after-major-project-rebrand/",
-   "author": "Bobby Borisov",
-   "publishedAt": 1790522145000,
-   "firstSeenAt": 1790575204177,
-   "tags": [
-    "linux",
-    "mobile",
-    "postmarketos",
-    "rebranding",
-    "distro",
-    "news"
-   ],
-   "brief": "Mobile Linux project postmarketOS has renamed itself Nura, announced at its conference. The name comes from Sardinia's ancient Nuraghe stone structures, symbolizing longevity. The old name was hard to trademark, often miscapitalized, and no longer fit a project now shipping preinstalled on PinePhones.",
-   "keyPoints": [
-    "Nura is short for Nuraghe, ancient Sardinian stone towers built to last",
-    "Old name was untrademarkable; Nura trademark application filed",
-    "Over 300 community names submitted; Nura won an internal team vote"
-   ],
-   "whyItMatters": "Users and contributors of the mobile Linux distro should know the project, packages, and documentation will gradually move to the Nura name and nura.eco domain.",
-   "kind": "news",
-   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/09/postmarketos-nura.jpg",
-   "readingMinutes": 3
-  },
-  {
-   "id": "8310e19d95b2431b",
-   "sourceId": "linuxiac",
-   "title": "Noctalia 5.2 Wayland Shell Released With Redesigned Window Switcher",
-   "url": "https://linuxiac.com/noctalia-5-2-wayland-shell-released-with-new-window-switcher/",
-   "author": "Bobby Borisov",
-   "publishedAt": 1790519225000,
-   "firstSeenAt": 1790575204177,
-   "tags": [
-    "wayland",
-    "desktop-shell",
-    "noctalia",
-    "release",
-    "distro",
-    "news"
-   ],
-   "brief": "Noctalia 5.2, a desktop shell for Wayland, arrives with an animated window-switcher carousel, calendar reminders from iCalendar, CalDAV, and Google Calendar, plus Freedesktop sound theme support.",
-   "keyPoints": [
-    "Redesigned window switcher with animated preview carousel and workspace filtering",
-    "Calendar reminders for iCalendar, CalDAV, and Google Calendar with configurable lead times",
-    "Sound theme support, annotation editor for existing images, Japanese localization"
-   ],
-   "whyItMatters": "Wayland users running Noctalia or considering alternative desktop shells gain workflow improvements and broad bug fixes worth reviewing.",
-   "kind": "release",
-   "imageUrl": "https://linuxiac.com/wp-content/uploads/2026/09/noctalia52.jpg",
-   "readingMinutes": 3
   }
  ]
 }
